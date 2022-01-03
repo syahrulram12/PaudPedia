@@ -1,0 +1,1 @@
+enum DetailType { ARTICLE, VIDEO }
