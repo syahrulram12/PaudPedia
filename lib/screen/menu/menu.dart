@@ -9,32 +9,27 @@ class HomeMenu extends StatefulWidget {
 }
 
 class _HomeMenuState extends State<HomeMenu> {
-  // AudioCache audioCache = AudioCache();
-  // AudioPlayer audioPlayer = AudioPlayer();
-  // PlayerState playerState = PlayerState.PAUSED;
-  // String? localFilePath;
-  // String? localAudioCacheURI;
+  AudioCache audioCache = AudioCache();
+  AudioPlayer audioPlayer = AudioPlayer();
+  PlayerState playerState = PlayerState.PAUSED;
+  String? localFilePath;
+  String? localAudioCacheURI;
 
-  // @override
-  // void initState() {
-  //   // TODO: implement initState
-  //   super.initState();
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    audioCache = AudioCache(fixedPlayer: audioPlayer);
+    audioCache.play('assets/audio/audio-frontpage.mp3');
+  }
 
-  //   audioCache = AudioCache(fixedPlayer: audioPlayer);
-  //   audioPlayer.onPlayerStateChanged.listen((PlayerState s) {
-  //     setState(() {
-  //       playerState = s;
-  //     });
-  //   });
-  // }
-
-  // @override
-  // void dispose() {
-  //   // TODO: implement dispose
-  //   super.dispose();
-  //   audioPlayer.release();
-  //   audioPlayer.dispose();
-  // }
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+    audioPlayer.release();
+    audioPlayer.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
