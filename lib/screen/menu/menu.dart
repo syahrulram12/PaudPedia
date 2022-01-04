@@ -1,6 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:audioplayers/audioplayers.dart';
+import 'package:path_provider/path_provider.dart';
 
 class HomeMenu extends StatefulWidget {
   @override
@@ -8,19 +9,32 @@ class HomeMenu extends StatefulWidget {
 }
 
 class _HomeMenuState extends State<HomeMenu> {
-  AudioCache audioCache = AudioCache();
-  AudioPlayer advancedPlayer = AudioPlayer();
-  String? localFilePath;
-  String? localAudioCacheURI;
+  // AudioCache audioCache = AudioCache();
+  // AudioPlayer audioPlayer = AudioPlayer();
+  // PlayerState playerState = PlayerState.PAUSED;
+  // String? localFilePath;
+  // String? localAudioCacheURI;
 
-  play() async {
-    var url;
-    int result = await advancedPlayer.play(
-        'https://thegrowingdeveloper.org/files/audios/quiet-time.mp3?b4869097e4');
-    if (result == 1) {
-      // success
-    }
-  }
+  // @override
+  // void initState() {
+  //   // TODO: implement initState
+  //   super.initState();
+
+  //   audioCache = AudioCache(fixedPlayer: audioPlayer);
+  //   audioPlayer.onPlayerStateChanged.listen((PlayerState s) {
+  //     setState(() {
+  //       playerState = s;
+  //     });
+  //   });
+  // }
+
+  // @override
+  // void dispose() {
+  //   // TODO: implement dispose
+  //   super.dispose();
+  //   audioPlayer.release();
+  //   audioPlayer.dispose();
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -32,6 +46,4 @@ class _HomeMenuState extends State<HomeMenu> {
               fit: BoxFit.fill)),
     ));
   }
-
-  static audioPlayer() {}
 }

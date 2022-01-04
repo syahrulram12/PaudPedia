@@ -16,12 +16,13 @@ import 'package:sizer/sizer.dart';
 Alice alice = Alice(showNotification: true);
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
+  // WidgetsFlutterBinding.ensureInitialized();
   // SystemChrome.setPreferredOrientations(
   //     [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);
 
   // SystemChrome.setEnabledSystemUIMode(SystemUiMode.leanBack,
   //     overlays: [SystemUiOverlay.bottom, SystemUiOverlay.top]);
+
   // SystemChrome.setSystemUIOverlayStyle(
   //     SystemUiOverlayStyle(statusBarColor: bgLightBlue));
 

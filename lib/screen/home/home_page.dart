@@ -142,8 +142,7 @@ pembelajaran saat ini.
                         child: Center(
                           child: MainMenuItem2(
                             imageUrl: 'assets/baru/cover_400x400_.png',
-                            message:
-                                "Media publikasi produk guru, orang tua dan pegiat PAUD",
+                            message: "",
                             // isShow:
                             // tooltipState == TooltipInfoState.GALLERY,
                             // onInfoClick: () {
