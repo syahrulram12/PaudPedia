@@ -11,7 +11,7 @@ class HomeMenu extends StatefulWidget {
 class _HomeMenuState extends State<HomeMenu> {
   AudioCache audioCache = AudioCache();
   AudioPlayer audioPlayer = AudioPlayer();
-  PlayerState playerState = PlayerState.PAUSED;
+  PlayerState playerState = PlayerState.PLAYING;
   String? localFilePath;
   String? localAudioCacheURI;
 
@@ -20,7 +20,7 @@ class _HomeMenuState extends State<HomeMenu> {
     // TODO: implement initState
     super.initState();
     audioCache = AudioCache(fixedPlayer: audioPlayer);
-    audioCache.play('assets/audio/audio-frontpage.mp3');
+    audioCache.loop('audio/audio-frontpage.mp3');
   }
 
   @override
