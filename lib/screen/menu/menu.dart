@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:paudpedia_kemendikbud/screen/menu/menu_detail.dart';
 
 class HomeMenu extends StatefulWidget {
   @override
@@ -50,10 +51,10 @@ class _HomeMenuState extends State<HomeMenu> {
                     right: (width / 5.5) / 3,
                     child: Image.asset(
                       'assets/icons/icon-02.png',
-                      width: 200,
+                      width: width / 2,
                     )),
                 Positioned(
-                    top: height / 4.4,
+                    top: height / 4.1,
                     child: Padding(
                       padding: EdgeInsets.symmetric(horizontal: 24),
                       child: Row(
@@ -131,89 +132,14 @@ class _HomeMenuState extends State<HomeMenu> {
                     children: [
                       Container(
                           width: width / 1.2,
-                          height: 400,
                           decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(12),
                           ),
-                          child: Container(
-                              child: Column(
-                            children: [
-                              Row(children: [
-                                Flexible(
-                                    child: MenuItem(
-                                        ImageUrl:
-                                            'assets/icons/menu/icon_menu-03.png',
-                                        width: 100,
-                                        height: 100)),
-                                Flexible(
-                                  child: MenuItem(
-                                      ImageUrl:
-                                          'assets/icons/menu/icon_menu-04.png',
-                                      width: 100,
-                                      height: 100),
-                                ),
-                                Flexible(
-                                    child: MenuItem(
-                                        ImageUrl:
-                                            'assets/icons/menu/icon_menu-05.png',
-                                        width: 100,
-                                        height: 100))
-                              ]),
-                              Row(children: [
-                                Expanded(
-                                    child: MenuItem(
-                                        ImageUrl:
-                                            'assets/icons/menu/icon_menu-06.png',
-                                        width: 100,
-                                        height: 100)),
-                                Expanded(
-                                  child: MenuItem(
-                                      ImageUrl:
-                                          'assets/icons/menu/icon_menu-07.png',
-                                      width: 100,
-                                      height: 100),
-                                ),
-                                Expanded(
-                                    child: MenuItem(
-                                        ImageUrl:
-                                            'assets/icons/menu/icon_menu-08.png',
-                                        width: 100,
-                                        height: 100))
-                              ]),
-                              Row(children: [
-                                Flexible(
-                                    child: MenuItem(
-                                        ImageUrl:
-                                            'assets/icons/menu/icon_menu-09.png',
-                                        width: 100,
-                                        height: 100)),
-                                Flexible(
-                                  child: MenuItem(
-                                      ImageUrl:
-                                          'assets/icons/menu/icon_menu-10.png',
-                                      width: 100,
-                                      height: 100),
-                                ),
-                                Flexible(
-                                    child: MenuItem(
-                                        ImageUrl:
-                                            'assets/icons/menu/icon_menu-11.png',
-                                        width: 100,
-                                        height: 100))
-                              ]),
-                              Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Flexible(
-                                        child: MenuItem(
-                                            ImageUrl:
-                                                'assets/icons/menu/icon_menu-12.png',
-                                            width: 100,
-                                            height: 100)),
-                                  ]),
-                            ],
-                          )))
+                          child: Padding(
+                              padding: EdgeInsets.symmetric(
+                                  horizontal: 10, vertical: 5),
+                              child: MenuBelajar()))
                     ],
                   ),
                 ),
@@ -282,6 +208,7 @@ class MenuItem extends StatelessWidget {
         child: ClipRRect(
           borderRadius: BorderRadius.circular(13),
           child: GestureDetector(
+            onTap: OnMenuClick,
             child: Image.asset(
               ImageUrl,
               fit: BoxFit.cover,
