@@ -71,7 +71,7 @@ pembelajaran saat ini.
                         padding: const EdgeInsets.symmetric(horizontal: 36),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Flexible(
                               child: MainMenuItem(
@@ -138,23 +138,28 @@ pembelajaran saat ini.
                       left: 0,
                       right: 0,
                       child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 36),
-                        child: Center(
-                          child: MainMenuItem2(
-                            imageUrl: 'assets/baru/cover_400x400_.png',
-                            message: "",
-                            // isShow:
-                            // tooltipState == TooltipInfoState.GALLERY,
-                            // onInfoClick: () {
-                            //   updateStateTooltipInfo(
-                            //       TooltipInfoState.GALLERY);
-                            // },
-                            onMenuClick: () {
-                              Get.to(() => HomeMenu());
-                            },
-                          ),
-                        ),
-                      ),
+                          padding: const EdgeInsets.symmetric(horizontal: 36),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Flexible(
+                                child: MainMenuItem2(
+                                  imageUrl: 'assets/baru/cover_400x400_.png',
+                                  message: "",
+                                  // isShow:
+                                  // tooltipState == TooltipInfoState.GALLERY,
+                                  // onInfoClick: () {
+                                  //   updateStateTooltipInfo(
+                                  //       TooltipInfoState.GALLERY);
+                                  // },
+                                  onMenuClick: () {
+                                    Get.to(() => HomeMenu());
+                                  },
+                                ),
+                              ),
+                            ],
+                          )),
                     ),
                     Positioned(
                         bottom: 13,

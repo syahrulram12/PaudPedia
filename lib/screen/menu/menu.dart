@@ -55,6 +55,7 @@ class _HomeMenuState extends State<HomeMenu> {
                     )),
                 Positioned(
                     top: height / 4.1,
+                    right: width / 2.5,
                     child: Padding(
                       padding: EdgeInsets.symmetric(horizontal: 24),
                       child: Row(
@@ -134,7 +135,7 @@ class _HomeMenuState extends State<HomeMenu> {
                           width: width / 1.2,
                           decoration: BoxDecoration(
                             color: Colors.white,
-                            borderRadius: BorderRadius.circular(12),
+                            borderRadius: BorderRadius.circular(28),
                           ),
                           child: Padding(
                               padding: EdgeInsets.symmetric(
