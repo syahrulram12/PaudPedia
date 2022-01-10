@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:get/get.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:paudpedia_kemendikbud/styles/color.dart';
 
 class HurufHome extends StatelessWidget {
   const HurufHome({Key? key}) : super(key: key);
@@ -30,6 +31,16 @@ class HurufHome extends StatelessWidget {
                 ))
               ],
             )),
+        Positioned(
+            top: MediaQuery.of(context).size.height / 2,
+            child: Container(
+              width: 300,
+              height: 300,
+              color: Colors.white,
+              child: Column(
+                children: [Row()],
+              ),
+            ))
       ],
     ));
   }
