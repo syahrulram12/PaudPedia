@@ -92,37 +92,6 @@ class _HomeMenuState extends State<HomeMenu> {
                               ),
                             ),
                           ),
-                          // Positioned(
-                          //     top: 2,
-                          //     child: TextButton(
-                          //         onPressed: () => showDialog<String>(
-                          //               context: context,
-                          //               builder: (BuildContext context) =>
-                          //                   AlertDialog(
-                          //                 title:
-                          //                     const Text('AlertDialog Title'),
-                          //                 content: const Text(
-                          //                     'AlertDialog description'),
-                          //                 actions: <Widget>[
-                          //                   TextButton(
-                          //                     onPressed: () => Navigator.pop(
-                          //                         context, 'Cancel'),
-                          //                     child: const Text('Cancel'),
-                          //                   ),
-                          //                   TextButton(
-                          //                     onPressed: () => Navigator.pop(
-                          //                         context, 'OK'),
-                          //                     child: const Text('OK'),
-                          //                   ),
-                          //                 ],
-                          //               ),
-                          //             ),
-                          //         child: TabItem(
-                          //           ImageUrl:
-                          //               'assets/icons/menu/icon_menu-02.png',
-                          //           width: 90,
-                          //           heigth: 90,
-                          //         )))
                         ],
                       ),
                     )),

@@ -4,6 +4,7 @@ import 'package:audioplayers/audioplayers.dart';
 import 'package:get/get.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:paudpedia_kemendikbud/screen/menu/menu.dart';
+import 'package:paudpedia_kemendikbud/screen/menu/belajar/belajar_huruf/belajar_huruf.dart';
 import 'package:paudpedia_kemendikbud/screen/menu/belajar/belajar_angka/belajar_angka.dart';
 
 class MenuBelajar extends StatelessWidget {
@@ -29,14 +30,15 @@ class MenuBelajar extends StatelessWidget {
               Flexible(
                 child: MenuItem(
                     ImageUrl: 'assets/icons/menu/icon_menu-04.png',
-                    // OnMenuClick: AngkaHome()
+                    OnMenuClick: () {
+                      Get.to(() => AngkaHome());
+                    },
                     width: 100,
                     height: 100),
               ),
               Flexible(
                   child: MenuItem(
                       ImageUrl: 'assets/icons/menu/icon_menu-05.png',
-                      // OnMenuClick: BendaHome()
                       width: 100,
                       height: 100))
             ]),
