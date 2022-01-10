@@ -86,6 +86,8 @@ flutter:
     - assets/icons/
     - assets/baru/
     - assets/icons/menu/
+    - assets/icons/icon_alfabet_big/
+    - assets/icons/icon_alfabet_small/
     - assets/audio/audio-frontpage.mp3
     - assets/images/all_background/belajar/
   #   - images/a_dot_ham.jpeg

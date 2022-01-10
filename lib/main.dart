@@ -16,15 +16,14 @@ import 'package:sizer/sizer.dart';
 Alice alice = Alice(showNotification: true);
 
 void main() async {
-  // WidgetsFlutterBinding.ensureInitialized();
-  // SystemChrome.setPreferredOrientations(
-  //     [DeviceOrientation.portraitDown, DeviceOrient  ation.portraitUp]);
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations(
+      [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);
 
-  // SystemChrome.setEnabledSystemUIMode(SystemUiMode.leanBack,
-  //     overlays: [SystemUiOverlay.bottom, SystemUiOverlay.top]);
+  SystemChrome.setEnabledSystemUIOverlays(SystemUiOverlay.values);
 
-  // SystemChrome.setSystemUIOverlayStyle(
-  //     SystemUiOverlayStyle(statusBarColor: bgLightBlue));
+  SystemChrome.setSystemUIOverlayStyle(
+      SystemUiOverlayStyle(statusBarColor: bgLightBlue));
 
   initDependencyInjection();
 
