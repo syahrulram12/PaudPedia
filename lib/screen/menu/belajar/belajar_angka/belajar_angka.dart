@@ -16,66 +16,66 @@ class AngkaHome extends StatelessWidget {
     double width = MediaQuery.of(context).size.width;
 
     return Scaffold(
-      body: Stack(
-        children: <Widget>[
-          Container(
-            decoration: BoxDecoration(
-                image: DecorationImage(
-                    image: AssetImage(
-                        'assets/images/all_background/belajar/02_belajar_angka_background.jpg'),
-                    fit: BoxFit.cover)),
-        child: Column(
+        body: Stack(
       children: <Widget>[
         Container(
-            child: Row(
-          mainAxisSize: MainAxisSize.max,
-          children: [
-            Container(
-              child: ClipRRect(
-                 child: GestureDetector(
-                     onTap: () => {Get.back()},
-                     child: Image.asset(
-                       'assets/icons/tab_bar_menu.png',
-                       width: 100,
-                     )),
-               ),
-             ),
-            Container(
-              margin: EdgeInsets.symmetric(horizontal: 17),
-              child: ClipRRect(
-                child: GestureDetector(
-                    onTap: () => {Get.back()},
-                    child: Image.asset(
-                      'assets/icons/tab_bar_right_left.png',
-                      width: 100,
-                    )),
+          decoration: BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage(
+                    'assets/images/all_background/belajar/02_belajar_angka_background.jpg'),
+                fit: BoxFit.cover),
+          ),
+          child: Column(
+            children: <Widget>[
+              Container(
+                child: Row(mainAxisSize: MainAxisSize.max, children: [
+                  Container(
+                    child: ClipRRect(
+                      child: GestureDetector(
+                          onTap: () => {Get.back()},
+                          child: Image.asset(
+                            'assets/icons/tab_bar_menu.png',
+                            width: 100,
+                          )),
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.symmetric(horizontal: 17),
+                    child: ClipRRect(
+                      child: GestureDetector(
+                          onTap: () => {Get.back()},
+                          child: Image.asset(
+                            'assets/icons/tab_bar_right_left.png',
+                            width: 100,
+                          )),
+                    ),
+                  ),
+                  Container(
+                    child: ClipRRect(
+                      child: GestureDetector(
+                          child: Image.asset(
+                        'assets/icons/tab_bar_auto.png',
+                        width: 125,
+                      )),
+                    ),
+                  ),
+                ]),
               ),
-            ),
-            Container(
-              child: ClipRRect(
-                child: GestureDetector(
-                    child: Image.asset(
-                      'assets/icons/tab_bar_auto.png',
-                      width: 125,
-                    )),
-              ),
-            ),
-             ]),
-    ),
-        SizedBox(height: height / 10),
-        SizedBox(height: height / 10),
-        Container(
-            child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 2),
-              child: Page3() ,
-            ))
-    ],
-             ),
-             ),
-    ],
+              SizedBox(height: height / 10),
+              SizedBox(height: height / 10),
+              Container(
+                  child: Padding(
+                padding: EdgeInsets.symmetric(horizontal: 2),
+                child: Page3(),
+              ))
+            ],
+          ),
+        ),
+      ],
     ));
   }
-  }
+}
+
 class AngkaItem extends StatelessWidget {
   final String Imageurl;
   final Function()? OnMenuClick;
@@ -87,18 +87,18 @@ class AngkaItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
         child: Container(
-          width: 105,
-          height: 105,
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(13),
-            child: GestureDetector(
-              onTap: OnMenuClick,
-              child: Image.asset(
-                'assets/icons/' + Imageurl + '',
-                fit: BoxFit.cover,
-              ),
-            ),
+      width: 105,
+      height: 105,
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(13),
+        child: GestureDetector(
+          onTap: OnMenuClick,
+          child: Image.asset(
+            'assets/icons/' + Imageurl + '',
+            fit: BoxFit.cover,
           ),
-        ));
+        ),
+      ),
+    ));
   }
 }
