@@ -12,7 +12,7 @@ class AngkaHome extends StatelessWidget {
     double height = MediaQuery.of(context).size.height;
     return Scaffold(
       body: Stack(
-        children: <Widget>[
+        children: [
           Container(
             decoration: BoxDecoration(
                 image: DecorationImage(
@@ -21,17 +21,37 @@ class AngkaHome extends StatelessWidget {
                     fit: BoxFit.cover)),
           ),
           Positioned(
-              top: 25,
-              left: 15,
               child: Row(
-                children: <Widget>[
-                  Positioned(
-                      child: GestureDetector(
-                    onTap: Get.back,
-                    child: Image.asset('assets/icons/tab_bar_menu.png'),
+            children: [
+              Container(
+                child: ClipRRect(
+                  child: GestureDetector(
+                      child: Image.asset(
+                    'assets/icons/tab_bar_menu.png',
+                    width: 100,
                   )),
-                ],
-              )),
+                ),
+              ),
+              Container(
+                child: ClipRRect(
+                  child: GestureDetector(
+                      child: Image.asset(
+                    'assets/icons/tab_bar_right_left.png',
+                    width: 150,
+                  )),
+                ),
+              ),
+              Container(
+                child: ClipRRect(
+                  child: GestureDetector(
+                      child: Image.asset(
+                    'assets/icons/tab_bar_auto.png',
+                    width: 100,
+                  )),
+                ),
+              ),
+            ],
+          )),
         ],
       ),
       // body: Container(
