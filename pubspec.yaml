@@ -95,6 +95,7 @@ flutter:
     - assets/icons/icon_alfabet_small/
     - assets/icons/icon_shape/
     - assets/audio/audio-frontpage.mp3
+    - assets/audio/
     - assets/images/all_background/belajar/
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
