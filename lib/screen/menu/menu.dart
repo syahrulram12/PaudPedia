@@ -54,23 +54,37 @@ class _HomeMenuState extends State<HomeMenu> {
                     )),
                 Positioned(
                     top: height / 4.1,
-                    right: width / 2.5,
+                    right: width / 4,
                     child: Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 24),
-                      child: Row(
-                        children: [
-                          Container(
-                            child: GestureDetector(
-                              child: TabItem(
-                                ImageUrl: 'assets/icons/menu/icon_menu-01.png',
-                                heigth: 125,
-                                width: 120,
+                        padding: EdgeInsets.symmetric(horizontal: 24),
+                        child: Container(
+                          color: Colors.blueGrey,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Container(
+                                child: GestureDetector(
+                                  child: TabItem(
+                                    ImageUrl:
+                                        'assets/icons/menu/icon_menu-01.png',
+                                    heigth: 125,
+                                    width: 120,
+                                  ),
+                                ),
                               ),
-                            ),
+                              Container(
+                                child: GestureDetector(
+                                  child: TabItem(
+                                    ImageUrl:
+                                        'assets/icons/menu/icon_menu-01.png',
+                                    heigth: 125,
+                                    width: 120,
+                                  ),
+                                ),
+                              ),
+                            ],
                           ),
-                        ],
-                      ),
-                    )),
+                        ))),
                 Positioned(
                   top: height / 3,
                   left: (width / 6) / 2,
@@ -84,7 +98,7 @@ class _HomeMenuState extends State<HomeMenu> {
                           ),
                           child: Padding(
                               padding: EdgeInsets.symmetric(
-                                  horizontal: 10, vertical: 5),
+                                  horizontal: 10, vertical: 10),
                               child: MenuBelajar()))
                     ],
                   ),
