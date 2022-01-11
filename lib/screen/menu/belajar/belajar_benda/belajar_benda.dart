@@ -5,14 +5,14 @@ import 'package:get/get.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:paudpedia_kemendikbud/styles/color.dart';
 
-class HurufHome extends StatefulWidget {
-  const HurufHome({Key? key}) : super(key: key);
+class BendaHome extends StatefulWidget {
+  const BendaHome({Key? key}) : super(key: key);
 
   @override
-  _HurufHomeState createState() => _HurufHomeState();
+  _BendaHomeState createState() => _BendaHomeState();
 }
 
-class _HurufHomeState extends State<HurufHome> {
+class _BendaHomeState extends State<BendaHome> {
   @override
   double Benda = 1;
   String ImageBg =
@@ -39,33 +39,77 @@ class _HurufHomeState extends State<HurufHome> {
     double width = MediaQuery.of(context).size.width;
     return Scaffold(
         body: Container(
-            decoration: BoxDecoration(image: ChangeStyle(Benda)()),
+            decoration: BoxDecoration(
+                image: DecorationImage(image: AssetImage(ImageBg))),
             child: Column(children: [
               Container(
+                  color: Colors.white,
                   child: Row(
-                mainAxisSize: MainAxisSize.max,
-                children: [
-                  Container(
-                    child: ClipRRect(
-                      child: GestureDetector(
-                          onTap: () => {Get.back()},
-                          child: Image.asset(
-                            'assets/icons/tab_bar_menu.png',
-                            width: 100,
-                          )),
-                    ),
-                  ),
-                  Container(
-                    child: ClipRRect(
-                      child: GestureDetector(
-                          child: Image.asset(
-                        'assets/icons/tab_bar_auto.png',
-                        width: 125,
-                      )),
-                    ),
-                  ),
-                ],
-              )),
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      Container(
+                        child: ClipRRect(
+                          child: GestureDetector(
+                              onTap: () => {Get.back()},
+                              child: Image.asset(
+                                'assets/icons/tab_bar_menu.png',
+                                width: 100,
+                              )),
+                        ),
+                      ),
+                      Container(
+                        child: ClipRRect(
+                          child: GestureDetector(
+                              onTap: () {
+                                ChangeStyle(3);
+                              },
+                              child: Image.asset(
+                                'assets/icons/tab_bar_auto.png',
+                                width: 125,
+                              )),
+                        ),
+                      ),
+                    ],
+                  )),
+              Container(
+                color: Colors.white,
+                width: 100,
+                child: Stack(
+                  children: [
+                    Positioned(
+                        top: 15,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          mainAxisSize: MainAxisSize.max,
+                          children: [
+                            Container(
+                              child: ClipRRect(
+                                child: GestureDetector(
+                                    onTap: () => {Get.back()},
+                                    child: Image.asset(
+                                      'assets/icons/tab_bar_menu.png',
+                                      width: 100,
+                                    )),
+                              ),
+                            ),
+                            Container(
+                              child: ClipRRect(
+                                child: GestureDetector(
+                                    onTap: () {
+                                      ChangeStyle(3);
+                                    },
+                                    child: Image.asset(
+                                      'assets/icons/tab_bar_auto.png',
+                                      width: 125,
+                                    )),
+                              ),
+                            ),
+                          ],
+                        )),
+                  ],
+                ),
+              )
             ])));
   }
 }
