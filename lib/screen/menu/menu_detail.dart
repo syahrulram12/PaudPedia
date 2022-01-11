@@ -42,20 +42,20 @@ class MenuBelajar extends StatelessWidget {
                       height: 100))
             ]),
             Row(children: [
-              Expanded(
+              Flexible(
                   child: MenuItem(
                       ImageUrl: 'assets/icons/menu/icon_menu-06.png',
                       // OnMenuClick: BentukHome()
                       width: 100,
                       height: 100)),
-              Expanded(
+              Flexible(
                 child: MenuItem(
                     ImageUrl: 'assets/icons/menu/icon_menu-07.png',
                     // OnMenuClick: buahHome()
                     width: 100,
                     height: 100),
               ),
-              Expanded(
+              Flexible(
                   child: MenuItem(
                       ImageUrl: 'assets/icons/menu/icon_menu-08.png',
                       // OnMenuClick: SayurHome()

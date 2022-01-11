@@ -24,7 +24,6 @@ class AngkaHome extends StatelessWidget {
                     image: AssetImage(
                         'assets/images/all_background/belajar/02_belajar_angka_background.jpg'),
                     fit: BoxFit.cover)),
-<<<<<<< HEAD
           ),
           Positioned(
               child: Row(
@@ -65,42 +64,6 @@ class AngkaHome extends StatelessWidget {
       //       image: DecorationImage(
       //           image: AssetImage('assets/images/Asset_2.png'),
       //           fit: BoxFit.cover)),
-      // ),
-    );
-=======
-        child: Column(
-      children: <Widget>[
-        Container(
-            child: Row(
-          mainAxisSize: MainAxisSize.max,
-          children: [
-            Container(
-              child: ClipRRect(
-                 child: GestureDetector(
-                     onTap: () => {Get.back()},
-                     child: Image.asset(
-                       'assets/icons/tab_bar_menu.png',
-                       width: 100,
-                     )),
-               ),
-             ),
-            Container(
-              child: ClipRRect(
-                child: GestureDetector(
-                    child: Image.asset(
-                      'assets/icons/tab_bar_auto.png',
-                      width: 125,
-                    )),
-              ),
-            ),
-             ]),
-    ),
-    ],
-             ),
-             ),
-    ],
-    ));
+    ); // ),
   }
->>>>>>> 907468198b7faf7941bffea4ffc62fad3c154ab8
-  }
-
+}
