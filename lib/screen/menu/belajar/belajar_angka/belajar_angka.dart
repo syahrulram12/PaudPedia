@@ -27,6 +27,17 @@ class AngkaHome extends StatelessWidget {
         child: Column(
       children: <Widget>[
         Container(
+          margin: EdgeInsets.symmetric(horizontal: 17),
+          child: ClipRRect(
+            child: GestureDetector(
+                onTap: () => {Get.back()},
+                child: Image.asset(
+                  'assets/icons/tab_bar_right_left.png',
+                  width: 100,
+                )),
+          ),
+        ),
+        Container(
             child: Row(
           mainAxisSize: MainAxisSize.max,
           children: [
@@ -58,4 +69,26 @@ class AngkaHome extends StatelessWidget {
     ));
   }
   }
+class AngkaItem extends StatelessWidget {
+  final String Imageurl;
+  final Function()? OnMenuClick;
 
+  const AngkaItem({Key? key, required this.Imageurl, this.OnMenuClick})
+      : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+        width: 60,
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(13),
+          child: GestureDetector(
+            onTap: OnMenuClick,
+            child: Image.asset(
+              'assets/icons/' + Imageurl + '',
+              fit: BoxFit.fill,
+            ),
+          ),
+        ));
+  }
+}

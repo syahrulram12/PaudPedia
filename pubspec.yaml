@@ -86,6 +86,11 @@ flutter:
     - assets/icons/
     - assets/baru/
     - assets/icons/menu/
+    - assets/icons/icon_number/icon_1-10/
+    - assets/icons/icon_number/icon_11-20/
+    - assets/icons/icon_number/icon_21-30/
+    - assets/icons/icon_number/icon_31-40/
+    - assets/icons/icon_number/icon_41-50/
     - assets/icons/icon_alfabet_big/
     - assets/icons/icon_alfabet_small/
     - assets/audio/audio-frontpage.mp3
