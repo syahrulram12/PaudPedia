@@ -27,17 +27,6 @@ class AngkaHome extends StatelessWidget {
         child: Column(
       children: <Widget>[
         Container(
-          margin: EdgeInsets.symmetric(horizontal: 17),
-          child: ClipRRect(
-            child: GestureDetector(
-                onTap: () => {Get.back()},
-                child: Image.asset(
-                  'assets/icons/tab_bar_right_left.png',
-                  width: 100,
-                )),
-          ),
-        ),
-        Container(
             child: Row(
           mainAxisSize: MainAxisSize.max,
           children: [
@@ -52,6 +41,17 @@ class AngkaHome extends StatelessWidget {
                ),
              ),
             Container(
+              margin: EdgeInsets.symmetric(horizontal: 17),
+              child: ClipRRect(
+                child: GestureDetector(
+                    onTap: () => {Get.back()},
+                    child: Image.asset(
+                      'assets/icons/tab_bar_right_left.png',
+                      width: 100,
+                    )),
+              ),
+            ),
+            Container(
               child: ClipRRect(
                 child: GestureDetector(
                     child: Image.asset(
@@ -62,6 +62,13 @@ class AngkaHome extends StatelessWidget {
             ),
              ]),
     ),
+        SizedBox(height: height / 10),
+        SizedBox(height: height / 10),
+        Container(
+            child: Padding(
+              padding: EdgeInsets.symmetric(horizontal: 2),
+              child: Page3() ,
+            ))
     ],
              ),
              ),
@@ -78,15 +85,18 @@ class AngkaItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-        width: 60,
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(13),
-          child: GestureDetector(
-            onTap: OnMenuClick,
-            child: Image.asset(
-              'assets/icons/' + Imageurl + '',
-              fit: BoxFit.fill,
+    return Center(
+        child: Container(
+          width: 105,
+          height: 105,
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(13),
+            child: GestureDetector(
+              onTap: OnMenuClick,
+              child: Image.asset(
+                'assets/icons/' + Imageurl + '',
+                fit: BoxFit.cover,
+              ),
             ),
           ),
         ));

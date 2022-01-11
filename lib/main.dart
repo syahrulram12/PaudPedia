@@ -17,15 +17,15 @@ Alice alice = Alice(showNotification: true);
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  SystemChrome.setPreferredOrientations(
-      [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);
+  // SystemChrome.setPreferredOrientations(
+  //     [DeviceOrientation.portraitDown, DeviceOrientation.portraitUp]);
 
-  SystemChrome.setEnabledSystemUIOverlays(SystemUiOverlay.values);
+  // SystemChrome.setEnabledSystemUIOverlays(SystemUiOverlay.values);
 
-  SystemChrome.setSystemUIOverlayStyle(
-      SystemUiOverlayStyle(statusBarColor: bgLightBlue));
+  // SystemChrome.setSystemUIOverlayStyle(
+  //     SystemUiOverlayStyle(statusBarColor: bgLightBlue));
 
-  initDependencyInjection();
+  // initDependencyInjection();
 
   await initializeDateFormatting('id_ID', null);
   runApp(MyApp());

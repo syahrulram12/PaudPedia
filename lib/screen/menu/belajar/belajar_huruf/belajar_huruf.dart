@@ -32,7 +32,6 @@ class _HurufHomeState extends State<HurufHome> {
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
-
     return Scaffold(
       body: Container(
           decoration: BoxDecoration(
@@ -41,7 +40,7 @@ class _HurufHomeState extends State<HurufHome> {
                       'assets/images/all_background/belajar/01_belajar_huruf_background.jpg'),
                   fit: BoxFit.cover)),
           child: Column(
-            children: <Widget>[
+            children: [
               Container(
                   child: Row(
                 mainAxisSize: MainAxisSize.max,
@@ -79,7 +78,7 @@ class _HurufHomeState extends State<HurufHome> {
                 ],
               )),
               SizedBox(height: height / 4),
-              Expanded(
+              Container(
                   child: Padding(
                 padding: EdgeInsets.symmetric(horizontal: 10),
                 child: Huruf ? HurufBesar() : HurufKecil(),

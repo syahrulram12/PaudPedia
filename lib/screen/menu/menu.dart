@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:audioplayers/audioplayers.dart';
-import 'package:path_provider/path_provider.dart';
+// import 'package:path_provider/path_provider.dart';
 import 'package:paudpedia_kemendikbud/screen/menu/menu_detail.dart';
 
 class HomeMenu extends StatefulWidget {
@@ -36,7 +36,6 @@ class _HomeMenuState extends State<HomeMenu> {
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
-
     return Scaffold(
         body: Container(
             decoration: BoxDecoration(
@@ -45,7 +44,7 @@ class _HomeMenuState extends State<HomeMenu> {
                     fit: BoxFit.cover)),
             child: Container(
                 child: Stack(
-              children: [
+              children: <Widget>[
                 Positioned(
                     top: (height / 5) / 6,
                     right: (width / 5.5) / 3,
@@ -60,31 +59,8 @@ class _HomeMenuState extends State<HomeMenu> {
                       padding: EdgeInsets.symmetric(horizontal: 24),
                       child: Row(
                         children: [
-                          Positioned(
-                            child: TextButton(
-                              onPressed: () {
-                                showDialog(
-                                  context: context,
-                                  builder: (BuildContext context) =>
-                                      AlertDialog(
-                                    title: const Text('AlertDialog Title'),
-                                    content:
-                                        const Text('AlertDialog description'),
-                                    actions: <Widget>[
-                                      TextButton(
-                                        onPressed: () =>
-                                            Navigator.pop(context, 'Cancel'),
-                                        child: const Text('Cancel'),
-                                      ),
-                                      TextButton(
-                                        onPressed: () =>
-                                            Navigator.pop(context, 'OK'),
-                                        child: const Text('OK'),
-                                      ),
-                                    ],
-                                  ),
-                                );
-                              },
+                          Container(
+                            child: GestureDetector(
                               child: TabItem(
                                 ImageUrl: 'assets/icons/menu/icon_menu-01.png',
                                 heigth: 125,
