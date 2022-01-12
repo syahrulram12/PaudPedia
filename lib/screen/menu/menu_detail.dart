@@ -4,6 +4,7 @@ import 'package:audioplayers/audioplayers.dart';
 import 'package:get/get.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:paudpedia_kemendikbud/screen/menu/belajar/belajar_bentuk/belajar_bentuk.dart';
+import 'package:paudpedia_kemendikbud/screen/menu/belajar/belajar_profesi/belajar_profesi.dart';
 import 'package:paudpedia_kemendikbud/screen/menu/menu.dart';
 import 'package:paudpedia_kemendikbud/screen/menu/belajar/belajar_huruf/belajar_huruf.dart';
 import 'package:paudpedia_kemendikbud/screen/menu/belajar/belajar_angka/belajar_angka.dart';
@@ -107,7 +108,9 @@ class MenuBelajar extends StatelessWidget {
                 Flexible(
                     child: MenuItem(
                         ImageUrl: 'assets/icons/menu/icon_menu-12.png',
-                        // OnMenuClick: ProfesiHome(),
+                        OnMenuClick: () {
+                        Get.to(() => ProfesiHome());
+  },
                         width: 100,
                         height: 100)),
               ]),
