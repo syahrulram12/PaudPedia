@@ -40,17 +40,6 @@ class WarnaHome extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.symmetric(horizontal: 17),
-                    child: ClipRRect(
-                      child: GestureDetector(
-                          onTap: () => {Get.back()},
-                          child: Image.asset(
-                            'assets/icons/tab_bar_abuabu.png',
-                            width: 100,
-                          )),
-                    ),
-                  ),
-                  Container(
                     child: ClipRRect(
                       child: GestureDetector(
                           child: Image.asset(
@@ -87,8 +76,8 @@ class WarnaItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
         child: Container(
-      width: 300,
-      height: 300,
+      width: 105,
+      height: 105,
       child: ClipRRect(
         borderRadius: BorderRadius.circular(13),
         child: GestureDetector(

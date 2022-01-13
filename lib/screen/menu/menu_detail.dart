@@ -9,6 +9,7 @@ import 'package:paudpedia_kemendikbud/screen/menu/menu.dart';
 import 'package:paudpedia_kemendikbud/screen/menu/belajar/belajar_huruf/belajar_huruf.dart';
 import 'package:paudpedia_kemendikbud/screen/menu/belajar/belajar_angka/belajar_angka.dart';
 import 'package:paudpedia_kemendikbud/screen/menu/belajar/belajar_benda/belajar_benda.dart';
+import 'package:paudpedia_kemendikbud/screen/menu/belajar/belajar_warna/belajar_warna.dart';
 
 class MenuBelajar extends StatelessWidget {
   const MenuBelajar({Key? key}) : super(key: key);
@@ -58,7 +59,7 @@ class MenuBelajar extends StatelessWidget {
                 Flexible(
                     child: MenuItem(
                         ImageUrl: 'assets/icons/menu/icon_menu-06.png',
-                        OnMenuClick:() {
+                        OnMenuClick: () {
                           Get.to(() => BentukHome());
                         },
                         width: 100,
@@ -84,7 +85,9 @@ class MenuBelajar extends StatelessWidget {
                 Flexible(
                     child: MenuItem(
                         ImageUrl: 'assets/icons/menu/icon_menu-09.png',
-                        // OnMenuClick: WarnaHome()
+                        OnMenuClick: () {
+                          Get.to(() => WarnaHome());
+                        },
                         width: 100,
                         height: 100)),
                 Flexible(
@@ -109,8 +112,8 @@ class MenuBelajar extends StatelessWidget {
                     child: MenuItem(
                         ImageUrl: 'assets/icons/menu/icon_menu-12.png',
                         OnMenuClick: () {
-                        Get.to(() => ProfesiHome());
-  },
+                          Get.to(() => ProfesiHome());
+                        },
                         width: 100,
                         height: 100)),
               ]),

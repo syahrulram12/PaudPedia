@@ -11,15 +11,43 @@ class Page1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return Container(
         child: Column(
       children: [
-        Row(
-          children: [
-            Flexible(child: WarnaItem(Imageurl: 'icon_cake/icon_cake-01.png')),
-          ],
-        ),
+        Container(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Flexible(
+                  child: WarnaItem(Imageurl: 'assets/icons/tab_bar_merah.png')),
+            ],
+          ),
+        )
       ],
     ));
+    Container(
+      child: ClipRRect(
+        child: GestureDetector(
+            child: Image.asset(
+          'assets/icons/tab_bar_kiri.png',
+          width: 125,
+        )),
+      ),
+    );
+    Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Flexible(child: WarnaItem(Imageurl: 'icon_cake/icon_cake-01.png')),
+      ],
+    );
+    Container(
+      child: ClipRRect(
+        child: GestureDetector(
+            child: Image.asset(
+          'assets/icons/tab_bar_kanan.png',
+          width: 125,
+        )),
+      ),
+    );
   }
 }
