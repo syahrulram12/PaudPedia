@@ -72,44 +72,44 @@ class _BendaHomeState extends State<BendaHome> {
                       ),
                     ],
                   )),
-              Container(
-                color: Colors.white,
-                width: 100,
-                child: Stack(
-                  children: [
-                    Positioned(
-                        top: 15,
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          mainAxisSize: MainAxisSize.max,
-                          children: [
-                            Container(
-                              child: ClipRRect(
-                                child: GestureDetector(
-                                    onTap: () => {Get.back()},
-                                    child: Image.asset(
-                                      'assets/icons/tab_bar_menu.png',
-                                      width: 100,
-                                    )),
-                              ),
-                            ),
-                            Container(
-                              child: ClipRRect(
-                                child: GestureDetector(
-                                    onTap: () {
-                                      ChangeStyle(3);
-                                    },
-                                    child: Image.asset(
-                                      'assets/icons/tab_bar_auto.png',
-                                      width: 125,
-                                    )),
-                              ),
-                            ),
-                          ],
-                        )),
-                  ],
-                ),
-              )
+              // Container(
+              //   color: Colors.white,
+              //   width: 100,
+              //   child: Stack(
+              //     children: [
+              //       Positioned(
+              //           top: 15,
+              //           child: Column(
+              //             mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              //             mainAxisSize: MainAxisSize.max,
+              //             children: [
+              //               Container(
+              //                 child: ClipRRect(
+              //                   child: GestureDetector(
+              //                       onTap: () => {Get.back()},
+              //                       child: Image.asset(
+              //                         'assets/icons/tab_bar_menu.png',
+              //                         width: 100,
+              //                       )),
+              //                 ),
+              //               ),
+              //               Container(
+              //                 child: ClipRRect(
+              //                   child: GestureDetector(
+              //                       onTap: () {
+              //                         ChangeStyle(3);
+              //                       },
+              //                       child: Image.asset(
+              //                         'assets/icons/tab_bar_auto.png',
+              //                         width: 125,
+              //                       )),
+              //                 ),
+              //               ),
+              //             ],
+              //           )),
+              //     ],
+              //   ),
+              // )
             ])));
   }
 }
