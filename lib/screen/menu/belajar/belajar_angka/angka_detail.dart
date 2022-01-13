@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:paudpedia_kemendikbud/styles/color.dart';
 import 'package:paudpedia_kemendikbud/screen/menu/belajar/belajar_angka/belajar_angka.dart';
-
+  
 class Page1 extends StatelessWidget {
   const Page1({Key? key}) : super(key: key);
 
