@@ -76,8 +76,8 @@ class WarnaItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
         child: Container(
-      width: 300,
-      height: 300,
+      width: 105,
+      height: 105,
       child: ClipRRect(
         borderRadius: BorderRadius.circular(13),
         child: GestureDetector(
