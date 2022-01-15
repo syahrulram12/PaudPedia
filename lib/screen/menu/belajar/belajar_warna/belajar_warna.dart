@@ -28,34 +28,35 @@ class WarnaHome extends StatelessWidget {
           child: Column(
             children: <Widget>[
               Container(
-                child: Row(mainAxisSize: MainAxisSize.max, children: [
-                  Container(
-                    child: ClipRRect(
-                      child: GestureDetector(
-                          onTap: () => {Get.back()},
-                          child: Image.asset(
-                            'assets/icons/tab_bar_menu.png',
-                            width: 100,
+                child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      Container(
+                        child: ClipRRect(
+                          child: GestureDetector(
+                              onTap: () => {Get.back()},
+                              child: Image.asset(
+                                'assets/icons/tab_bar_menu.png',
+                                width: 100,
+                              )),
+                        ),
+                      ),
+                      Container(
+                        child: ClipRRect(
+                          child: GestureDetector(
+                              child: Image.asset(
+                            'assets/icons/tab_bar_auto.png',
+                            width: 125,
                           )),
-                    ),
-                  ),
-                  Container(
-                    child: ClipRRect(
-                      child: GestureDetector(
-                          child: Image.asset(
-                        'assets/icons/tab_bar_auto.png',
-                        width: 125,
-                      )),
-                    ),
-                  ),
-                ]),
+                        ),
+                      ),
+                    ]),
               ),
-              SizedBox(height: height / 10),
-              SizedBox(height: height / 10),
               Container(
                   child: Padding(
                 padding: EdgeInsets.symmetric(horizontal: 2),
-                child: WarnaHome(),
+                child: Page1(),
               ))
             ],
           ),
@@ -76,8 +77,8 @@ class WarnaItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
         child: Container(
-      width: 105,
-      height: 105,
+      width: 300,
+      height: 300,
       child: ClipRRect(
         borderRadius: BorderRadius.circular(13),
         child: GestureDetector(

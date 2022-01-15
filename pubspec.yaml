@@ -96,6 +96,14 @@ flutter:
     - assets/icons/icon_shape/
     - assets/icons/icon_profesi/
     - assets/icons/icon_cake/
+    - assets/icons/icon_hewan/icon_hewan_hutan/
+    - assets/icons/icon_hewan/icon_hewan_ikan_hias/
+    - assets/icons/icon_hewan/icon_hewan_langka/
+    - assets/icons/icon_hewan/icon_hewan_laut/
+    - assets/icons/icon_tanaman/icon_tanaman_bunga/
+    - assets/icons/icon_tanaman/icon_tanaman_hias/
+    - assets/icons/icon_tanaman/icon_tanaman_obat/
+    - assets/icons/icon_tanaman/icon_tanaman_pangan/
     - assets/audio/audio-frontpage.mp3
     - assets/audio/
     - assets/images/all_background/belajar/
