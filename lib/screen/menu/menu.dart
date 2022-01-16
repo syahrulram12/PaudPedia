@@ -12,9 +12,6 @@ class HomeMenu extends StatefulWidget {
 class _HomeMenuState extends State<HomeMenu> {
   AudioCache audioCache = AudioCache();
   AudioPlayer audioPlayer = AudioPlayer();
-  PlayerState playerState = PlayerState.PLAYING;
-  String? localFilePath;
-  String? localAudioCacheURI;
 
   @override
   void initState() {
@@ -159,18 +156,20 @@ class MenuItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    // decoration: BoxDecoration(border: Border.all(width: 2)),
     return Container(
-        width: width,
-        height: height,
-        // decoration: BoxDecoration(border: Border.all(width: 2)),
-        margin: EdgeInsets.symmetric(horizontal: 5),
+      width: MediaQuery.of(context).size.width / 2 ,
+      decoration: BoxDecoration(
+      ),
+        // margin: EdgeInsets.symmetric(horizontal: 5),
         child: ClipRRect(
           borderRadius: BorderRadius.circular(13),
           child: GestureDetector(
             onTap: OnMenuClick,
             child: Image.asset(
               ImageUrl,
-              fit: BoxFit.cover,
+              fit: BoxFit.fill,
             ),
           ),
         ));

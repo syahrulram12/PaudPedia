@@ -9,7 +9,6 @@ import 'package:paudpedia_kemendikbud/screen/menu/belajar/belajar_angka/belajar_
 
 class HurufHome extends StatefulWidget {
   const HurufHome({Key? key}) : super(key: key);
-
   @override
   _HurufHomeState createState() => _HurufHomeState();
 }
@@ -69,10 +68,11 @@ class _HurufHomeState extends State<HurufHome> {
                   Container(
                     child: ClipRRect(
                       child: GestureDetector(
+                          onTap: () { },
                           child: Image.asset(
-                        'assets/icons/tab_bar_auto.png',
-                        width: 125,
-                      )),
+                            'assets/icons/tab_bar_auto.png',
+                            width: 125,
+                          )),
                     ),
                   ),
                 ],
@@ -81,7 +81,7 @@ class _HurufHomeState extends State<HurufHome> {
               Container(
                   child: Padding(
                 padding: EdgeInsets.symmetric(horizontal: 10),
-                child: Huruf ? HurufBesar() : HurufKecil(),
+                child: Huruf ? TombolHuruf(UrlHuruf: 'icon_alfabet_big/icon_alfabet_-'): TombolHuruf(UrlHuruf:'icon_alfabet_small/icon_alfabet_small--' ,),
               ))
               //Position buat ngatur menu atas
               //Buat Isi Bawah Huruf
@@ -91,12 +91,25 @@ class _HurufHomeState extends State<HurufHome> {
   }
 }
 
-class HurufItem extends StatelessWidget {
+
+class HurufItem extends StatefulWidget {
   final String Imageurl;
+  final String audioUrl;
   final Function()? OnMenuClick;
 
-  const HurufItem({Key? key, required this.Imageurl, this.OnMenuClick})
-      : super(key: key);
+  const HurufItem({
+    Key? key,
+    required this.Imageurl,
+    this.OnMenuClick,
+    required this.audioUrl
+  }) : super(key: key);
+
+  @override
+  _HurufItemState createState() => _HurufItemState();
+}
+
+class _HurufItemState extends State<HurufItem> {
+  AudioCache SfxHuruf = AudioCache();
 
   @override
   Widget build(BuildContext context) {
@@ -105,12 +118,43 @@ class HurufItem extends StatelessWidget {
         child: ClipRRect(
           borderRadius: BorderRadius.circular(13),
           child: GestureDetector(
-            onTap: OnMenuClick,
+            onTap: () {
+              SfxHuruf.play('audio/BELAJAR/huruf/' + widget.audioUrl);
+            },
             child: Image.asset(
-              'assets/icons/' + Imageurl + '',
+              'assets/icons/' + widget.Imageurl + '',
               fit: BoxFit.fill,
             ),
+          )
           ),
-        ));
+        );
   }
 }
+
+// class HurufItem extends StatelessWidget {
+//   final String Imageurl;
+//   // final String audioUrl;
+//   final Function()? OnMenuClick;
+//
+//   const HurufItem({
+//     Key? key,
+//     required this.Imageurl,
+//     this.OnMenuClick,
+//     // required this.audioUrl
+//   }) : super(key: key);
+//
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return Container(
+//         width: 60,
+//         child: ClipRRect(
+//           borderRadius: BorderRadius.circular(13),
+//             child: Image.asset(
+//               'assets/icons/' + Imageurl + '',
+//               fit: BoxFit.fill,
+//             ),
+//           ),
+//         );
+//   }
+// }

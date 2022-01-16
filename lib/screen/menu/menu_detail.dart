@@ -17,13 +17,12 @@ class MenuBelajar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
-    return Center(
-        child: Container(
-      margin: EdgeInsets.symmetric(horizontal: (width / 8) / 2),
+    return Container(
+      alignment: Alignment.center,
       child: Column(
         children: [
           Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
               mainAxisSize: MainAxisSize.max,
               children: [
                 Flexible(
@@ -53,7 +52,7 @@ class MenuBelajar extends StatelessWidget {
                         height: 100)),
               ]),
           Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
               mainAxisSize: MainAxisSize.max,
               children: [
                 Flexible(
@@ -79,7 +78,7 @@ class MenuBelajar extends StatelessWidget {
                         height: 100))
               ]),
           Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
               mainAxisSize: MainAxisSize.max,
               children: [
                 Flexible(
@@ -106,7 +105,6 @@ class MenuBelajar extends StatelessWidget {
               ]),
           Row(
               mainAxisAlignment: MainAxisAlignment.start,
-              mainAxisSize: MainAxisSize.max,
               children: [
                 Flexible(
                     child: MenuItem(
@@ -116,9 +114,13 @@ class MenuBelajar extends StatelessWidget {
                         },
                         width: 100,
                         height: 100)),
-              ]),
+                Flexible(
+                    child: Container()),
+                Flexible(
+                    child: Container()
+                )]),
         ],
       ),
-    ));
+    );
   }
 }
