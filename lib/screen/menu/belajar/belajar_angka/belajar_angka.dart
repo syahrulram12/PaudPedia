@@ -66,7 +66,7 @@ class AngkaHome extends StatelessWidget {
               Container(
                   child: Padding(
                 padding: EdgeInsets.symmetric(horizontal: 2),
-                child: Page3(),
+                child: Page1(),
               ))
             ],
           ),
@@ -76,29 +76,50 @@ class AngkaHome extends StatelessWidget {
   }
 }
 
-class AngkaItem extends StatelessWidget {
+class AngkaItem extends StatefulWidget {
   final String Imageurl;
+  final String audioUrl;
   final Function()? OnMenuClick;
+  const AngkaItem({Key? key, required this.Imageurl, this.OnMenuClick, required this.audioUrl}) : super(key: key);
 
-  const AngkaItem({Key? key, required this.Imageurl, this.OnMenuClick})
-      : super(key: key);
+  @override
+  _AngkaItemState createState() => _AngkaItemState();
+}
 
+class _AngkaItemState extends State<AngkaItem> {
+  AudioCache SfxAngka = AudioCache();
   @override
   Widget build(BuildContext context) {
     return Center(
         child: Container(
-      width: 105,
-      height: 105,
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(13),
-        child: GestureDetector(
-          onTap: OnMenuClick,
-          child: Image.asset(
-            'assets/icons/' + Imageurl + '',
-            fit: BoxFit.cover,
+          width: 105,
+          height: 105,
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(13),
+            child: GestureDetector(
+              onTap: () {
+                SfxAngka.play('audio/BELAJAR/angka/'+widget.audioUrl);
+              },
+              child: Image.asset(
+                'assets/icons/'+ widget.Imageurl + '',
+                fit: BoxFit.cover,
+              ),
+            ),
           ),
-        ),
-      ),
-    ));
+        ));;
   }
 }
+
+
+// class AngkaItem extends StatelessWidget {
+//   final String Imageurl;
+//   final Function()? OnMenuClick;
+//
+//   const AngkaItem({Key? key, required this.Imageurl, this.OnMenuClick})
+//       : super(key: key);
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return
+//   }
+// }

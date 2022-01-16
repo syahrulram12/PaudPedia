@@ -14,8 +14,18 @@ class HurufHome extends StatefulWidget {
 }
 
 class _HurufHomeState extends State<HurufHome> {
+  AudioCache audioCache = AudioCache();
+  AudioPlayer audioPlayer = AudioPlayer();
+
   @override
   bool Huruf = true;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    audioCache.play('audio/BELAJAR/huruf/belajar-huruf.mp3');
+  }
 
   ChangeStyle() {
     setState(() {
@@ -131,30 +141,4 @@ class _HurufItemState extends State<HurufItem> {
   }
 }
 
-// class HurufItem extends StatelessWidget {
-//   final String Imageurl;
-//   // final String audioUrl;
-//   final Function()? OnMenuClick;
-//
-//   const HurufItem({
-//     Key? key,
-//     required this.Imageurl,
-//     this.OnMenuClick,
-//     // required this.audioUrl
-//   }) : super(key: key);
-//
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     return Container(
-//         width: 60,
-//         child: ClipRRect(
-//           borderRadius: BorderRadius.circular(13),
-//             child: Image.asset(
-//               'assets/icons/' + Imageurl + '',
-//               fit: BoxFit.fill,
-//             ),
-//           ),
-//         );
-//   }
-// }
+
