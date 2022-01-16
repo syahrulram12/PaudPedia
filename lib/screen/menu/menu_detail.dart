@@ -85,7 +85,7 @@ class MenuBelajar extends StatelessWidget {
                     child: MenuItem(
                         ImageUrl: 'assets/icons/menu/icon_menu-09.png',
                         OnMenuClick: () {
-                          Get.to(() => WarnaHome());
+                          // Get.to(() => WarnaHome());
                         },
                         width: 100,
                         height: 100)),
