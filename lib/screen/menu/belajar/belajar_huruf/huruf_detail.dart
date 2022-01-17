@@ -6,8 +6,11 @@ import 'package:path_provider/path_provider.dart';
 import 'package:paudpedia_kemendikbud/styles/color.dart';
 import 'package:paudpedia_kemendikbud/screen/menu/belajar/belajar_huruf/belajar_huruf.dart';
 
-class HurufBesar extends StatelessWidget {
-  const HurufBesar({Key? key}) : super(key: key);
+
+class TombolHuruf extends StatelessWidget {
+  final String UrlHuruf;
+  const TombolHuruf( {Key? key, required this.UrlHuruf}) : super(key: key);
+
 
   @override
   Widget build(BuildContext context) {
@@ -18,209 +21,98 @@ class HurufBesar extends StatelessWidget {
           children: [
             Flexible(
                 child: HurufItem(
-                    Imageurl: 'icon_alfabet_big/icon_alfabet_-01.png')),
+                    Imageurl: UrlHuruf +'01.png', audioUrl: 'a.mp3',)),
             Flexible(
                 child: HurufItem(
-                    Imageurl: 'icon_alfabet_big/icon_alfabet_-02.png')),
+                    Imageurl: UrlHuruf +'02.png',audioUrl: 'b.mp3',)),
             Flexible(
                 child: HurufItem(
-                    Imageurl: 'icon_alfabet_big/icon_alfabet_-03.png')),
+                    Imageurl: UrlHuruf + '03.png',audioUrl: 'c.mp3',)),
             Flexible(
                 child: HurufItem(
-                    Imageurl: 'icon_alfabet_big/icon_alfabet_-04.png')),
+                    Imageurl:UrlHuruf + '04.png',audioUrl: 'd.mp3',)),
             Flexible(
                 child: HurufItem(
-                    Imageurl: 'icon_alfabet_big/icon_alfabet_-05.png')),
+                    Imageurl: UrlHuruf + '05.png',audioUrl: 'e.mp3',)),
             Flexible(
                 child: HurufItem(
-                    Imageurl: 'icon_alfabet_big/icon_alfabet_-06.png')),
+                    Imageurl:UrlHuruf + '06.png',audioUrl: 'f.mp3',)),
           ],
         ),
         Row(
           children: [
             Flexible(
                 child: HurufItem(
-                    Imageurl: 'icon_alfabet_big/icon_alfabet_-07.png')),
+                    Imageurl:UrlHuruf + '07.png',audioUrl: 'g.mp3',)),
             Flexible(
                 child: HurufItem(
-                    Imageurl: 'icon_alfabet_big/icon_alfabet_-08.png')),
+                    Imageurl:UrlHuruf + '08.png',audioUrl: 'h.mp3',)),
             Flexible(
                 child: HurufItem(
-                    Imageurl: 'icon_alfabet_big/icon_alfabet_-09.png')),
+                    Imageurl:UrlHuruf + '09.png',audioUrl: 'i.mp3',)),
             Flexible(
                 child: HurufItem(
-                    Imageurl: 'icon_alfabet_big/icon_alfabet_-10.png')),
+                    Imageurl:UrlHuruf + '10.png',audioUrl: 'j.mp3',)),
             Flexible(
                 child: HurufItem(
-                    Imageurl: 'icon_alfabet_big/icon_alfabet_-11.png')),
+                    Imageurl:UrlHuruf + '11.png',audioUrl: 'k.mp3',)),
             Flexible(
                 child: HurufItem(
-                    Imageurl: 'icon_alfabet_big/icon_alfabet_-12.png')),
+                    Imageurl:UrlHuruf + '12.png',audioUrl: 'l.mp3',)),
           ],
         ),
         Row(
           children: [
             Flexible(
                 child: HurufItem(
-                    Imageurl: 'icon_alfabet_big/icon_alfabet_-13.png')),
+                    Imageurl: UrlHuruf + '13.png',audioUrl: 'm.mp3',)),
             Flexible(
                 child: HurufItem(
-                    Imageurl: 'icon_alfabet_big/icon_alfabet_-14.png')),
+                    Imageurl:UrlHuruf + '14.png',audioUrl: 'n.mp3',)),
             Flexible(
                 child: HurufItem(
-                    Imageurl: 'icon_alfabet_big/icon_alfabet_-15.png')),
+                    Imageurl:UrlHuruf + '15.png',audioUrl: 'o.mp3',)),
             Flexible(
                 child: HurufItem(
-                    Imageurl: 'icon_alfabet_big/icon_alfabet_-16.png')),
+                    Imageurl:UrlHuruf + '16.png',audioUrl: 'p.mp3',)),
             Flexible(
                 child: HurufItem(
-                    Imageurl: 'icon_alfabet_big/icon_alfabet_-17.png')),
+                    Imageurl:UrlHuruf + '17.png',audioUrl: 'q.mp3',)),
             Flexible(
                 child: HurufItem(
-                    Imageurl: 'icon_alfabet_big/icon_alfabet_-18.png')),
+                    Imageurl: UrlHuruf +'18.png',audioUrl: 'r.mp3',)),
           ],
         ),
         Row(
           children: [
             Flexible(
                 child: HurufItem(
-                    Imageurl: 'icon_alfabet_big/icon_alfabet_-19.png')),
+                    Imageurl:UrlHuruf + '19.png',audioUrl: 's.mp3',)),
             Flexible(
                 child: HurufItem(
-                    Imageurl: 'icon_alfabet_big/icon_alfabet_-20.png')),
+                    Imageurl:UrlHuruf + '20.png',audioUrl: 't.mp3',)),
             Flexible(
                 child: HurufItem(
-                    Imageurl: 'icon_alfabet_big/icon_alfabet_-21.png')),
+                    Imageurl:UrlHuruf + '21.png',audioUrl: 'u.mp3',)),
             Flexible(
                 child: HurufItem(
-                    Imageurl: 'icon_alfabet_big/icon_alfabet_-22.png')),
+                    Imageurl:UrlHuruf + '22.png',audioUrl: 'v.mp3',)),
             Flexible(
                 child: HurufItem(
-                    Imageurl: 'icon_alfabet_big/icon_alfabet_-23.png')),
+                    Imageurl:UrlHuruf + '23.png',audioUrl: 'w.mp3',)),
             Flexible(
                 child: HurufItem(
-                    Imageurl: 'icon_alfabet_big/icon_alfabet_-24.png')),
+                    Imageurl:UrlHuruf + '24.png',audioUrl: 'x.mp3',)),
           ],
         ),
         Row(
           children: [
             Flexible(
                 child: HurufItem(
-                    Imageurl: 'icon_alfabet_big/icon_alfabet_-25.png')),
+                    Imageurl:UrlHuruf + '25.png',audioUrl: 'y.mp3',)),
             Flexible(
                 child: HurufItem(
-                    Imageurl: 'icon_alfabet_big/icon_alfabet_-26.png')),
-          ],
-        ),
-      ],
-    ));
-  }
-}
-
-class HurufKecil extends StatelessWidget {
-  const HurufKecil({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-        child: Column(
-      children: [
-        Row(
-          children: [
-            Flexible(
-                child: HurufItem(
-                    Imageurl: 'icon_alfabet_small/icon_alfabet_small--01.png')),
-            Flexible(
-                child: HurufItem(
-                    Imageurl: 'icon_alfabet_small/icon_alfabet_small--02.png')),
-            Flexible(
-                child: HurufItem(
-                    Imageurl: 'icon_alfabet_small/icon_alfabet_small--03.png')),
-            Flexible(
-                child: HurufItem(
-                    Imageurl: 'icon_alfabet_small/icon_alfabet_small--04.png')),
-            Flexible(
-                child: HurufItem(
-                    Imageurl: 'icon_alfabet_small/icon_alfabet_small--05.png')),
-            Flexible(
-                child: HurufItem(
-                    Imageurl: 'icon_alfabet_small/icon_alfabet_small--06.png')),
-          ],
-        ),
-        Row(
-          children: [
-            Flexible(
-                child: HurufItem(
-                    Imageurl: 'icon_alfabet_small/icon_alfabet_small--07.png')),
-            Flexible(
-                child: HurufItem(
-                    Imageurl: 'icon_alfabet_small/icon_alfabet_small--08.png')),
-            Flexible(
-                child: HurufItem(
-                    Imageurl: 'icon_alfabet_small/icon_alfabet_small--09.png')),
-            Flexible(
-                child: HurufItem(
-                    Imageurl: 'icon_alfabet_small/icon_alfabet_small--10.png')),
-            Flexible(
-                child: HurufItem(
-                    Imageurl: 'icon_alfabet_small/icon_alfabet_small--11.png')),
-            Flexible(
-                child: HurufItem(
-                    Imageurl: 'icon_alfabet_small/icon_alfabet_small--12.png')),
-          ],
-        ),
-        Row(
-          children: [
-            Flexible(
-                child: HurufItem(
-                    Imageurl: 'icon_alfabet_small/icon_alfabet_small--13.png')),
-            Flexible(
-                child: HurufItem(
-                    Imageurl: 'icon_alfabet_small/icon_alfabet_small--14.png')),
-            Flexible(
-                child: HurufItem(
-                    Imageurl: 'icon_alfabet_small/icon_alfabet_small--15.png')),
-            Flexible(
-                child: HurufItem(
-                    Imageurl: 'icon_alfabet_small/icon_alfabet_small--16.png')),
-            Flexible(
-                child: HurufItem(
-                    Imageurl: 'icon_alfabet_small/icon_alfabet_small--17.png')),
-            Flexible(
-                child: HurufItem(
-                    Imageurl: 'icon_alfabet_small/icon_alfabet_small--18.png')),
-          ],
-        ),
-        Row(
-          children: [
-            Flexible(
-                child: HurufItem(
-                    Imageurl: 'icon_alfabet_small/icon_alfabet_small--19.png')),
-            Flexible(
-                child: HurufItem(
-                    Imageurl: 'icon_alfabet_small/icon_alfabet_small--20.png')),
-            Flexible(
-                child: HurufItem(
-                    Imageurl: 'icon_alfabet_small/icon_alfabet_small--21.png')),
-            Flexible(
-                child: HurufItem(
-                    Imageurl: 'icon_alfabet_small/icon_alfabet_small--22.png')),
-            Flexible(
-                child: HurufItem(
-                    Imageurl: 'icon_alfabet_small/icon_alfabet_small--23.png')),
-            Flexible(
-                child: HurufItem(
-                    Imageurl: 'icon_alfabet_small/icon_alfabet_small--24.png')),
-          ],
-        ),
-        Row(
-          children: [
-            Flexible(
-                child: HurufItem(
-                    Imageurl: 'icon_alfabet_small/icon_alfabet_small--25.png')),
-            Flexible(
-                child: HurufItem(
-                    Imageurl: 'icon_alfabet_small/icon_alfabet_small--26.png')),
+                    Imageurl:UrlHuruf + '26.png',audioUrl: 'z.mp3',)),
           ],
         ),
       ],

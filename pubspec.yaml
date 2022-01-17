@@ -22,21 +22,21 @@ environment:
 
 dependencies:
   advance_pdf_viewer: ^2.0.0
-  audioplayers: ^0.19.0
+  audioplayers: ^0.20.1
   alice: ^0.2.3
   cached_network_image: ^3.1.0
   chewie: ^1.2.2
   cupertino_icons: ^1.0.2
   dio: ^4.0.0
   equatable: ^2.0.3
-  file_picker: ^3.0.3
+  file_picker: ^4.3.2
   flutter:
     sdk: flutter
-  flutter_html: ^2.1.2
+  flutter_html: ^3.0.0-alpha.2
   flutter_keyboard_visibility: ^5.0.3
   flutter_launcher_icons: ^0.9.2
   flutter_native_splash: ^1.2.0
-  flutter_svg: ^0.22.0
+  flutter_svg: ^0.23.0+1
   flutter_typeahead: ^3.2.0
   flutter_webview_plugin: ^0.4.0
   get: ^4.2.4
@@ -106,6 +106,8 @@ flutter:
     - assets/icons/icon_tanaman/icon_tanaman_pangan/
     - assets/audio/audio-frontpage.mp3
     - assets/audio/
+    - assets/audio/BELAJAR/huruf/
+    - assets/audio/BELAJAR/angka/
     - assets/images/all_background/belajar/
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
