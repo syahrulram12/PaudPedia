@@ -37,7 +37,8 @@ class Page1 extends StatelessWidget {
     Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Flexible(child: WarnaItem(Imageurl: 'icon_cake/icon_cake-01.png')),
+        Flexible(
+            child: WarnaItem(Imageurl: 'icon_cake/icon_cake-01-merah.png')),
       ],
     );
     Container(
