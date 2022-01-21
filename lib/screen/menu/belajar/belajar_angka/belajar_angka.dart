@@ -7,8 +7,53 @@ import 'package:paudpedia_kemendikbud/styles/color.dart';
 import 'package:paudpedia_kemendikbud/screen/menu/belajar/belajar_angka/angka_detail.dart';
 import 'package:paudpedia_kemendikbud/screen/menu/belajar/belajar_angka/belajar_angka.dart';
 
-class AngkaHome extends StatelessWidget {
+class AngkaHome extends StatefulWidget {
   const AngkaHome({Key? key}) : super(key: key);
+
+  @override
+  _AngkaHomeState createState() => _AngkaHomeState();
+}
+
+class _AngkaHomeState extends State<AngkaHome> {
+  AudioCache SfxAngka = AudioCache();
+  int page = 1;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    SfxAngka.play('audio/BELAJAR/angka/belajar-angka.mp3');
+  }
+
+  ChangePage(act) {
+    setState(() {
+      if (act == 'tambah') {
+        page = page + 1;
+        if (page > 5) {
+          page = 5;
+        }
+      } else {
+        page = page - 1;
+        if (page < 1) {
+          page = 1;
+        }
+      }
+    });
+  }
+
+  Page() {
+    if (page == 1) {
+      return Page1();
+    } else if (page == 2) {
+      return Page2();
+    } else if (page == 3) {
+      return Page3();
+    } else if (page == 4) {
+      return Page4();
+    } else {
+      return Page5();
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -28,45 +73,69 @@ class AngkaHome extends StatelessWidget {
           child: Column(
             children: <Widget>[
               Container(
-                child: Row(mainAxisSize: MainAxisSize.max, children: [
-                  Container(
-                    child: ClipRRect(
-                      child: GestureDetector(
-                          onTap: () => {Get.back()},
-                          child: Image.asset(
-                            'assets/icons/tab_bar_menu.png',
-                            width: 100,
+                margin: EdgeInsets.symmetric(horizontal:5,vertical: 25),
+                height: (height/8) / 2,
+                child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      Container(
+                        width: width / 6,
+                        child: ClipRRect(
+                          child: GestureDetector(
+                              onTap: () => {Get.back()},
+                              child: Image.asset(
+                                'assets/icons/tab_bar_menu.png',
+                              fit: BoxFit.contain)),
+                        ),
+                      ),
+                      Container(
+                        width: width / 5 ,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: AssetImage(
+                                    'assets/icons/tab_bar_right_left.png'),fit: BoxFit.contain)),
+                        child: Row(
+                          children: [
+                            Flexible(
+                              child: Container(
+                                child: GestureDetector(
+                                  onTap: () {
+                                    ChangePage('kurang');
+                                  },
+
+                                ),
+                              ),
+                            ),
+                            Flexible(
+                                child: Container(
+                                  child: GestureDetector(
+                                    onTap: () {
+                                      ChangePage('tambah');
+                                    },
+                                  ),
+                                ))
+                          ],
+                        ),
+
+                      ),
+                      Container(
+                        width: width /5,
+                        child: ClipRRect(
+                          child: GestureDetector(
+                              child: Image.asset(
+                            'assets/icons/tab_bar_auto.png',
+                            width: 125,
                           )),
-                    ),
-                  ),
-                  Container(
-                    margin: EdgeInsets.symmetric(horizontal: 17),
-                    child: ClipRRect(
-                      child: GestureDetector(
-                          onTap: () => {Get.back()},
-                          child: Image.asset(
-                            'assets/icons/tab_bar_right_left.png',
-                            width: 100,
-                          )),
-                    ),
-                  ),
-                  Container(
-                    child: ClipRRect(
-                      child: GestureDetector(
-                          child: Image.asset(
-                        'assets/icons/tab_bar_auto.png',
-                        width: 125,
-                      )),
-                    ),
-                  ),
-                ]),
+                        ),
+                      ),
+                    ]),
               ),
-              SizedBox(height: height / 10),
               SizedBox(height: height / 10),
               Container(
                   child: Padding(
                 padding: EdgeInsets.symmetric(horizontal: 2),
-                child: Page1(),
+                child: Page(),
               ))
             ],
           ),
@@ -80,7 +149,12 @@ class AngkaItem extends StatefulWidget {
   final String Imageurl;
   final String audioUrl;
   final Function()? OnMenuClick;
-  const AngkaItem({Key? key, required this.Imageurl, this.OnMenuClick, required this.audioUrl}) : super(key: key);
+  const AngkaItem(
+      {Key? key,
+      required this.Imageurl,
+      this.OnMenuClick,
+      required this.audioUrl})
+      : super(key: key);
 
   @override
   _AngkaItemState createState() => _AngkaItemState();
@@ -92,34 +166,19 @@ class _AngkaItemState extends State<AngkaItem> {
   Widget build(BuildContext context) {
     return Center(
         child: Container(
-          width: 105,
-          height: 105,
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(13),
-            child: GestureDetector(
-              onTap: () {
-                SfxAngka.play('audio/BELAJAR/angka/'+widget.audioUrl);
-              },
-              child: Image.asset(
-                'assets/icons/'+ widget.Imageurl + '',
-                fit: BoxFit.cover,
-              ),
-            ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(13),
+        child: GestureDetector(
+          onTap: () {
+            SfxAngka.play('audio/BELAJAR/angka/' + widget.audioUrl);
+          },
+          child: Image.asset(
+            'assets/icons/' + widget.Imageurl + '',
+            fit: BoxFit.cover,
           ),
-        ));;
+        ),
+      ),
+    ));
+    ;
   }
 }
-
-
-// class AngkaItem extends StatelessWidget {
-//   final String Imageurl;
-//   final Function()? OnMenuClick;
-//
-//   const AngkaItem({Key? key, required this.Imageurl, this.OnMenuClick})
-//       : super(key: key);
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     return
-//   }
-// }
