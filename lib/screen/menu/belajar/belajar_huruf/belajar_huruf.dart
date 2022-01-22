@@ -5,7 +5,6 @@ import 'package:get/get.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:paudpedia_kemendikbud/styles/color.dart';
 import 'package:paudpedia_kemendikbud/screen/menu/belajar/belajar_huruf/huruf_detail.dart';
-import 'package:paudpedia_kemendikbud/screen/menu/belajar/belajar_angka/belajar_angka.dart';
 
 class HurufHome extends StatefulWidget {
   const HurufHome({Key? key}) : super(key: key);
@@ -15,11 +14,7 @@ class HurufHome extends StatefulWidget {
 
 class _HurufHomeState extends State<HurufHome> {
   AudioCache audioCache = AudioCache();
-  AudioPlayer audioPlayer = AudioPlayer();
-
-  @override
   bool Huruf = true;
-
   @override
   void initState() {
     // TODO: implement initState
@@ -27,9 +22,9 @@ class _HurufHomeState extends State<HurufHome> {
     audioCache.play('audio/BELAJAR/huruf/belajar-huruf.mp3');
   }
 
-  ChangeStyle() {
+  ChangeStyle(act) {
     setState(() {
-      if (Huruf == true) {
+      if (act == 'kecil') {
         Huruf = false;
       } else {
         Huruf = true;
@@ -42,61 +37,87 @@ class _HurufHomeState extends State<HurufHome> {
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
     return Scaffold(
-      body: Container(
-          decoration: BoxDecoration(
-              image: DecorationImage(
-                  image: AssetImage(
-                      'assets/images/all_background/belajar/01_belajar_huruf_background.jpg'),
-                  fit: BoxFit.cover)),
-          child: Column(
-            children: [
-              Container(
-                  child: Row(
-                mainAxisSize: MainAxisSize.max,
-                children: [
-                  Container(
-                    child: ClipRRect(
-                      child: GestureDetector(
-                          onTap: () => {Get.back()},
-                          child: Image.asset(
-                            'assets/icons/tab_bar_menu.png',
-                            width: 100,
-                          )),
+      body: Stack(
+        children: [
+          Container(
+              decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image: AssetImage(
+                          'assets/images/all_background/belajar/01_belajar_huruf_background.jpg'),
+                      fit: BoxFit.cover)),
+          ),
+          Positioned(child: Column(children: [
+            Container(
+              decoration : BoxDecoration(
+                color: Colors.cyan,
+              ),
+                margin: EdgeInsets.symmetric(horizontal: 10, vertical: 30),
+                height: (height / 8) /2,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      color: Colors.blue,
+                      child: ClipRRect(
+                        child: GestureDetector(
+                            onTap: () => {Get.back()},
+                            child: Image.asset(
+                              'assets/icons/tab_bar_menu.png',
+                              fit: BoxFit.contain,
+                            )),
+                      ),
                     ),
-                  ),
-                  Container(
-                    margin: EdgeInsets.symmetric(horizontal: 17),
-                    child: ClipRRect(
-                      child: GestureDetector(
-                          onTap: () => {ChangeStyle()},
-                          child: Image.asset(
-                            'assets/icons/tab_bar_alfabet.png',
-                            width: 100,
-                          )),
+                    Container(
+                      width: width / 5,
+                      decoration : BoxDecoration(
+                      image: DecorationImage(
+                      image: AssetImage('assets/icons/tab_bar_alfabet.png'),fit: BoxFit.cover
+                      )
+                      ),
+                      child: Row(
+                        children: [
+                          Flexible(
+                            child: ClipRRect(
+                              child: Container(
+                                child: GestureDetector(
+                                  onTap : () {
+                                    ChangeStyle('besar');
+                                  }
+                                ),
+                              ),
+                            )
+                          ),
+                          Flexible(
+                            child: Container(
+                              child: GestureDetector(
+                                onTap: () {
+                                  ChangeStyle('kecil');
+                                },),
+                            )
+                          )
+                        ],
+                      )
                     ),
-                  ),
-                  Container(
-                    child: ClipRRect(
+                    Container(
+                      color: Colors.white,
+                      width: width / 5,
                       child: GestureDetector(
                           onTap: () { },
                           child: Image.asset(
                             'assets/icons/tab_bar_auto.png',
-                            width: 125,
+                            fit: BoxFit.contain,
                           )),
                     ),
-                  ),
-                ],
-              )),
-              SizedBox(height: height / 4),
-              Container(
-                  child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 10),
-                child: Huruf ? TombolHuruf(UrlHuruf: 'icon_alfabet_big/icon_alfabet_-'): TombolHuruf(UrlHuruf:'icon_alfabet_small/icon_alfabet_small--' ,),
-              ))
-              //Position buat ngatur menu atas
-              //Buat Isi Bawah Huruf
-            ],
-          )),
+                  ],
+                )),
+            SizedBox(height: height / 4),
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: (width / 8)/2) ,
+              child: Huruf ? TombolHuruf(UrlHuruf: 'icon_alfabet_big/icon_alfabet_-'): TombolHuruf(UrlHuruf:'icon_alfabet_small/icon_alfabet_small--' ,),)
+          ],))
+
+        ],
+      )
     );
   }
 }
