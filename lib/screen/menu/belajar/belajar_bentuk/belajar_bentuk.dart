@@ -80,13 +80,23 @@ class _BentukHomeState extends State<BentukHome> {
   }
 }
 
-class BentukItem extends StatelessWidget {
+class BentukItem extends StatefulWidget {
   final String Imageurl;
+  final String audioUrl;
   final Function()? OnMenuClick;
-
-  const BentukItem({Key? key, required this.Imageurl, this.OnMenuClick})
+  const BentukItem(
+      {Key? key,
+      required this.Imageurl,
+      required this.audioUrl,
+      this.OnMenuClick})
       : super(key: key);
 
+  @override
+  _BentukItemState createState() => _BentukItemState();
+}
+
+class _BentukItemState extends State<BentukItem> {
+  AudioCache SfxAngka = AudioCache();
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -95,9 +105,11 @@ class BentukItem extends StatelessWidget {
       child: ClipRRect(
         borderRadius: BorderRadius.circular(13),
         child: GestureDetector(
-          onTap: OnMenuClick,
+          onTap: () {
+            SfxAngka.play('audio/BELAJAR/bentuk/' + widget.audioUrl);
+          },
           child: Image.asset(
-            'assets/icons/' + Imageurl + '',
+            'assets/icons/' + widget.Imageurl + '',
             fit: BoxFit.cover,
           ),
         ),
