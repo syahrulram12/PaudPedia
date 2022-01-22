@@ -39,7 +39,7 @@ dependencies:
   flutter_svg: ^0.22.0
   flutter_typeahead: ^3.2.0
   flutter_webview_plugin: ^0.4.0
-  get: ^4.2.4
+  get: 4.6.1
   google_fonts: ^2.1.0
   intl: ^0.17.0
   path_provider: ^2.0.3
@@ -93,6 +93,8 @@ flutter:
     - assets/icons/icon_number/icon_41-50/
     - assets/icons/icon_alfabet_big/
     - assets/icons/icon_alfabet_small/
+    - assets/icons/icon_vegetable/
+    - assets/icons/icon_fruit/
     - assets/icons/icon_shape/
     - assets/icons/icon_profesi/
     - assets/icons/icon_cake/
