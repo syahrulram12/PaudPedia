@@ -19,65 +19,65 @@ class Buah extends StatelessWidget {
               children: [
                 Flexible(
                     child: BuahItem(
-                        Imageurl: 'icon_shape/icon_box.png')),
-                SizedBox(
-                    width: 5
-                ),
+                        Imageurl: 'icon_fruit/icon_fruit_07.png')),
                 Flexible(
                     child: BuahItem(
-                        Imageurl: 'icon_shape/icon_rectangle.png')),
+                        Imageurl: 'icon_fruit/icon_fruit_18.png')),
                 Flexible(
                     child: BuahItem(
-                        Imageurl: 'icon_shape/icon_circle.png')),
-                Flexible(
-                    child: BuahItem(
-                        Imageurl: 'icon_shape/icon_oval.png')),
+                        Imageurl: 'icon_fruit/icon_fruit_31.png')),
               ],
             ),
             Row(
               children: [
                 Flexible(
                     child: BuahItem(
-                        Imageurl: 'icon_shape/triangle.png')),
+                        Imageurl: 'icon_fruit/icon_fruit_04.png')),
                 Flexible(
                     child: BuahItem(
-                        Imageurl: 'icon_shape/icon_pentagon.png')),
+                        Imageurl: 'icon_fruit/icon_fruit_23.png')),
                 Flexible(
                     child: BuahItem(
-                        Imageurl: 'icon_shape/icon_hexagon.png')),
-                Flexible(
-                    child: BuahItem(
-                        Imageurl: 'icon_shape/icon_octagonal.png')),
+                        Imageurl: 'icon_fruit/icon_fruit_20.png')),
               ],
             ),
             Row(
               children: [
                 Flexible(
                     child: BuahItem(
-                        Imageurl: 'icon_shape/icon_parallelogram.png')),
+                        Imageurl: 'icon_fruit/icon_fruit_15.png')),
                 Flexible(
                     child: BuahItem(
-                        Imageurl: 'icon_shape/icon_rhombus.png')),
+                        Imageurl: 'icon_fruit/icon_fruit_34.png')),
                 Flexible(
                     child: BuahItem(
-                        Imageurl: 'icon_shape/icon_trapezoid.png')),
-                Flexible(
-                    child: BuahItem(
-                        Imageurl: 'icon_shape/icon_moon.png')),
+                        Imageurl: 'icon_fruit/icon_fruit_28.png')),
               ],
             ),
             Row(
-
               children: [
                 Flexible(
                     child: BuahItem(
-                        Imageurl: 'icon_shape/icon_love.png')),
+                        Imageurl: 'icon_fruit/icon_fruit_10.png')),
                 Flexible(
                     child: BuahItem(
-                        Imageurl: 'icon_shape/icon_star.png')),
+                        Imageurl: 'icon_fruit/icon_fruit_26.png')),
                 Flexible(
                     child: BuahItem(
-                        Imageurl: 'icon_shape/icon_arrow.png')),
+                        Imageurl: 'icon_fruit/icon_fruit_40.png')),
+              ],
+            ),
+            Row(
+              children: [
+                Flexible(
+                    child: BuahItem(
+                        Imageurl: 'icon_fruit/icon_fruit_12.png')),
+                Flexible(
+                    child: BuahItem(
+                        Imageurl: 'icon_fruit/icon_fruit_37.png')),
+                Flexible(
+                    child: BuahItem(
+                        Imageurl: 'icon_fruit/icon_fruit_0102.png')),
               ],
             ),
           ],

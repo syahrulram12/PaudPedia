@@ -19,10 +19,7 @@ class Sayur extends StatelessWidget {
               children: [
                 Flexible(
                     child: SayurItem(
-                        Imageurl: 'icon_vegetable/icon_vegetable-03.ng')),
-                SizedBox(
-                    width: 5
-                ),
+                        Imageurl: 'icon_vegetable/icon_vegetable-03.png')),
                 Flexible(
                     child: SayurItem(
                         Imageurl: 'icon_vegetable/icon_vegetable-05.png')),
@@ -41,20 +38,20 @@ class Sayur extends StatelessWidget {
                         Imageurl: 'icon_vegetable/icon_vegetable-11.png')),
                 Flexible(
                     child: SayurItem(
-                        Imageurl: 'icon_vegetable/icon_vegetable-14.png')),
+                        Imageurl: 'icon_vegetable/icon_vegetable-13.png')),
               ],
             ),
             Row(
               children: [
                 Flexible(
                     child: SayurItem(
-                        Imageurl: 'icon_shape/icon_parallelogram.png')),
+                        Imageurl: 'icon_vegetable/icon_vegetable-17.png')),
                 Flexible(
                     child: SayurItem(
-                        Imageurl: 'icon_shape/icon_rhombus.png')),
+                        Imageurl: 'icon_vegetable/icon_vegetable-19.png')),
                 Flexible(
                     child: SayurItem(
-                        Imageurl: 'icon_shape/icon_trapezoid.png')),
+                        Imageurl: 'icon_vegetable/icon_vegetable-15.png')),
               ],
             ),
             Row(
@@ -62,13 +59,27 @@ class Sayur extends StatelessWidget {
               children: [
                 Flexible(
                     child: SayurItem(
-                        Imageurl: 'icon_shape/icon_love.png')),
+                        Imageurl: 'icon_vegetable/icon_vegetable-21.png')),
                 Flexible(
                     child: SayurItem(
-                        Imageurl: 'icon_shape/icon_star.png')),
+                        Imageurl: 'icon_vegetable/icon_vegetable-23.png')),
                 Flexible(
                     child: SayurItem(
-                        Imageurl: 'icon_shape/icon_arrow.png')),
+                        Imageurl: 'icon_vegetable/icon_vegetable-25.png')),
+              ],
+            ),
+            Row(
+
+              children: [
+                Flexible(
+                    child: SayurItem(
+                        Imageurl: 'icon_vegetable/icon_vegetable-29.png')),
+                Flexible(
+                    child: SayurItem(
+                        Imageurl: 'icon_vegetable/icon_vegetable-01.png')),
+                Flexible(
+                    child: SayurItem(
+                        Imageurl: 'icon_vegetable/icon_vegetable-27.png')),
               ],
             ),
           ],

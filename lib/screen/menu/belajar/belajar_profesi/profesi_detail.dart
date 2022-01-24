@@ -12,28 +12,56 @@ class Profesi1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
     return Container(
         child: Column(
             children: [
               Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                mainAxisSize: MainAxisSize.max,
                 children: [
                   Flexible(
                       child: ProfesiItem(
-                          Imageurl: 'icon_profesi/pilih_profesi.png')),
+                          Imageurl: 'icon_profesi/pilih_profesi.png',
+                          
+                      ))
                 ],
               ),
               Row(
-        children: [
-        Flexible(
-        child: ProfesiItem(
-            Imageurl: 'icon_profesi/icon_teacher.png')),
-        Flexible(
-        child: ProfesiItem(
-            Imageurl: 'icon_profesi/icon_doctor.png')),
-
+                mainAxisAlignment: MainAxisAlignment.start,
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  Flexible(
+                      child: ProfesiItem(
+                          Imageurl: 'icon_profesi/icon_teacher.png')),
+                  Flexible(
+                      child: ProfesiItem(
+                          Imageurl: 'icon_profesi/icon_fire.png')),
     ],
     ),
-            ],
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                mainAxisSize: MainAxisSize.max,
+                children: [
+                  Flexible(
+                      child: ProfesiItem(
+                          Imageurl: 'icon_profesi/icon_doctor.png')),
+                  Flexible(
+                      child: ProfesiItem(
+                          Imageurl: 'icon_profesi/icon_police.png')),
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Flexible(
+                      child: ProfesiItem(
+                          Imageurl: 'icon_profesi/icon_waiter.png')),
+                  Flexible(
+                      child: Container()),
+                ],
+              ),
+    ],
         ));
   }
 }

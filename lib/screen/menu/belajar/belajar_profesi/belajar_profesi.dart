@@ -28,38 +28,29 @@ class ProfesiHome extends StatelessWidget {
               child: Column(
                 children: <Widget>[
                   Container(
-                    child: Row(mainAxisSize: MainAxisSize.max, children: [
-                      Container(
-                        child: ClipRRect(
-                          child: GestureDetector(
-                              onTap: () => {Get.back()},
-                              child: Image.asset(
-                                'assets/icons/tab_bar_menu.png',
-                                width: 100,
-                              )),
-                        ),
-                      ),
-                      Container(
-                        margin: EdgeInsets.symmetric(horizontal: 17),
-                        child: ClipRRect(
-                          child: GestureDetector(
-                              onTap: () => {Get.back()},
-                              child: Image.asset(
-                                'assets/icons/tab_bar_right_left.png',
-                                width: 100,
-                              )),
-                        ),
-                      ),
-                      Container(
-                        child: ClipRRect(
-                          child: GestureDetector(
-                              child: Image.asset(
-                                'assets/icons/tab_bar_auto.png',
-                                width: 125,
-                              )),
-                        ),
-                      ),
-                    ]),
+                    child: Row(  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Container(
+                            child: ClipRRect(
+                              child: GestureDetector(
+                                  onTap: () => {Get.back()},
+                                  child: Image.asset(
+                                    'assets/icons/tab_bar_menu.png',
+                                    width: 100,
+                                  )),
+                            ),
+                          ),
+                          Container(
+                            child: ClipRRect(
+                              child: GestureDetector(
+                                  child: Image.asset(
+                                    'assets/icons/tab_bar_auto.png',
+                                    width: 125,
+                                  )),
+                            ),
+                          ),
+                        ]),
                   ),
                   SizedBox(height: height / 10),
                   Container(
@@ -86,18 +77,22 @@ class ProfesiItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
         child: Container(
-          width: 250,
-          height: 100,
+          margin: EdgeInsets.symmetric(vertical: 6, horizontal: 3),
+          width: 150,
+          height: 80,
           child: ClipRRect(
-
             child: GestureDetector(
               onTap: OnMenuClick,
               child: Image.asset(
                 'assets/icons/' + Imageurl + '',
-                fit: BoxFit.cover,
+                fit: BoxFit.contain,
+                    height: 80,
+                    width: 150,
+                  ),
               ),
             ),
           ),
-        ));
+        );
+
   }
 }

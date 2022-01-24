@@ -19,7 +19,7 @@ class Bentuk extends StatelessWidget {
         children: [
         Flexible(
             child: BentukItem(
-            Imageurl: 'icon_shape/icon_box.png')),
+                Imageurl: 'icon_shape/icon_box.png')),
           SizedBox(
             width: 5
           ),
@@ -38,16 +38,16 @@ class Bentuk extends StatelessWidget {
         children: [
           Flexible(
            child: BentukItem(
-    Imageurl: 'icon_shape/triangle.png')),
-    Flexible(
-    child: BentukItem(
-    Imageurl: 'icon_shape/icon_pentagon.png')),
-    Flexible(
-    child: BentukItem(
-    Imageurl: 'icon_shape/icon_hexagon.png')),
-    Flexible(
-    child: BentukItem(
-    Imageurl: 'icon_shape/icon_octagonal.png')),
+               Imageurl: 'icon_shape/triangle.png')),
+          Flexible(
+            child: BentukItem(
+                Imageurl: 'icon_shape/icon_pentagon.png')),
+          Flexible(
+              child: BentukItem(
+                  Imageurl: 'icon_shape/icon_hexagon.png')),
+          Flexible(
+              child: BentukItem(
+                  Imageurl: 'icon_shape/icon_octagonal.png')),
     ],
         ),
               Row(

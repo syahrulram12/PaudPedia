@@ -52,6 +52,8 @@ class SayurHome extends StatelessWidget {
                           ),
                         ]),
                   ),
+                  SizedBox(height: height / 10),
+                  SizedBox(height: height / 10),
                   Container(
                       child: Padding(
                         padding: EdgeInsets.symmetric(horizontal: 2),
@@ -74,9 +76,10 @@ class SayurItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 90,
-      height: 90,
+    return Center(
+        child: Container(
+      width: 80,
+      height: 80,
       child: ClipRRect(
         borderRadius: BorderRadius.circular(13),
         child: GestureDetector(
@@ -87,6 +90,6 @@ class SayurItem extends StatelessWidget {
           ),
         ),
       ),
-    );
+    ));
   }
 }
