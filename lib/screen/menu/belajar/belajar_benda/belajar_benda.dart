@@ -38,78 +38,77 @@ class _BendaHomeState extends State<BendaHome> {
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
     return Scaffold(
-        body: Container(
-            decoration: BoxDecoration(
-                image: DecorationImage(image: AssetImage(ImageBg))),
-            child: Column(children: [
-              Container(
-                  color: Colors.white,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    mainAxisSize: MainAxisSize.max,
-                    children: [
-                      Container(
-                        child: ClipRRect(
-                          child: GestureDetector(
-                              onTap: () => {Get.back()},
-                              child: Image.asset(
-                                'assets/icons/tab_bar_menu.png',
-                                width: 100,
-                              )),
-                        ),
-                      ),
-                      Container(
-                        child: ClipRRect(
-                          child: GestureDetector(
-                              onTap: () {
-                                ChangeStyle(3);
-                              },
-                              child: Image.asset(
-                                'assets/icons/tab_bar_auto.png',
-                                width: 125,
-                              )),
-                        ),
-                      ),
-                    ],
-                  )),
-              // Container(
-              //   color: Colors.white,
-              //   width: 100,
-              //   child: Stack(
-              //     children: [
-              //       Positioned(
-              //           top: 15,
-              //           child: Column(
-              //             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              //             mainAxisSize: MainAxisSize.max,
-              //             children: [
-              //               Container(
-              //                 child: ClipRRect(
-              //                   child: GestureDetector(
-              //                       onTap: () => {Get.back()},
-              //                       child: Image.asset(
-              //                         'assets/icons/tab_bar_menu.png',
-              //                         width: 100,
-              //                       )),
-              //                 ),
-              //               ),
-              //               Container(
-              //                 child: ClipRRect(
-              //                   child: GestureDetector(
-              //                       onTap: () {
-              //                         ChangeStyle(3);
-              //                       },
-              //                       child: Image.asset(
-              //                         'assets/icons/tab_bar_auto.png',
-              //                         width: 125,
-              //                       )),
-              //                 ),
-              //               ),
-              //             ],
-              //           )),
-              //     ],
-              //   ),
-              // )
-            ])));
+        body: Stack(
+      children: <Widget>[
+        Container(
+          height: height / 1,
+          width: width / 1,
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage(ImageBg), fit: BoxFit.cover)),
+        ),
+        Positioned(
+            top: 15,
+            child: Container(
+              height: (height / 8) / 2,
+              margin: EdgeInsets.symmetric(horizontal: (width / 8) / 2),
+              child: ClipRRect(
+                child: GestureDetector(
+                    onTap: () => {Get.back()},
+                    child: Image.asset(
+                      'assets/icons/tab_bar_menu.png',
+                    )),
+              ),
+            )),
+        Align(
+          alignment: Alignment.center,
+          child: Container(
+            margin: EdgeInsets.symmetric(
+                horizontal: (width / 8) / 2, vertical: height / 6),
+            height: height / 1,
+            color: Colors.white,
+          ),
+        )
+      ],
+    )
+        // Container(
+        //   color: Colors.white,
+        //   width: 100,
+        //   child: R(
+        //     children: [
+        //       Positioned(
+        //           top: 15,
+        //           child: Column(
+        //             mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        //             mainAxisSize: MainAxisSize.max,
+        //             children: [
+        //               Container(
+        //                 child: ClipRRect(
+        //                   child: GestureDetector(
+        //                       onTap: () => {Get.back()},
+        //                       child: Image.asset(
+        //                         'assets/icons/tab_bar_menu.png',
+        //                         width: 100,
+        //                       )),
+        //                 ),
+        //               ),
+        //               Container(
+        //                 child: ClipRRect(
+        //                   child: GestureDetector(
+        //                       onTap: () {
+        //                         ChangeStyle(3);
+        //                       },
+        //                       child: Image.asset(
+        //                         'assets/icons/tab_bar_auto.png',
+        //                         width: 125,
+        //                       )),
+        //                 ),
+        //               ),
+        //             ],
+        //           )),
+        //     ],
+        //   ),
+        // )
+        );
   }
 }

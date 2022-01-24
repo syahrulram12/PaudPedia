@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:audioplayers/audioplayers.dart';
+import 'package:flutter_html/html_parser.dart';
 import 'package:get/get.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:paudpedia_kemendikbud/styles/color.dart';
@@ -12,7 +13,8 @@ class Bentuk extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        child: Column(
+        child: Wrap(
+      direction: Axis.horizontal,
       children: [
         Row(
           children: [
@@ -103,6 +105,7 @@ class Bentuk extends StatelessWidget {
               Imageurl: 'icon_shape/icon_arrow.png',
               audioUrl: 'panah.mp3',
             )),
+            Flexible(child: Container())
           ],
         ),
       ],

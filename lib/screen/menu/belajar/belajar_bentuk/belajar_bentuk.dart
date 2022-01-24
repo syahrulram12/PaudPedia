@@ -21,14 +21,13 @@ class _BentukHomeState extends State<BentukHome> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    SfxBentuk.play('audio/BELAJAR/bentuk/belajar-bentuk.mp3');
+    SfxBentuk.play('audio/BELAJAR/bentuk/belajar-mengenal-bentuk.mp3');
   }
 
   @override
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
-
     return Scaffold(
         body: Stack(
       children: <Widget>[
@@ -42,36 +41,39 @@ class _BentukHomeState extends State<BentukHome> {
           child: Column(
             children: <Widget>[
               Container(
+                margin: EdgeInsets.symmetric(
+                    horizontal: (width / 8) / 2, vertical: 25),
+                height: (height / 8) / 2,
                 child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Container(
+                        width: width / 7,
                         child: ClipRRect(
                           child: GestureDetector(
                               onTap: () => {Get.back()},
                               child: Image.asset(
                                 'assets/icons/tab_bar_menu.png',
-                                width: 100,
                               )),
                         ),
                       ),
                       Container(
+                        width: width / 5,
                         child: ClipRRect(
                           child: GestureDetector(
                               child: Image.asset(
                             'assets/icons/tab_bar_auto.png',
-                            width: 125,
                           )),
                         ),
                       ),
                     ]),
               ),
               Container(
-                  child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 2),
-                child: Bentuk(),
-              ))
+                  margin: EdgeInsets.symmetric(horizontal: (width / 8) / 2),
+                  child: Center(
+                    child: Bentuk(),
+                  ))
             ],
           ),
         ),
@@ -97,20 +99,29 @@ class BentukItem extends StatefulWidget {
 
 class _BentukItemState extends State<BentukItem> {
   AudioCache SfxAngka = AudioCache();
+  AudioPlayer audioPlayer = AudioPlayer();
+
+  PlayAudio(audioUrl) {
+    SfxAngka = AudioCache(fixedPlayer: audioPlayer);
+    audioPlayer.release();
+    SfxAngka.play('audio/BELAJAR/bentuk/' + audioUrl);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.symmetric(horizontal: 14, vertical: 14),
       width: 90,
       height: 90,
       child: ClipRRect(
         borderRadius: BorderRadius.circular(13),
         child: GestureDetector(
           onTap: () {
-            SfxAngka.play('audio/BELAJAR/bentuk/' + widget.audioUrl);
+            PlayAudio(widget.audioUrl);
           },
           child: Image.asset(
             'assets/icons/' + widget.Imageurl + '',
-            fit: BoxFit.cover,
+            width: 20,
           ),
         ),
       ),
