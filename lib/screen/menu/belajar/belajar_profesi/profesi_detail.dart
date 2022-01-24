@@ -22,7 +22,7 @@ class Profesi1 extends StatelessWidget {
                 children: [
                   Flexible(
                       child: ProfesiItem(
-                          Imageurl: 'icon_profesi/pilih_profesi.png',
+                          Imageurl: 'icon_profesi/pilih_profesi.png', audioUrl: 'pilih-salah-satu-untuk-menu-belajar.mp3',
                           
                       ))
                 ],
@@ -33,10 +33,10 @@ class Profesi1 extends StatelessWidget {
                 children: [
                   Flexible(
                       child: ProfesiItem(
-                          Imageurl: 'icon_profesi/icon_teacher.png')),
+                          Imageurl: 'icon_profesi/icon_teacher.png', audioUrl: 'tahukah-kamu-apa-profesinya.mp3',)),
                   Flexible(
                       child: ProfesiItem(
-                          Imageurl: 'icon_profesi/icon_fire.png')),
+                          Imageurl: 'icon_profesi/icon_fire.png', audioUrl: 'tahukah-kamu-apa-profesinya.mp3',)),
     ],
     ),
               Row(
@@ -45,10 +45,10 @@ class Profesi1 extends StatelessWidget {
                 children: [
                   Flexible(
                       child: ProfesiItem(
-                          Imageurl: 'icon_profesi/icon_doctor.png')),
+                          Imageurl: 'icon_profesi/icon_doctor.png', audioUrl: 'tahukah-kamu-apa-profesinya.mp3',)),
                   Flexible(
                       child: ProfesiItem(
-                          Imageurl: 'icon_profesi/icon_police.png')),
+                          Imageurl: 'icon_profesi/icon_police.png', audioUrl: 'tahukah-kamu-apa-profesinya.mp3',)),
                 ],
               ),
               Row(
@@ -56,7 +56,7 @@ class Profesi1 extends StatelessWidget {
                 children: [
                   Flexible(
                       child: ProfesiItem(
-                          Imageurl: 'icon_profesi/icon_waiter.png')),
+                          Imageurl: 'icon_profesi/icon_waiter.png', audioUrl: 'tahukah-kamu-apa-profesinya.mp3',)),
                   Flexible(
                       child: Container()),
                 ],

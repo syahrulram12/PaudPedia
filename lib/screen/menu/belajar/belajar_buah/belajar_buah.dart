@@ -7,9 +7,22 @@ import 'package:paudpedia_kemendikbud/styles/color.dart';
 import 'package:paudpedia_kemendikbud/screen/menu/belajar/belajar_buah/buah_detail.dart';
 import 'package:paudpedia_kemendikbud/screen/menu/belajar/belajar_buah/belajar_buah.dart';
 
-class BuahHome extends StatelessWidget {
+class BuahHome extends StatefulWidget {
   const BuahHome({Key? key}) : super(key: key);
 
+  @override
+  _BuahHomeState createState() => _BuahHomeState();
+}
+
+class _BuahHomeState extends State<BuahHome> {
+  AudioCache SfxBuah = AudioCache();
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    SfxBuah.play('audio/BELAJAR/buah/belajar-mengenal-buah.mp3');
+  }
   @override
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;
@@ -53,7 +66,7 @@ class BuahHome extends StatelessWidget {
                         ]),
                   ),
                   SizedBox(height: height / 10),
-                  SizedBox(height: height / 10),
+                  SizedBox(height: height / 8),
                   Container(
                       child: Padding(
                         padding: EdgeInsets.symmetric(horizontal: 2),
@@ -67,13 +80,20 @@ class BuahHome extends StatelessWidget {
   }
 }
 
-class BuahItem extends StatelessWidget {
+class BuahItem extends StatefulWidget {
   final String Imageurl;
+  final String audioUrl;
   final Function()? OnMenuClick;
 
-  const BuahItem({Key? key, required this.Imageurl, this.OnMenuClick})
+  const BuahItem({Key? key, required this.Imageurl, this.OnMenuClick, required this.audioUrl})
       : super(key: key);
 
+  @override
+  _BuahItemState createState() => _BuahItemState();
+}
+
+class _BuahItemState extends State<BuahItem> {
+  AudioCache SfxBuah = AudioCache();
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -83,9 +103,11 @@ class BuahItem extends StatelessWidget {
       child: ClipRRect(
         borderRadius: BorderRadius.circular(13),
         child: GestureDetector(
-          onTap: OnMenuClick,
+          onTap: () {
+            SfxBuah.play('audio/BELAJAR/buah/' + widget.audioUrl);
+          },
           child: Image.asset(
-            'assets/icons/' + Imageurl + '',
+            'assets/icons/' + widget.Imageurl + '',
             fit: BoxFit.cover,
           ),
         ),

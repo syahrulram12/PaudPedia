@@ -21,7 +21,7 @@ class _BentukHomeState extends State<BentukHome> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    SfxBentuk.play('audio/BELAJAR/bentuk/belajar-bentuk.mp3');
+    SfxBentuk.play('audio/BELAJAR/bentuk/belajar-mengenal-bentuk.mp3');
   }
 
   @override

@@ -150,11 +150,7 @@ class AngkaItem extends StatefulWidget {
   final String audioUrl;
   final Function()? OnMenuClick;
   const AngkaItem(
-      {Key? key,
-      required this.Imageurl,
-      this.OnMenuClick,
-      required this.audioUrl})
-      : super(key: key);
+      {Key? key, required this.Imageurl, this.OnMenuClick, required this.audioUrl}) : super(key: key);
 
   @override
   _AngkaItemState createState() => _AngkaItemState();

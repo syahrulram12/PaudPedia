@@ -108,6 +108,9 @@ flutter:
     - assets/icons/icon_tanaman/icon_tanaman_pangan/
     - assets/audio/audio-frontpage.mp3
     - assets/audio/
+    - assets/audio/BELAJAR/sayur/
+    - assets/audio/BELAJAR/buah/
+    - assets/audio/BELAJAR/profesi/
     - assets/audio/BELAJAR/huruf/
     - assets/audio/BELAJAR/angka/
     - assets/audio/BELAJAR/bentuk/

@@ -7,9 +7,22 @@ import 'package:paudpedia_kemendikbud/styles/color.dart';
 import 'package:paudpedia_kemendikbud/screen/menu/belajar/belajar_profesi/profesi_detail.dart';
 import 'package:paudpedia_kemendikbud/screen/menu/belajar/belajar_profesi/belajar_profesi.dart';
 
-class ProfesiHome extends StatelessWidget {
+class ProfesiHome extends StatefulWidget {
   const ProfesiHome({Key? key}) : super(key: key);
 
+  @override
+  _ProfesiHomeState createState() => _ProfesiHomeState();
+}
+
+class _ProfesiHomeState extends State<ProfesiHome> {
+  AudioCache SfxProfesi = AudioCache();
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    SfxProfesi.play('audio/BELAJAR/profesi/belajar-mengenal-profesi.mp3');
+  }
   @override
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;
@@ -66,12 +79,20 @@ class ProfesiHome extends StatelessWidget {
   }
 }
 
-class ProfesiItem extends StatelessWidget {
+class ProfesiItem extends StatefulWidget {
   final String Imageurl;
+  final String audioUrl;
   final Function()? OnMenuClick;
 
-  const ProfesiItem({Key? key, required this.Imageurl, this.OnMenuClick})
+  const ProfesiItem({Key? key, required this.Imageurl,  required this.audioUrl, this.OnMenuClick})
       : super(key: key);
+
+  @override
+  _ProfesiItemState createState() => _ProfesiItemState();
+}
+
+class _ProfesiItemState extends State<ProfesiItem> {
+  AudioCache SfxProfesi = AudioCache();
 
   @override
   Widget build(BuildContext context) {
@@ -82,9 +103,11 @@ class ProfesiItem extends StatelessWidget {
           height: 80,
           child: ClipRRect(
             child: GestureDetector(
-              onTap: OnMenuClick,
+              onTap: () {
+                SfxProfesi.play('audio/BELAJAR/profesi/' + widget.audioUrl);
+              },
               child: Image.asset(
-                'assets/icons/' + Imageurl + '',
+                'assets/icons/' + widget.Imageurl + '',
                 fit: BoxFit.contain,
                     height: 80,
                     width: 150,
