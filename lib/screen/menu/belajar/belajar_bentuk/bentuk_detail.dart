@@ -17,27 +17,57 @@ class Bentuk extends StatelessWidget {
       direction: Axis.horizontal,
       children: [
         Row(
+        children: [
+        Flexible(
+            child: BentukItem(
+                Imageurl: 'icon_shape/icon_box.png', audioUrl: '',)),
+          SizedBox(
+            width: 5
+          ),
+          Flexible(
+              child: BentukItem(
+                  Imageurl: 'icon_shape/icon_rectangle.png', audioUrl: '',)),
+          Flexible(
+              child: BentukItem(
+                  Imageurl: 'icon_shape/icon_circle.png', audioUrl: '',)),
+          Flexible(
+              child: BentukItem(
+                  Imageurl: 'icon_shape/icon_oval.png', audioUrl: '',)),
+    ],
+    ),
+        Row(
+        children: [
+          Flexible(
+           child: BentukItem(
+               Imageurl: 'icon_shape/triangle.png', audioUrl: '',)),
+          Flexible(
+            child: BentukItem(
+                Imageurl: 'icon_shape/icon_pentagon.png', audioUrl: '',)),
+          Flexible(
+              child: BentukItem(
+                  Imageurl: 'icon_shape/icon_hexagon.png', audioUrl: '',)),
+          Flexible(
+              child: BentukItem(
+                  Imageurl: 'icon_shape/icon_octagonal.png', audioUrl: '',)),
+        ],
+    ),
+          Row(
           children: [
             Flexible(
                 child: BentukItem(
-              Imageurl: 'icon_shape/icon_box.png',
-              audioUrl: 'bujur-sangkar.mp3',
+              Imageurl: 'icon_shape/icon_box.png', audioUrl: 'bujur-sangkar.mp3',
             )),
             Flexible(
                 child: BentukItem(
-              Imageurl: 'icon_shape/icon_rectangle.png',
-              audioUrl: 'persegi-panjang.mp3',
+              Imageurl: 'icon_shape/icon_rectangle.png', audioUrl: 'persegi-panjang.mp3',
             )),
             Flexible(
                 child: BentukItem(
-              Imageurl: 'icon_shape/icon_circle.png',
-              audioUrl: 'lingkaran.mp3',
+              Imageurl: 'icon_shape/icon_circle.png', audioUrl: 'lingkaran.mp3',
             )),
             Flexible(
                 child: BentukItem(
-              Imageurl: 'icon_shape/icon_oval.png',
-              audioUrl: 'oval.mp3',
-            )),
+              Imageurl: 'icon_shape/icon_oval.png', audioUrl: 'oval.mp3',)),
           ],
         ),
         Row(
