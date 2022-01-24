@@ -110,6 +110,7 @@ flutter:
     - assets/audio/
     - assets/audio/BELAJAR/huruf/
     - assets/audio/BELAJAR/angka/
+    - assets/audio/BELAJAR/bentuk/
     - assets/images/all_background/belajar/
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
