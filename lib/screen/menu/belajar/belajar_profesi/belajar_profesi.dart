@@ -18,81 +18,97 @@ class ProfesiHome extends StatelessWidget {
         body: Stack(
       children: <Widget>[
         Container(
+          clipBehavior: Clip.none,
           decoration: BoxDecoration(
             image: DecorationImage(
                 image: AssetImage(
                     'assets/images/all_background/belajar/10_belajar_profesi-01.jpg'),
                 fit: BoxFit.cover),
           ),
-          child: Column(
-            children: <Widget>[
+        ),
+        Container(
+          margin: EdgeInsets.symmetric(horizontal: 15),
+          child: Container(
+              child: Wrap(
+            children: [
               Container(
-                child: Row(mainAxisSize: MainAxisSize.max, children: [
-                  Container(
-                    child: ClipRRect(
-                      child: GestureDetector(
-                          onTap: () => {Get.back()},
-                          child: Image.asset(
-                            'assets/icons/tab_bar_menu.png',
-                            width: 100,
-                          )),
-                    ),
-                  ),
-                  Container(
-                    margin: EdgeInsets.symmetric(horizontal: 17),
-                    child: ClipRRect(
-                      child: GestureDetector(
-                          onTap: () => {Get.back()},
-                          child: Image.asset(
-                            'assets/icons/tab_bar_right_left.png',
-                            width: 100,
-                          )),
-                    ),
-                  ),
-                  Container(
-                    child: ClipRRect(
-                      child: GestureDetector(
-                          child: Image.asset(
-                        'assets/icons/tab_bar_auto.png',
-                        width: 125,
+                height: height / 8 / 2,
+                margin: EdgeInsets.symmetric(
+                    horizontal: 15, vertical: (height / 8) / 5),
+                child: ClipRRect(
+                  child: GestureDetector(
+                      onTap: () => {Get.back()},
+                      child: Image.asset(
+                        'assets/icons/tab_bar_menu.png',
                       )),
-                    ),
-                  ),
-                ]),
+                ),
               ),
-              SizedBox(height: height / 10),
-              Container(
-                  child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 1),
-                child: Profesi1(),
-              ))
+              SizedBox(
+                height: height / 4,
+              ),
+              Align(
+                alignment: Alignment.center,
+                child: Container(
+                  margin: EdgeInsets.symmetric(horizontal: 15),
+                  height: 500,
+                  child: Profesi1(),
+                ),
+              )
             ],
-          ),
+          )),
         ),
       ],
     ));
   }
 }
 
-class ProfesiItem extends StatelessWidget {
+class ProfesiItem extends StatefulWidget {
   final String Imageurl;
+  final String audioUrl;
   final Function()? OnMenuClick;
 
-  const ProfesiItem({Key? key, required this.Imageurl, this.OnMenuClick})
+  const ProfesiItem(
+      {Key? key,
+      required this.Imageurl,
+      this.OnMenuClick,
+      required this.audioUrl})
       : super(key: key);
 
   @override
+  _ProfesiItemState createState() => _ProfesiItemState();
+}
+
+class _ProfesiItemState extends State<ProfesiItem> {
+  AudioPlayer audioPlayer = AudioPlayer();
+  AudioCache SfxProfesi = AudioCache();
+  bool IsPlaying = false;
+
+  void PlayAudio(audioUrl) {
+    SetState() {
+      if (IsPlaying = false) {
+        IsPlaying = true;
+      } else
+        (audioPlayer.stop());
+      SfxProfesi.play(audioUrl);
+    }
+  }
+
+  @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
     return Center(
         child: Container(
-      width: 250,
-      height: 100,
+      margin: EdgeInsets.symmetric(vertical: 5, horizontal: 5),
+      width: width / 2.5,
       child: ClipRRect(
         child: GestureDetector(
-          onTap: OnMenuClick,
+          onTap: () {
+            SfxProfesi.play('audio/BELAJAR/profesi/' + widget.audioUrl);
+          },
           child: Image.asset(
-            'assets/icons/' + Imageurl + '',
-            fit: BoxFit.cover,
+            'assets/icons/' + widget.Imageurl + '',
+            fit: BoxFit.contain,
           ),
         ),
       ),
