@@ -68,19 +68,19 @@ class MenuBelajar extends StatelessWidget {
                         width: 100,
                         height: 100)),
                 Flexible(
-                  child: MenuItem(
-                      ImageUrl: 'assets/icons/menu/icon_menu-07.png',
-                      OnMenuClick: () {
-                           Get.to(()  => BuahHome());
-                      },
-                      width: 100,
-                      height: 100)),
+                    child: MenuItem(
+                        ImageUrl: 'assets/icons/menu/icon_menu-07.png',
+                        OnMenuClick: () {
+                          Get.to(() => BuahHome());
+                        },
+                        width: 100,
+                        height: 100)),
                 Flexible(
                     child: MenuItem(
                         ImageUrl: 'assets/icons/menu/icon_menu-08.png',
-                        OnMenuClick:  () {
-                        Get.to (()  => SayurHome());
-                            },
+                        OnMenuClick: () {
+                          Get.to(() => SayurHome());
+                        },
                         width: 100,
                         height: 100)),
               ]),
@@ -92,7 +92,7 @@ class MenuBelajar extends StatelessWidget {
                     child: MenuItem(
                         ImageUrl: 'assets/icons/menu/icon_menu-09.png',
                         OnMenuClick: () {
-                          // Get.to(() => WarnaHome());
+                          Get.to(() => WarnaHome());
                         },
                         width: 100,
                         height: 100)),
