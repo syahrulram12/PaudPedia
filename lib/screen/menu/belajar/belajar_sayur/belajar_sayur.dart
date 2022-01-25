@@ -6,7 +6,6 @@ import 'package:path_provider/path_provider.dart';
 import 'package:paudpedia_kemendikbud/styles/color.dart';
 import 'package:paudpedia_kemendikbud/screen/menu/belajar/belajar_sayur/sayur_detail.dart';
 import 'package:paudpedia_kemendikbud/screen/menu/belajar/belajar_sayur/belajar_sayur.dart';
-String imageLink = 'myImage.png';
 
 class SayurHome extends StatefulWidget {
   const SayurHome({Key? key}) : super(key: key);
@@ -29,7 +28,6 @@ class _SayurHomeState extends State<SayurHome> {
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
-
     return Scaffold(
         body: Stack(
           children: <Widget>[
@@ -67,7 +65,6 @@ class _SayurHomeState extends State<SayurHome> {
                           ),
                         ]),
                   ),
-
                   SizedBox(height: height / 10),
                   SizedBox(height: height / 8),
                   Container(
@@ -76,10 +73,10 @@ class _SayurHomeState extends State<SayurHome> {
                         child: Sayur(),
                       ))
                 ],
-              ),
-            ),
-          ],
-        ));
+          ),
+        ),
+      ],
+    ));
   }
 }
 
@@ -100,10 +97,9 @@ class _SayurItemState extends State<SayurItem> {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-        child: Container(
-      width: 80,
-      height: 80,
+    return Container(
+      width: 90,
+      height: 90,
       child: ClipRRect(
         borderRadius: BorderRadius.circular(13),
         child: GestureDetector(
@@ -116,6 +112,6 @@ class _SayurItemState extends State<SayurItem> {
           ),
         ),
       ),
-    ));
+    );
   }
 }

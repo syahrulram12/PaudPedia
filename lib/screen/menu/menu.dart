@@ -18,7 +18,8 @@ class _HomeMenuState extends State<HomeMenu> {
     // TODO: implement initState
     super.initState();
     audioCache = AudioCache(fixedPlayer: audioPlayer);
-    audioCache.loop('audio/audio-frontpage.mp3');
+    audioCache.loop('audio/audio-frontpage.mp3',
+        mode: PlayerMode.LOW_LATENCY, volume: 5);
   }
 
   @override
@@ -156,12 +157,10 @@ class MenuItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     // decoration: BoxDecoration(border: Border.all(width: 2)),
     return Container(
-      width: MediaQuery.of(context).size.width / 2 ,
-      decoration: BoxDecoration(
-      ),
+        width: MediaQuery.of(context).size.width / 2,
+        decoration: BoxDecoration(),
         // margin: EdgeInsets.symmetric(horizontal: 5),
         child: ClipRRect(
           borderRadius: BorderRadius.circular(13),

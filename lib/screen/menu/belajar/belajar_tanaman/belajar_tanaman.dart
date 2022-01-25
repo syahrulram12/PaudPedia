@@ -14,19 +14,19 @@ class TanamanHome extends StatefulWidget {
 
 class _TanamanHomeState extends State<TanamanHome> {
   @override
-  double Benda = 1;
+  double Tanaman = 1;
   String ImageBg =
       'assets/images/all_background/belajar/08_belajar_tanaman_background_01.jpg';
 
-  ChangeStyle(Benda) {
+  ChangeStyle(Tanaman) {
     setState(() {
-      if (Benda == 1) {
+      if (Tanaman == 1) {
         ImageBg =
             'assets/images/all_background/belajar/09_belajar_tanaman_background_01.jpg';
-      } else if (Benda == 2) {
+      } else if (Tanaman == 2) {
         ImageBg =
             'assets/images/all_background/belajar/08_belajar_tanaman_background_02.jpg';
-      } else if (Benda == 3) {
+      } else if (Tanaman == 3) {
         ImageBg =
             'assets/images/all_background/belajar/09_belajar_tanaman_background_03.jpg';
       } else {
@@ -38,8 +38,6 @@ class _TanamanHomeState extends State<TanamanHome> {
 
   @override
   Widget build(BuildContext context) {
-    double height = MediaQuery.of(context).size.height;
-    double width = MediaQuery.of(context).size.width;
     return Scaffold(
         body: Container(
             decoration: BoxDecoration(

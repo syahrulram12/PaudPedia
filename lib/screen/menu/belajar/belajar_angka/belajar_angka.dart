@@ -73,8 +73,9 @@ class _AngkaHomeState extends State<AngkaHome> {
           child: Column(
             children: <Widget>[
               Container(
-                margin: EdgeInsets.symmetric(horizontal:5,vertical: 25),
-                height: (height/8) / 2,
+                margin: EdgeInsets.symmetric(
+                    horizontal: (width / 8) / 2, vertical: 25),
+                height: (height / 8) / 2,
                 child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     mainAxisSize: MainAxisSize.max,
@@ -85,16 +86,17 @@ class _AngkaHomeState extends State<AngkaHome> {
                           child: GestureDetector(
                               onTap: () => {Get.back()},
                               child: Image.asset(
-                                'assets/icons/tab_bar_menu.png',
-                              fit: BoxFit.contain)),
+                                  'assets/icons/tab_bar_menu.png',
+                                  fit: BoxFit.contain)),
                         ),
                       ),
                       Container(
-                        width: width / 5 ,
+                        width: width / 5,
                         decoration: BoxDecoration(
                             image: DecorationImage(
                                 image: AssetImage(
-                                    'assets/icons/tab_bar_right_left.png'),fit: BoxFit.contain)),
+                                    'assets/icons/tab_bar_right_left.png'),
+                                fit: BoxFit.contain)),
                         child: Row(
                           children: [
                             Flexible(
@@ -103,24 +105,21 @@ class _AngkaHomeState extends State<AngkaHome> {
                                   onTap: () {
                                     ChangePage('kurang');
                                   },
-
                                 ),
                               ),
                             ),
-                            Flexible(
-                                child: Container(
-                                  child: GestureDetector(
-                                    onTap: () {
-                                      ChangePage('tambah');
-                                    },
-                                  ),
-                                ))
+                            Flexible(child: Container(
+                              child: GestureDetector(
+                                onTap: () {
+                                  ChangePage('tambah');
+                                },
+                              ),
+                            ))
                           ],
                         ),
-
                       ),
                       Container(
-                        width: width /5,
+                        width: width / 5,
                         child: ClipRRect(
                           child: GestureDetector(
                               child: Image.asset(

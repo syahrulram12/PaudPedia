@@ -1,16 +1,16 @@
 import 'package:alice/alice.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+// import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:get/get_navigation/src/root/get_material_app.dart';
+// import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:paudpedia_kemendikbud/screen/home/home_page.dart';
 import 'package:paudpedia_kemendikbud/service/local/paud_local_datasource.dart';
 import 'package:paudpedia_kemendikbud/service/paud_repository.dart';
 import 'package:paudpedia_kemendikbud/service/remote/network_intercepter.dart';
 import 'package:paudpedia_kemendikbud/service/remote/paud_remote_datasource.dart';
-import 'package:paudpedia_kemendikbud/styles/color.dart';
+// import 'package:paudpedia_kemendikbud/styles/color.dart';
 import 'package:sizer/sizer.dart';
 
 Alice alice = Alice(showNotification: true);

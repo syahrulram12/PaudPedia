@@ -5,7 +5,6 @@ import 'package:get/get.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:paudpedia_kemendikbud/styles/color.dart';
 import 'package:paudpedia_kemendikbud/screen/menu/belajar/belajar_buah/buah_detail.dart';
-import 'package:paudpedia_kemendikbud/screen/menu/belajar/belajar_buah/belajar_buah.dart';
 
 class BuahHome extends StatefulWidget {
   const BuahHome({Key? key}) : super(key: key);
@@ -30,6 +29,7 @@ class _BuahHomeState extends State<BuahHome> {
 
     return Scaffold(
         body: Stack(
+
           children: <Widget>[
             Container(
               decoration: BoxDecoration(
@@ -73,10 +73,11 @@ class _BuahHomeState extends State<BuahHome> {
                         child: Buah(),
                       ))
                 ],
+
               ),
-            ),
-          ],
-        ));
+    ),
+      ],
+    ));
   }
 }
 
@@ -96,10 +97,9 @@ class _BuahItemState extends State<BuahItem> {
   AudioCache SfxBuah = AudioCache();
   @override
   Widget build(BuildContext context) {
-    return Center(
-        child: Container(
+    return Container(
       width: 90,
-      height: 80,
+      height: 90,
       child: ClipRRect(
         borderRadius: BorderRadius.circular(13),
         child: GestureDetector(
@@ -112,6 +112,6 @@ class _BuahItemState extends State<BuahItem> {
           ),
         ),
       ),
-    ));
+    );
   }
 }
