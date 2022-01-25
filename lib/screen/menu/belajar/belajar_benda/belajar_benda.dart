@@ -45,7 +45,9 @@ class _BendaHomeState extends State<BendaHome> {
           width: width / 1,
           decoration: BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage(ImageBg), fit: BoxFit.cover)),
+                  image: AssetImage(
+                      'assets/images/all_background/belajar/03_belajar_benda_background.jpg'),
+                  fit: BoxFit.cover)),
         ),
         Positioned(
             top: 15,
@@ -63,11 +65,10 @@ class _BendaHomeState extends State<BendaHome> {
         Align(
           alignment: Alignment.center,
           child: Container(
-            margin: EdgeInsets.symmetric(
-                horizontal: (width / 8) / 2, vertical: height / 6),
-            height: height / 1,
-            color: Colors.white,
-          ),
+              margin: EdgeInsets.symmetric(
+                  horizontal: (width / 8) / 2, vertical: height / 6),
+              height: height / 4,
+              decoration: BoxDecoration(border: Border.all(width: 2))),
         )
       ],
     )
