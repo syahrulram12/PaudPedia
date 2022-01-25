@@ -14,38 +14,13 @@ class Page1 extends StatelessWidget {
     return Center(
         child: Column(children: <Widget>[
       Container(
-        margin: EdgeInsets.symmetric(horizontal: 8 / 2, vertical: 25),
-        height: 8 / 2,
         child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            mainAxisSize: MainAxisSize.max,
             children: [
-              Container(
-                width: 6,
-                child: ClipRRect(
-                  child: GestureDetector(
-                      onTap: () => {Get.back()},
-                      child: Image.asset('assets/icons/tab_bar_kanan.png',
-                          fit: BoxFit.contain)),
-                ),
-              ),
-              Flexible(
-                  child: WarnaItem(
-                Imageurl: 'icon_cake/icon_cake-01-merah.png',
-                audioUrl: 'merah.mp3',
-              )),
               Flexible(
                 child: Container(
-                  width: 5,
-                  child: ClipRRect(
-                    child: GestureDetector(
-                        child: Image.asset(
-                      'assets/icons/tab_bar_kiri.png',
-                      width: 125,
-                    )),
-                  ),
-                ),
-              )
+                  child: WarnaItem(
+                Imageurl: 'icon_cake/icon_cake-01-merah.png', width: 100, audioUrl: 'merah.mp3', height: 100,
+              ))),
             ]),
       )
     ]));
