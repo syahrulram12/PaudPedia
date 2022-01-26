@@ -25,7 +25,7 @@ void main() async {
   // SystemChrome.setSystemUIOverlayStyle(
   //     SystemUiOverlayStyle(statusBarColor: bgLightBlue));
 
-  // initDependencyInjection();
+  initDependencyInjection();
 
   await initializeDateFormatting('id_ID', null);
   runApp(MyApp());

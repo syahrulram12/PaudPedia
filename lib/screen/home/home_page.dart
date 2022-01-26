@@ -145,7 +145,7 @@ pembelajaran saat ini.
                             children: [
                               Flexible(
                                 child: MainMenuItem2(
-                                  imageUrl: 'assets/baru/cover_400x400_.png',
+                                  imageUrl: 'assets/images/cover_400x400_.png',
                                   message: "",
                                   // isShow:
                                   // tooltipState == TooltipInfoState.GALLERY,

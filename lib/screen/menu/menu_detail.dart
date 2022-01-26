@@ -99,9 +99,9 @@ class MenuBelajar extends StatelessWidget {
                 Flexible(
                   child: MenuItem(
                       ImageUrl: 'assets/icons/menu/icon_menu-10.png',
-                      OnMenuClick: () {
-                        Get.to(() => TanamanHome());
-                      },
+                      //OnMenuClick: () {
+                      //  Get.to(() => TanamanHome());
+                      //},
                       width: 100,
                       height: 100),
                 ),

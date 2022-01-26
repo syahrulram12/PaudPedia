@@ -83,8 +83,8 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/
+    - assets/images/all_background/belajar/
     - assets/icons/
-    - assets/baru/
     - assets/icons/menu/
     - assets/icons/icon_number/icon_1-10/
     - assets/icons/icon_number/icon_11-20/
@@ -102,19 +102,28 @@ flutter:
     - assets/icons/icon_hewan/icon_hewan_ikan_hias/
     - assets/icons/icon_hewan/icon_hewan_langka/
     - assets/icons/icon_hewan/icon_hewan_laut/
+    - assets/icons/icon_object/bathroom/
+    - assets/icons/icon_object/bedroom/
+    - assets/icons/icon_object/kitchen/
     - assets/icons/icon_tanaman/icon_tanaman_bunga/
     - assets/icons/icon_tanaman/icon_tanaman_hias/
     - assets/icons/icon_tanaman/icon_tanaman_obat/
     - assets/icons/icon_tanaman/icon_tanaman_pangan/
+    - assets/icons/icon_object/bathroom/
+    - assets/icons/icon_object/bedroom/
+    - assets/icons/icon_object/kitchen/
     - assets/audio/audio-frontpage.mp3
     - assets/audio/
     - assets/audio/BELAJAR/sayur/
     - assets/audio/BELAJAR/buah/
     - assets/audio/BELAJAR/huruf/
+    - assets/audio/BELAJAR/warna/
+    - assets/audio/BELAJAR/fauna/
+    - assets/audio/BELAJAR/benda/
     - assets/audio/BELAJAR/angka/
     - assets/audio/BELAJAR/bentuk/
     - assets/audio/BELAJAR/profesi/
-    - assets/images/all_background/belajar/
+    - assets/audio/BELAJAR/benda/
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
