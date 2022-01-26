@@ -109,12 +109,18 @@ flutter:
     - assets/icons/icon_tanaman/icon_tanaman_hias/
     - assets/icons/icon_tanaman/icon_tanaman_obat/
     - assets/icons/icon_tanaman/icon_tanaman_pangan/
+    - assets/icons/icon_object/bathroom/
+    - assets/icons/icon_object/bedroom/
+    - assets/icons/icon_object/kitchen/
     - assets/audio/audio-frontpage.mp3
     - assets/audio/
     - assets/audio/BELAJAR/sayur/
     - assets/audio/BELAJAR/buah/
     - assets/audio/BELAJAR/profesi/
     - assets/audio/BELAJAR/huruf/
+    - assets/audio/BELAJAR/warna/
+    - assets/audio/BELAJAR/fauna/
+    - assets/audio/BELAJAR/benda/
     - assets/audio/BELAJAR/angka/
     - assets/audio/BELAJAR/bentuk/
     - assets/audio/BELAJAR/profesi/
