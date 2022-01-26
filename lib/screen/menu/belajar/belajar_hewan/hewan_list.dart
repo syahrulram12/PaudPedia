@@ -11,9 +11,26 @@ class Page1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return Container(
         child: Column(
       children: [
+        Align(
+          alignment: Alignment.topCenter,
+          child: Padding(
+              padding: EdgeInsets.symmetric(vertical: 15),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(10),
+                child: Center(
+                  child: Text(
+                    'Binatang Langka',
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 30,
+                        color: Colors.white),
+                  ),
+                ),
+              )),
+        ),
         Row(
           children: [
             Flexible(
@@ -92,9 +109,26 @@ class Page2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return Container(
         child: Column(
       children: [
+        Align(
+          alignment: Alignment.topCenter,
+          child: Padding(
+              padding: EdgeInsets.symmetric(vertical: 15),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(10),
+                child: Center(
+                  child: Text(
+                    'Binatang Hutan',
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 30,
+                        color: Colors.white),
+                  ),
+                ),
+              )),
+        ),
         Row(
           children: [
             Flexible(
@@ -173,9 +207,26 @@ class Page3 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return Container(
         child: Column(
       children: [
+        Align(
+          alignment: Alignment.topCenter,
+          child: Padding(
+              padding: EdgeInsets.symmetric(vertical: 15),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(10),
+                child: Center(
+                  child: Text(
+                    'Ikan Hias',
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 30,
+                        color: Colors.white),
+                  ),
+                ),
+              )),
+        ),
         Row(
           children: [
             Flexible(
@@ -238,9 +289,26 @@ class Page4 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return Container(
         child: Column(
       children: [
+        Align(
+          alignment: Alignment.topCenter,
+          child: Padding(
+              padding: EdgeInsets.symmetric(vertical: 15),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(10),
+                child: Center(
+                  child: Text(
+                    'Binatang Laut',
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 30,
+                        color: Colors.white),
+                  ),
+                ),
+              )),
+        ),
         Row(
           children: [
             Flexible(
