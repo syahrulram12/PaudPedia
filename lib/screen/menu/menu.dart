@@ -18,8 +18,7 @@ class _HomeMenuState extends State<HomeMenu> {
     // TODO: implement initState
     super.initState();
     audioCache = AudioCache(fixedPlayer: audioPlayer);
-    audioCache.loop('audio/audio-frontpage.mp3',
-        mode: PlayerMode.LOW_LATENCY, volume: 5);
+    audioCache.loop('audio/audio-frontpage.mp3', volume: 5);
   }
 
   @override

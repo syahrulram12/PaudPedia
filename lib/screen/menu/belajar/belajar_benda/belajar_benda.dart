@@ -16,6 +16,22 @@ class BendaHome extends StatefulWidget {
 class _BendaHomeState extends State<BendaHome> {
   @override
   double page = 1;
+  String judul = 'Kamar Tidur';
+  AudioCache SfxBenda = AudioCache();
+  AudioPlayer audioPlayer = AudioPlayer();
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    SfxBenda.play('audio/BELAJAR/benda/belajar-mengenal-benda.mp3');
+  }
+
+  Future<void> PlayAudio(audioUrl) async {
+    SfxBenda = AudioCache(fixedPlayer: audioPlayer);
+    audioPlayer.release();
+    await SfxBenda.play('audio/BELAJAR/benda/' + audioUrl);
+  }
 
   ChangePage(act) {
     setState(() {
@@ -35,10 +51,13 @@ class _BendaHomeState extends State<BendaHome> {
 
   Page() {
     if (page == 1) {
+      PlayAudio('kamar-tidur.mp3');
       return Page1();
     } else if (page == 2) {
+      PlayAudio('kamar-mandi.mp3');
       return Page2();
     } else {
+      PlayAudio('dapur.mp3');
       return Page3();
     }
   }
@@ -62,10 +81,6 @@ class _BendaHomeState extends State<BendaHome> {
         Positioned(
             top: 15,
             child: Container(
-              decoration: BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage(
-                          'assets/images/all_background/belajar/belajar_benda.png'))),
               width: width / 1,
               height: (height / 8) / 2,
               child: Row(
@@ -128,12 +143,18 @@ class _BendaHomeState extends State<BendaHome> {
             )),
         Align(
           alignment: Alignment.center,
+          heightFactor: 55,
           child: Container(
-            margin: EdgeInsets.symmetric(
-                horizontal: (width / 8) / 2, vertical: height / 6),
-            decoration: BoxDecoration(border: Border.all(width: 2)),
-            child: Page(),
-          ),
+              height: height / 1.5,
+              margin: EdgeInsets.symmetric(
+                  horizontal: (width / 8) / 2, vertical: 100),
+              decoration: BoxDecoration(
+                  color: Color.fromRGBO(37, 150, 190, 1),
+                  border: Border.all(width: 15, color: Colors.brown.shade500),
+                  borderRadius: BorderRadius.circular(50)),
+              child: Wrap(
+                children: [Page()],
+              )),
         )
       ],
     ));
@@ -156,24 +177,40 @@ class BendaItem extends StatefulWidget {
 }
 
 class _BendaItemState extends State<BendaItem> {
-  AudioCache SfxAngka = AudioCache();
+  AudioCache SfxBenda = AudioCache();
+  AudioPlayer audioPlayer = AudioPlayer();
+
+  void PlayAudio(audioUrl) {
+    SfxBenda = AudioCache(fixedPlayer: audioPlayer);
+    audioPlayer.release();
+    SfxBenda.play('audio/BELAJAR/benda/' + audioUrl);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Center(
         child: Container(
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(13),
-        child: GestureDetector(
-          onTap: () {
-            SfxAngka.play('audio/BELAJAR/angka/' + widget.audioUrl);
-          },
-          child: Image.asset(
-            'assets/icons/' + widget.Imageurl + '',
-            fit: BoxFit.cover,
-          ),
-        ),
-      ),
-    ));
+            margin: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+            width: 100,
+            height: 100,
+            decoration: BoxDecoration(
+              color: Colors.grey,
+              borderRadius: BorderRadius.circular(13),
+            ),
+            child: Padding(
+              padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+              child: ClipRRect(
+                child: GestureDetector(
+                  onTap: () {
+                    PlayAudio(widget.audioUrl);
+                  },
+                  child: Image.asset(
+                    'assets/icons/' + widget.Imageurl + '',
+                    fit: BoxFit.contain,
+                  ),
+                ),
+              ),
+            )));
     ;
   }
 }
