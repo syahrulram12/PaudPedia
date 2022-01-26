@@ -44,6 +44,44 @@ class _WarnaHomeState extends State<WarnaHome> {
   Page() {
     if (page == 1) {
       return Page1();
+    } else if (page == 2) {
+      return Page2();
+    } else if (page == 3) {
+      return Page3();
+    } else if (page == 4) {
+      return Page4();
+    } else if (page == 5) {
+      return Page5(); 
+    } else if (page == 6) {
+      return Page6(); 
+    } else if (page == 7) {
+      return Page7();
+    } else if (page == 8) {
+      return Page8();
+    } else if (page == 9) {
+      return Page9();
+    } else if (page == 10) {
+      return Page10();
+    } else if (page == 11) {
+      return Page11();
+    } else if (page == 12) {
+      return Page12();
+    } else if (page == 13) {
+      return Page13();
+    } else if (page == 14) {
+      return Page14();
+    } else if (page == 15) {
+      return Page15();
+    } else if (page == 16) {
+      return Page16();
+    } else if (page == 17) {
+      return Page17();
+    } else if (page == 18) {
+      return Page18();
+    } else if (page == 19) {
+      return Page19();
+    } else {
+      return Page20();
     }
   }
 
