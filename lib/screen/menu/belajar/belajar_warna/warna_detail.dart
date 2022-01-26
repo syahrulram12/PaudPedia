@@ -24,18 +24,5 @@ class Page1 extends StatelessWidget {
             ]),
       )
     ]));
-        child: Column(
-      children: [
-        Row(
-          children: [
-            Flexible(
-                child: WarnaItem(
-              Imageurl: 'icon_number/icon_1-10/icon_1-10-01.png',
-              audioUrl: '1.mp3',
-            )),
-          ],
-        ),
-      ],
-    ));
   }
 }
