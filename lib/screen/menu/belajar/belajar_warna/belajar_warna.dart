@@ -122,7 +122,7 @@ class _WarnaHomeState extends State<WarnaHome> {
                       ),
                     ]),
               ),
-              SizedBox(height: height / 10),
+              SizedBox(height: height / 8),
               Container(
                   child: Padding(
                 padding: EdgeInsets.symmetric(horizontal: 2),
@@ -138,13 +138,17 @@ class _WarnaHomeState extends State<WarnaHome> {
 
 class WarnaItem extends StatefulWidget {
   final String Imageurl;
+  final double width;
+  final double height;
   final String audioUrl;
   final Function()? OnMenuClick;
   const WarnaItem(
       {Key? key,
       required this.Imageurl,
       this.OnMenuClick,
-      required this.audioUrl})
+        required this.width,
+        required this.height,
+        required this.audioUrl})
       : super(key: key);
 
   @override
