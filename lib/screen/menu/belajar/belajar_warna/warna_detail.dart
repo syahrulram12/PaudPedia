@@ -22,7 +22,7 @@ class Page1 extends StatelessWidget {
             width: 100,
             audioUrl: 'merah.mp3',
             height: 100,
-          ))),
+          )))
         ]),
       )
     ]));
