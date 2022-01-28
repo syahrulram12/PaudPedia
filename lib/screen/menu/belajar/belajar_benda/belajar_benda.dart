@@ -136,7 +136,7 @@ class _BendaHomeState extends State<BendaHome> {
                     child: GestureDetector(
                         onTap: () => {Get.back()},
                         child: Image.asset('assets/icons/tab_bar_auto.png',
-                            fit: BoxFit.contain)),
+                            fit: BoxFit.cover)),
                   ),
                 ),
               )

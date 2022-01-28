@@ -134,7 +134,6 @@ class _WarnaHomeState extends State<WarnaHome> {
                           child: GestureDetector(
                               child: Image.asset(
                             'assets/icons/tab_bar_auto.png',
-                            width: 125,
                           )),
                         ),
                       ),

@@ -26,7 +26,7 @@ class Page1 extends StatelessWidget {
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 30,
-                        color: Colors.white),
+                        color: Colors.pink.shade200),
                   ),
                 ),
               )),
@@ -36,19 +36,19 @@ class Page1 extends StatelessWidget {
             Flexible(
                 child: TanamanItem(
               Imageurl:
-                  'icon_tanaman/icon_tanaman_bunga/icon_tanaman_anggrek.png',
+                  'icon_tanaman/icon_tanaman_bunga/icon_tanaman_-anggrek.png',
               audioUrl: 'bunga-anggrek.mp3',
             )),
             Flexible(
                 child: TanamanItem(
               Imageurl:
-                  'icon_tanaman/icon_tanaman_bunga/icon_tanaman_aster.png',
+                  'icon_tanaman/icon_tanaman_bunga/icon_tanaman_-aster.png',
               audioUrl: 'bunga-aster.mp3',
             )),
             Flexible(
                 child: TanamanItem(
               Imageurl:
-                  'icon_tanaman/icon_tanaman_bunga/icon_tanaman_bangkai.png',
+                  'icon_tanaman/icon_tanaman_bunga/icon_tanaman_-bangkai.png',
               audioUrl: 'bunga-bangkai.mp3',
             )),
           ],
@@ -58,18 +58,19 @@ class Page1 extends StatelessWidget {
             Flexible(
                 child: TanamanItem(
               Imageurl:
-                  'icon_tanaman/icon_tanaman_bunga/icon_tanaman_kamboja.png',
+                  'icon_tanaman/icon_tanaman_bunga/icon_tanaman_-kamboja.png',
               audioUrl: 'bunga-kamboja.mp3',
             )),
             Flexible(
                 child: TanamanItem(
-              Imageurl: 'icon_tanaman/icon_tanaman_bunga/icon_tanaman_lili.png',
+              Imageurl:
+                  'icon_tanaman/icon_tanaman_bunga/icon_tanaman_-lili.png',
               audioUrl: 'bunga-lili.mp3',
             )),
             Flexible(
                 child: TanamanItem(
               Imageurl:
-                  'icon_tanaman/icon_tanaman_bunga/icon_tanaman_matahari.png',
+                  'icon_tanaman/icon_tanaman_bunga/icon_tanaman_-matahari.png',
               audioUrl: 'bunga-matahari.mp3',
             )),
           ],
@@ -79,19 +80,19 @@ class Page1 extends StatelessWidget {
             Flexible(
                 child: TanamanItem(
               Imageurl:
-                  'icon_tanaman/icon_tanaman_bunga/icon_tanaman_mawar.png',
+                  'icon_tanaman/icon_tanaman_bunga/icon_tanaman_-mawar.png',
               audioUrl: 'bunga-mawar.mp3',
             )),
             Flexible(
                 child: TanamanItem(
               Imageurl:
-                  'icon_tanaman/icon_tanaman_bunga/icon_tanaman_melati.png',
+                  'icon_tanaman/icon_tanaman_bunga/icon_tanaman_-melati.png',
               audioUrl: 'bunga-melati.mp3',
             )),
             Flexible(
                 child: TanamanItem(
               Imageurl:
-                  'icon_tanaman/icon_tanaman_bunga/icon_tanaman_sakura.png',
+                  'icon_tanaman/icon_tanaman_bunga/icon_tanaman_-sakura.png',
               audioUrl: 'bunga-sakura.mp3',
             )),
           ],
@@ -102,7 +103,7 @@ class Page1 extends StatelessWidget {
             Flexible(
                 child: TanamanItem(
               Imageurl:
-                  'icon_tanaman/icon_tanaman_bunga/icon_tanaman_tulip.png',
+                  'icon_tanaman/icon_tanaman_bunga/icon_tanaman_-tulip.png',
               audioUrl: 'bunga-tulip.mp3',
             )),
             Flexible(child: Container())
@@ -143,19 +144,19 @@ class Page2 extends StatelessWidget {
             Flexible(
                 child: TanamanItem(
               Imageurl:
-                  'icon_tanaman/icon_tanaman_hias/icon_tanaman_apuapu.png',
+                  'icon_tanaman/icon_tanaman_hias/icon_tanaman_-apuapu.png',
               audioUrl: 'apu-apu.mp3',
             )),
             Flexible(
                 child: TanamanItem(
               Imageurl:
-                  'icon_tanaman/icon_tanaman_hias/icon_tanaman_bambuair.png',
+                  'icon_tanaman/icon_tanaman_hias/icon_tanaman_-bambuair.png',
               audioUrl: 'bambu-air.mp3',
             )),
             Flexible(
                 child: TanamanItem(
               Imageurl:
-                  'icon_tanaman/icon_tanaman_hias/icon_tanaman_cactus.png',
+                  'icon_tanaman/icon_tanaman_hias/icon_tanaman_-cactus.png',
               audioUrl: 'kaktus.mp3',
             )),
           ],
@@ -165,19 +166,19 @@ class Page2 extends StatelessWidget {
             Flexible(
                 child: TanamanItem(
               Imageurl:
-                  'icon_tanaman/icon_tanaman_hias/icon_tanaman_cemara.png',
+                  'icon_tanaman/icon_tanaman_hias/icon_tanaman_-cemara.png',
               audioUrl: 'cemara.mp3',
             )),
             Flexible(
                 child: TanamanItem(
               Imageurl:
-                  'icon_tanaman/icon_tanaman_hias/icon_tanaman_keladi.png',
+                  'icon_tanaman/icon_tanaman_hias/icon_tanaman_-keladi.png',
               audioUrl: 'keladi.mp3',
             )),
             Flexible(
                 child: TanamanItem(
               Imageurl:
-                  'icon_tanaman/icon_tanaman_hias/icon_tanaman_kolbanda.png',
+                  'icon_tanaman/icon_tanaman_hias/icon_tanaman_-kolbanda.png',
               audioUrl: 'kolpanda.mp3',
             )),
           ],
@@ -187,19 +188,19 @@ class Page2 extends StatelessWidget {
             Flexible(
                 child: TanamanItem(
               Imageurl:
-                  'icon_tanaman/icon_tanaman_hias/icon_tanaman_pakis_haji.png',
+                  'icon_tanaman/icon_tanaman_hias/icon_tanaman_-pakis_haji.png',
               audioUrl: 'pakis-haji.mp3',
             )),
             Flexible(
                 child: TanamanItem(
               Imageurl:
-                  'icon_tanaman/icon_tanaman_hias/icon_tanaman_palemerah.png',
+                  'icon_tanaman/icon_tanaman_hias/icon_tanaman_-palemerah.png',
               audioUrl: 'palem-merah.mp3',
             )),
             Flexible(
                 child: TanamanItem(
               Imageurl:
-                  'icon_tanaman/icon_tanaman_hias/icon_tanaman_puring.png',
+                  'icon_tanaman/icon_tanaman_hias/icon_tanaman_-puring.png',
               audioUrl: 'puring.mp3',
             )),
           ],
@@ -210,7 +211,7 @@ class Page2 extends StatelessWidget {
             Flexible(
                 child: TanamanItem(
               Imageurl:
-                  'icon_tanaman/icon_tanaman_hias/icon_tanaman_sansivera.png',
+                  'icon_tanaman/icon_tanaman_hias/icon_tanaman_-sansivera.png',
               audioUrl: 'sansivera.mp3',
             )),
             Flexible(child: Container())
@@ -347,7 +348,7 @@ class Page4 extends StatelessWidget {
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 30,
-                        color: Colors.white),
+                        color: Colors.pink.shade100),
                   ),
                 ),
               )),

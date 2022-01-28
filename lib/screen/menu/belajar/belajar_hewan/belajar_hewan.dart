@@ -132,12 +132,12 @@ class _HewanHomeState extends State<HewanHome> {
                   ),
                   Flexible(
                     child: Container(
-                      width: width / 6,
+                      width: width / 5,
                       child: ClipRRect(
                         child: GestureDetector(
                             onTap: () => {Get.back()},
                             child: Image.asset('assets/icons/tab_bar_auto.png',
-                                fit: BoxFit.contain)),
+                                fit: BoxFit.cover)),
                       ),
                     ),
                   )
@@ -197,7 +197,6 @@ class _HewanItemState extends State<HewanItem> {
             width: 100,
             height: 100,
             decoration: BoxDecoration(
-              color: Colors.grey,
               borderRadius: BorderRadius.circular(13),
             ),
             child: Padding(
