@@ -22,16 +22,6 @@ class Page1 extends StatelessWidget {
                 Imageurl: 'icon_cake/icon_cake-01-merah.png', width: 100, audioUrl: 'merah.mp3', height: 100,
               ))),
             ]),
-        child: Row(children: [
-          Flexible(
-              child: Container(
-                  child: WarnaItem(
-            Imageurl: 'icon_cake/icon_cake-01-merah.png',
-            width: 100,
-            audioUrl: 'merah.mp3',
-            height: 100,
-          ))),
-        ]),
       )
     ]));
   }

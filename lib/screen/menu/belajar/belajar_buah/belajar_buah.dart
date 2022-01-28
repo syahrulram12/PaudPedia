@@ -26,10 +26,8 @@ class _BuahHomeState extends State<BuahHome> {
   Widget build(BuildContext context) {
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
-
     return Scaffold(
         body: Stack(
-
           children: <Widget>[
             Container(
               decoration: BoxDecoration(
@@ -41,25 +39,29 @@ class _BuahHomeState extends State<BuahHome> {
               child: Column(
                 children: <Widget>[
                   Container(
-                    child: Row(  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    margin: EdgeInsets.symmetric(
+                        horizontal: (width / 8) / 2, vertical: 25),
+                    height: (height / 8) / 2,
+                    child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Container(
+                            width: width / 7,
                             child: ClipRRect(
                               child: GestureDetector(
                                   onTap: () => {Get.back()},
                                   child: Image.asset(
                                     'assets/icons/tab_bar_menu.png',
-                                    width: 100,
                                   )),
                             ),
                           ),
                           Container(
+                            width: width / 5,
                             child: ClipRRect(
                               child: GestureDetector(
                                   child: Image.asset(
                                     'assets/icons/tab_bar_auto.png',
-                                    width: 125,
                                   )),
                             ),
                           ),
@@ -97,7 +99,8 @@ class _BuahItemState extends State<BuahItem> {
   AudioCache SfxBuah = AudioCache();
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Center(
+      child: Container(
       width: 90,
       height: 90,
       child: ClipRRect(
@@ -112,6 +115,6 @@ class _BuahItemState extends State<BuahItem> {
           ),
         ),
       ),
-    );
+    ));
   }
 }
