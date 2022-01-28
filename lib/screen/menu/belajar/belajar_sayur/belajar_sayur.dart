@@ -41,25 +41,29 @@ class _SayurHomeState extends State<SayurHome> {
               child: Column(
                 children: <Widget>[
                   Container(
-                    child: Row(  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    margin: EdgeInsets.symmetric(
+                        horizontal: (width / 8) / 2, vertical: 25),
+                    height: (height / 8) / 2,
+                    child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Container(
+                            width: width / 7,
                             child: ClipRRect(
                               child: GestureDetector(
                                   onTap: () => {Get.back()},
                                   child: Image.asset(
                                     'assets/icons/tab_bar_menu.png',
-                                    width: 85,
                                   )),
                             ),
                           ),
                           Container(
+                            width: width / 5,
                             child: ClipRRect(
                               child: GestureDetector(
                                   child: Image.asset(
                                     'assets/icons/tab_bar_auto.png',
-                                    width: 85,
                                   )),
                             ),
                           ),
@@ -97,9 +101,10 @@ class _SayurItemState extends State<SayurItem> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 90,
-      height: 90,
+    return Center(
+      child: Container(
+      width: 80,
+      height: 80,
       child: ClipRRect(
         borderRadius: BorderRadius.circular(13),
         child: GestureDetector(
@@ -112,6 +117,6 @@ class _SayurItemState extends State<SayurItem> {
           ),
         ),
       ),
-    );
+    ));
   }
 }

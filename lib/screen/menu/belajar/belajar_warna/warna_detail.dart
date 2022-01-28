@@ -14,17 +14,15 @@ class Page1 extends StatelessWidget {
     return Center(
         child: Column(children: <Widget>[
       Container(
-        child: Row(children: [
-          Flexible(
-              child: Container(
+        child: Row(
+            children: [
+              Flexible(
+                child: Container(
                   child: WarnaItem(
-            Imageurl: 'icon_cake-01-merah.png',
-            width: 100,
-            audioUrl: 'merah.mp3',
-            height: 100,
-          )))
-        ]),
-      )
+                Imageurl: 'icon_cake/icon_cake-01-merah.png', width: 100, audioUrl: 'merah.mp3', height: 100,
+              ))),
+            ]),
+      ),
     ]));
   }
 }
@@ -41,7 +39,7 @@ class Page2 extends StatelessWidget {
           Flexible(
               child: Container(
                   child: WarnaItem(
-            Imageurl: 'icon_cake-02-merah.png',
+            Imageurl: 'icon_cake/icon_cake-02-kuning.png',
             width: 100,
             audioUrl: 'kuning.mp3',
             height: 100,
@@ -64,7 +62,7 @@ class Page3 extends StatelessWidget {
           Flexible(
               child: Container(
                   child: WarnaItem(
-            Imageurl: 'icon_cake-03-kuning.png',
+            Imageurl: 'icon_cake/icon_cake-03-jingga.png',
             width: 100,
             audioUrl: 'jingga.mp3',
             height: 100,
@@ -87,7 +85,7 @@ class Page4 extends StatelessWidget {
           Flexible(
               child: Container(
                   child: WarnaItem(
-            Imageurl: 'icon_cake-04-kuning.png',
+            Imageurl: 'icon_cake/icon_cake-04-hijau.png',
             width: 100,
             audioUrl: 'hijau.mp3',
             height: 100,
@@ -110,7 +108,7 @@ class Page5 extends StatelessWidget {
           Flexible(
               child: Container(
                   child: WarnaItem(
-            Imageurl: 'icon_cake-05-jingga.png',
+            Imageurl: 'icon_cake/icon_cake-05-biru.png',
             width: 100,
             audioUrl: 'biru.mp3',
             height: 100,
@@ -133,7 +131,7 @@ class Page6 extends StatelessWidget {
           Flexible(
               child: Container(
                   child: WarnaItem(
-            Imageurl: 'icon_cake-06-jingga.png',
+            Imageurl: 'icon_cake/icon_cake-06-ungu.png',
             width: 100,
             audioUrl: 'ungu.mp3',
             height: 100,
@@ -156,7 +154,7 @@ class Page7 extends StatelessWidget {
           Flexible(
               child: Container(
                   child: WarnaItem(
-            Imageurl: 'icon_cake-07-hijau.png',
+            Imageurl: 'icon_cake/icon_cake-07-putih.png',
             width: 100,
             audioUrl: 'putih.mp3',
             height: 100,
@@ -179,7 +177,7 @@ class Page8 extends StatelessWidget {
           Flexible(
               child: Container(
                   child: WarnaItem(
-            Imageurl: 'icon_cake-08-hijau.png',
+            Imageurl: 'icon_cake/icon_cake-08-cokelat.png',
             width: 100,
             audioUrl: 'cokelat.mp3',
             height: 100,
@@ -202,7 +200,7 @@ class Page9 extends StatelessWidget {
           Flexible(
               child: Container(
                   child: WarnaItem(
-            Imageurl: 'icon_cake-09-biru.png',
+            Imageurl: 'icon_cake/icon_cake-09-abuabu.png',
             width: 100,
             audioUrl: 'abu-abu.mp3',
             height: 100,
@@ -225,237 +223,7 @@ class Page10 extends StatelessWidget {
           Flexible(
               child: Container(
                   child: WarnaItem(
-            Imageurl: 'icon_cake-10-biru.png',
-            width: 100,
-            audioUrl: 'biru.mp3',
-            height: 100,
-          ))),
-        ]),
-      )
-    ]));
-  }
-}
-
-class Page11 extends StatelessWidget {
-  const Page11({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-        child: Column(children: <Widget>[
-      Container(
-        child: Row(children: [
-          Flexible(
-              child: Container(
-                  child: WarnaItem(
-            Imageurl: 'icon_cake-11-ungu.png',
-            width: 100,
-            audioUrl: 'ungu.mp3',
-            height: 100,
-          ))),
-        ]),
-      )
-    ]));
-  }
-}
-
-class Page12 extends StatelessWidget {
-  const Page12({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-        child: Column(children: <Widget>[
-      Container(
-        child: Row(children: [
-          Flexible(
-              child: Container(
-                  child: WarnaItem(
-            Imageurl: 'icon_cake-12-ungu.png',
-            width: 100,
-            audioUrl: 'ungu.mp3',
-            height: 100,
-          ))),
-        ]),
-      )
-    ]));
-  }
-}
-
-class Page13 extends StatelessWidget {
-  const Page13({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-        child: Column(children: <Widget>[
-      Container(
-        child: Row(children: [
-          Flexible(
-              child: Container(
-                  child: WarnaItem(
-            Imageurl: 'icon_cake-13-putih.png',
-            width: 100,
-            audioUrl: 'putih.mp3',
-            height: 100,
-          ))),
-        ]),
-      )
-    ]));
-  }
-}
-
-class Page14 extends StatelessWidget {
-  const Page14({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-        child: Column(children: <Widget>[
-      Container(
-        child: Row(children: [
-          Flexible(
-              child: Container(
-                  child: WarnaItem(
-            Imageurl: 'icon_cake-14-putih.png',
-            width: 100,
-            audioUrl: 'putih.mp3',
-            height: 100,
-          ))),
-        ]),
-      )
-    ]));
-  }
-}
-
-class Page15 extends StatelessWidget {
-  const Page15({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-        child: Column(children: <Widget>[
-      Container(
-        child: Row(children: [
-          Flexible(
-              child: Container(
-                  child: WarnaItem(
-            Imageurl: 'icon_cake-15-cokelat.png',
-            width: 100,
-            audioUrl: 'cokelat.mp3',
-            height: 100,
-          ))),
-        ]),
-      )
-    ]));
-  }
-}
-
-class Page16 extends StatelessWidget {
-  const Page16({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-        child: Column(children: <Widget>[
-      Container(
-        child: Row(children: [
-          Flexible(
-              child: Container(
-                  child: WarnaItem(
-            Imageurl: 'icon_cake-16-cokelat.png',
-            width: 100,
-            audioUrl: 'cokelat.mp3',
-            height: 100,
-          ))),
-        ]),
-      )
-    ]));
-  }
-}
-
-class Page17 extends StatelessWidget {
-  const Page17({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-        child: Column(children: <Widget>[
-      Container(
-        child: Row(children: [
-          Flexible(
-              child: Container(
-                  child: WarnaItem(
-            Imageurl: 'icon_cake-17-abuabu.png',
-            width: 100,
-            audioUrl: 'abuabu.mp3',
-            height: 100,
-          ))),
-        ]),
-      )
-    ]));
-  }
-}
-
-class Page18 extends StatelessWidget {
-  const Page18({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-        child: Column(children: <Widget>[
-      Container(
-        child: Row(children: [
-          Flexible(
-              child: Container(
-                  child: WarnaItem(
-            Imageurl: 'icon_cake-18-abuabu.png',
-            width: 100,
-            audioUrl: 'abuabu.mp3',
-            height: 100,
-          ))),
-        ]),
-      )
-    ]));
-  }
-}
-
-class Page19 extends StatelessWidget {
-  const Page19({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-        child: Column(children: <Widget>[
-      Container(
-        child: Row(children: [
-          Flexible(
-              child: Container(
-                  child: WarnaItem(
-            Imageurl: 'icon_cake-19-hitam.png',
-            width: 100,
-            audioUrl: 'hitam.mp3',
-            height: 100,
-          ))),
-        ]),
-      )
-    ]));
-  }
-}
-
-class Page20 extends StatelessWidget {
-  const Page20({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-        child: Column(children: <Widget>[
-      Container(
-        child: Row(children: [
-          Flexible(
-              child: Container(
-                  child: WarnaItem(
-            Imageurl: 'icon_cake-20-hitam.png',
+            Imageurl: 'icon_cake/icon_cake-10-hitam.png',
             width: 100,
             audioUrl: 'hitam.mp3',
             height: 100,
