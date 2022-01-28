@@ -186,7 +186,7 @@ class _WarnaItemState extends State<WarnaItem> {
             SfxWarna.play('audio/BELAJAR/warna/' + widget.audioUrl);
           },
           child: Image.asset(
-            'assets/icons/' + widget.Imageurl + '',
+            'assets/icons/icon_cake/' + widget.Imageurl + '',
             fit: BoxFit.cover,
           ),
         ),
