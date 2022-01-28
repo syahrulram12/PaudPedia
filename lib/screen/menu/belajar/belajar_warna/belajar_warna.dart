@@ -29,8 +29,8 @@ class _WarnaHomeState extends State<WarnaHome> {
     setState(() {
       if (act == 'tambah') {
         page = page + 1;
-        if (page > 20) {
-          page = 20;
+        if (page > 10) {
+          page = 10;
         }
       } else {
         page = page - 1;
@@ -51,37 +51,17 @@ class _WarnaHomeState extends State<WarnaHome> {
     } else if (page == 4) {
       return Page4();
     } else if (page == 5) {
-      return Page5(); 
+      return Page5();
     } else if (page == 6) {
-      return Page6(); 
+      return Page6();
     } else if (page == 7) {
       return Page7();
     } else if (page == 8) {
       return Page8();
     } else if (page == 9) {
       return Page9();
-    } else if (page == 10) {
-      return Page10();
-    } else if (page == 11) {
-      return Page11();
-    } else if (page == 12) {
-      return Page12();
-    } else if (page == 13) {
-      return Page13();
-    } else if (page == 14) {
-      return Page14();
-    } else if (page == 15) {
-      return Page15();
-    } else if (page == 16) {
-      return Page16();
-    } else if (page == 17) {
-      return Page17();
-    } else if (page == 18) {
-      return Page18();
-    } else if (page == 19) {
-      return Page19();
     } else {
-      return Page20();
+      return Page10();
     }
   }
 
@@ -184,9 +164,9 @@ class WarnaItem extends StatefulWidget {
       {Key? key,
       required this.Imageurl,
       this.OnMenuClick,
-        required this.width,
-        required this.height,
-        required this.audioUrl})
+      required this.width,
+      required this.height,
+      required this.audioUrl})
       : super(key: key);
 
   @override
@@ -206,7 +186,7 @@ class _WarnaItemState extends State<WarnaItem> {
             SfxWarna.play('audio/BELAJAR/warna/' + widget.audioUrl);
           },
           child: Image.asset(
-            'assets/icons/' + widget.Imageurl + '',
+            'assets/icons/icon_cake/' + widget.Imageurl + '',
             fit: BoxFit.cover,
           ),
         ),
