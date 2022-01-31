@@ -71,93 +71,87 @@ class _BendaHomeState extends State<BendaHome> {
     double width = MediaQuery.of(context).size.width;
     return Scaffold(
         body: Stack(
-      children: <Widget>[
+      children: [
         Container(
-          height: height / 1,
-          width: width / 1,
-          decoration: BoxDecoration(
-              image: DecorationImage(
-                  image: AssetImage(
-                      'assets/images/all_background/belajar/03_belajar_benda_background.jpg'),
-                  fit: BoxFit.cover)),
-        ),
-        Container(
-          margin: EdgeInsets.symmetric(horizontal: 15, vertical: 25),
-          width: width / 1,
-          height: (height / 8) / 2,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Flexible(
-                child: Container(
-                  width: width / 6,
-                  child: ClipRRect(
-                    child: GestureDetector(
-                        onTap: () => {Get.back()},
-                        child: Image.asset('assets/icons/tab_bar_menu.png',
-                            fit: BoxFit.contain)),
-                  ),
-                ),
-              ),
-              Flexible(
-                child: Container(
-                  width: width / 6,
-                  decoration: BoxDecoration(
-                      image: DecorationImage(
-                          image:
-                              AssetImage('assets/icons/tab_bar_right_left.png'),
-                          fit: BoxFit.contain)),
+            height: height / 1,
+            decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage(
+                        'assets/images/all_background/belajar/03_belajar_benda_background.jpg'),
+                    fit: BoxFit.cover)),
+            child: Column(
+              children: [
+                Container(
+                  margin: EdgeInsets.symmetric(
+                      horizontal: (width / 8) / 2, vertical: 25),
+                  height: (height / 8) / 2,
                   child: Row(
-                    children: [
-                      Flexible(
-                        child: Container(
-                          child: GestureDetector(
-                            onTap: () {
-                              ChangePage('kurang');
-                            },
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Container(
+                          width: width / 6,
+                          child: ClipRRect(
+                            child: GestureDetector(
+                                onTap: () => {Get.back()},
+                                child: Image.asset(
+                                    'assets/icons/tab_bar_menu.png',
+                                    fit: BoxFit.contain)),
                           ),
                         ),
-                      ),
-                      Flexible(child: Container(
-                        child: GestureDetector(
-                          onTap: () {
-                            ChangePage('tambah');
-                          },
+                        Container(
+                          width: width / 5,
+                          decoration: BoxDecoration(
+                              image: DecorationImage(
+                                  image: AssetImage(
+                                      'assets/icons/tab_bar_right_left.png'),
+                                  fit: BoxFit.contain)),
+                          child: Row(
+                            children: [
+                              Flexible(
+                                child: Container(
+                                  child: GestureDetector(
+                                    onTap: () {
+                                      ChangePage('kurang');
+                                    },
+                                  ),
+                                ),
+                              ),
+                              Flexible(child: Container(
+                                child: GestureDetector(
+                                  onTap: () {
+                                    ChangePage('tambah');
+                                  },
+                                ),
+                              ))
+                            ],
+                          ),
                         ),
-                      ))
-                    ],
-                  ),
+                        Container(
+                          width: width / 5,
+                          child: ClipRRect(
+                            child: GestureDetector(
+                                child: Image.asset(
+                                    'assets/icons/tab_bar_auto.png',
+                                    fit: BoxFit.cover)),
+                          ),
+                        ),
+                      ]),
                 ),
-              ),
-              Flexible(
-                child: Container(
-                  width: width / 6,
-                  child: ClipRRect(
-                    child: GestureDetector(
-                        onTap: () => {Get.back()},
-                        child: Image.asset('assets/icons/tab_bar_auto.png',
-                            fit: BoxFit.cover)),
-                  ),
+                SizedBox(
+                  height: 100,
                 ),
-              )
-            ],
-          ),
-        ),
-        Align(
-          alignment: Alignment.center,
-          heightFactor: 55,
-          child: Container(
-              height: height / 1.5,
-              margin: EdgeInsets.symmetric(
-                  horizontal: (width / 8) / 2, vertical: 100),
-              decoration: BoxDecoration(
-                  color: Color.fromRGBO(37, 150, 190, 1),
-                  border: Border.all(width: 15, color: Colors.brown.shade500),
-                  borderRadius: BorderRadius.circular(50)),
-              child: Wrap(
-                children: [Page()],
-              )),
-        )
+                Container(
+                  margin: EdgeInsets.symmetric(horizontal: (width / 8) / 2),
+                  decoration: BoxDecoration(
+                      color: Color.fromRGBO(37, 150, 190, 1),
+                      border:
+                          Border.all(width: 15, color: Colors.brown.shade500),
+                      borderRadius: BorderRadius.circular(50)),
+                  child: Page(),
+                )
+              ],
+            )),
       ],
     ));
   }
@@ -212,6 +206,5 @@ class _BendaItemState extends State<BendaItem> {
                 ),
               ),
             )));
-    ;
   }
 }

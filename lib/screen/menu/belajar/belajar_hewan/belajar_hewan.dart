@@ -24,7 +24,7 @@ class _HewanHomeState extends State<HewanHome> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    SfxHewan.play('audio/BELAJAR/hewan/belajar-mengenal-fauna.mp3');
+    SfxHewan.play('audio/BELAJAR/fauna/belajar-mengenal-fauna.mp3');
   }
 
   Future<void> PlayAudio(audioUrl) async {
@@ -51,16 +51,16 @@ class _HewanHomeState extends State<HewanHome> {
 
   Page() {
     if (page == 1) {
-      PlayAudio('binatang-langka.mp3');
+      // PlayAudio('binatang-langka.mp3');
       return Page1();
     } else if (page == 2) {
-      PlayAudio('binatang-hutan.mp3');
+      // PlayAudio('binatang-hutan.mp3');
       return Page2();
     } else if (page == 3) {
-      PlayAudio('ikan-hias.mp3');
+      // PlayAudio('ikan-hias.mp3');
       return Page3();
     } else {
-      PlayAudio('binatang-laut.mp3');
+      // PlayAudio('binatang-laut.mp3');
       return Page4();
     }
   }

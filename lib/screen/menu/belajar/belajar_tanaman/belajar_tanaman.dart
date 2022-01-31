@@ -24,7 +24,7 @@ class _TanamanHomeState extends State<TanamanHome> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    SfxTanaman.play('audio/BELAJAR/tanaman.mp3');
+    SfxTanaman.play('audio/BELAJAR/tanaman/belajar-mengenal-tanaman.mp3');
   }
 
   Future<void> PlayAudio(audioUrl) async {
@@ -51,16 +51,16 @@ class _TanamanHomeState extends State<TanamanHome> {
 
   Page() {
     if (page == 1) {
-      PlayAudio('tanaman-bunga.mp3');
+      // PlayAudio('tanaman-bunga.mp3');
       return Page1();
     } else if (page == 2) {
-      PlayAudio('tanaman-hias.mp3');
+      // PlayAudio('tanaman-hias.mp3');
       return Page2();
     } else if (page == 3) {
-      PlayAudio('tanaman-obat.mp3');
+      // PlayAudio('tanaman-obat.mp3');
       return Page3();
     } else {
-      PlayAudio('tanaman-pangan.mp3');
+      // PlayAudio('tanaman-pangan.mp3');
       return Page4();
     }
   }

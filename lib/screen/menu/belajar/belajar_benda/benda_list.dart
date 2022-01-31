@@ -84,7 +84,7 @@ class Page1 extends StatelessWidget {
             Flexible(
                 child: BendaItem(
               Imageurl: 'icon_object/bedroom/icon_object_bedroom-09.png',
-              audioUrl: 'keranang-bola.mp3',
+              audioUrl: 'keranjang-bola.mp3',
             )),
           ],
         ),
