@@ -152,7 +152,7 @@ class _HewanHomeState extends State<HewanHome> {
               margin: EdgeInsets.symmetric(
                   horizontal: (width / 8) / 2, vertical: 100),
               decoration: BoxDecoration(
-                  color: Color.fromRGBO(37, 150, 190, 1),
+                  color: Color.fromRGBO(135, 180, 67, 1.0),
                   border: Border.all(width: 15, color: Colors.brown.shade500),
                   borderRadius: BorderRadius.circular(50)),
               child: Wrap(
@@ -197,6 +197,7 @@ class _HewanItemState extends State<HewanItem> {
             width: 100,
             height: 100,
             decoration: BoxDecoration(
+              color: Colors.yellow.shade400,
               borderRadius: BorderRadius.circular(13),
             ),
             child: Padding(

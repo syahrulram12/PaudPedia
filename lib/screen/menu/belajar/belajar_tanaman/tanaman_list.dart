@@ -26,7 +26,7 @@ class Page1 extends StatelessWidget {
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 30,
-                        color: Colors.pink.shade200),
+                        color: Colors.yellow.shade400),
                   ),
                 ),
               )),
@@ -134,7 +134,7 @@ class Page2 extends StatelessWidget {
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 30,
-                        color: Colors.white),
+                        color: Colors.yellow.shade400),
                   ),
                 ),
               )),
@@ -242,7 +242,7 @@ class Page3 extends StatelessWidget {
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 30,
-                        color: Colors.white),
+                        color: Colors.yellow.shade400),
                   ),
                 ),
               )),
@@ -348,7 +348,7 @@ class Page4 extends StatelessWidget {
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 30,
-                        color: Colors.pink.shade100),
+                        color: Colors.yellow.shade400),
                   ),
                 ),
               )),
@@ -358,20 +358,17 @@ class Page4 extends StatelessWidget {
             Flexible(
                 child: TanamanItem(
               Imageurl:
-                  'icon_tanaman/icon_tanaman_pangan/icon_tanaman_brokoli.png',
-              audioUrl: 'brokoli.mp3',
+                  'icon_tanaman/icon_tanaman_pangan/icon_tanaman_brokoli.png', audioUrl: 'brokoli.mp3',
             )),
             Flexible(
                 child: TanamanItem(
               Imageurl:
-                  'icon_tanaman/icon_tanaman_pangan/icon_tanaman_gandum.png',
-              audioUrl: 'gandum.mp3',
+                  'icon_tanaman/icon_tanaman_pangan/icon_tanaman_gandum.png', audioUrl: 'gandum.mp3',
             )),
             Flexible(
                 child: TanamanItem(
               Imageurl:
-                  'icon_tanaman/icon_tanaman_pangan/icon_tanaman_jagung.png',
-              audioUrl: 'jagung.mp3',
+                  'icon_tanaman/icon_tanaman_pangan/icon_tanaman_jagung.png', audioUrl: 'jagung.mp3',
             )),
           ],
         ),

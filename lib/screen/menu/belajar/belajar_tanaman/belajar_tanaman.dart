@@ -152,7 +152,7 @@ class _TanamanHomeState extends State<TanamanHome> {
               margin: EdgeInsets.symmetric(
                   horizontal: (width / 8) / 2, vertical: 100),
               decoration: BoxDecoration(
-                  color: Colors.white,
+                  color: Colors.cyan[600],
                   border: Border.all(width: 15, color: Colors.brown.shade500),
                   borderRadius: BorderRadius.circular(50)),
               child: Wrap(
@@ -197,7 +197,7 @@ class _TanamanItemState extends State<TanamanItem> {
             width: 100,
             height: 100,
             decoration: BoxDecoration(
-              color: Colors.pink.shade100,
+              color: Colors.yellow.shade300,
               borderRadius: BorderRadius.circular(13),
             ),
             child: Padding(
