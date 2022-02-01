@@ -358,17 +358,20 @@ class Page4 extends StatelessWidget {
             Flexible(
                 child: TanamanItem(
               Imageurl:
-                  'icon_tanaman/icon_tanaman_pangan/icon_tanaman_brokoli.png', audioUrl: 'brokoli.mp3',
+                  'icon_tanaman/icon_tanaman_pangan/icon_tanaman_brokoli.png',
+              audioUrl: 'brokoli.mp3',
             )),
             Flexible(
                 child: TanamanItem(
               Imageurl:
-                  'icon_tanaman/icon_tanaman_pangan/icon_tanaman_gandum.png', audioUrl: 'gandum.mp3',
+                  'icon_tanaman/icon_tanaman_pangan/icon_tanaman_gandum.png',
+              audioUrl: 'gandum.mp3',
             )),
             Flexible(
                 child: TanamanItem(
               Imageurl:
-                  'icon_tanaman/icon_tanaman_pangan/icon_tanaman_jagung.png', audioUrl: 'jagung.mp3',
+                  'icon_tanaman/icon_tanaman_pangan/icon_tanaman_jagung.png',
+              audioUrl: 'jagung.mp3',
             )),
           ],
         ),

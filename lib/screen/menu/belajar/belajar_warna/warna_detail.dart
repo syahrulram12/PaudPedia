@@ -14,14 +14,16 @@ class Page1 extends StatelessWidget {
     return Center(
         child: Column(children: <Widget>[
       Container(
-        child: Row(
-            children: [
-              Flexible(
-                child: Container(
+        child: Row(children: [
+          Flexible(
+              child: Container(
                   child: WarnaItem(
-                Imageurl: 'icon_cake/icon_cake-01-merah.png', width: 100, audioUrl: 'merah.mp3', height: 100,
-              ))),
-            ]),
+            Imageurl: 'icon_cake-01-merah-smile.png',
+            width: 100,
+            audioUrl: 'merah.mp3',
+            height: 100,
+          ))),
+        ]),
       ),
     ]));
   }
@@ -39,7 +41,7 @@ class Page2 extends StatelessWidget {
           Flexible(
               child: Container(
                   child: WarnaItem(
-            Imageurl: 'icon_cake/icon_cake-02-kuning.png',
+            Imageurl: 'icon_cake-02-kuning-smile.png',
             width: 100,
             audioUrl: 'kuning.mp3',
             height: 100,
@@ -62,7 +64,7 @@ class Page3 extends StatelessWidget {
           Flexible(
               child: Container(
                   child: WarnaItem(
-            Imageurl: 'icon_cake/icon_cake-03-jingga.png',
+            Imageurl: 'icon_cake-03-jingga-smile.png',
             width: 100,
             audioUrl: 'jingga.mp3',
             height: 100,
@@ -85,7 +87,7 @@ class Page4 extends StatelessWidget {
           Flexible(
               child: Container(
                   child: WarnaItem(
-            Imageurl: 'icon_cake/icon_cake-04-hijau.png',
+            Imageurl: 'icon_cake-04-hijau-smile.png',
             width: 100,
             audioUrl: 'hijau.mp3',
             height: 100,
@@ -108,7 +110,7 @@ class Page5 extends StatelessWidget {
           Flexible(
               child: Container(
                   child: WarnaItem(
-            Imageurl: 'icon_cake/icon_cake-05-biru.png',
+            Imageurl: 'icon_cake-05-biru-smile.png',
             width: 100,
             audioUrl: 'biru.mp3',
             height: 100,
@@ -131,7 +133,7 @@ class Page6 extends StatelessWidget {
           Flexible(
               child: Container(
                   child: WarnaItem(
-            Imageurl: 'icon_cake/icon_cake-06-ungu.png',
+            Imageurl: 'icon_cake-06-ungu-smile.png',
             width: 100,
             audioUrl: 'ungu.mp3',
             height: 100,
@@ -154,7 +156,7 @@ class Page7 extends StatelessWidget {
           Flexible(
               child: Container(
                   child: WarnaItem(
-            Imageurl: 'icon_cake/icon_cake-07-putih.png',
+            Imageurl: 'icon_cake-07-putih-smile.png',
             width: 100,
             audioUrl: 'putih.mp3',
             height: 100,
@@ -177,9 +179,9 @@ class Page8 extends StatelessWidget {
           Flexible(
               child: Container(
                   child: WarnaItem(
-            Imageurl: 'icon_cake/icon_cake-08-cokelat.png',
+            Imageurl: 'icon_cake-08-cokelat-smile.png',
             width: 100,
-            audioUrl: 'cokelat.mp3',
+            audioUrl: 'coklat.mp3',
             height: 100,
           ))),
         ]),
@@ -200,7 +202,7 @@ class Page9 extends StatelessWidget {
           Flexible(
               child: Container(
                   child: WarnaItem(
-            Imageurl: 'icon_cake/icon_cake-09-abuabu.png',
+            Imageurl: 'icon_cake-09-abuabu-smile.png',
             width: 100,
             audioUrl: 'abu-abu.mp3',
             height: 100,
@@ -223,7 +225,7 @@ class Page10 extends StatelessWidget {
           Flexible(
               child: Container(
                   child: WarnaItem(
-            Imageurl: 'icon_cake/icon_cake-10-hitam.png',
+            Imageurl: 'icon_cake-10-hitam-smile.png',
             width: 100,
             audioUrl: 'hitam.mp3',
             height: 100,

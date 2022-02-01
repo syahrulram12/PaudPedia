@@ -139,7 +139,7 @@ class _BendaHomeState extends State<BendaHome> {
                       ]),
                 ),
                 SizedBox(
-                  height: 100,
+                  height: height / 8,
                 ),
                 Container(
                   margin: EdgeInsets.symmetric(horizontal: (width / 8) / 2),
