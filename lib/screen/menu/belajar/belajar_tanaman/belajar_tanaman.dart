@@ -80,85 +80,79 @@ class _TanamanHomeState extends State<TanamanHome> {
                   image: AssetImage(
                       'assets/images/all_background/belajar/08_belajar-tanaman_background.jpg'),
                   fit: BoxFit.cover)),
-        ),
-        Positioned(
-            child: Container(
-          margin: EdgeInsets.symmetric(horizontal: 15, vertical: 25),
-          width: width / 1,
-          height: (height / 8) / 2,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          child: Column(
             children: [
-              Flexible(
-                child: Container(
-                  width: width / 6,
-                  child: ClipRRect(
-                    child: GestureDetector(
-                        onTap: () => {Get.back()},
-                        child: Image.asset('assets/icons/tab_bar_menu.png',
-                            fit: BoxFit.contain)),
-                  ),
-                ),
-              ),
-              Flexible(
-                child: Container(
-                  width: width / 6,
-                  decoration: BoxDecoration(
-                      image: DecorationImage(
-                          image:
-                              AssetImage('assets/icons/tab_bar_right_left.png'),
-                          fit: BoxFit.contain)),
-                  child: Row(
+              Container(
+                margin: EdgeInsets.symmetric(
+                    horizontal: (width / 8) / 2, vertical: 25),
+                height: (height / 8) / 2,
+                child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisSize: MainAxisSize.max,
                     children: [
-                      Flexible(
-                        child: Container(
+                      Container(
+                        width: width / 6,
+                        child: ClipRRect(
                           child: GestureDetector(
-                            onTap: () {
-                              ChangePage('kurang');
-                            },
-                          ),
+                              onTap: () => {Get.back()},
+                              child: Image.asset(
+                                  'assets/icons/tab_bar_menu.png',
+                                  fit: BoxFit.contain)),
                         ),
                       ),
-                      Flexible(child: Container(
-                        child: GestureDetector(
-                          onTap: () {
-                            ChangePage('tambah');
-                          },
+                      Container(
+                        width: width / 5,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: AssetImage(
+                                    'assets/icons/tab_bar_right_left.png'),
+                                fit: BoxFit.contain)),
+                        child: Row(
+                          children: [
+                            Flexible(
+                              child: Container(
+                                child: GestureDetector(
+                                  onTap: () {
+                                    ChangePage('kurang');
+                                  },
+                                ),
+                              ),
+                            ),
+                            Flexible(child: Container(
+                              child: GestureDetector(
+                                onTap: () {
+                                  ChangePage('tambah');
+                                },
+                              ),
+                            ))
+                          ],
                         ),
-                      ))
-                    ],
-                  ),
-                ),
+                      ),
+                      Container(
+                        width: width / 5,
+                        child: ClipRRect(
+                          child: GestureDetector(
+                              child: Image.asset(
+                                  'assets/icons/tab_bar_auto.png',
+                                  fit: BoxFit.cover)),
+                        ),
+                      ),
+                    ]),
               ),
-              Flexible(
-                child: Container(
-                  width: width / 5,
-                  child: ClipRRect(
-                    child: GestureDetector(
-                        onTap: () => {Get.back()},
-                        child: Image.asset('assets/icons/tab_bar_auto.png',
-                            fit: BoxFit.cover)),
-                  ),
-                ),
+              SizedBox(
+                height: height / 8,
+              ),
+              Container(
+                margin: EdgeInsets.symmetric(horizontal: (width / 8) / 2),
+                decoration: BoxDecoration(
+                    color: Color.fromRGBO(37, 150, 190, 1),
+                    border: Border.all(width: 15, color: Colors.brown.shade500),
+                    borderRadius: BorderRadius.circular(50)),
+                child: Page(),
               )
             ],
           ),
-        )),
-        Align(
-          alignment: Alignment.center,
-          heightFactor: 55,
-          child: Container(
-              height: height / 1.5,
-              margin: EdgeInsets.symmetric(
-                  horizontal: (width / 8) / 2, vertical: 100),
-              decoration: BoxDecoration(
-                  color: Colors.cyan[600],
-                  border: Border.all(width: 15, color: Colors.brown.shade500),
-                  borderRadius: BorderRadius.circular(50)),
-              child: Wrap(
-                children: [Page()],
-              )),
-        )
+        ),
       ],
     ));
   }
