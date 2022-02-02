@@ -5,7 +5,6 @@ import 'package:get/get.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:paudpedia_kemendikbud/styles/color.dart';
 import 'package:paudpedia_kemendikbud/screen/menu/belajar/belajar_warna/warna_detail.dart';
-import 'package:paudpedia_kemendikbud/screen/menu/belajar/belajar_warna/belajar_warna.dart';
 
 class WarnaHome extends StatefulWidget {
   const WarnaHome({Key? key}) : super(key: key);
@@ -173,24 +172,49 @@ class WarnaItem extends StatefulWidget {
 }
 
 class _WarnaItemState extends State<WarnaItem> {
-  AudioCache SfxWarna = AudioCache();
+  AudioCache SfxItem = AudioCache();
+  AudioPlayer audioPlayer = AudioPlayer();
+  PlayerState state = PlayerState.STOPPED;
+
+  playAudio(audio) {
+    audioPlayer.stop();
+    SfxItem = AudioCache(fixedPlayer: audioPlayer);
+    SfxItem.play('audio/BELAJAR/benda/' + audio);
+  }
+
+  // change(image) {
+  //   String url = 'assets/icons/' + widget.Imageurl + '-smile.png';
+  //   setState(() {
+  //     if (PlayerState == PlayerState.PLAYING) {
+  //       url = 'assets/icons/' + image + '.png';
+  //     } else {
+  //       url = 'assets/icons/' + image + '-smile.png';
+  //     }
+  //   });
+  // }
+
   @override
   Widget build(BuildContext context) {
     return Center(
         child: Container(
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(13),
-        child: GestureDetector(
-          onTap: () {
-            SfxWarna.play('audio/BELAJAR/warna/' + widget.audioUrl);
-          },
-          child: Image.asset(
-            'assets/icons/icon_cake/' + widget.Imageurl + '',
-            fit: BoxFit.cover,
-          ),
-        ),
-      ),
-    ));
+            margin: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(13),
+            ),
+            child: Padding(
+              padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+              child: ClipRRect(
+                child: GestureDetector(
+                  onTap: () {
+                    playAudio(widget.audioUrl);
+                  },
+                  child: Image.asset(
+                    'assets/icons/icon_cake/' + widget.Imageurl + '-smile.png',
+                    fit: BoxFit.contain,
+                  ),
+                ),
+              ),
+            )));
     ;
   }
 }

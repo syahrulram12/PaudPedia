@@ -26,12 +26,6 @@ class _BendaHomeState extends State<BendaHome> {
     SfxBenda.play('audio/BELAJAR/benda/belajar-mengenal-benda.mp3');
   }
 
-  PlayAudio(audioUrl) {
-    SfxBenda = AudioCache(fixedPlayer: audioPlayer);
-    audioPlayer.release();
-    SfxBenda.play('audio/BELAJAR/benda/' + audioUrl);
-  }
-
   ChangePage(act) {
     setState(() {
       if (act == 'tambah') {
@@ -173,13 +167,14 @@ class BendaItem extends StatefulWidget {
 }
 
 class _BendaItemState extends State<BendaItem> {
-  AudioCache SfxBenda = AudioCache();
+  AudioCache SfxItem = AudioCache();
   AudioPlayer audioPlayer = AudioPlayer();
 
-  void PlayAudio(audioUrl) {
-    SfxBenda = AudioCache(fixedPlayer: audioPlayer);
-    audioPlayer.release();
-    SfxBenda.play('audio/BELAJAR/benda/' + audioUrl);
+  PlayAudio(audioUrl) {
+    audioPlayer.stop();
+    SfxItem = AudioCache(fixedPlayer: audioPlayer);
+    SfxItem.play('audio/BELAJAR/benda/' + audioUrl);
+    PlayerState.PLAYING;
   }
 
   @override
@@ -187,8 +182,6 @@ class _BendaItemState extends State<BendaItem> {
     return Center(
         child: Container(
             margin: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-            width: 100,
-            height: 100,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(13),
             ),
