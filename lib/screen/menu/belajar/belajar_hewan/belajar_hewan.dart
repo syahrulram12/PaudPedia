@@ -140,7 +140,7 @@ class _HewanHomeState extends State<HewanHome> {
                     ]),
               ),
               SizedBox(
-                height: height / 8,
+                height: height / 9,
               ),
               Container(
                 margin: EdgeInsets.symmetric(horizontal: (width / 8) / 2),
