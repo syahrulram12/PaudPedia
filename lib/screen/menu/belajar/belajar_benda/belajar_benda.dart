@@ -174,7 +174,6 @@ class _BendaItemState extends State<BendaItem> {
     audioPlayer.stop();
     SfxItem = AudioCache(fixedPlayer: audioPlayer);
     SfxItem.play('audio/BELAJAR/benda/' + audioUrl);
-    PlayerState.PLAYING;
   }
 
   @override
