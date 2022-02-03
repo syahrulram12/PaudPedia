@@ -188,8 +188,6 @@ class _TanamanItemState extends State<TanamanItem> {
     return Center(
         child: Container(
             margin: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-            width: 100,
-            height: 100,
             decoration: BoxDecoration(
               color: Colors.yellow.shade300,
               borderRadius: BorderRadius.circular(13),
