@@ -37,11 +37,11 @@ class Profesi1 extends StatelessWidget {
                 Flexible(
                     child: ProfesiItem(
                       Imageurl: 'icon_profesi/icon_teacher.png',
-                      audioUrl: 'tahukah-kamu-apa-profesinya.mp3',)),
+                      audioUrl: 'guru.mp3',)),
                 Flexible(
                     child: ProfesiItem(
                       Imageurl: 'icon_profesi/icon_fire.png',
-                      audioUrl: 'tahukah-kamu-apa-profesinya.mp3',)),
+                      audioUrl: 'pemadam-kebakaran.mp3',)),
               ],
             ),
             Row(
@@ -51,11 +51,11 @@ class Profesi1 extends StatelessWidget {
                 Flexible(
                     child: ProfesiItem(
                       Imageurl: 'icon_profesi/icon_doctor.png',
-                      audioUrl: 'tahukah-kamu-apa-profesinya.mp3',)),
+                      audioUrl: 'dokter.mp3',)),
                 Flexible(
                     child: ProfesiItem(
                       Imageurl: 'icon_profesi/icon_police.png',
-                      audioUrl: 'tahukah-kamu-apa-profesinya.mp3',)),
+                      audioUrl: 'polisi.mp3',)),
               ],
             ),
             Row(
@@ -64,7 +64,7 @@ class Profesi1 extends StatelessWidget {
                 Flexible(
                     child: ProfesiItem(
                       Imageurl: 'icon_profesi/icon_waiter.png',
-                      audioUrl: 'tahukah-kamu-apa-profesinya.mp3',)),
+                      audioUrl: 'pelayan.mp3',)),
                 Flexible(
                     child: Container()),
               ],
