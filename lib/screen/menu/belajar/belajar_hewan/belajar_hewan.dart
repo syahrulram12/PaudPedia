@@ -188,8 +188,6 @@ class _HewanItemState extends State<HewanItem> {
     return Center(
         child: Container(
             margin: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-            width: 100,
-            height: 100,
             decoration: BoxDecoration(
               color: Colors.yellow.shade400,
               borderRadius: BorderRadius.circular(13),
