@@ -26,7 +26,7 @@ class Page1 extends StatelessWidget {
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 30,
-                        color: Colors.yellow.shade400),
+                        color: Colors.white),
                   ),
                 ),
               )),
@@ -134,7 +134,7 @@ class Page2 extends StatelessWidget {
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 30,
-                        color: Colors.yellow.shade400),
+                        color: Colors.white),
                   ),
                 ),
               )),
@@ -242,7 +242,7 @@ class Page3 extends StatelessWidget {
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 30,
-                        color: Colors.yellow.shade400),
+                        color: Colors.white),
                   ),
                 ),
               )),
@@ -348,7 +348,7 @@ class Page4 extends StatelessWidget {
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 30,
-                        color: Colors.yellow.shade400),
+                        color: Colors.white),
                   ),
                 ),
               )),

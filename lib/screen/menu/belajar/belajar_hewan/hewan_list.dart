@@ -163,7 +163,7 @@ class Page2 extends StatelessWidget {
             Flexible(
                 child: HewanItem(
               Imageurl: 'icon_hewan/icon_hewan_hutan/icon_hewan-16.png',
-              audioUrl: '.mp3',
+              audioUrl: 'berang-berang.mp3',
             )),
           ],
         ),
@@ -319,7 +319,7 @@ class Page4 extends StatelessWidget {
             Flexible(
                 child: HewanItem(
               Imageurl: 'icon_hewan/icon_hewan_laut/icon_hewan-30.png',
-              audioUrl: 'anjing-laut.mp3',
+              audioUrl: 'kuda-laut.mp3',
             )),
             Flexible(
                 child: HewanItem(
@@ -357,7 +357,7 @@ class Page4 extends StatelessWidget {
             Flexible(
                 child: HewanItem(
               Imageurl: 'icon_hewan/icon_hewan_laut/icon_hewan-36.png',
-              audioUrl: 'kuda-laut.mp3',
+              audioUrl: 'singa-laut.mp3',
             )),
             Flexible(
                 child: HewanItem(
@@ -372,7 +372,7 @@ class Page4 extends StatelessWidget {
             Flexible(
                 child: HewanItem(
               Imageurl: 'icon_hewan/icon_hewan_laut/icon_hewan-38.png',
-              audioUrl: 'berang-berang.mp3',
+              audioUrl: 'anjing-laut.mp3',
             )),
             Flexible(child: Container())
           ],
