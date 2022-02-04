@@ -178,8 +178,8 @@ class _HewanItemState extends State<HewanItem> {
   AudioPlayer audioPlayer = AudioPlayer();
 
   void PlayAudio(audioUrl) {
+    audioPlayer.stop();
     SfxHewan = AudioCache(fixedPlayer: audioPlayer);
-    audioPlayer.release();
     SfxHewan.play('audio/BELAJAR/fauna/' + audioUrl);
   }
 

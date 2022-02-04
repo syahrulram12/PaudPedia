@@ -178,8 +178,8 @@ class _TanamanItemState extends State<TanamanItem> {
   AudioPlayer audioPlayer = AudioPlayer();
 
   void PlayAudio(audioUrl) {
+    audioPlayer.stop();
     SfxTanaman = AudioCache(fixedPlayer: audioPlayer);
-    audioPlayer.release();
     SfxTanaman.play('audio/BELAJAR/tanaman/' + audioUrl);
   }
 
