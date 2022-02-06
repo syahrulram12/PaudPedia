@@ -174,12 +174,11 @@ class WarnaItem extends StatefulWidget {
 class _WarnaItemState extends State<WarnaItem> {
   AudioCache SfxItem = AudioCache();
   AudioPlayer audioPlayer = AudioPlayer();
-  PlayerState state = PlayerState.STOPPED;
 
   playAudio(audio) {
     audioPlayer.stop();
     SfxItem = AudioCache(fixedPlayer: audioPlayer);
-    SfxItem.play('audio/BELAJAR/benda/' + audio);
+    SfxItem.play('audio/BELAJAR/warna/' + audio);
   }
 
   // change(image) {

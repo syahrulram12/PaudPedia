@@ -18,11 +18,7 @@ class Page1 extends StatelessWidget {
           Flexible(
               child: Container(
                   child: WarnaItem(
-            Imageurl: 'icon_cake-01-merah',
-            width: 100,
-            audioUrl: 'merah.mp3',
-            height: 100,
-          ))),
+            Imageurl: 'icon_cake-01-merah', width: 100, audioUrl: 'merah.mp3', height: 100,))),
         ]),
       ),
     ]));
