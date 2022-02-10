@@ -12,6 +12,17 @@ class HomeMenu extends StatefulWidget {
 class _HomeMenuState extends State<HomeMenu> {
   AudioCache audioCache = AudioCache();
   AudioPlayer audioPlayer = AudioPlayer();
+  bool menu = false;
+
+  ChangeMenu(i) {
+    setState(() {
+      if (i == 'belajar') {
+        menu = true;
+      } else {
+        menu = false;
+      }
+    });
+  }
 
   @override
   void initState() {
@@ -50,34 +61,47 @@ class _HomeMenuState extends State<HomeMenu> {
                       width: width / 2,
                     )),
                 Positioned(
-                    top: height / 4.1,
-                    right: width / 2.3,
+                    top: height / 3.8,
                     child: Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 24),
+                        padding:
+                            EdgeInsets.symmetric(horizontal: width / 4 / 2),
                         child: Container(
+                          height: height / 8,
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               Container(
                                 child: GestureDetector(
-                                  child: TabItem(
-                                    ImageUrl:
-                                        'assets/icons/menu/icon_menu-01.png',
-                                    heigth: 125,
-                                    width: 120,
-                                  ),
+                                  onTap: () {
+                                    ChangeMenu('belajar');
+                                  },
+                                  child: menu
+                                      ? Image.asset(
+                                          'assets/icons/menu/icon_menu-01.png',
+                                          fit: BoxFit.fill,
+                                        )
+                                      : Image.asset(
+                                          'assets/icons/menu/icon_menu-13.png',
+                                          fit: BoxFit.fill,
+                                        ),
                                 ),
                               ),
-                              // Container(
-                              //   child: GestureDetector(
-                              //     child: TabItem(
-                              //       ImageUrl:
-                              //           'assets/icons/menu/icon_menu-01.png',
-                              //       heigth: 125,
-                              //       width: 120,
-                              //     ),
-                              //   ),
-                              // ),
+                              Container(
+                                child: GestureDetector(
+                                  onTap: () {
+                                    ChangeMenu('bermain');
+                                  },
+                                  child: menu
+                                      ? Image.asset(
+                                          'assets/icons/menu/icon_menu-02.png',
+                                          fit: BoxFit.contain,
+                                        )
+                                      : Image.asset(
+                                          'assets/icons/menu/icon_menu-14.png',
+                                          fit: BoxFit.fill,
+                                        ),
+                                ),
+                              ),
                             ],
                           ),
                         ))),
@@ -93,9 +117,10 @@ class _HomeMenuState extends State<HomeMenu> {
                             borderRadius: BorderRadius.circular(28),
                           ),
                           child: Padding(
-                              padding: EdgeInsets.symmetric(
-                                  horizontal: 10, vertical: 10),
-                              child: MenuBelajar()))
+                            padding: EdgeInsets.symmetric(
+                                horizontal: 10, vertical: 10),
+                            child: menu ? MenuBelajar() : MenuBermain(),
+                          ))
                     ],
                   ),
                 ),

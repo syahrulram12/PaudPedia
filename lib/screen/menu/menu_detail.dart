@@ -131,3 +131,120 @@ class MenuBelajar extends StatelessWidget {
     );
   }
 }
+
+class MenuBermain extends StatelessWidget {
+  const MenuBermain({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+    return Container(
+      alignment: Alignment.center,
+      child: Column(
+        children: [
+          Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                Flexible(
+                    child: MenuItem(
+                        ImageUrl: 'assets/icons/menu/icon_menu-15.png',
+                        OnMenuClick: () {
+                          Get.to(() => HurufHome());
+                        },
+                        width: 100,
+                        height: 100)),
+                Flexible(
+                  child: MenuItem(
+                      ImageUrl: 'assets/icons/menu/icon_menu-16.png',
+                      OnMenuClick: () {
+                        Get.to(() => AngkaHome());
+                      },
+                      width: 100,
+                      height: 100),
+                ),
+                Flexible(
+                    child: MenuItem(
+                        ImageUrl: 'assets/icons/menu/icon_menu-17.png',
+                        OnMenuClick: () {
+                          Get.to(() => BendaHome());
+                        },
+                        width: 100,
+                        height: 100)),
+              ]),
+          Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                Flexible(
+                    child: MenuItem(
+                        ImageUrl: 'assets/icons/menu/icon_menu-18.png',
+                        OnMenuClick: () {
+                          Get.to(() => BentukHome());
+                        },
+                        width: 100,
+                        height: 100)),
+                Flexible(
+                    child: MenuItem(
+                        ImageUrl: 'assets/icons/menu/icon_menu-19.png',
+                        OnMenuClick: () {
+                          Get.to(() => BuahHome());
+                        },
+                        width: 100,
+                        height: 100)),
+                Flexible(
+                    child: MenuItem(
+                        ImageUrl: 'assets/icons/menu/icon_menu-20.png',
+                        OnMenuClick: () {
+                          Get.to(() => SayurHome());
+                        },
+                        width: 100,
+                        height: 100)),
+              ]),
+          Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                Flexible(
+                    child: MenuItem(
+                        ImageUrl: 'assets/icons/menu/icon_menu-21.png',
+                        OnMenuClick: () {
+                          Get.to(() => WarnaHome());
+                        },
+                        width: 100,
+                        height: 100)),
+                Flexible(
+                  child: MenuItem(
+                      ImageUrl: 'assets/icons/menu/icon_menu-22.png',
+                      OnMenuClick: () {
+                        Get.to(() => TanamanHome());
+                      },
+                      width: 100,
+                      height: 100),
+                ),
+                Flexible(
+                    child: MenuItem(
+                        ImageUrl: 'assets/icons/menu/icon_menu-23.png',
+                        OnMenuClick: () {
+                          Get.to(() => HewanHome());
+                        },
+                        width: 100,
+                        height: 100))
+              ]),
+          Row(mainAxisAlignment: MainAxisAlignment.start, children: [
+            Flexible(
+                child: MenuItem(
+                    ImageUrl: 'assets/icons/menu/icon_menu-24.png',
+                    OnMenuClick: () {
+                      Get.to(() => ProfesiHome());
+                    },
+                    width: 100,
+                    height: 100)),
+            Flexible(child: Container()),
+            Flexible(child: Container())
+          ]),
+        ],
+      ),
+    );
+  }
+}
