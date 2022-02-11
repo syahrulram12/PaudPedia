@@ -29,8 +29,8 @@ class _AngkaHomeState extends State<AngkaHome> {
     setState(() {
       if (act == 'tambah') {
         page = page + 1;
-        if (page > 5) {
-          page = 5;
+        if (page > 2) {
+          page = 2;
         }
       } else {
         page = page - 1;

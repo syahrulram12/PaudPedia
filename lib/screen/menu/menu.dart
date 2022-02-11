@@ -12,17 +12,17 @@ class HomeMenu extends StatefulWidget {
 class _HomeMenuState extends State<HomeMenu> {
   AudioCache audioCache = AudioCache();
   AudioPlayer audioPlayer = AudioPlayer();
-  bool menu = false;
+  // bool menu = false;
 
-  ChangeMenu(i) {
-    setState(() {
-      if (i == 'belajar') {
-        menu = true;
-      } else {
-        menu = false;
-      }
-    });
-  }
+  // ChangeMenu(i) {
+  //   setState(() {
+  //     if (i == 'belajar') {
+  //       menu = true;
+  //     } else {
+  //       menu = false;
+  //     }
+  //   });
+  // }
 
   @override
   void initState() {
@@ -70,22 +70,22 @@ class _HomeMenuState extends State<HomeMenu> {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
-                              Container(
-                                child: GestureDetector(
-                                  onTap: () {
-                                    ChangeMenu('belajar');
-                                  },
-                                  child: menu
-                                      ? Image.asset(
-                                          'assets/icons/menu/icon_menu-01.png',
-                                          fit: BoxFit.fill,
-                                        )
-                                      : Image.asset(
-                                          'assets/icons/menu/icon_menu-13.png',
-                                          fit: BoxFit.fill,
-                                        ),
-                                ),
-                              ),
+                              // Container(
+                              //   child: GestureDetector(
+                              //     onTap: () {
+                              //       ChangeMenu('belajar');
+                              //     },
+                              //     child: menu
+                              //         ? Image.asset(
+                              //             'assets/icons/menu/icon_menu-01.png',
+                              //             fit: BoxFit.fill,
+                              //           )
+                              //         : Image.asset(
+                              //             'assets/icons/menu/icon_menu-13.png',
+                              //             fit: BoxFit.fill,
+                              //           ),
+                              //   ),
+                              // ),
                               Container(
                                 child: GestureDetector(
                                   onTap: () {
