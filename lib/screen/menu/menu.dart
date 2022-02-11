@@ -12,7 +12,7 @@ class HomeMenu extends StatefulWidget {
 class _HomeMenuState extends State<HomeMenu> {
   AudioCache audioCache = AudioCache();
   AudioPlayer audioPlayer = AudioPlayer();
-  // bool menu = false;
+  bool menu = false;
 
   // ChangeMenu(i) {
   //   setState(() {
@@ -89,7 +89,7 @@ class _HomeMenuState extends State<HomeMenu> {
                               Container(
                                 child: GestureDetector(
                                   onTap: () {
-                                    ChangeMenu('bermain');
+                                    // ChangeMenu('bermain');
                                   },
                                   child: menu
                                       ? Image.asset(
@@ -119,7 +119,7 @@ class _HomeMenuState extends State<HomeMenu> {
                           child: Padding(
                             padding: EdgeInsets.symmetric(
                                 horizontal: 10, vertical: 10),
-                            child: menu ? MenuBelajar() : MenuBermain(),
+                            child: MenuBelajar(),
                           ))
                     ],
                   ),
