@@ -64,7 +64,7 @@ class _SayurHomeState extends State<SayurHome> {
                               child: GestureDetector(
                                   child: Image.asset(
                                     'assets/icons/tab_bar_auto.png',
-                                  )),
+                                    fit: BoxFit.cover)),
                             ),
                           ),
                         ]),

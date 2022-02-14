@@ -63,8 +63,8 @@ class _BentukHomeState extends State<BentukHome> {
                         child: ClipRRect(
                           child: GestureDetector(
                               child: Image.asset(
-                            'assets/icons/tab_bar_auto.png',
-                          )),
+                                    'assets/icons/tab_bar_auto.png',
+                                    fit: BoxFit.cover)),
                         ),
                       ),
                     ]),

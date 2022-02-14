@@ -132,8 +132,8 @@ class _WarnaHomeState extends State<WarnaHome> {
                         child: ClipRRect(
                           child: GestureDetector(
                               child: Image.asset(
-                            'assets/icons/tab_bar_auto.png',
-                          )),
+                                  'assets/icons/tab_bar_auto.png',
+                                  fit: BoxFit.cover)),
                         ),
                       ),
                     ]),

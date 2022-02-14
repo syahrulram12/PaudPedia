@@ -104,9 +104,8 @@ class _HurufHomeState extends State<HurufHome> {
                       child: GestureDetector(
                           onTap: () {},
                           child: Image.asset(
-                            'assets/icons/tab_bar_auto.png',
-                            fit: BoxFit.contain,
-                          )),
+                                    'assets/icons/tab_bar_auto.png',
+                                    fit: BoxFit.cover)),
                     ),
                   ],
                 )),

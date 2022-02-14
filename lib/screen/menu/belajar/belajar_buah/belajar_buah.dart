@@ -62,7 +62,7 @@ class _BuahHomeState extends State<BuahHome> {
                               child: GestureDetector(
                                   child: Image.asset(
                                     'assets/icons/tab_bar_auto.png',
-                                  )),
+                                    fit: BoxFit.cover)),
                             ),
                           ),
                         ]),
@@ -101,8 +101,8 @@ class _BuahItemState extends State<BuahItem> {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-      width: 90,
-      height: 90,
+      width: 80,
+      height: 80,
       child: ClipRRect(
         borderRadius: BorderRadius.circular(13),
         child: GestureDetector(

@@ -123,9 +123,8 @@ class _AngkaHomeState extends State<AngkaHome> {
                         child: ClipRRect(
                           child: GestureDetector(
                               child: Image.asset(
-                            'assets/icons/tab_bar_auto.png',
-                            width: 125,
-                          )),
+                                    'assets/icons/tab_bar_auto.png',
+                                    fit: BoxFit.cover)),
                         ),
                       ),
                     ]),
