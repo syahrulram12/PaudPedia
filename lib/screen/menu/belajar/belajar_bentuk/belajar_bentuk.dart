@@ -16,12 +16,21 @@ class BentukHome extends StatefulWidget {
 
 class _BentukHomeState extends State<BentukHome> {
   AudioCache SfxBentuk = AudioCache();
-
+  AudioPlayer audio = AudioPlayer();
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
+    SfxBentuk = AudioCache(fixedPlayer: audio);
     SfxBentuk.play('audio/BELAJAR/bentuk/belajar-mengenal-bentuk.mp3');
+  }
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+    audio.release();
+    audio.dispose();
   }
 
   @override
@@ -63,8 +72,8 @@ class _BentukHomeState extends State<BentukHome> {
                         child: ClipRRect(
                           child: GestureDetector(
                               child: Image.asset(
-                                    'assets/icons/tab_bar_auto.png',
-                                    fit: BoxFit.cover)),
+                                  'assets/icons/tab_bar_auto.png',
+                                  fit: BoxFit.cover)),
                         ),
                       ),
                     ]),

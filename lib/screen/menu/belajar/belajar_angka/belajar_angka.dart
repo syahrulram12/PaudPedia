@@ -16,13 +16,23 @@ class AngkaHome extends StatefulWidget {
 
 class _AngkaHomeState extends State<AngkaHome> {
   AudioCache SfxAngka = AudioCache();
+  AudioPlayer audio = AudioPlayer();
   int page = 1;
 
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
+    SfxAngka = AudioCache(fixedPlayer: audio);
     SfxAngka.play('audio/BELAJAR/angka/belajar-angka.mp3');
+  }
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+    audio.release();
+    audio.dispose();
   }
 
   ChangePage(act) {
@@ -123,8 +133,8 @@ class _AngkaHomeState extends State<AngkaHome> {
                         child: ClipRRect(
                           child: GestureDetector(
                               child: Image.asset(
-                                    'assets/icons/tab_bar_auto.png',
-                                    fit: BoxFit.cover)),
+                                  'assets/icons/tab_bar_auto.png',
+                                  fit: BoxFit.cover)),
                         ),
                       ),
                     ]),
@@ -148,7 +158,11 @@ class AngkaItem extends StatefulWidget {
   final String audioUrl;
   final Function()? OnMenuClick;
   const AngkaItem(
-      {Key? key, required this.Imageurl, this.OnMenuClick, required this.audioUrl}) : super(key: key);
+      {Key? key,
+      required this.Imageurl,
+      this.OnMenuClick,
+      required this.audioUrl})
+      : super(key: key);
 
   @override
   _AngkaItemState createState() => _AngkaItemState();
