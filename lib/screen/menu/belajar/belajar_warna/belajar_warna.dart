@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:audioplayers/audioplayers.dart';
@@ -138,12 +140,37 @@ class _WarnaHomeState extends State<WarnaHome> {
                       ),
                     ]),
               ),
-              SizedBox(height: height / 8),
+              SizedBox(height: height / 6 / 2),
               Container(
+                  color: Colors.blue,
+                  height: height / 2,
                   child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 2),
-                child: Page(),
-              ))
+                      padding: EdgeInsets.symmetric(horizontal: 0),
+                      child: Center(
+                        child: Row(
+                          children: [
+                            Container(
+                                color: Colors.red,
+                                width: width / 7,
+                                child: Image.asset(
+                                    'assets/icons/tab_bar_kiri.png')),
+                            Container(
+                              color: Colors.green,
+                              margin: EdgeInsets.symmetric(vertical: 50),
+                              width: width / 1.2,
+                              child: Center(
+                                child: Page(),
+                              ),
+                            ),
+                            Container(
+                              color: Colors.white,
+                              width: width / 7,
+                              child:
+                                  Image.asset('assets/icons/tab_bar_kanan.png'),
+                            ),
+                          ],
+                        ),
+                      )))
             ],
           ),
         ),
@@ -174,23 +201,24 @@ class WarnaItem extends StatefulWidget {
 class _WarnaItemState extends State<WarnaItem> {
   AudioCache SfxItem = AudioCache();
   AudioPlayer audioPlayer = AudioPlayer();
+  PlayerState status = PlayerState.PAUSED;
+  bool play = false;
 
   playAudio(audio) {
-    audioPlayer.stop();
-    SfxItem = AudioCache(fixedPlayer: audioPlayer);
-    SfxItem.play('audio/BELAJAR/warna/' + audio);
+    setState(() {
+      play = true;
+      SfxItem.play('audio/BELAJAR/warna/' + audio);
+      ChangeImage();
+    });
   }
 
-  // change(image) {
-  //   String url = 'assets/icons/' + widget.Imageurl + '-smile.png';
-  //   setState(() {
-  //     if (PlayerState == PlayerState.PLAYING) {
-  //       url = 'assets/icons/' + image + '.png';
-  //     } else {
-  //       url = 'assets/icons/' + image + '-smile.png';
-  //     }
-  //   });
-  // }
+  Future<void> ChangeImage() async {
+    Timer(Duration(seconds: 1), () {
+      setState(() {
+        play = false;
+      });
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -207,10 +235,17 @@ class _WarnaItemState extends State<WarnaItem> {
                   onTap: () {
                     playAudio(widget.audioUrl);
                   },
-                  child: Image.asset(
-                    'assets/icons/icon_cake/' + widget.Imageurl + '-smile.png',
-                    fit: BoxFit.contain,
-                  ),
+                  child: play
+                      ? Image.asset(
+                          'assets/icons/icon_cake/' + widget.Imageurl + '.png',
+                          fit: BoxFit.contain,
+                        )
+                      : Image.asset(
+                          'assets/icons/icon_cake/' +
+                              widget.Imageurl +
+                              '-smile.png',
+                          fit: BoxFit.contain,
+                        ),
                 ),
               ),
             )));

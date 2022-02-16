@@ -12,7 +12,7 @@ class HomeMenu extends StatefulWidget {
 class _HomeMenuState extends State<HomeMenu> {
   AudioCache audioCache = AudioCache();
   AudioPlayer audioPlayer = AudioPlayer();
-  bool menu = false;
+  bool menu = true;
 
   // ChangeMenu(i) {
   //   setState(() {
