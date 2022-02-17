@@ -224,7 +224,7 @@ class _WarnaItemState extends State<WarnaItem> {
                       Container(
                         child: play
                             ? Image.asset(
-                                'assets/icons/icon_cake/icon-cake-' +
+                                'assets/icons/icon_cake/icon_cake-' +
                                     widget.number +
                                     '-' +
                                     widget.Imageurl +
