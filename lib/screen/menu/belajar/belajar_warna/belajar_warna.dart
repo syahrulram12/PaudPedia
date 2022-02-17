@@ -103,34 +103,6 @@ class _WarnaHomeState extends State<WarnaHome> {
                       ),
                       Container(
                         width: width / 5,
-                        decoration: BoxDecoration(
-                            image: DecorationImage(
-                                image: AssetImage(
-                                    'assets/icons/tab_bar_right_left.png'),
-                                fit: BoxFit.contain)),
-                        child: Row(
-                          children: [
-                            Flexible(
-                              child: Container(
-                                child: GestureDetector(
-                                  onTap: () {
-                                    ChangePage('kurang');
-                                  },
-                                ),
-                              ),
-                            ),
-                            Flexible(child: Container(
-                              child: GestureDetector(
-                                onTap: () {
-                                  ChangePage('tambah');
-                                },
-                              ),
-                            ))
-                          ],
-                        ),
-                      ),
-                      Container(
-                        width: width / 5,
                         child: ClipRRect(
                           child: GestureDetector(
                               child: Image.asset(
@@ -150,24 +122,28 @@ class _WarnaHomeState extends State<WarnaHome> {
                         child: Row(
                           children: [
                             Container(
-                                color: Colors.red,
-                                width: width / 7,
-                                child: Image.asset(
-                                    'assets/icons/tab_bar_kiri.png')),
-                            Container(
-                              color: Colors.green,
-                              margin: EdgeInsets.symmetric(vertical: 50),
-                              width: width / 1.2,
-                              child: Center(
-                                child: Page(),
-                              ),
-                            ),
-                            Container(
-                              color: Colors.white,
                               width: width / 7,
-                              child:
-                                  Image.asset('assets/icons/tab_bar_kanan.png'),
+                              child: GestureDetector(
+                                  onTap: () {
+                                    ChangePage('kurang');
+                                  },
+                                  child: Image.asset(
+                                      'assets/icons/tab_bar_kiri.png')),
                             ),
+                            Container(
+                              margin: EdgeInsets.symmetric(vertical: 30),
+                              width: width / 1.4,
+                              child: Page(),
+                            ),
+                            Container(
+                                width: width / 7,
+                                child: GestureDetector(
+                                  onTap: () {
+                                    ChangePage('tambah');
+                                  },
+                                  child: Image.asset(
+                                      'assets/icons/tab_bar_kanan.png'),
+                                )),
                           ],
                         ),
                       )))
@@ -184,10 +160,12 @@ class WarnaItem extends StatefulWidget {
   final double width;
   final double height;
   final String audioUrl;
+  final String number;
   final Function()? OnMenuClick;
   const WarnaItem(
       {Key? key,
       required this.Imageurl,
+      required this.number,
       this.OnMenuClick,
       required this.width,
       required this.height,
@@ -232,21 +210,37 @@ class _WarnaItemState extends State<WarnaItem> {
               padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
               child: ClipRRect(
                 child: GestureDetector(
-                  onTap: () {
-                    playAudio(widget.audioUrl);
-                  },
-                  child: play
-                      ? Image.asset(
-                          'assets/icons/icon_cake/' + widget.Imageurl + '.png',
-                          fit: BoxFit.contain,
-                        )
-                      : Image.asset(
-                          'assets/icons/icon_cake/' +
+                    onTap: () {
+                      playAudio(widget.audioUrl);
+                    },
+                    child: Column(children: [
+                      Container(
+                          color: Colors.red,
+                          height: 30,
+                          width: 100,
+                          child: Image.asset('assets/icons/tab_bar_' +
                               widget.Imageurl +
-                              '-smile.png',
-                          fit: BoxFit.contain,
-                        ),
-                ),
+                              '.png')),
+                      Container(
+                        child: play
+                            ? Image.asset(
+                                'assets/icons/icon_cake/icon-cake-' +
+                                    widget.number +
+                                    '-' +
+                                    widget.Imageurl +
+                                    '.png',
+                                fit: BoxFit.cover,
+                              )
+                            : Image.asset(
+                                'assets/icons/icon_cake/icon_cake-' +
+                                    widget.number +
+                                    '-' +
+                                    widget.Imageurl +
+                                    '-smile.png',
+                                fit: BoxFit.cover,
+                              ),
+                      ),
+                    ])),
               ),
             )));
     ;
