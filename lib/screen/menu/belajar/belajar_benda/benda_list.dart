@@ -35,8 +35,8 @@ class Page1 extends StatelessWidget {
           children: [
             Flexible(
                 child: BendaItem(
-              Imageurl: 'icon_object/bedroom/icon_object_bedroom-01.png',
-              audioUrl: '11.mp3',
+              Imageurl: 'icon_object/bedroom/icon_object_bedroom-10.png',
+              audioUrl: 'teropong-bintang.mp3',
             )),
             Flexible(
                 child: BendaItem(
@@ -86,17 +86,6 @@ class Page1 extends StatelessWidget {
               Imageurl: 'icon_object/bedroom/icon_object_bedroom-09.png',
               audioUrl: 'keranjang-bola.mp3',
             )),
-          ],
-        ),
-        Row(
-          children: [
-            Flexible(child: Container()),
-            Flexible(
-                child: BendaItem(
-              Imageurl: 'icon_object/bedroom/icon_object_bedroom-10.png',
-              audioUrl: 'teropong-bintang.mp3',
-            )),
-            Flexible(child: Container())
           ],
         ),
       ],
@@ -186,17 +175,6 @@ class Page2 extends StatelessWidget {
             )),
           ],
         ),
-        Row(
-          children: [
-            Flexible(child: Container()),
-            Flexible(
-                child: BendaItem(
-              Imageurl: 'icon_object/bathroom/icon_object_bathroom-10.png',
-              audioUrl: 'laci.mp3',
-            )),
-            Flexible(child: Container())
-          ],
-        ),
       ],
     ));
   }
@@ -278,20 +256,9 @@ class Page3 extends StatelessWidget {
             )),
             Flexible(
                 child: BendaItem(
-              Imageurl: 'icon_object/kitchen/icon_object_kitchen-09.png',
-              audioUrl: '.mp3',
-            )),
-          ],
-        ),
-        Row(
-          children: [
-            Flexible(child: Container()),
-            Flexible(
-                child: BendaItem(
               Imageurl: 'icon_object/kitchen/icon_object_kitchen-10.png',
               audioUrl: 'sapu.mp3',
             )),
-            Flexible(child: Container())
           ],
         ),
       ],

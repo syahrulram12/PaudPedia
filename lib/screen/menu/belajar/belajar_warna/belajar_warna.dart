@@ -215,7 +215,6 @@ class _WarnaItemState extends State<WarnaItem> {
                     },
                     child: Column(children: [
                       Container(
-                          color: Colors.red,
                           height: 30,
                           width: 100,
                           child: Image.asset('assets/icons/tab_bar_' +
