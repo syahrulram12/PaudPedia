@@ -4,6 +4,7 @@ import 'package:audioplayers/audioplayers.dart';
 import 'package:get/get.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:paudpedia_kemendikbud/styles/color.dart';
+
 import 'package:paudpedia_kemendikbud/screen/menu/belajar/belajar_hewan/hewan_list.dart';
 
 class HewanHome extends StatefulWidget {
@@ -35,16 +36,18 @@ class _HewanHomeState extends State<HewanHome> {
 
   ChangePage(act) {
     setState(() {
-      if (act == 'tambah') {
-        page = page + 1;
-        if (page > 4) {
+      switch (act) {
+        case 2:
+          page = 2;
+          break;
+        case 3:
+          page = 3;
+          break;
+        case 4:
           page = 4;
-        }
-      } else {
-        page = page - 1;
-        if (page < 1) {
+          break;
+        default:
           page = 1;
-        }
       }
     });
   }
@@ -143,12 +146,109 @@ class _HewanHomeState extends State<HewanHome> {
                 height: height / 9,
               ),
               Container(
+                width: 280,
+                height: 400,
                 margin: EdgeInsets.symmetric(horizontal: (width / 8) / 2),
                 decoration: BoxDecoration(
                     color: Color.fromRGBO(37, 150, 190, 1),
-                    border: Border.all(width: 15, color: Colors.brown.shade500),
+                    border: Border.all(width: 10, color: Colors.brown.shade500),
                     borderRadius: BorderRadius.circular(50)),
-                child: Page(),
+                child: Stack(
+                  alignment: Alignment.topLeft,
+                  clipBehavior: Clip.none,
+                  children: [
+                    Positioned(
+                        left: -30,
+                        child: Container(
+                          width: 150,
+                          height: 400,
+                          child: Align(
+                            alignment: Alignment.center,
+                            child: Container(
+                                height: 360,
+                                width: 200,
+                                child: Column(
+                                  children: [
+                                    Padding(
+                                      padding: EdgeInsets.all(15),
+                                      child: Container(
+                                        width: 200,
+                                        height: 50,
+                                        child: GestureDetector(
+                                            onTap: () {
+                                              ChangePage(1);
+                                            },
+                                            child: Image.asset(
+                                                'assets/icons/tab_bar_name_object-01.png',
+                                                fit: BoxFit.cover)),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsets.all(15),
+                                      child: Container(
+                                          width: 200,
+                                          height: 50,
+                                          child: GestureDetector(
+                                            onTap: () {
+                                              ChangePage(2);
+                                            },
+                                            child: Image.asset(
+                                              'assets/icons/tab_bar_name_object-02.png',
+                                              fit: BoxFit.cover,
+                                            ),
+                                          )),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsets.all(15),
+                                      child: Container(
+                                          width: 150,
+                                          height: 50,
+                                          child: GestureDetector(
+                                            onTap: () {
+                                              ChangePage(3);
+                                            },
+                                            child: Image.asset(
+                                                'assets/icons/tab_bar_name_object-03.png',
+                                                fit: BoxFit.cover),
+                                          )),
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsets.all(15),
+                                      child: Container(
+                                          width: 150,
+                                          height: 50,
+                                          child: GestureDetector(
+                                            onTap: () {
+                                              ChangePage(4);
+                                            },
+                                            child: Image.asset(
+                                              'assets/icons/tab_bar_name_object-04.png',
+                                              fit: BoxFit.cover,
+                                            ),
+                                          )),
+                                    ),
+                                  ],
+                                )),
+                          ),
+                        )),
+                    Positioned(
+                        top: -25,
+                        right: -7,
+                        child: Container(
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(25),
+                                boxShadow: [
+                                  BoxShadow(
+                                      color: Colors.black.withOpacity(0.1),
+                                      spreadRadius: -2,
+                                      blurRadius: 1,
+                                      offset: Offset(2, 0))
+                                ]),
+                            width: 200,
+                            height: 430,
+                            child: Page()))
+                  ],
+                ),
               )
             ],
           ),
@@ -186,26 +286,20 @@ class _HewanItemState extends State<HewanItem> {
   @override
   Widget build(BuildContext context) {
     return Center(
-        child: Container(
-            margin: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-            decoration: BoxDecoration(
-              color: Colors.yellow.shade400,
-              borderRadius: BorderRadius.circular(13),
-            ),
-            child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-              child: ClipRRect(
-                child: GestureDetector(
-                  onTap: () {
-                    PlayAudio(widget.audioUrl);
-                  },
-                  child: Image.asset(
-                    'assets/icons/' + widget.Imageurl + '',
-                    fit: BoxFit.contain,
-                  ),
-                ),
-              ),
-            )));
+        child: Padding(
+      padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+      child: ClipRRect(
+        child: GestureDetector(
+          onTap: () {
+            PlayAudio(widget.audioUrl);
+          },
+          child: Image.asset(
+            'assets/icons/' + widget.Imageurl + '',
+            fit: BoxFit.contain,
+          ),
+        ),
+      ),
+    ));
     ;
   }
 }

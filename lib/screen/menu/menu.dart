@@ -93,7 +93,7 @@ class _HomeMenuState extends State<HomeMenu> {
                                   },
                                   child: menu
                                       ? Image.asset(
-                                          'assets/icons/menu/icon_menu-02.png',
+                                          'assets/icons/menu/icon_menu-14.png',
                                           fit: BoxFit.contain,
                                         )
                                       : Image.asset(
