@@ -28,24 +28,16 @@ class _BendaHomeState extends State<BendaHome> {
 
   ChangePage(act) {
     setState(() {
-      if (act == 'tambah') {
-        page = page + 1;
-        if (page > 3) {
+      switch (act) {
+        case 2:
+          page = 2;
+          break;
+        case 3:
           page = 3;
-        }
-      } else {
-        page = page - 1;
-        if (page < 1) {
+          break;
+        default:
           page = 1;
-        }
       }
-      // if (page == 1) {
-      //   await PlayAudio('kamar-tidur.mp3');
-      // } else if (page == 2) {
-      //   await PlayAudio('kamar-mandi.mp3');
-      // } else {
-      //   await PlayAudio('dapur.mp3');
-      // }
     });
   }
 
@@ -95,34 +87,6 @@ class _BendaHomeState extends State<BendaHome> {
                         ),
                         Container(
                           width: width / 5,
-                          decoration: BoxDecoration(
-                              image: DecorationImage(
-                                  image: AssetImage(
-                                      'assets/icons/tab_bar_right_left.png'),
-                                  fit: BoxFit.contain)),
-                          child: Row(
-                            children: [
-                              Flexible(
-                                child: Container(
-                                  child: GestureDetector(
-                                    onTap: () {
-                                      ChangePage('kurang');
-                                    },
-                                  ),
-                                ),
-                              ),
-                              Flexible(child: Container(
-                                child: GestureDetector(
-                                  onTap: () {
-                                    ChangePage('tambah');
-                                  },
-                                ),
-                              ))
-                            ],
-                          ),
-                        ),
-                        Container(
-                          width: width / 5,
                           child: ClipRRect(
                             child: GestureDetector(
                                 child: Image.asset(
@@ -136,13 +100,141 @@ class _BendaHomeState extends State<BendaHome> {
                   height: height / 8,
                 ),
                 Container(
+                  width: width / 1.2,
+                  height: height / 1.7,
                   margin: EdgeInsets.symmetric(horizontal: (width / 8) / 2),
                   decoration: BoxDecoration(
                       color: Color.fromRGBO(37, 150, 190, 1),
                       border:
                           Border.all(width: 15, color: Colors.brown.shade500),
                       borderRadius: BorderRadius.circular(50)),
-                  child: Page(),
+                  child: Stack(
+                    alignment: Alignment.topLeft,
+                    clipBehavior: Clip.none,
+                    children: [
+                      Positioned(
+                          left: -40,
+                          child: Container(
+                            width: 200,
+                            child: Center(
+                              child: Container(
+                                  height: 400,
+                                  width: 300,
+                                  margin: EdgeInsets.only(top: 60),
+                                  child: Column(
+                                    children: [
+                                      Padding(
+                                        padding: EdgeInsets.all(2),
+                                        child: ClipRRect(
+                                          borderRadius:
+                                              BorderRadius.circular(30),
+                                          child: Container(
+                                            margin: EdgeInsets.only(
+                                                bottom: 2, left: 2),
+                                            decoration:
+                                                BoxDecoration(boxShadow: [
+                                              BoxShadow(
+                                                color: Colors.black
+                                                    .withOpacity(0.2),
+                                                spreadRadius: 50,
+                                                blurRadius: 1,
+                                                offset: Offset(20, 30),
+                                              )
+                                            ]),
+                                            child: GestureDetector(
+                                                onTap: () {
+                                                  ChangePage(1);
+                                                },
+                                                child: Image.asset(
+                                                    'assets/icons/tab_bar_name_object-01.png',
+                                                    fit: BoxFit.contain)),
+                                          ),
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 40,
+                                      ),
+                                      Padding(
+                                          padding: EdgeInsets.all(2),
+                                          child: ClipRRect(
+                                            borderRadius:
+                                                BorderRadius.circular(30),
+                                            child: Container(
+                                                margin: EdgeInsets.only(
+                                                    bottom: 2, left: 2),
+                                                decoration:
+                                                    BoxDecoration(boxShadow: [
+                                                  BoxShadow(
+                                                    color: Colors.black
+                                                        .withOpacity(0.3),
+                                                    spreadRadius: 1,
+                                                    offset: Offset(0, 0),
+                                                  )
+                                                ]),
+                                                child: GestureDetector(
+                                                  onTap: () {
+                                                    ChangePage(2);
+                                                  },
+                                                  child: Image.asset(
+                                                    'assets/icons/tab_bar_name_object-02.png',
+                                                    fit: BoxFit.contain,
+                                                  ),
+                                                )),
+                                          )),
+                                      SizedBox(
+                                        height: 40,
+                                      ),
+                                      Padding(
+                                          padding: EdgeInsets.all(2),
+                                          child: ClipRRect(
+                                            borderRadius:
+                                                BorderRadius.circular(30),
+                                            child: Container(
+                                                margin: EdgeInsets.only(
+                                                    bottom: 2, left: 2),
+                                                decoration:
+                                                    BoxDecoration(boxShadow: [
+                                                  BoxShadow(
+                                                    color: Colors.black
+                                                        .withOpacity(0.3),
+                                                    spreadRadius: 1,
+                                                    offset: Offset(0, 0),
+                                                  )
+                                                ]),
+                                                child: GestureDetector(
+                                                  onTap: () {
+                                                    ChangePage(3);
+                                                  },
+                                                  child: Image.asset(
+                                                    'assets/icons/tab_bar_name_object-03.png',
+                                                    fit: BoxFit.contain,
+                                                  ),
+                                                )),
+                                          )),
+                                    ],
+                                  )),
+                            ),
+                          )),
+                      Positioned(
+                        top: -25,
+                        right: -7,
+                        child: Container(
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(25),
+                              boxShadow: [
+                                BoxShadow(
+                                    color: Colors.black.withOpacity(0.1),
+                                    spreadRadius: -2,
+                                    blurRadius: 1,
+                                    offset: Offset(2, 0))
+                              ]),
+                          width: 200,
+                          height: 500,
+                          child: Page(),
+                        ),
+                      )
+                    ],
+                  ),
                 )
               ],
             )),
@@ -179,24 +271,19 @@ class _BendaItemState extends State<BendaItem> {
   @override
   Widget build(BuildContext context) {
     return Center(
-        child: Container(
-            margin: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(13),
-            ),
-            child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-              child: ClipRRect(
-                child: GestureDetector(
-                  onTap: () {
-                    PlayAudio(widget.audioUrl);
-                  },
-                  child: Image.asset(
-                    'assets/icons/' + widget.Imageurl + '',
-                    fit: BoxFit.contain,
-                  ),
-                ),
-              ),
-            )));
+        child: Padding(
+      padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+      child: ClipRRect(
+        child: GestureDetector(
+          onTap: () {
+            PlayAudio(widget.audioUrl);
+          },
+          child: Image.asset(
+            'assets/icons/' + widget.Imageurl + '',
+            fit: BoxFit.contain,
+          ),
+        ),
+      ),
+    ));
   }
 }

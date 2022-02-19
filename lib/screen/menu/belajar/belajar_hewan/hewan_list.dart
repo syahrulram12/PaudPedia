@@ -17,7 +17,7 @@ class Page1 extends StatelessWidget {
         ClipRRect(
           borderRadius: BorderRadius.circular(25),
           child: Container(
-            width: 200,
+            width: 300,
             height: 25,
             color: Colors.indigo.shade900,
             child: Center(
@@ -32,8 +32,8 @@ class Page1 extends StatelessWidget {
         ClipPath(
           clipper: BackgroundClipper(),
           child: Container(
-            width: 170,
-            height: 400,
+            width: 200,
+            height: 450,
             decoration: BoxDecoration(
               color: Colors.white,
             ),
@@ -134,7 +134,7 @@ class Page2 extends StatelessWidget {
         ClipRRect(
           borderRadius: BorderRadius.circular(25),
           child: Container(
-            width: 200,
+            width: 300,
             height: 25,
             color: Colors.indigo.shade900,
             child: Center(
@@ -149,8 +149,8 @@ class Page2 extends StatelessWidget {
         ClipPath(
           clipper: BackgroundClipper(),
           child: Container(
-            width: 170,
-            height: 400,
+            width: 200,
+            height: 450,
             decoration: BoxDecoration(
               color: Colors.white,
             ),
@@ -244,7 +244,7 @@ class Page3 extends StatelessWidget {
         ClipRRect(
           borderRadius: BorderRadius.circular(25),
           child: Container(
-            width: 200,
+            width: 300,
             height: 25,
             color: Colors.indigo.shade900,
             child: Center(
@@ -259,8 +259,8 @@ class Page3 extends StatelessWidget {
         ClipPath(
           clipper: BackgroundClipper(),
           child: Container(
-            width: 170,
-            height: 400,
+            width: 200,
+            height: 450,
             decoration: BoxDecoration(
               color: Colors.white,
             ),
@@ -347,7 +347,7 @@ class Page4 extends StatelessWidget {
         ClipRRect(
           borderRadius: BorderRadius.circular(25),
           child: Container(
-            width: 200,
+            width: 300,
             height: 25,
             color: Colors.indigo.shade900,
             child: Center(
@@ -362,8 +362,8 @@ class Page4 extends StatelessWidget {
         ClipPath(
           clipper: BackgroundClipper(),
           child: Container(
-            width: 170,
-            height: 400,
+            width: 200,
+            height: 450,
             decoration: BoxDecoration(
               color: Colors.white,
             ),
