@@ -220,7 +220,7 @@ class _BendaHomeState extends State<BendaHome> {
                         right: -7,
                         child: Container(
                           decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(25),
+                              borderRadius: BorderRadius.circular(70),
                               boxShadow: [
                                 BoxShadow(
                                     color: Colors.black.withOpacity(0.1),
@@ -228,8 +228,8 @@ class _BendaHomeState extends State<BendaHome> {
                                     blurRadius: 1,
                                     offset: Offset(2, 0))
                               ]),
-                          width: 200,
-                          height: 500,
+                          width: 230,
+                          height: height / 1.55,
                           child: Page(),
                         ),
                       )
