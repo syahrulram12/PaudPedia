@@ -35,16 +35,18 @@ class _TanamanHomeState extends State<TanamanHome> {
 
   ChangePage(act) {
     setState(() {
-      if (act == 'tambah') {
-        page = page + 1;
-        if (page > 4) {
+      switch (act) {
+        case 2:
+          page = 2;
+          break;
+        case 3:
+          page = 3;
+          break;
+        case 4:
           page = 4;
-        }
-      } else {
-        page = page - 1;
-        if (page < 1) {
+          break;
+        default:
           page = 1;
-        }
       }
     });
   }
@@ -102,34 +104,6 @@ class _TanamanHomeState extends State<TanamanHome> {
                       ),
                       Container(
                         width: width / 5,
-                        decoration: BoxDecoration(
-                            image: DecorationImage(
-                                image: AssetImage(
-                                    'assets/icons/tab_bar_right_left.png'),
-                                fit: BoxFit.contain)),
-                        child: Row(
-                          children: [
-                            Flexible(
-                              child: Container(
-                                child: GestureDetector(
-                                  onTap: () {
-                                    ChangePage('kurang');
-                                  },
-                                ),
-                              ),
-                            ),
-                            Flexible(child: Container(
-                              child: GestureDetector(
-                                onTap: () {
-                                  ChangePage('tambah');
-                                },
-                              ),
-                            ))
-                          ],
-                        ),
-                      ),
-                      Container(
-                        width: width / 5,
                         child: ClipRRect(
                           child: GestureDetector(
                               child: Image.asset(
@@ -140,15 +114,168 @@ class _TanamanHomeState extends State<TanamanHome> {
                     ]),
               ),
               SizedBox(
-                height: height / 8,
+                height: height / 9,
               ),
               Container(
+                width: width / 1.2,
+                height: height / 1.7,
                 margin: EdgeInsets.symmetric(horizontal: (width / 8) / 2),
                 decoration: BoxDecoration(
                     color: Color.fromRGBO(37, 150, 190, 1),
-                    border: Border.all(width: 15, color: Colors.brown.shade500),
+                    border: Border.all(width: 10, color: Colors.brown.shade500),
                     borderRadius: BorderRadius.circular(50)),
-                child: Page(),
+                child: Stack(
+                  alignment: Alignment.topLeft,
+                  clipBehavior: Clip.none,
+                  children: [
+                    Positioned(
+                        left: -30,
+                        child: Container(
+                          width: 200,
+                          child: Center(
+                            child: Container(
+                                height: 400,
+                                width: 300,
+                                margin: EdgeInsets.only(top: 40),
+                                child: Column(
+                                  children: [
+                                    Padding(
+                                      padding: EdgeInsets.all(2),
+                                      child: ClipRRect(
+                                        borderRadius: BorderRadius.circular(30),
+                                        child: Container(
+                                          margin: EdgeInsets.only(
+                                              bottom: 2, left: 2),
+                                          decoration: BoxDecoration(boxShadow: [
+                                            BoxShadow(
+                                              color:
+                                                  Colors.black.withOpacity(0.2),
+                                              spreadRadius: 50,
+                                              blurRadius: 1,
+                                              offset: Offset(20, 30),
+                                            )
+                                          ]),
+                                          child: GestureDetector(
+                                              onTap: () {
+                                                ChangePage(1);
+                                              },
+                                              child: Image.asset(
+                                                  'assets/icons/tab_bar_tanaman_-01.png',
+                                                  fit: BoxFit.contain)),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 20,
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsets.all(2),
+                                      child: ClipRRect(
+                                        borderRadius: BorderRadius.circular(30),
+                                        child: Container(
+                                          margin: EdgeInsets.only(
+                                              bottom: 2, left: 2),
+                                          decoration: BoxDecoration(boxShadow: [
+                                            BoxShadow(
+                                              color:
+                                                  Colors.black.withOpacity(0.2),
+                                              spreadRadius: 50,
+                                              blurRadius: 1,
+                                              offset: Offset(20, 30),
+                                            )
+                                          ]),
+                                          child: GestureDetector(
+                                              onTap: () {
+                                                ChangePage(2);
+                                              },
+                                              child: Image.asset(
+                                                  'assets/icons/tab_bar_tanaman_-02.png',
+                                                  fit: BoxFit.contain)),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 20,
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsets.all(2),
+                                      child: ClipRRect(
+                                        borderRadius: BorderRadius.circular(30),
+                                        child: Container(
+                                          margin: EdgeInsets.only(
+                                              bottom: 2, left: 2),
+                                          decoration: BoxDecoration(boxShadow: [
+                                            BoxShadow(
+                                              color:
+                                                  Colors.black.withOpacity(0.2),
+                                              spreadRadius: 50,
+                                              blurRadius: 1,
+                                              offset: Offset(20, 30),
+                                            )
+                                          ]),
+                                          child: GestureDetector(
+                                              onTap: () {
+                                                ChangePage(3);
+                                              },
+                                              child: Image.asset(
+                                                  'assets/icons/tab_bar_tanaman_-03.png',
+                                                  fit: BoxFit.contain)),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: 20,
+                                    ),
+                                    Padding(
+                                      padding: EdgeInsets.all(2),
+                                      child: ClipRRect(
+                                        borderRadius: BorderRadius.circular(30),
+                                        child: Container(
+                                          margin: EdgeInsets.only(
+                                              bottom: 2, left: 2),
+                                          decoration: BoxDecoration(boxShadow: [
+                                            BoxShadow(
+                                              color:
+                                                  Colors.black.withOpacity(0.2),
+                                              spreadRadius: 50,
+                                              blurRadius: 1,
+                                              offset: Offset(20, 30),
+                                            )
+                                          ]),
+                                          child: GestureDetector(
+                                              onTap: () {
+                                                ChangePage(4);
+                                              },
+                                              child: Image.asset(
+                                                  'assets/icons/tab_bar_tanaman_-04.png',
+                                                  fit: BoxFit.contain)),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                )),
+                          ),
+                        )),
+                    Positioned(
+                      top: -25,
+                      right: -7,
+                      child: Container(
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(60),
+                            boxShadow: [
+                              BoxShadow(
+                                  color: Colors.black.withOpacity(0.1),
+                                  spreadRadius: -2,
+                                  blurRadius: 1,
+                                  offset: Offset(2, 0))
+                            ]),
+                        width: 230,
+                        height: height / 1.55,
+                        child: Page(),
+                      ),
+                    )
+                  ],
+                ),
               )
             ],
           ),
@@ -186,26 +313,20 @@ class _TanamanItemState extends State<TanamanItem> {
   @override
   Widget build(BuildContext context) {
     return Center(
-        child: Container(
-            margin: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-            decoration: BoxDecoration(
-              color: Colors.yellow.shade300,
-              borderRadius: BorderRadius.circular(13),
-            ),
-            child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-              child: ClipRRect(
-                child: GestureDetector(
-                  onTap: () {
-                    PlayAudio(widget.audioUrl);
-                  },
-                  child: Image.asset(
-                    'assets/icons/' + widget.Imageurl + '',
-                    fit: BoxFit.contain,
-                  ),
-                ),
-              ),
-            )));
+        child: Padding(
+      padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+      child: ClipRRect(
+        child: GestureDetector(
+          onTap: () {
+            PlayAudio(widget.audioUrl);
+          },
+          child: Image.asset(
+            'assets/icons/' + widget.Imageurl + '',
+            fit: BoxFit.contain,
+          ),
+        ),
+      ),
+    ));
     ;
   }
 }

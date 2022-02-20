@@ -4,7 +4,6 @@ import 'package:audioplayers/audioplayers.dart';
 import 'package:get/get.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:paudpedia_kemendikbud/styles/color.dart';
-
 import 'package:paudpedia_kemendikbud/screen/menu/belajar/belajar_hewan/hewan_list.dart';
 
 class HewanHome extends StatefulWidget {
