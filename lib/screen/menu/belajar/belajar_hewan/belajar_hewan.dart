@@ -270,7 +270,7 @@ class _HewanHomeState extends State<HewanHome> {
                                   offset: Offset(2, 0))
                             ]),
                         width: 230,
-                        height: height / 1.55,
+                        height: height / 1.50,
                         child: Page(),
                       ),
                     )
