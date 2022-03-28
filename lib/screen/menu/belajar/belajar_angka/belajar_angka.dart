@@ -53,7 +53,7 @@ class _AngkaHomeState extends State<AngkaHome> {
 
   Page() {
     if (page == 1) {
-      return Page1();
+      return Page();
     } else if (page == 2) {
       return Page2();
     } else if (page == 3) {
@@ -141,10 +141,11 @@ class _AngkaHomeState extends State<AngkaHome> {
               ),
               SizedBox(height: height / 10),
               Container(
+                  color: Colors.blue,
                   child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 2),
-                child: Page(),
-              ))
+                    padding: EdgeInsets.symmetric(horizontal: 2),
+                    child: Page1(),
+                  ))
             ],
           ),
         ),
@@ -155,13 +156,8 @@ class _AngkaHomeState extends State<AngkaHome> {
 
 class AngkaItem extends StatefulWidget {
   final String Imageurl;
-  final String audioUrl;
   final Function()? OnMenuClick;
-  const AngkaItem(
-      {Key? key,
-      required this.Imageurl,
-      this.OnMenuClick,
-      required this.audioUrl})
+  const AngkaItem({Key? key, required this.Imageurl, this.OnMenuClick})
       : super(key: key);
 
   @override
@@ -173,20 +169,15 @@ class _AngkaItemState extends State<AngkaItem> {
   @override
   Widget build(BuildContext context) {
     return Center(
-        child: Container(
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(13),
-        child: GestureDetector(
-          onTap: () {
-            SfxAngka.play('audio/BELAJAR/angka/' + widget.audioUrl);
-          },
+      child: Container(
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(13),
           child: Image.asset(
             'assets/icons/' + widget.Imageurl + '',
             fit: BoxFit.cover,
           ),
         ),
       ),
-    ));
-    ;
+    );
   }
 }

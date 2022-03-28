@@ -8,8 +8,10 @@ class TebakHuruf extends StatefulWidget {
 }
 
 class _TebakHurufState extends State<TebakHuruf> {
+
+  
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold();
   }
 }
