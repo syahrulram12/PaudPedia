@@ -252,6 +252,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
   }
 }
 
+
 // class Page1 extends StatefulWidget {
 //   const Page1({Key? key}) : super(key: key);
 
@@ -336,6 +337,116 @@ class Page2 extends StatelessWidget {
 class Page3 extends StatelessWidget {
   const Page3({Key? key}) : super(key: key);
 
+  Page() {
+    if (page == 1) {
+      return Page();
+    } else if (page == 2) {
+      return Page2();
+    } else if (page == 3) {
+      return Page3();
+    } else if (page == 4) {
+      return Page4();
+    } else {
+      return Page5();
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    double height = MediaQuery.of(context).size.height;
+    double width = MediaQuery.of(context).size.width;
+
+    return Scaffold(
+        body: Stack(
+      children: <Widget>[
+        Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage(
+                    'assets/images/all_background/belajar/02_belajar_angka_background.jpg'),
+                fit: BoxFit.cover),
+          ),
+          child: Column(
+            children: <Widget>[
+              Container(
+                margin: EdgeInsets.symmetric(
+                    horizontal: (width / 8) / 2, vertical: 25),
+                height: (height / 8) / 2,
+                child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      Container(
+                        width: width / 6,
+                        child: ClipRRect(
+                          child: GestureDetector(
+                              onTap: () => {Get.back()},
+                              child: Image.asset(
+                                  'assets/icons/tab_bar_menu.png',
+                                  fit: BoxFit.contain)),
+                        ),
+                      ),
+                      Container(
+                        width: width / 5,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: AssetImage(
+                                    'assets/icons/tab_bar_right_left.png'),
+                                fit: BoxFit.contain)),
+                        child: Row(
+                          children: [
+                            Flexible(
+                              child: Container(
+                                child: GestureDetector(
+                                  onTap: () {
+                                    ChangePage('kurang');
+                                  },
+                                ),
+                              ),
+                            ),
+                            Flexible(child: Container(
+                              child: GestureDetector(
+                                onTap: () {
+                                  ChangePage('tambah');
+                                },
+                              ),
+                            ))
+                          ],
+                        ),
+                      ),
+                      Container(
+                        width: width / 5,
+                        child: ClipRRect(
+                          child: GestureDetector(
+                              child: Image.asset(
+                                  'assets/icons/tab_bar_auto.png',
+                                  fit: BoxFit.cover)),
+                        ),
+                      ),
+                    ]),
+              ),
+              SizedBox(height: height / 10),
+              Container(
+                  color: Colors.blue,
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 2),
+                    child: Page1(),
+                  ))
+            ],
+          ),
+        ),
+      ],
+    ));
+  }
+}
+
+class AngkaItem extends StatefulWidget {
+  final String Imageurl;
+  final Function()? OnMenuClick;
+  const AngkaItem({Key? key, required this.Imageurl, this.OnMenuClick})
+      : super(key: key);
+
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -409,6 +520,7 @@ class Page4 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return Container(
         child: Column(
           children: [
@@ -472,6 +584,19 @@ class Page4 extends StatelessWidget {
             ),
           ],
         ));
+
+    return Center(
+      child: Container(
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(13),
+          child: Image.asset(
+            'assets/icons/' + widget.Imageurl + '',
+            fit: BoxFit.cover,
+          ),
+        ),
+      ),
+    );
+
   }
 }
 
