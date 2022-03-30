@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:audioplayers/audioplayers.dart';
@@ -16,16 +15,16 @@ class Page1 extends StatefulWidget {
 }
 
 class _Page1State extends State<Page1> with TickerProviderStateMixin {
-  var AngkaItem1 = 1;
-  var AngkaItem2 = 1;
-  var AngkaItem3 = 1;
-  var AngkaItem4 = 1;
-  var AngkaItem5 = 1;
-  var AngkaItem6 = 1;
-  var AngkaItem7 = 1;
-  var AngkaItem8 = 1;
-  var AngkaItem9 = 1;
-  var AngkaItem10 = 1;
+  var AngkaItem1 = 1.0;
+  var AngkaItem2 = 1.0;
+  var AngkaItem3 = 1.0;
+  var AngkaItem4 = 1.0;
+  var AngkaItem5 = 1.0;
+  var AngkaItem6 = 1.0;
+  var AngkaItem7 = 1.0;
+  var AngkaItem8 = 1.0;
+  var AngkaItem9 = 1.0;
+  var AngkaItem10 = 1.0;
   late AnimationController _controller1;
   late AnimationController _controller2;
   late AnimationController _controller3;
@@ -252,23 +251,23 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
 // }
 
 class Page2 extends StatefulWidget {
-  const Page2({ Key? key }) : super(key: key);
+  const Page2({Key? key}) : super(key: key);
 
   @override
   _Page2State createState() => _Page2State();
 }
 
-class _Page2State extends State<Page2> {
-   var AngkaItem1 = 1;
-  var AngkaItem2 = 1;
-  var AngkaItem3 = 1;
-  var AngkaItem4 = 1;
-  var AngkaItem5 = 1;
-  var AngkaItem6 = 1;
-  var AngkaItem7 = 1;
-  var AngkaItem8 = 1;
-  var AngkaItem9 = 1;
-  var AngkaItem10 = 1;
+class _Page2State extends State<Page2> with TickerProviderStateMixin {
+  var AngkaItem1 = 1.0;
+  var AngkaItem2 = 1.0;
+  var AngkaItem3 = 1.0;
+  var AngkaItem4 = 1.0;
+  var AngkaItem5 = 1.0;
+  var AngkaItem6 = 1.0;
+  var AngkaItem7 = 1.0;
+  var AngkaItem8 = 1.0;
+  var AngkaItem9 = 1.0;
+  var AngkaItem10 = 1.0;
   late AnimationController _controller1;
   late AnimationController _controller2;
   late AnimationController _controller3;
@@ -422,204 +421,60 @@ class _Page2State extends State<Page2> {
                 child: Transform.scale(
                   scale: AngkaItem1,
                   child: AngkaItem(
-                    Imageurl: 'icon_number/icon_11-20/icon_11-20-11.png',
+                    Imageurl: 'icon_number/icon_1-10/icon_1-10-01.png',
                   ),
                 ),
               ),
             ),
             Flexible(
-              child: GestureDetector(
-                onTap: () {
-                  setState(() {
-                    _controller1.forward(from: 0.0);
-                  });
-                  Timer(Duration(seconds: 1), () {
-                    setState(() {
-                      _controller1.reverse();
-                    });
-                  });
-                },
-                child: Transform.scale(
-                  scale: AngkaItem1,
-                  child: AngkaItem(
-                    Imageurl: 'icon_number/icon_11-20/icon_11-20-12.png',
-                  ),
-                ),
-              ),
-            ),
-           Flexible(
-              child: GestureDetector(
-                onTap: () {
-                  setState(() {
-                    _controller1.forward(from: 0.0);
-                  });
-                  Timer(Duration(seconds: 1), () {
-                    setState(() {
-                      _controller1.reverse();
-                    });
-                  });
-                },
-                child: Transform.scale(
-                  scale: AngkaItem1,
-                  child: AngkaItem(
-                    Imageurl: 'icon_number/icon_11-20/icon_11-20-13.png',
-                  ),
-                ),
-              ),
-            ),
+                child: AngkaItem(
+              Imageurl: 'icon_number/icon_11-20/icon_11-20-12.png',
+            )),
+            Flexible(
+                child: AngkaItem(
+              Imageurl: 'icon_number/icon_11-20/icon_11-20-13.png',
+            )),
           ],
         ),
         Row(
           children: [
             Flexible(
-              child: GestureDetector(
-                onTap: () {
-                  setState(() {
-                    _controller1.forward(from: 0.0);
-                  });
-                  Timer(Duration(seconds: 1), () {
-                    setState(() {
-                      _controller1.reverse();
-                    });
-                  });
-                },
-                child: Transform.scale(
-                  scale: AngkaItem1,
-                  child: AngkaItem(
-                    Imageurl: 'icon_number/icon_11-20/icon_11-20-14.png',
-                  ),
-                ),
-              ),
-            ),
+                child: AngkaItem(
+              Imageurl: 'icon_number/icon_11-20/icon_11-20-14.png',
+            )),
             Flexible(
-              child: GestureDetector(
-                onTap: () {
-                  setState(() {
-                    _controller1.forward(from: 0.0);
-                  });
-                  Timer(Duration(seconds: 1), () {
-                    setState(() {
-                      _controller1.reverse();
-                    });
-                  });
-                },
-                child: Transform.scale(
-                  scale: AngkaItem1,
-                  child: AngkaItem(
-                    Imageurl: 'icon_number/icon_11-20/icon_11-20-15.png',
-                  ),
-                ),
-              ),
-            ),
+                child: AngkaItem(
+              Imageurl: 'icon_number/icon_11-20/icon_11-20-15.png',
+            )),
             Flexible(
-              child: GestureDetector(
-                onTap: () {
-                  setState(() {
-                    _controller1.forward(from: 0.0);
-                  });
-                  Timer(Duration(seconds: 1), () {
-                    setState(() {
-                      _controller1.reverse();
-                    });
-                  });
-                },
-                child: Transform.scale(
-                  scale: AngkaItem1,
-                  child: AngkaItem(
-                    Imageurl: 'icon_number/icon_11-20/icon_11-20-16.png',
-                  ),
-                ),
-              ),
-            ),
+                child: AngkaItem(
+              Imageurl: 'icon_number/icon_11-20/icon_11-20-16.png',
+            )),
           ],
         ),
         Row(
           children: [
             Flexible(
-              child: GestureDetector(
-                onTap: () {
-                  setState(() {
-                    _controller1.forward(from: 0.0);
-                  });
-                  Timer(Duration(seconds: 1), () {
-                    setState(() {
-                      _controller1.reverse();
-                    });
-                  });
-                },
-                child: Transform.scale(
-                  scale: AngkaItem1,
-                  child: AngkaItem(
-                    Imageurl: 'icon_number/icon_11-20/icon_11-20-17.png',
-                  ),
-                ),
-              ),
-            ),
+                child: AngkaItem(
+              Imageurl: 'icon_number/icon_11-20/icon_11-20-17.png',
+            )),
             Flexible(
-              child: GestureDetector(
-                onTap: () {
-                  setState(() {
-                    _controller1.forward(from: 0.0);
-                  });
-                  Timer(Duration(seconds: 1), () {
-                    setState(() {
-                      _controller1.reverse();
-                    });
-                  });
-                },
-                child: Transform.scale(
-                  scale: AngkaItem1,
-                  child: AngkaItem(
-                    Imageurl: 'icon_number/icon_11-20/icon_11-20-18.png',
-                  ),
-                ),
-              ),
-            ),
+                child: AngkaItem(
+              Imageurl: 'icon_number/icon_11-20/icon_11-20-18.png',
+            )),
             Flexible(
-              child: GestureDetector(
-                onTap: () {
-                  setState(() {
-                    _controller1.forward(from: 0.0);
-                  });
-                  Timer(Duration(seconds: 1), () {
-                    setState(() {
-                      _controller1.reverse();
-                    });
-                  });
-                },
-                child: Transform.scale(
-                  scale: AngkaItem1,
-                  child: AngkaItem(
-                    Imageurl: 'icon_number/icon_11-20/icon_11-20-19.png',
-                  ),
-                ),
-              ),
-            ),
+                child: AngkaItem(
+              Imageurl: 'icon_number/icon_11-20/icon_11-20-19.png',
+            )),
           ],
         ),
         Row(
           children: [
             Flexible(child: Container()),
             Flexible(
-              child: GestureDetector(
-                onTap: () {
-                  setState(() {
-                    _controller1.forward(from: 0.0);
-                  });
-                  Timer(Duration(seconds: 1), () {
-                    setState(() {
-                      _controller1.reverse();
-                    });
-                  });
-                },
-                child: Transform.scale(
-                  scale: AngkaItem1,
-                  child: AngkaItem(
-                    Imageurl: 'icon_number/icon_11-20/icon_11-20-20.png',
-                  ),
-                ),
-              ),
-            ),
+                child: AngkaItem(
+              Imageurl: 'icon_number/icon_11-20/icon_11-20-20.png',
+            )),
             Flexible(child: Container())
           ],
         ),
@@ -627,6 +482,7 @@ class _Page2State extends State<Page2> {
     ));
   }
 }
+
 class Page2 extends StatelessWidget {
   const Page2({Key? key}) : super(key: key);
 
