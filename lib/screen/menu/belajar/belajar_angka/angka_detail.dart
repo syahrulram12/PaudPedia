@@ -698,8 +698,154 @@ class Page3 extends StatelessWidget {
   }
 }
 
-class Page4 extends StatelessWidget {
+class Page4 extends StatefulWidget {
   const Page4({Key? key}) : super(key: key);
+
+  @override
+  State<Page4> createState() => _Page4State();
+}
+
+class _Page4State extends State<Page4> with TickerProviderStateMixin {
+  var AngkaItem1 = 1.0;
+  var AngkaItem2 = 1.0;
+  var AngkaItem3 = 1.0;
+  var AngkaItem4 = 1.0;
+  var AngkaItem5 = 1.0;
+  var AngkaItem6 = 1.0;
+  var AngkaItem7 = 1.0;
+  var AngkaItem8 = 1.0;
+  var AngkaItem9 = 1.0;
+  var AngkaItem10 = 1.0;
+  late AnimationController _controller1;
+  late AnimationController _controller2;
+  late AnimationController _controller3;
+  late AnimationController _controller4;
+  late AnimationController _controller5;
+  late AnimationController _controller6;
+  late AnimationController _controller7;
+  late AnimationController _controller8;
+  late AnimationController _controller9;
+  late AnimationController _controller10;
+
+  @override
+  void initState() {
+    _controller1 = AnimationController(
+        vsync: this,
+        lowerBound: 1,
+        upperBound: 1.0,
+        duration: Duration(milliseconds: 300));
+    _controller1.addListener(() {
+      setState(() {
+        AngkaItem1 = _controller1.value;
+      });
+    });
+    _controller2 = AnimationController(
+        vsync: this,
+        lowerBound: 1,
+        upperBound: 1.0,
+        duration: Duration(seconds: 1));
+    _controller2.addListener(() {
+      setState(() {
+        AngkaItem2 = _controller2.value;
+      });
+    });
+    _controller3 = AnimationController(
+        vsync: this,
+        lowerBound: 1,
+        upperBound: 1.0,
+        duration: Duration(milliseconds: 300));
+    _controller3.addListener(() {
+      setState(() {
+        AngkaItem3 = _controller3.value;
+      });
+    });
+    _controller4 = AnimationController(
+        vsync: this,
+        lowerBound: 1,
+        upperBound: 1.0,
+        duration: Duration(seconds: 1));
+    _controller4.addListener(() {
+      setState(() {
+        AngkaItem4 = _controller4.value;
+      });
+    });
+    _controller5 = AnimationController(
+        vsync: this,
+        lowerBound: 1,
+        upperBound: 1.0,
+        duration: Duration(milliseconds: 300));
+    _controller5.addListener(() {
+      setState(() {
+        AngkaItem5 = _controller5.value;
+      });
+    });
+    _controller6 = AnimationController(
+        vsync: this,
+        lowerBound: 1,
+        upperBound: 1.0,
+        duration: Duration(seconds: 1));
+    _controller6.addListener(() {
+      setState(() {
+        AngkaItem6 = _controller6.value;
+      });
+    });
+    _controller7 = AnimationController(
+        vsync: this,
+        lowerBound: 1,
+        upperBound: 1.0,
+        duration: Duration(milliseconds: 300));
+    _controller7.addListener(() {
+      setState(() {
+        AngkaItem7 = _controller7.value;
+      });
+    });
+    _controller8 = AnimationController(
+        vsync: this,
+        lowerBound: 1,
+        upperBound: 1.0,
+        duration: Duration(seconds: 1));
+    _controller8.addListener(() {
+      setState(() {
+        AngkaItem8 = _controller8.value;
+      });
+    });
+    _controller9 = AnimationController(
+        vsync: this,
+        lowerBound: 1,
+        upperBound: 1.0,
+        duration: Duration(milliseconds: 300));
+    _controller9.addListener(() {
+      setState(() {
+        AngkaItem9 = _controller9.value;
+      });
+    });
+    _controller10 = AnimationController(
+        vsync: this,
+        lowerBound: 1,
+        upperBound: 1.0,
+        duration: Duration(seconds: 1));
+    _controller10.addListener(() {
+      setState(() {
+        AngkaItem10 = _controller10.value;
+      });
+    });
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    _controller1.dispose();
+    _controller2.dispose();
+    _controller3.dispose();
+    _controller4.dispose();
+    _controller5.dispose();
+    _controller6.dispose();
+    _controller7.dispose();
+    _controller8.dispose();
+    _controller9.dispose();
+    _controller10.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -709,58 +855,218 @@ class Page4 extends StatelessWidget {
         Row(
           children: [
             Flexible(
-                child: AngkaItem(
-              Imageurl: 'icon_number/icon_31-40/icon_31-40-31.png',
-            )),
+              child: GestureDetector(
+                onTap: () {
+                  setState(() {
+                    _controller1.forward(from: 0.0);
+                  });
+                  Timer(Duration(seconds: 1), () {
+                    setState(() {
+                      _controller1.reverse();
+                    });
+                  });
+                },
+                child: Transform.scale(
+                  scale: AngkaItem1,
+                  child: AngkaItem(
+                    Imageurl: 'icon_number/icon_21-30/icon_31-40-31.png',
+                  ),
+                ),
+              ),
+            ),
             Flexible(
-                child: AngkaItem(
-              Imageurl: 'icon_number/icon_31-40/icon_31-40-32.png',
-            )),
+              child: GestureDetector(
+                onTap: () {
+                  setState(() {
+                    _controller1.forward(from: 0.0);
+                  });
+                  Timer(Duration(seconds: 1), () {
+                    setState(() {
+                      _controller1.reverse();
+                    });
+                  });
+                },
+                child: Transform.scale(
+                  scale: AngkaItem1,
+                  child: AngkaItem(
+                    Imageurl: 'icon_number/icon_21-30/icon_31-40-32.png',
+                  ),
+                ),
+              ),
+            ),
             Flexible(
-                child: AngkaItem(
-              Imageurl: 'icon_number/icon_31-40/icon_31-40-33.png',
-            )),
+              child: GestureDetector(
+                onTap: () {
+                  setState(() {
+                    _controller1.forward(from: 0.0);
+                  });
+                  Timer(Duration(seconds: 1), () {
+                    setState(() {
+                      _controller1.reverse();
+                    });
+                  });
+                },
+                child: Transform.scale(
+                  scale: AngkaItem1,
+                  child: AngkaItem(
+                    Imageurl: 'icon_number/icon_21-30/icon_31-40-33.png',
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
         Row(
           children: [
             Flexible(
-                child: AngkaItem(
-              Imageurl: 'icon_number/icon_31-40/icon_31-40-34.png',
-            )),
+              child: GestureDetector(
+                onTap: () {
+                  setState(() {
+                    _controller1.forward(from: 0.0);
+                  });
+                  Timer(Duration(seconds: 1), () {
+                    setState(() {
+                      _controller1.reverse();
+                    });
+                  });
+                },
+                child: Transform.scale(
+                  scale: AngkaItem1,
+                  child: AngkaItem(
+                    Imageurl: 'icon_number/icon_21-30/icon_31-40-34.png',
+                  ),
+                ),
+              ),
+            ),
             Flexible(
-                child: AngkaItem(
-              Imageurl: 'icon_number/icon_31-40/icon_31-40-35.png',
-            )),
+              child: GestureDetector(
+                onTap: () {
+                  setState(() {
+                    _controller1.forward(from: 0.0);
+                  });
+                  Timer(Duration(seconds: 1), () {
+                    setState(() {
+                      _controller1.reverse();
+                    });
+                  });
+                },
+                child: Transform.scale(
+                  scale: AngkaItem1,
+                  child: AngkaItem(
+                    Imageurl: 'icon_number/icon_21-30/icon_31-40-35.png',
+                  ),
+                ),
+              ),
+            ),
             Flexible(
-                child: AngkaItem(
-              Imageurl: 'icon_number/icon_31-40/icon_31-40-36.png',
-            )),
+              child: GestureDetector(
+                onTap: () {
+                  setState(() {
+                    _controller1.forward(from: 0.0);
+                  });
+                  Timer(Duration(seconds: 1), () {
+                    setState(() {
+                      _controller1.reverse();
+                    });
+                  });
+                },
+                child: Transform.scale(
+                  scale: AngkaItem1,
+                  child: AngkaItem(
+                    Imageurl: 'icon_number/icon_21-30/icon_31-40-36.png',
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
         Row(
           children: [
             Flexible(
-                child: AngkaItem(
-              Imageurl: 'icon_number/icon_31-40/icon_31-40-37.png',
-            )),
+              child: GestureDetector(
+                onTap: () {
+                  setState(() {
+                    _controller1.forward(from: 0.0);
+                  });
+                  Timer(Duration(seconds: 1), () {
+                    setState(() {
+                      _controller1.reverse();
+                    });
+                  });
+                },
+                child: Transform.scale(
+                  scale: AngkaItem1,
+                  child: AngkaItem(
+                    Imageurl: 'icon_number/icon_21-30/icon_31-40-37.png',
+                  ),
+                ),
+              ),
+            ),
             Flexible(
-                child: AngkaItem(
-              Imageurl: 'icon_number/icon_31-40/icon_31-40-38.png',
-            )),
+              child: GestureDetector(
+                onTap: () {
+                  setState(() {
+                    _controller1.forward(from: 0.0);
+                  });
+                  Timer(Duration(seconds: 1), () {
+                    setState(() {
+                      _controller1.reverse();
+                    });
+                  });
+                },
+                child: Transform.scale(
+                  scale: AngkaItem1,
+                  child: AngkaItem(
+                    Imageurl: 'icon_number/icon_21-30/icon_31-40-38.png',
+                  ),
+                ),
+              ),
+            ),
             Flexible(
-                child: AngkaItem(
-              Imageurl: 'icon_number/icon_31-40/icon_31-40-39.png',
-            )),
+              child: GestureDetector(
+                onTap: () {
+                  setState(() {
+                    _controller1.forward(from: 0.0);
+                  });
+                  Timer(Duration(seconds: 1), () {
+                    setState(() {
+                      _controller1.reverse();
+                    });
+                  });
+                },
+                child: Transform.scale(
+                  scale: AngkaItem1,
+                  child: AngkaItem(
+                    Imageurl: 'icon_number/icon_21-30/icon_31-40-39.png',
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
         Row(
           children: [
             Flexible(child: Container()),
             Flexible(
-                child: AngkaItem(
-              Imageurl: 'icon_number/icon_31-40/icon_31-40-40.png',
-            )),
+              child: GestureDetector(
+                onTap: () {
+                  setState(() {
+                    _controller1.forward(from: 0.0);
+                  });
+                  Timer(Duration(seconds: 1), () {
+                    setState(() {
+                      _controller1.reverse();
+                    });
+                  });
+                },
+                child: Transform.scale(
+                  scale: AngkaItem1,
+                  child: AngkaItem(
+                    Imageurl: 'icon_number/icon_21-30/icon_31-40-40.png',
+                  ),
+                ),
+              ),
+            ),
             Flexible(child: Container())
           ],
         ),
