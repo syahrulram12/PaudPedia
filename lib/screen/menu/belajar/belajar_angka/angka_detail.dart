@@ -240,15 +240,6 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
   }
 }
 
-// class Page1 extends StatefulWidget {
-//   const Page1({Key? key}) : super(key: key);
-
-//   _Page1State CreateState() =>
-//   @override
-//   Widget build(BuildContext context) {
-//     return
-//   }
-// }
 
 class Page2 extends StatefulWidget {
   const Page2({Key? key}) : super(key: key);
