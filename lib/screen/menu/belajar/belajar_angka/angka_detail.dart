@@ -15,16 +15,16 @@ class Page1 extends StatefulWidget {
 }
 
 class _Page1State extends State<Page1> with TickerProviderStateMixin {
-  var AngkaItem1 = 1.0;
-  var AngkaItem2 = 1.0;
-  var AngkaItem3 = 1.0;
-  var AngkaItem4 = 1.0;
-  var AngkaItem5 = 1.0;
-  var AngkaItem6 = 1.0;
-  var AngkaItem7 = 1.0;
-  var AngkaItem8 = 1.0;
-  var AngkaItem9 = 1.0;
-  var AngkaItem10 = 1.0;
+  var angkaitem1 = 0.8;
+  var angkaitem2 = 0.8;
+  var angkaitem3 = 0.8;
+  var angkaitem4 = 0.8;
+  var angkaitem5 = 0.8;
+  var angkaitem6 = 0.8;
+  var angkaitem7 = 0.8;
+  var angkaitem8 = 0.8;
+  var angkaitem9 = 0.8;
+  var angkaitem10 = 0.8;
   late AnimationController _controller1;
   late AnimationController _controller2;
   late AnimationController _controller3;
@@ -47,7 +47,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
         duration: Duration(milliseconds: 300));
     _controller1.addListener(() {
       setState(() {
-        AngkaItem1 = _controller1.value;
+        angkaitem1 = _controller1.value;
       });
     });
     _controller2 = AnimationController(
@@ -57,7 +57,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
         duration: Duration(seconds: 1));
     _controller2.addListener(() {
       setState(() {
-        AngkaItem2 = _controller2.value;
+        angkaitem2 = _controller2.value;
       });
     });
     _controller3 = AnimationController(
@@ -67,7 +67,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
         duration: Duration(milliseconds: 300));
     _controller3.addListener(() {
       setState(() {
-        AngkaItem3 = _controller3.value;
+        angkaitem3 = _controller3.value;
       });
     });
     _controller4 = AnimationController(
@@ -77,7 +77,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
         duration: Duration(seconds: 1));
     _controller4.addListener(() {
       setState(() {
-        AngkaItem4 = _controller4.value;
+        angkaitem4 = _controller4.value;
       });
     });
     _controller5 = AnimationController(
@@ -87,7 +87,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
         duration: Duration(milliseconds: 300));
     _controller5.addListener(() {
       setState(() {
-        AngkaItem5 = _controller5.value;
+        angkaitem5 = _controller5.value;
       });
     });
     _controller6 = AnimationController(
@@ -97,7 +97,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
         duration: Duration(seconds: 1));
     _controller6.addListener(() {
       setState(() {
-        AngkaItem6 = _controller6.value;
+        angkaitem6 = _controller6.value;
       });
     });
     _controller7 = AnimationController(
@@ -107,7 +107,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
         duration: Duration(milliseconds: 300));
     _controller7.addListener(() {
       setState(() {
-        AngkaItem7 = _controller7.value;
+        angkaitem7 = _controller7.value;
       });
     });
     _controller8 = AnimationController(
@@ -117,7 +117,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
         duration: Duration(seconds: 1));
     _controller8.addListener(() {
       setState(() {
-        AngkaItem8 = _controller8.value;
+        angkaitem8 = _controller8.value;
       });
     });
     _controller9 = AnimationController(
@@ -127,7 +127,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
         duration: Duration(milliseconds: 300));
     _controller9.addListener(() {
       setState(() {
-        AngkaItem9 = _controller9.value;
+        angkaitem9 = _controller9.value;
       });
     });
     _controller10 = AnimationController(
@@ -137,7 +137,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
         duration: Duration(seconds: 1));
     _controller10.addListener(() {
       setState(() {
-        AngkaItem10 = _controller10.value;
+        angkaitem10 = _controller10.value;
       });
     });
 
@@ -184,7 +184,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
                 });
               },
               child: Transform.scale(
-                scale: AngkaItem1,
+                scale: angkaitem1,
                 child: AngkaItem(
                   Imageurl: 'icon_number/icon_1-10/icon_1-10-01.png',
                 ),
@@ -204,7 +204,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
                 });
               },
               child: Transform.scale(
-                scale: AngkaItem2,
+                scale: angkaitem2,
                 child: AngkaItem(
                   Imageurl: 'icon_number/icon_1-10/icon_1-10-02.png',
                 ),
@@ -224,7 +224,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
                 });
               },
               child: Transform.scale(
-                scale: AngkaItem3,
+                scale: angkaitem3,
                 child: AngkaItem(
                   Imageurl: 'icon_number/icon_1-10/icon_1-10-03.png',
                 ),
@@ -246,7 +246,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
                     });
                   },
                   child: Transform.scale(
-                    scale: AngkaItem4,
+                    scale: angkaitem4,
                     child: AngkaItem(
                       Imageurl: 'icon_number/icon_1-10/icon_1-10-04.png',
                     ),
@@ -266,7 +266,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
                     });
                   },
                   child: Transform.scale(
-                    scale: AngkaItem5,
+                    scale: angkaitem5,
                     child: AngkaItem(
                       Imageurl: 'icon_number/icon_1-10/icon_1-10-05.png',
                     ),
@@ -286,7 +286,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
                     });
                   },
                   child: Transform.scale(
-                    scale: AngkaItem6,
+                    scale: angkaitem6,
                     child: AngkaItem(
                       Imageurl: 'icon_number/icon_1-10/icon_1-10-06.png',
                     ),
@@ -308,7 +308,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
                         });
                       },
                       child: Transform.scale(
-                        scale: AngkaItem7,
+                        scale: angkaitem7,
                         child: AngkaItem(
                           Imageurl: 'icon_number/icon_1-10/icon_1-10-07.png',
                         ),
@@ -328,7 +328,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
                         });
                       },
                       child: Transform.scale(
-                        scale: AngkaItem8,
+                        scale: angkaitem8,
                         child: AngkaItem(
                           Imageurl: 'icon_number/icon_1-10/icon_1-10-08.png',
                         ),
@@ -348,7 +348,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
                         });
                       },
                       child: Transform.scale(
-                        scale: AngkaItem9,
+                        scale: angkaitem9,
                         child: AngkaItem(
                           Imageurl: 'icon_number/icon_1-10/icon_1-10-09.png',
                         ),
@@ -371,7 +371,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
                             });
                           },
                           child: Transform.scale(
-                            scale: AngkaItem10,
+                            scale: angkaitem10,
                             child: AngkaItem(
                               Imageurl:
                                   'icon_number/icon_1-10/icon_1-10-10.png',
@@ -400,16 +400,16 @@ class Page2 extends StatefulWidget {
 }
 
 class _Page2State extends State<Page2> with TickerProviderStateMixin {
-  var AngkaItem1 = 1.0;
-  var AngkaItem2 = 1.0;
-  var AngkaItem3 = 1.0;
-  var AngkaItem4 = 1.0;
-  var AngkaItem5 = 1.0;
-  var AngkaItem6 = 1.0;
-  var AngkaItem7 = 1.0;
-  var AngkaItem8 = 1.0;
-  var AngkaItem9 = 1.0;
-  var AngkaItem10 = 1.0;
+  var angkaitem1 = 1.0;
+  var angkaitem2 = 1.0;
+  var angkaitem3 = 1.0;
+  var angkaitem4 = 1.0;
+  var angkaitem5 = 1.0;
+  var angkaitem6 = 1.0;
+  var angkaitem7 = 1.0;
+  var angkaitem8 = 1.0;
+  var angkaitem9 = 1.0;
+  var angkaitem10 = 1.0;
   late AnimationController _controller1;
   late AnimationController _controller2;
   late AnimationController _controller3;
@@ -432,7 +432,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
         duration: Duration(milliseconds: 300));
     _controller1.addListener(() {
       setState(() {
-        AngkaItem1 = _controller1.value;
+        angkaitem1 = _controller1.value;
       });
     });
     _controller2 = AnimationController(
@@ -442,7 +442,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
         duration: Duration(seconds: 1));
     _controller2.addListener(() {
       setState(() {
-        AngkaItem2 = _controller2.value;
+        angkaitem2 = _controller2.value;
       });
     });
     _controller3 = AnimationController(
@@ -452,7 +452,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
         duration: Duration(milliseconds: 300));
     _controller3.addListener(() {
       setState(() {
-        AngkaItem3 = _controller3.value;
+        angkaitem3 = _controller3.value;
       });
     });
     _controller4 = AnimationController(
@@ -462,7 +462,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
         duration: Duration(seconds: 1));
     _controller4.addListener(() {
       setState(() {
-        AngkaItem4 = _controller4.value;
+        angkaitem4 = _controller4.value;
       });
     });
     _controller5 = AnimationController(
@@ -472,7 +472,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
         duration: Duration(milliseconds: 300));
     _controller5.addListener(() {
       setState(() {
-        AngkaItem5 = _controller5.value;
+        angkaitem5 = _controller5.value;
       });
     });
     _controller6 = AnimationController(
@@ -482,7 +482,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
         duration: Duration(seconds: 1));
     _controller6.addListener(() {
       setState(() {
-        AngkaItem6 = _controller6.value;
+        angkaitem6 = _controller6.value;
       });
     });
     _controller7 = AnimationController(
@@ -492,7 +492,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
         duration: Duration(milliseconds: 300));
     _controller7.addListener(() {
       setState(() {
-        AngkaItem7 = _controller7.value;
+        angkaitem7 = _controller7.value;
       });
     });
     _controller8 = AnimationController(
@@ -502,7 +502,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
         duration: Duration(seconds: 1));
     _controller8.addListener(() {
       setState(() {
-        AngkaItem8 = _controller8.value;
+        angkaitem8 = _controller8.value;
       });
     });
     _controller9 = AnimationController(
@@ -512,7 +512,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
         duration: Duration(milliseconds: 300));
     _controller9.addListener(() {
       setState(() {
-        AngkaItem9 = _controller9.value;
+        angkaitem9 = _controller9.value;
       });
     });
     _controller10 = AnimationController(
@@ -522,7 +522,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
         duration: Duration(seconds: 1));
     _controller10.addListener(() {
       setState(() {
-        AngkaItem10 = _controller10.value;
+        angkaitem10 = _controller10.value;
       });
     });
     super.initState();
@@ -568,7 +568,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem1,
+                  scale: angkaitem1,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_11-20/icon_11-20-11.png',
                   ),
@@ -589,7 +589,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem2,
+                  scale: angkaitem2,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_11-20/icon_11-20-12.png',
                   ),
@@ -610,7 +610,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem3,
+                  scale: angkaitem3,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_11-20/icon_11-20-13.png',
                   ),
@@ -635,7 +635,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem4,
+                  scale: angkaitem4,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_11-20/icon_11-20-14.png',
                   ),
@@ -656,7 +656,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem5,
+                  scale: angkaitem5,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_11-20/icon_11-20-15.png',
                   ),
@@ -677,7 +677,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem6,
+                  scale: angkaitem6,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_11-20/icon_11-20-16.png',
                   ),
@@ -702,7 +702,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem7,
+                  scale: angkaitem7,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_11-20/icon_11-20-17.png',
                   ),
@@ -723,7 +723,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem8,
+                  scale: angkaitem8,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_11-20/icon_11-20-18.png',
                   ),
@@ -744,7 +744,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem9,
+                  scale: angkaitem9,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_11-20/icon_11-20-19.png',
                   ),
@@ -770,7 +770,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem10,
+                  scale: angkaitem10,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_11-20/icon_11-20-20.png',
                   ),
@@ -793,16 +793,16 @@ class Page3 extends StatefulWidget {
 }
 
 class _Page3State extends State<Page3> with TickerProviderStateMixin {
-  var AngkaItem1 = 1.0;
-  var AngkaItem2 = 1.0;
-  var AngkaItem3 = 1.0;
-  var AngkaItem4 = 1.0;
-  var AngkaItem5 = 1.0;
-  var AngkaItem6 = 1.0;
-  var AngkaItem7 = 1.0;
-  var AngkaItem8 = 1.0;
-  var AngkaItem9 = 1.0;
-  var AngkaItem10 = 1.0;
+  var angkaitem1 = 1.0;
+  var angkaitem2 = 1.0;
+  var angkaitem3 = 1.0;
+  var angkaitem4 = 1.0;
+  var angkaitem5 = 1.0;
+  var angkaitem6 = 1.0;
+  var angkaitem7 = 1.0;
+  var angkaitem8 = 1.0;
+  var angkaitem9 = 1.0;
+  var angkaitem10 = 1.0;
   late AnimationController _controller1;
   late AnimationController _controller2;
   late AnimationController _controller3;
@@ -825,7 +825,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
         duration: Duration(milliseconds: 300));
     _controller1.addListener(() {
       setState(() {
-        AngkaItem1 = _controller1.value;
+        angkaitem1 = _controller1.value;
       });
     });
     _controller2 = AnimationController(
@@ -835,7 +835,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
         duration: Duration(seconds: 1));
     _controller2.addListener(() {
       setState(() {
-        AngkaItem2 = _controller2.value;
+        angkaitem2 = _controller2.value;
       });
     });
     _controller3 = AnimationController(
@@ -845,7 +845,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
         duration: Duration(milliseconds: 300));
     _controller3.addListener(() {
       setState(() {
-        AngkaItem3 = _controller3.value;
+        angkaitem3 = _controller3.value;
       });
     });
     _controller4 = AnimationController(
@@ -855,7 +855,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
         duration: Duration(seconds: 1));
     _controller4.addListener(() {
       setState(() {
-        AngkaItem4 = _controller4.value;
+        angkaitem4 = _controller4.value;
       });
     });
     _controller5 = AnimationController(
@@ -865,7 +865,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
         duration: Duration(milliseconds: 300));
     _controller5.addListener(() {
       setState(() {
-        AngkaItem5 = _controller5.value;
+        angkaitem5 = _controller5.value;
       });
     });
     _controller6 = AnimationController(
@@ -875,7 +875,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
         duration: Duration(seconds: 1));
     _controller6.addListener(() {
       setState(() {
-        AngkaItem6 = _controller6.value;
+        angkaitem6 = _controller6.value;
       });
     });
     _controller7 = AnimationController(
@@ -885,7 +885,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
         duration: Duration(milliseconds: 300));
     _controller7.addListener(() {
       setState(() {
-        AngkaItem7 = _controller7.value;
+        angkaitem7 = _controller7.value;
       });
     });
     _controller8 = AnimationController(
@@ -895,7 +895,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
         duration: Duration(seconds: 1));
     _controller8.addListener(() {
       setState(() {
-        AngkaItem8 = _controller8.value;
+        angkaitem8 = _controller8.value;
       });
     });
     _controller9 = AnimationController(
@@ -905,7 +905,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
         duration: Duration(milliseconds: 300));
     _controller9.addListener(() {
       setState(() {
-        AngkaItem9 = _controller9.value;
+        angkaitem9 = _controller9.value;
       });
     });
     _controller10 = AnimationController(
@@ -915,7 +915,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
         duration: Duration(seconds: 1));
     _controller10.addListener(() {
       setState(() {
-        AngkaItem10 = _controller10.value;
+        angkaitem10 = _controller10.value;
       });
     });
 
@@ -964,7 +964,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem1,
+                  scale: angkaitem1,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_21-30/icon_21-30-21.png',
                   ),
@@ -985,7 +985,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem2,
+                  scale: angkaitem2,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_21-30/icon_21-30-22.png',
                   ),
@@ -1006,7 +1006,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem3,
+                  scale: angkaitem3,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_21-30/icon_21-30-23.png',
                   ),
@@ -1031,7 +1031,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem4,
+                  scale: angkaitem4,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_21-30/icon_21-30-24.png',
                   ),
@@ -1052,7 +1052,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem5,
+                  scale: angkaitem5,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_21-30/icon_21-30-25.png',
                   ),
@@ -1073,7 +1073,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem6,
+                  scale: angkaitem6,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_21-30/icon_21-30-26.png',
                   ),
@@ -1098,7 +1098,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem7,
+                  scale: angkaitem7,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_21-30/icon_21-30-27.png',
                   ),
@@ -1119,7 +1119,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem8,
+                  scale: angkaitem8,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_21-30/icon_21-30-28.png',
                   ),
@@ -1140,7 +1140,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem9,
+                  scale: angkaitem9,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_21-30/icon_21-30-29.png',
                   ),
@@ -1166,7 +1166,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem10,
+                  scale: angkaitem10,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_21-30/icon_21-30-30.png',
                   ),
@@ -1189,16 +1189,16 @@ class Page4 extends StatefulWidget {
 }
 
 class _Page4State extends State<Page4> with TickerProviderStateMixin {
-  var AngkaItem1 = 1.0;
-  var AngkaItem2 = 1.0;
-  var AngkaItem3 = 1.0;
-  var AngkaItem4 = 1.0;
-  var AngkaItem5 = 1.0;
-  var AngkaItem6 = 1.0;
-  var AngkaItem7 = 1.0;
-  var AngkaItem8 = 1.0;
-  var AngkaItem9 = 1.0;
-  var AngkaItem10 = 1.0;
+  var angkaitem1 = 1.0;
+  var angkaitem2 = 1.0;
+  var angkaitem3 = 1.0;
+  var angkaitem4 = 1.0;
+  var angkaitem5 = 1.0;
+  var angkaitem6 = 1.0;
+  var angkaitem7 = 1.0;
+  var angkaitem8 = 1.0;
+  var angkaitem9 = 1.0;
+  var angkaitem10 = 1.0;
   late AnimationController _controller1;
   late AnimationController _controller2;
   late AnimationController _controller3;
@@ -1221,7 +1221,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
         duration: Duration(milliseconds: 300));
     _controller1.addListener(() {
       setState(() {
-        AngkaItem1 = _controller1.value;
+        angkaitem1 = _controller1.value;
       });
     });
     _controller2 = AnimationController(
@@ -1231,7 +1231,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
         duration: Duration(seconds: 1));
     _controller2.addListener(() {
       setState(() {
-        AngkaItem2 = _controller2.value;
+        angkaitem2 = _controller2.value;
       });
     });
     _controller3 = AnimationController(
@@ -1241,7 +1241,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
         duration: Duration(milliseconds: 300));
     _controller3.addListener(() {
       setState(() {
-        AngkaItem3 = _controller3.value;
+        angkaitem3 = _controller3.value;
       });
     });
     _controller4 = AnimationController(
@@ -1251,7 +1251,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
         duration: Duration(seconds: 1));
     _controller4.addListener(() {
       setState(() {
-        AngkaItem4 = _controller4.value;
+        angkaitem4 = _controller4.value;
       });
     });
     _controller5 = AnimationController(
@@ -1261,7 +1261,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
         duration: Duration(milliseconds: 300));
     _controller5.addListener(() {
       setState(() {
-        AngkaItem5 = _controller5.value;
+        angkaitem5 = _controller5.value;
       });
     });
     _controller6 = AnimationController(
@@ -1271,7 +1271,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
         duration: Duration(seconds: 1));
     _controller6.addListener(() {
       setState(() {
-        AngkaItem6 = _controller6.value;
+        angkaitem6 = _controller6.value;
       });
     });
     _controller7 = AnimationController(
@@ -1281,7 +1281,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
         duration: Duration(milliseconds: 300));
     _controller7.addListener(() {
       setState(() {
-        AngkaItem7 = _controller7.value;
+        angkaitem7 = _controller7.value;
       });
     });
     _controller8 = AnimationController(
@@ -1291,7 +1291,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
         duration: Duration(seconds: 1));
     _controller8.addListener(() {
       setState(() {
-        AngkaItem8 = _controller8.value;
+        angkaitem8 = _controller8.value;
       });
     });
     _controller9 = AnimationController(
@@ -1301,7 +1301,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
         duration: Duration(milliseconds: 300));
     _controller9.addListener(() {
       setState(() {
-        AngkaItem9 = _controller9.value;
+        angkaitem9 = _controller9.value;
       });
     });
     _controller10 = AnimationController(
@@ -1311,7 +1311,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
         duration: Duration(seconds: 1));
     _controller10.addListener(() {
       setState(() {
-        AngkaItem10 = _controller10.value;
+        angkaitem10 = _controller10.value;
       });
     });
     SfxAngka = AudioCache(fixedPlayer: audio);
@@ -1359,7 +1359,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem1,
+                  scale: angkaitem1,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_31-40/icon_31-40-31.png',
                   ),
@@ -1380,7 +1380,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem2,
+                  scale: angkaitem2,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_31-40/icon_31-40-32.png',
                   ),
@@ -1401,7 +1401,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem3,
+                  scale: angkaitem3,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_31-40/icon_31-40-33.png',
                   ),
@@ -1426,7 +1426,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem4,
+                  scale: angkaitem4,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_31-40/icon_31-40-34.png',
                   ),
@@ -1447,7 +1447,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem5,
+                  scale: angkaitem5,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_31-40/icon_31-40-35.png',
                   ),
@@ -1468,7 +1468,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem6,
+                  scale: angkaitem6,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_31-40/icon_31-40-36.png',
                   ),
@@ -1493,7 +1493,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem7,
+                  scale: angkaitem7,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_31-40/icon_31-40-37.png',
                   ),
@@ -1514,7 +1514,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem8,
+                  scale: angkaitem8,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_31-40/icon_31-40-38.png',
                   ),
@@ -1535,7 +1535,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem9,
+                  scale: angkaitem9,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_31-40/icon_31-40-39.png',
                   ),
@@ -1561,7 +1561,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem10,
+                  scale: angkaitem10,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_31-40/icon_31-40-40.png',
                   ),
@@ -1584,16 +1584,16 @@ class Page5 extends StatefulWidget {
 }
 
 class _Page5State extends State<Page5> with TickerProviderStateMixin {
-  var AngkaItem1 = 1.0;
-  var AngkaItem2 = 1.0;
-  var AngkaItem3 = 1.0;
-  var AngkaItem4 = 1.0;
-  var AngkaItem5 = 1.0;
-  var AngkaItem6 = 1.0;
-  var AngkaItem7 = 1.0;
-  var AngkaItem8 = 1.0;
-  var AngkaItem9 = 1.0;
-  var AngkaItem10 = 1.0;
+  var angkaitem1 = 1.0;
+  var angkaitem2 = 1.0;
+  var angkaitem3 = 1.0;
+  var angkaitem4 = 1.0;
+  var angkaitem5 = 1.0;
+  var angkaitem6 = 1.0;
+  var angkaitem7 = 1.0;
+  var angkaitem8 = 1.0;
+  var angkaitem9 = 1.0;
+  var angkaitem10 = 1.0;
   late AnimationController _controller1;
   late AnimationController _controller2;
   late AnimationController _controller3;
@@ -1616,7 +1616,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
         duration: Duration(milliseconds: 300));
     _controller1.addListener(() {
       setState(() {
-        AngkaItem1 = _controller1.value;
+        angkaitem1 = _controller1.value;
       });
     });
     _controller2 = AnimationController(
@@ -1626,7 +1626,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
         duration: Duration(seconds: 1));
     _controller2.addListener(() {
       setState(() {
-        AngkaItem2 = _controller2.value;
+        angkaitem2 = _controller2.value;
       });
     });
     _controller3 = AnimationController(
@@ -1636,7 +1636,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
         duration: Duration(milliseconds: 300));
     _controller3.addListener(() {
       setState(() {
-        AngkaItem3 = _controller3.value;
+        angkaitem3 = _controller3.value;
       });
     });
     _controller4 = AnimationController(
@@ -1646,7 +1646,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
         duration: Duration(seconds: 1));
     _controller4.addListener(() {
       setState(() {
-        AngkaItem4 = _controller4.value;
+        angkaitem4 = _controller4.value;
       });
     });
     _controller5 = AnimationController(
@@ -1656,7 +1656,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
         duration: Duration(milliseconds: 300));
     _controller5.addListener(() {
       setState(() {
-        AngkaItem5 = _controller5.value;
+        angkaitem5 = _controller5.value;
       });
     });
     _controller6 = AnimationController(
@@ -1666,7 +1666,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
         duration: Duration(seconds: 1));
     _controller6.addListener(() {
       setState(() {
-        AngkaItem6 = _controller6.value;
+        angkaitem6 = _controller6.value;
       });
     });
     _controller7 = AnimationController(
@@ -1676,7 +1676,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
         duration: Duration(milliseconds: 300));
     _controller7.addListener(() {
       setState(() {
-        AngkaItem7 = _controller7.value;
+        angkaitem7 = _controller7.value;
       });
     });
     _controller8 = AnimationController(
@@ -1686,7 +1686,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
         duration: Duration(seconds: 1));
     _controller8.addListener(() {
       setState(() {
-        AngkaItem8 = _controller8.value;
+        angkaitem8 = _controller8.value;
       });
     });
     _controller9 = AnimationController(
@@ -1696,7 +1696,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
         duration: Duration(milliseconds: 300));
     _controller9.addListener(() {
       setState(() {
-        AngkaItem9 = _controller9.value;
+        angkaitem9 = _controller9.value;
       });
     });
     _controller10 = AnimationController(
@@ -1706,7 +1706,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
         duration: Duration(seconds: 1));
     _controller10.addListener(() {
       setState(() {
-        AngkaItem10 = _controller10.value;
+        angkaitem10 = _controller10.value;
       });
     });
 
@@ -1754,7 +1754,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem1,
+                  scale: angkaitem1,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_41-50/icon_41-50-41.png',
                   ),
@@ -1775,7 +1775,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem2,
+                  scale: angkaitem2,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_41-50/icon_41-50-42.png',
                   ),
@@ -1796,7 +1796,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem3,
+                  scale: angkaitem3,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_41-50/icon_41-50-43.png',
                   ),
@@ -1821,7 +1821,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem4,
+                  scale: angkaitem4,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_41-50/icon_41-50-44.png',
                   ),
@@ -1842,7 +1842,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem5,
+                  scale: angkaitem5,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_41-50/icon_41-50-45.png',
                   ),
@@ -1863,7 +1863,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem6,
+                  scale: angkaitem6,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_41-50/icon_41-50-46.png',
                   ),
@@ -1888,7 +1888,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem7,
+                  scale: angkaitem7,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_41-50/icon_41-50-47.png',
                   ),
@@ -1909,7 +1909,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem8,
+                  scale: angkaitem8,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_41-50/icon_41-50-48.png',
                   ),
@@ -1930,7 +1930,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem9,
+                  scale: angkaitem9,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_41-50/icon_41-50-49.png',
                   ),
@@ -1956,7 +1956,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
                   });
                 },
                 child: Transform.scale(
-                  scale: AngkaItem10,
+                  scale: angkaitem10,
                   child: AngkaItem(
                     Imageurl: 'icon_number/icon_41-50/icon_41-50-50.png',
                   ),
