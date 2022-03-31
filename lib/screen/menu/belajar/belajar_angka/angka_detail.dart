@@ -35,6 +35,8 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
   late AnimationController _controller8;
   late AnimationController _controller9;
   late AnimationController _controller10;
+  AudioCache SfxAngka = AudioCache();
+  AudioPlayer audio = AudioPlayer();
 
   @override
   void initState() {
@@ -138,7 +140,13 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
         AngkaItem10 = _controller10.value;
       });
     });
+
+    SfxAngka = AudioCache(fixedPlayer: audio);
     super.initState();
+  }
+
+  Future<void> PlayAudio(url) async {
+    SfxAngka.play(url);
   }
 
   @override
@@ -166,6 +174,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  PlayAudio('audio/belajar/angka/1.mp3');
                   setState(() {
                     _controller1.forward(from: 0.0);
                   });
@@ -240,7 +249,6 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
   }
 }
 
-
 class Page2 extends StatefulWidget {
   const Page2({Key? key}) : super(key: key);
 
@@ -269,6 +277,8 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
   late AnimationController _controller8;
   late AnimationController _controller9;
   late AnimationController _controller10;
+  AudioCache SfxAngka = AudioCache();
+  AudioPlayer audio = AudioPlayer();
 
   @override
   void initState() {
@@ -375,6 +385,10 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     super.initState();
   }
 
+  Future<void> PlayAudio(url) async {
+    SfxAngka.play(url);
+  }
+
   @override
   void dispose() {
     _controller1.dispose();
@@ -400,6 +414,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  PlayAudio('audio/belajar/angka/11.mp3');
                   setState(() {
                     _controller1.forward(from: 0.0);
                   });
@@ -420,6 +435,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  PlayAudio('audio/belajar/angka/12.mp3');
                   setState(() {
                     _controller2.forward(from: 0.0);
                   });
@@ -440,6 +456,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  PlayAudio('audio/belajar/angka/13.mp3');
                   setState(() {
                     _controller3.forward(from: 0.0);
                   });
@@ -464,6 +481,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  PlayAudio('audio/belajar/angka/14.mp3');
                   setState(() {
                     _controller4.forward(from: 0.0);
                   });
@@ -484,6 +502,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  PlayAudio('audio/belajar/angka/15.mp3');
                   setState(() {
                     _controller5.forward(from: 0.0);
                   });
@@ -504,6 +523,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  PlayAudio('audio/belajar/angka/16.mp3');
                   setState(() {
                     _controller6.forward(from: 0.0);
                   });
@@ -528,6 +548,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  PlayAudio('audio/belajar/angka/17.mp3');
                   setState(() {
                     _controller7.forward(from: 0.0);
                   });
@@ -549,6 +570,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
               child: GestureDetector(
                 onTap: () {
                   setState(() {
+                    PlayAudio('audio/belajar/angka/18.mp3');
                     _controller8.forward(from: 0.0);
                   });
                   Timer(Duration(seconds: 1), () {
@@ -568,6 +590,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  PlayAudio('audio/belajar/angka/19.mp3');
                   setState(() {
                     _controller9.forward(from: 0.0);
                   });
@@ -593,6 +616,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  PlayAudio('audio/belajar/angka/20.mp3');
                   setState(() {
                     _controller10.forward(from: 0.0);
                   });
@@ -646,6 +670,8 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
   late AnimationController _controller8;
   late AnimationController _controller9;
   late AnimationController _controller10;
+  AudioCache SfxAngka = AudioCache();
+  AudioPlayer audio = AudioPlayer();
 
   @override
   void initState() {
@@ -749,7 +775,14 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
         AngkaItem10 = _controller10.value;
       });
     });
+
+    SfxAngka = AudioCache(fixedPlayer: audio);
+
     super.initState();
+  }
+
+  Future<void> PlayAudio(url) async {
+    SfxAngka.play(url);
   }
 
   @override
@@ -777,6 +810,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  PlayAudio('audio/belajar/angka/21.mp3');
                   setState(() {
                     _controller1.forward(from: 0.0);
                   });
@@ -797,6 +831,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  PlayAudio('audio/belajar/angka/22.mp3');
                   setState(() {
                     _controller2.forward(from: 0.0);
                   });
@@ -817,6 +852,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  PlayAudio('audio/belajar/angka/23.mp3');
                   setState(() {
                     _controller3.forward(from: 0.0);
                   });
@@ -841,6 +877,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  PlayAudio('audio/belajar/angka/24.mp3');
                   setState(() {
                     _controller4.forward(from: 0.0);
                   });
@@ -861,6 +898,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  PlayAudio('audio/belajar/angka/25.mp3');
                   setState(() {
                     _controller5.forward(from: 0.0);
                   });
@@ -881,6 +919,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  PlayAudio('audio/belajar/angka/26.mp3');
                   setState(() {
                     _controller6.forward(from: 0.0);
                   });
@@ -905,6 +944,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  PlayAudio('audio/belajar/angka/27.mp3');
                   setState(() {
                     _controller7.forward(from: 0.0);
                   });
@@ -925,6 +965,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  PlayAudio('audio/belajar/angka/28.mp3');
                   setState(() {
                     _controller8.forward(from: 0.0);
                   });
@@ -945,6 +986,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  PlayAudio('audio/belajar/angka/29.mp3');
                   setState(() {
                     _controller9.forward(from: 0.0);
                   });
@@ -970,6 +1012,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  PlayAudio('audio/belajar/angka/30.mp3');
                   setState(() {
                     _controller10.forward(from: 0.0);
                   });
@@ -1023,6 +1066,8 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
   late AnimationController _controller8;
   late AnimationController _controller9;
   late AnimationController _controller10;
+  AudioCache SfxAngka = AudioCache();
+  AudioPlayer audio = AudioPlayer();
 
   @override
   void initState() {
@@ -1126,7 +1171,12 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
         AngkaItem10 = _controller10.value;
       });
     });
+    SfxAngka = AudioCache(fixedPlayer: audio);
     super.initState();
+  }
+
+  Future<void> PlayAudio(url) async {
+    SfxAngka.play(url);
   }
 
   @override
@@ -1141,6 +1191,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
     _controller8.dispose();
     _controller9.dispose();
     _controller10.dispose();
+    audio.dispose();
     super.dispose();
   }
 
@@ -1154,6 +1205,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  SfxAngka.play('audio/belajar/angka/31.mp3');
                   setState(() {
                     _controller1.forward(from: 0.0);
                   });
@@ -1174,6 +1226,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  SfxAngka.play('audio/belajar/angka/32.mp3');
                   setState(() {
                     _controller2.forward(from: 0.0);
                   });
@@ -1194,6 +1247,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  SfxAngka.play('audio/belajar/angka/33.mp3');
                   setState(() {
                     _controller3.forward(from: 0.0);
                   });
@@ -1218,6 +1272,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  SfxAngka.play('audio/belajar/angka/34.mp3');
                   setState(() {
                     _controller4.forward(from: 0.0);
                   });
@@ -1238,6 +1293,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  SfxAngka.play('audio/belajar/angka/35.mp3');
                   setState(() {
                     _controller5.forward(from: 0.0);
                   });
@@ -1258,6 +1314,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  SfxAngka.play('audio/belajar/angka/36.mp3');
                   setState(() {
                     _controller6.forward(from: 0.0);
                   });
@@ -1282,6 +1339,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  SfxAngka.play('audio/belajar/angka/37.mp3');
                   setState(() {
                     _controller7.forward(from: 0.0);
                   });
@@ -1302,6 +1360,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  SfxAngka.play('audio/belajar/angka/38.mp3');
                   setState(() {
                     _controller8.forward(from: 0.0);
                   });
@@ -1322,6 +1381,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  SfxAngka.play('audio/belajar/angka/39.mp3');
                   setState(() {
                     _controller9.forward(from: 0.0);
                   });
@@ -1347,6 +1407,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  SfxAngka.play('audio/belajar/angka/40.mp3');
                   setState(() {
                     _controller10.forward(from: 0.0);
                   });
@@ -1400,6 +1461,8 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
   late AnimationController _controller8;
   late AnimationController _controller9;
   late AnimationController _controller10;
+  AudioCache SfxAngka = AudioCache();
+  AudioPlayer audio = AudioPlayer();
 
   @override
   void initState() {
@@ -1503,7 +1566,13 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
         AngkaItem10 = _controller10.value;
       });
     });
+
+    SfxAngka = AudioCache(fixedPlayer: audio);
     super.initState();
+  }
+
+  Future<void> PlayAudio(url) async {
+    SfxAngka.play(url);
   }
 
   @override
@@ -1531,6 +1600,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  PlayAudio('audio/belajar/angka/41.mp3');
                   setState(() {
                     _controller1.forward(from: 0.0);
                   });
@@ -1551,6 +1621,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  PlayAudio('audio/belajar/angka/42.mp3');
                   setState(() {
                     _controller2.forward(from: 0.0);
                   });
@@ -1571,6 +1642,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  PlayAudio('audio/belajar/angka/43.mp3');
                   setState(() {
                     _controller3.forward(from: 0.0);
                   });
@@ -1595,6 +1667,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  PlayAudio('audio/belajar/angka/44.mp3');
                   setState(() {
                     _controller4.forward(from: 0.0);
                   });
@@ -1615,6 +1688,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  PlayAudio('audio/belajar/angka/45.mp3');
                   setState(() {
                     _controller5.forward(from: 0.0);
                   });
@@ -1635,6 +1709,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  PlayAudio('audio/belajar/angka/46.mp3');
                   setState(() {
                     _controller6.forward(from: 0.0);
                   });
@@ -1659,6 +1734,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  PlayAudio('audio/belajar/angka/47.mp3');
                   setState(() {
                     _controller7.forward(from: 0.0);
                   });
@@ -1679,6 +1755,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  PlayAudio('audio/belajar/angka/48.mp3');
                   setState(() {
                     _controller8.forward(from: 0.0);
                   });
@@ -1699,6 +1776,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  PlayAudio('audio/belajar/angka/49.mp3');
                   setState(() {
                     _controller9.forward(from: 0.0);
                   });
@@ -1724,6 +1802,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
+                  PlayAudio('audio/belajar/angka/50.mp3');
                   setState(() {
                     _controller10.forward(from: 0.0);
                   });

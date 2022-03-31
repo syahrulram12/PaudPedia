@@ -53,7 +53,7 @@ class _AngkaHomeState extends State<AngkaHome> {
 
   Page() {
     if (page == 1) {
-      return Page();
+      return Page1();
     } else if (page == 2) {
       return Page2();
     } else if (page == 3) {
@@ -144,7 +144,7 @@ class _AngkaHomeState extends State<AngkaHome> {
                       color: Colors.blue,
                       child: Padding(
                         padding: EdgeInsets.symmetric(horizontal: 2),
-                        child: Page1(),
+                        child: Page(),
                       ))
                 ],
               ),
