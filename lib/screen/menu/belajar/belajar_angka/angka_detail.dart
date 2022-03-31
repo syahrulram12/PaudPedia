@@ -15,9 +15,9 @@ class Page1 extends StatefulWidget {
 }
 
 class _Page1State extends State<Page1> with TickerProviderStateMixin {
-  var angkaitem1 = 0.8;
-  var angkaitem2 = 0.8;
-  var angkaitem3 = 0.8;
+  var angkaitem1 = 1.0;
+  var angkaitem2 = 1.0;
+  var angkaitem3 = 1.0;
   var angkaitem4 = 0.8;
   var angkaitem5 = 0.8;
   var angkaitem6 = 0.8;
@@ -54,7 +54,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
         vsync: this,
         lowerBound: 1.0,
         upperBound: 1.2,
-        duration: Duration(seconds: 1));
+        duration: Duration(milliseconds: 300));
     _controller2.addListener(() {
       setState(() {
         angkaitem2 = _controller2.value;
@@ -231,162 +231,160 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
               ),
             ),
           ),
-          Row(
-            children: [
-              Flexible(
-                child: GestureDetector(
-                  onTap: () {
+        ]),
+        Row(children: [
+          Flexible(
+            child: GestureDetector(
+              onTap: () {
+                PlayAudio('audio/BELAJAR/angka/1.mp3');
+                setState(() {
+                  _controller4.forward(from: 0.0);
+                });
+                Timer(Duration(seconds: 1), () {
+                  setState(() {
+                    _controller4.reverse();
+                  });
+                });
+              },
+              child: Transform.scale(
+                scale: angkaitem4,
+                child: AngkaItem(
+                  Imageurl: 'icon_number/icon_1-10/icon_1-10-01.png',
+                ),
+              ),
+            ),
+          ),
+          Flexible(
+            child: GestureDetector(
+              onTap: () {
+                setState(() {
+                  _controller5.forward(from: 0.0);
+                });
+                Timer(Duration(seconds: 1), () {
+                  setState(() {
+                    _controller5.reverse();
+                  });
+                });
+              },
+              child: Transform.scale(
+                scale: angkaitem5,
+                child: AngkaItem(
+                  Imageurl: 'icon_number/icon_1-10/icon_1-10-02.png',
+                ),
+              ),
+            ),
+          ),
+          Flexible(
+            child: GestureDetector(
+              onTap: () {
+                setState(() {
+                  _controller6.forward(from: 0.0);
+                });
+                Timer(Duration(seconds: 1), () {
+                  setState(() {
+                    _controller6.reverse();
+                  });
+                });
+              },
+              child: Transform.scale(
+                scale: angkaitem6,
+                child: AngkaItem(
+                  Imageurl: 'icon_number/icon_1-10/icon_1-10-03.png',
+                ),
+              ),
+            ),
+          ),
+        ]),
+        Row(children: [
+          Flexible(
+            child: GestureDetector(
+              onTap: () {
+                PlayAudio('audio/BELAJAR/angka/1.mp3');
+                setState(() {
+                  _controller7.forward(from: 0.0);
+                });
+                Timer(Duration(seconds: 1), () {
+                  setState(() {
+                    _controller7.reverse();
+                  });
+                });
+              },
+              child: Transform.scale(
+                scale: angkaitem7,
+                child: AngkaItem(
+                  Imageurl: 'icon_number/icon_1-10/icon_1-10-01.png',
+                ),
+              ),
+            ),
+          ),
+          Flexible(
+            child: GestureDetector(
+              onTap: () {
+                setState(() {
+                  _controller8.forward(from: 0.0);
+                });
+                Timer(Duration(seconds: 1), () {
+                  setState(() {
+                    _controller8.reverse();
+                  });
+                });
+              },
+              child: Transform.scale(
+                scale: angkaitem8,
+                child: AngkaItem(
+                  Imageurl: 'icon_number/icon_1-10/icon_1-10-02.png',
+                ),
+              ),
+            ),
+          ),
+          Flexible(
+            child: GestureDetector(
+              onTap: () {
+                setState(() {
+                  _controller9.forward(from: 0.0);
+                });
+                Timer(Duration(seconds: 1), () {
+                  setState(() {
+                    _controller9.reverse();
+                  });
+                });
+              },
+              child: Transform.scale(
+                scale: angkaitem9,
+                child: AngkaItem(
+                  Imageurl: 'icon_number/icon_1-10/icon_1-10-03.png',
+                ),
+              ),
+            ),
+          ),
+        ]),
+        Row(
+          children: [
+            Flexible(child: Container()),
+            Flexible(
+              child: GestureDetector(
+                onTap: () {
+                  PlayAudio('audio/BELAJAR/angka/20.mp3');
+                  setState(() {
+                    _controller10.forward(from: 0.0);
+                  });
+                  Timer(Duration(seconds: 1), () {
                     setState(() {
-                      _controller4.forward(from: 0.0);
+                      _controller10.reverse();
                     });
-                    Timer(Duration(seconds: 1), () {
-                      setState(() {
-                        _controller4.reverse();
-                      });
-                    });
-                  },
-                  child: Transform.scale(
-                    scale: angkaitem4,
-                    child: AngkaItem(
-                      Imageurl: 'icon_number/icon_1-10/icon_1-10-04.png',
-                    ),
+                  });
+                },
+                child: Transform.scale(
+                  scale: angkaitem10,
+                  child: AngkaItem(
+                    Imageurl: 'icon_number/icon_11-20/icon_11-20-20.png',
                   ),
                 ),
               ),
-              Flexible(
-                child: GestureDetector(
-                  onTap: () {
-                    setState(() {
-                      _controller5.forward(from: 0.0);
-                    });
-                    Timer(Duration(seconds: 1), () {
-                      setState(() {
-                        _controller5.reverse();
-                      });
-                    });
-                  },
-                  child: Transform.scale(
-                    scale: angkaitem5,
-                    child: AngkaItem(
-                      Imageurl: 'icon_number/icon_1-10/icon_1-10-05.png',
-                    ),
-                  ),
-                ),
-              ),
-              Flexible(
-                child: GestureDetector(
-                  onTap: () {
-                    setState(() {
-                      _controller6.forward(from: 0.0);
-                    });
-                    Timer(Duration(seconds: 1), () {
-                      setState(() {
-                        _controller6.reverse();
-                      });
-                    });
-                  },
-                  child: Transform.scale(
-                    scale: angkaitem6,
-                    child: AngkaItem(
-                      Imageurl: 'icon_number/icon_1-10/icon_1-10-06.png',
-                    ),
-                  ),
-                ),
-              ),
-              Row(
-                children: [
-                  Flexible(
-                    child: GestureDetector(
-                      onTap: () {
-                        setState(() {
-                          _controller7.forward(from: 0.0);
-                        });
-                        Timer(Duration(seconds: 1), () {
-                          setState(() {
-                            _controller7.reverse();
-                          });
-                        });
-                      },
-                      child: Transform.scale(
-                        scale: angkaitem7,
-                        child: AngkaItem(
-                          Imageurl: 'icon_number/icon_1-10/icon_1-10-07.png',
-                        ),
-                      ),
-                    ),
-                  ),
-                  Flexible(
-                    child: GestureDetector(
-                      onTap: () {
-                        setState(() {
-                          _controller8.forward(from: 0.0);
-                        });
-                        Timer(Duration(seconds: 1), () {
-                          setState(() {
-                            _controller8.reverse();
-                          });
-                        });
-                      },
-                      child: Transform.scale(
-                        scale: angkaitem8,
-                        child: AngkaItem(
-                          Imageurl: 'icon_number/icon_1-10/icon_1-10-08.png',
-                        ),
-                      ),
-                    ),
-                  ),
-                  Flexible(
-                    child: GestureDetector(
-                      onTap: () {
-                        setState(() {
-                          _controller9.forward(from: 0.0);
-                        });
-                        Timer(Duration(seconds: 1), () {
-                          setState(() {
-                            _controller9.reverse();
-                          });
-                        });
-                      },
-                      child: Transform.scale(
-                        scale: angkaitem9,
-                        child: AngkaItem(
-                          Imageurl: 'icon_number/icon_1-10/icon_1-10-09.png',
-                        ),
-                      ),
-                    ),
-                  ),
-                  Row(
-                    children: [
-                      Flexible(child: Container()),
-                      Flexible(
-                        child: GestureDetector(
-                          onTap: () {
-                            setState(() {
-                              _controller10.forward(from: 0.0);
-                            });
-                            Timer(Duration(seconds: 1), () {
-                              setState(() {
-                                _controller10.reverse();
-                              });
-                            });
-                          },
-                          child: Transform.scale(
-                            scale: angkaitem10,
-                            child: AngkaItem(
-                              Imageurl:
-                                  'icon_number/icon_1-10/icon_1-10-10.png',
-                            ),
-                          ),
-                        ),
-                      ),
-                      Flexible(child: Container())
-                    ],
-                  ),
-                ],
-              )
-            ],
-          )
-        ])
+            ),
+            Flexible(child: Container())
+          ],
+        ),
       ],
     ));
   }

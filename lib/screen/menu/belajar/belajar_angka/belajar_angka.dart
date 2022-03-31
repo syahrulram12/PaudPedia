@@ -72,85 +72,85 @@ class _AngkaHomeState extends State<AngkaHome> {
 
     return Scaffold(
         body: Stack(
-          children: <Widget>[
-            Container(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                    image: AssetImage(
-                        'assets/images/all_background/belajar/02_belajar_angka_background.jpg'),
-                    fit: BoxFit.cover),
-              ),
-              child: Column(
-                children: <Widget>[
-                  Container(
-                    margin: EdgeInsets.symmetric(
-                        horizontal: (width / 8) / 2, vertical: 25),
-                    height: (height / 8) / 2,
-                    child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        mainAxisSize: MainAxisSize.max,
-                        children: [
-                          Container(
-                            width: width / 6,
-                            child: ClipRRect(
-                              child: GestureDetector(
-                                  onTap: () => {Get.back()},
-                                  child: Image.asset(
-                                      'assets/icons/tab_bar_menu.png',
-                                      fit: BoxFit.contain)),
-                            ),
-                          ),
-                          Container(
-                            width: width / 5,
-                            decoration: BoxDecoration(
-                                image: DecorationImage(
-                                    image: AssetImage(
-                                        'assets/icons/tab_bar_right_left.png'),
-                                    fit: BoxFit.contain)),
-                            child: Row(
-                              children: [
-                                Flexible(
-                                  child: Container(
-                                    child: GestureDetector(
-                                      onTap: () {
-                                        ChangePage('kurang');
-                                      },
-                                    ),
-                                  ),
+      children: <Widget>[
+        Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage(
+                    'assets/images/all_background/belajar/02_belajar_angka_background.jpg'),
+                fit: BoxFit.cover),
+          ),
+          child: Column(
+            children: <Widget>[
+              Container(
+                margin: EdgeInsets.symmetric(
+                    horizontal: (width / 8) / 2, vertical: 25),
+                height: (height / 8) / 2,
+                child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      Container(
+                        width: width / 6,
+                        child: ClipRRect(
+                          child: GestureDetector(
+                              onTap: () => {Get.back()},
+                              child: Image.asset(
+                                  'assets/icons/tab_bar_menu.png',
+                                  fit: BoxFit.contain)),
+                        ),
+                      ),
+                      Container(
+                        width: width / 5,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: AssetImage(
+                                    'assets/icons/tab_bar_right_left.png'),
+                                fit: BoxFit.contain)),
+                        child: Row(
+                          children: [
+                            Flexible(
+                              child: Container(
+                                child: GestureDetector(
+                                  onTap: () {
+                                    ChangePage('kurang');
+                                  },
                                 ),
-                                Flexible(child: Container(
-                                  child: GestureDetector(
-                                    onTap: () {
-                                      ChangePage('tambah');
-                                    },
-                                  ),
-                                ))
-                              ],
+                              ),
                             ),
-                          ),
-                          Container(
-                            width: width / 5,
-                            child: ClipRRect(
+                            Flexible(child: Container(
                               child: GestureDetector(
-                                  child: Image.asset(
-                                      'assets/icons/tab_bar_auto.png',
-                                      fit: BoxFit.cover)),
-                            ),
-                          ),
-                        ]),
-                  ),
-                  SizedBox(height: height / 10),
-                  Container(
-                      color: Colors.blue,
-                      child: Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 2),
-                        child: Page(),
-                      ))
-                ],
+                                onTap: () {
+                                  ChangePage('tambah');
+                                },
+                              ),
+                            ))
+                          ],
+                        ),
+                      ),
+                      Container(
+                        width: width / 5,
+                        child: ClipRRect(
+                          child: GestureDetector(
+                              child: Image.asset(
+                                  'assets/icons/tab_bar_auto.png',
+                                  fit: BoxFit.cover)),
+                        ),
+                      ),
+                    ]),
               ),
-            ),
-          ],
-        ));
+              SizedBox(height: height / 10),
+              Container(
+                  color: Colors.blue,
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 2),
+                    child: Page1(),
+                  ))
+            ],
+          ),
+        ),
+      ],
+    ));
   }
 }
 
