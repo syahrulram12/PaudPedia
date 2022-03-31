@@ -5,7 +5,7 @@ import 'package:audioplayers/audioplayers.dart';
 import 'package:get/get.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:paudpedia_kemendikbud/styles/color.dart';
-import 'package:paudpedia_kemendikbud/screen/menu/belajar/belajar_angka/belajar_angka.dart';
+import 'package:paudpedia_kemendikbud/screen/menu/BELAJAR/BELAJAR_angka/BELAJAR_angka.dart';
 
 class Page1 extends StatefulWidget {
   const Page1({Key? key}) : super(key: key);
@@ -42,8 +42,8 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
   void initState() {
     _controller1 = AnimationController(
         vsync: this,
-        lowerBound: 1,
-        upperBound: 1.0,
+        lowerBound: 1.0,
+        upperBound: 1.2,
         duration: Duration(milliseconds: 300));
     _controller1.addListener(() {
       setState(() {
@@ -52,8 +52,8 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     });
     _controller2 = AnimationController(
         vsync: this,
-        lowerBound: 1,
-        upperBound: 1.0,
+        lowerBound: 1.0,
+        upperBound: 1.2,
         duration: Duration(seconds: 1));
     _controller2.addListener(() {
       setState(() {
@@ -62,8 +62,8 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     });
     _controller3 = AnimationController(
         vsync: this,
-        lowerBound: 1,
-        upperBound: 1.0,
+        lowerBound: 1.0,
+        upperBound: 1.2,
         duration: Duration(milliseconds: 300));
     _controller3.addListener(() {
       setState(() {
@@ -72,8 +72,8 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     });
     _controller4 = AnimationController(
         vsync: this,
-        lowerBound: 1,
-        upperBound: 1.0,
+        lowerBound: 1.0,
+        upperBound: 1.2,
         duration: Duration(seconds: 1));
     _controller4.addListener(() {
       setState(() {
@@ -82,8 +82,8 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     });
     _controller5 = AnimationController(
         vsync: this,
-        lowerBound: 1,
-        upperBound: 1.0,
+        lowerBound: 1.0,
+        upperBound: 1.2,
         duration: Duration(milliseconds: 300));
     _controller5.addListener(() {
       setState(() {
@@ -92,8 +92,8 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     });
     _controller6 = AnimationController(
         vsync: this,
-        lowerBound: 1,
-        upperBound: 1.0,
+        lowerBound: 1.0,
+        upperBound: 1.2,
         duration: Duration(seconds: 1));
     _controller6.addListener(() {
       setState(() {
@@ -102,8 +102,8 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     });
     _controller7 = AnimationController(
         vsync: this,
-        lowerBound: 1,
-        upperBound: 1.0,
+        lowerBound: 1.0,
+        upperBound: 1.2,
         duration: Duration(milliseconds: 300));
     _controller7.addListener(() {
       setState(() {
@@ -112,8 +112,8 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     });
     _controller8 = AnimationController(
         vsync: this,
-        lowerBound: 1,
-        upperBound: 1.0,
+        lowerBound: 1.0,
+        upperBound: 1.2,
         duration: Duration(seconds: 1));
     _controller8.addListener(() {
       setState(() {
@@ -122,8 +122,8 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     });
     _controller9 = AnimationController(
         vsync: this,
-        lowerBound: 1,
-        upperBound: 1.0,
+        lowerBound: 1.0,
+        upperBound: 1.2,
         duration: Duration(milliseconds: 300));
     _controller9.addListener(() {
       setState(() {
@@ -132,8 +132,8 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     });
     _controller10 = AnimationController(
         vsync: this,
-        lowerBound: 1,
-        upperBound: 1.0,
+        lowerBound: 1.0,
+        upperBound: 1.2,
         duration: Duration(seconds: 1));
     _controller10.addListener(() {
       setState(() {
@@ -145,7 +145,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     super.initState();
   }
 
-  Future<void> PlayAudio(url) async {
+  void PlayAudio(url) {
     SfxAngka.play(url);
   }
 
@@ -169,222 +169,225 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     return Center(
         child: Column(
       children: [
-        Row(
-          children: [
-            Flexible(
-              child: GestureDetector(
-                onTap: () {
-                  PlayAudio('audio/belajar/angka/1.mp3');
+        Row(children: [
+          Flexible(
+            child: GestureDetector(
+              onTap: () {
+                PlayAudio('audio/BELAJAR/angka/1.mp3');
+                setState(() {
+                  _controller1.forward(from: 0.0);
+                });
+                Timer(Duration(seconds: 1), () {
                   setState(() {
-                    _controller1.forward(from: 0.0);
+                    _controller1.reverse();
                   });
-                  Timer(Duration(seconds: 1), () {
-                    setState(() {
-                      _controller1.reverse();
-                    });
-                  });
-                },
-                child: Transform.scale(
-                  scale: AngkaItem1,
-                  child: AngkaItem(
-                    Imageurl: 'icon_number/icon_1-10/icon_1-10-01.png',
-                  ),
+                });
+              },
+              child: Transform.scale(
+                scale: AngkaItem1,
+                child: AngkaItem(
+                  Imageurl: 'icon_number/icon_1-10/icon_1-10-01.png',
                 ),
               ),
             ),
-            Flexible(
-              child: GestureDetector(
-                onTap: () {
-                  setState(() {
-                    _controller2.forward(from: 0.0);
-                  });
-                  Timer(Duration(seconds: 1), () {
-                    setState(() {
-                      _controller2.reverse();
-                    });
-                  });
-                  },
-              child: Transform.scale(
-              scale: AngkaItem2,
-                child: AngkaItem(
-              Imageurl: 'icon_number/icon_1-10/icon_1-10-02.png',
-                 ),
-               ),
-               ),
-               ),
-            Flexible(
-              child: GestureDetector(
+          ),
+          Flexible(
+            child: GestureDetector(
               onTap: () {
                 setState(() {
-               _controller3.forward(from: 0.0);
-              });
-              Timer(Duration(seconds: 1), () {
+                  _controller2.forward(from: 0.0);
+                });
+                Timer(Duration(seconds: 1), () {
+                  setState(() {
+                    _controller2.reverse();
+                  });
+                });
+              },
+              child: Transform.scale(
+                scale: AngkaItem2,
+                child: AngkaItem(
+                  Imageurl: 'icon_number/icon_1-10/icon_1-10-02.png',
+                ),
+              ),
+            ),
+          ),
+          Flexible(
+            child: GestureDetector(
+              onTap: () {
                 setState(() {
-                  _controller3.reverse();
-              });
-              });
+                  _controller3.forward(from: 0.0);
+                });
+                Timer(Duration(seconds: 1), () {
+                  setState(() {
+                    _controller3.reverse();
+                  });
+                });
               },
               child: Transform.scale(
                 scale: AngkaItem3,
                 child: AngkaItem(
-                Imageurl: 'icon_number/icon_1-10/icon_1-10-03.png',
-    ),
-    ),
-    ),
-    ),
-        Row(
-          children: [
-            Flexible(
-              child: GestureDetector(
-                onTap: () {
-                  setState(() {
-                    _controller4.forward(from: 0.0);
-                  });
-                  Timer(Duration(seconds: 1), () {
+                  Imageurl: 'icon_number/icon_1-10/icon_1-10-03.png',
+                ),
+              ),
+            ),
+          ),
+          Row(
+            children: [
+              Flexible(
+                child: GestureDetector(
+                  onTap: () {
                     setState(() {
-                      _controller4.reverse();
-    });
-    });
-    },
-                child: Transform.scale(
-                  scale: AngkaItem4,
-                  child: AngkaItem(
-                    Imageurl: 'icon_number/icon_1-10/icon_1-10-04.png',
-    ),
-    ),
-    ),
-    ),
-            Flexible(
-              child: GestureDetector(
-                onTap: () {
-                  setState(() {
-                    _controller5.forward(from: 0.0);
-                  });
-                  Timer(Duration(seconds: 1), () {
-                    setState(() {
-                      _controller5.reverse();
+                      _controller4.forward(from: 0.0);
                     });
-                  });
-                  },
-                child: Transform.scale(
-                  scale: AngkaItem5,
-                  child: AngkaItem(
-                    Imageurl: 'icon_number/icon_1-10/icon_1-10-05.png',
-    ),
-    ),
-    ),
-    ),
-            Flexible(
-              child: GestureDetector(
-                onTap: () {
-                  setState(() {
-                    _controller6.forward(from: 0.0);
-                  });
-                  Timer(Duration(seconds: 1), () {
-                    setState(() {
-                   _controller6.reverse();
-                    });
+                    Timer(Duration(seconds: 1), () {
+                      setState(() {
+                        _controller4.reverse();
+                      });
                     });
                   },
-    child: Transform.scale(
-    scale: AngkaItem6,
-    child: AngkaItem(
-    Imageurl: 'icon_number/icon_1-10/icon_1-10-06.png',
-    ),
-    ),
-    ),
-    ),
-        Row(
-          children: [
-            Flexible(
-              child: GestureDetector(
-                onTap: () {
-                setState(() {
-                 _controller7.forward(from: 0.0);
-                });
-                Timer(Duration(seconds: 1), () {
-                  setState(() {
-                    _controller7.reverse();
-                  });
-                   });
-                    },
-                child: Transform.scale(
-                  scale: AngkaItem7,
-                  child: AngkaItem(
-                    Imageurl: 'icon_number/icon_1-10/icon_1-10-07.png',
-    ),
-    ),
-    ),
-    ),
-            Flexible(
-              child: GestureDetector(
-                onTap: () {
-                  setState(() {
-                    _controller8.forward(from: 0.0);
-                  });
-                  Timer(Duration(seconds: 1), () {
+                  child: Transform.scale(
+                    scale: AngkaItem4,
+                    child: AngkaItem(
+                      Imageurl: 'icon_number/icon_1-10/icon_1-10-04.png',
+                    ),
+                  ),
+                ),
+              ),
+              Flexible(
+                child: GestureDetector(
+                  onTap: () {
                     setState(() {
-                      _controller8.reverse();
+                      _controller5.forward(from: 0.0);
                     });
-                  });
+                    Timer(Duration(seconds: 1), () {
+                      setState(() {
+                        _controller5.reverse();
+                      });
+                    });
                   },
-                child: Transform.scale(
-                  scale: AngkaItem8,
-                  child: AngkaItem(
-                    Imageurl: 'icon_number/icon_1-10/icon_1-10-08.png',
-    ),
-    ),
-    ),
-    ),
-            Flexible(
-              child: GestureDetector(
-                onTap: () {
-                  setState(() {
-                    _controller9.forward(from: 0.0);
-                  });
-                  Timer(Duration(seconds: 1), () {
+                  child: Transform.scale(
+                    scale: AngkaItem5,
+                    child: AngkaItem(
+                      Imageurl: 'icon_number/icon_1-10/icon_1-10-05.png',
+                    ),
+                  ),
+                ),
+              ),
+              Flexible(
+                child: GestureDetector(
+                  onTap: () {
                     setState(() {
-                      _controller9.reverse();
-    });
-    });
-    },
-                child: Transform.scale(
-                  scale: AngkaItem9,
-                  child: AngkaItem(
-                    Imageurl: 'icon_number/icon_1-10/icon_1-10-09.png',
-    ),
-    ),
-    ),
-    ),
-        Row(
-          children: [
-            Flexible(child: Container()),
-            Flexible(
-              child: GestureDetector(
-                onTap: () {
-                  setState(() {
-                    _controller10.forward(from: 0.0);
-                  });
-                  Timer(Duration(seconds: 1), () {
-                    setState(() {
-                      _controller10.reverse();
+                      _controller6.forward(from: 0.0);
                     });
-                  });
-    },
-    child: Transform.scale(
-                scale: AngkaItem10,
-                child: AngkaItem(
-                Imageurl: 'icon_number/icon_1-10/icon_1-10-10.png',
-    ),
-    ),
-    ),
-    ),
-            Flexible(child: Container())
-          ],
-    ),
-    ],
-    )],
-    )])],
+                    Timer(Duration(seconds: 1), () {
+                      setState(() {
+                        _controller6.reverse();
+                      });
+                    });
+                  },
+                  child: Transform.scale(
+                    scale: AngkaItem6,
+                    child: AngkaItem(
+                      Imageurl: 'icon_number/icon_1-10/icon_1-10-06.png',
+                    ),
+                  ),
+                ),
+              ),
+              Row(
+                children: [
+                  Flexible(
+                    child: GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          _controller7.forward(from: 0.0);
+                        });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {
+                            _controller7.reverse();
+                          });
+                        });
+                      },
+                      child: Transform.scale(
+                        scale: AngkaItem7,
+                        child: AngkaItem(
+                          Imageurl: 'icon_number/icon_1-10/icon_1-10-07.png',
+                        ),
+                      ),
+                    ),
+                  ),
+                  Flexible(
+                    child: GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          _controller8.forward(from: 0.0);
+                        });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {
+                            _controller8.reverse();
+                          });
+                        });
+                      },
+                      child: Transform.scale(
+                        scale: AngkaItem8,
+                        child: AngkaItem(
+                          Imageurl: 'icon_number/icon_1-10/icon_1-10-08.png',
+                        ),
+                      ),
+                    ),
+                  ),
+                  Flexible(
+                    child: GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          _controller9.forward(from: 0.0);
+                        });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {
+                            _controller9.reverse();
+                          });
+                        });
+                      },
+                      child: Transform.scale(
+                        scale: AngkaItem9,
+                        child: AngkaItem(
+                          Imageurl: 'icon_number/icon_1-10/icon_1-10-09.png',
+                        ),
+                      ),
+                    ),
+                  ),
+                  Row(
+                    children: [
+                      Flexible(child: Container()),
+                      Flexible(
+                        child: GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              _controller10.forward(from: 0.0);
+                            });
+                            Timer(Duration(seconds: 1), () {
+                              setState(() {
+                                _controller10.reverse();
+                              });
+                            });
+                          },
+                          child: Transform.scale(
+                            scale: AngkaItem10,
+                            child: AngkaItem(
+                              Imageurl:
+                                  'icon_number/icon_1-10/icon_1-10-10.png',
+                            ),
+                          ),
+                        ),
+                      ),
+                      Flexible(child: Container())
+                    ],
+                  ),
+                ],
+              )
+            ],
+          )
+        ])
+      ],
     ));
   }
 }
@@ -554,7 +557,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/belajar/angka/11.mp3');
+                  PlayAudio('audio/BELAJAR/angka/11.mp3');
                   setState(() {
                     _controller1.forward(from: 0.0);
                   });
@@ -575,7 +578,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/belajar/angka/12.mp3');
+                  PlayAudio('audio/BELAJAR/angka/12.mp3');
                   setState(() {
                     _controller2.forward(from: 0.0);
                   });
@@ -596,7 +599,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/belajar/angka/13.mp3');
+                  PlayAudio('audio/BELAJAR/angka/13.mp3');
                   setState(() {
                     _controller3.forward(from: 0.0);
                   });
@@ -621,7 +624,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/belajar/angka/14.mp3');
+                  PlayAudio('audio/BELAJAR/angka/14.mp3');
                   setState(() {
                     _controller4.forward(from: 0.0);
                   });
@@ -642,7 +645,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/belajar/angka/15.mp3');
+                  PlayAudio('audio/BELAJAR/angka/15.mp3');
                   setState(() {
                     _controller5.forward(from: 0.0);
                   });
@@ -663,7 +666,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/belajar/angka/16.mp3');
+                  PlayAudio('audio/BELAJAR/angka/16.mp3');
                   setState(() {
                     _controller6.forward(from: 0.0);
                   });
@@ -688,7 +691,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/belajar/angka/17.mp3');
+                  PlayAudio('audio/BELAJAR/angka/17.mp3');
                   setState(() {
                     _controller7.forward(from: 0.0);
                   });
@@ -710,7 +713,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
               child: GestureDetector(
                 onTap: () {
                   setState(() {
-                    PlayAudio('audio/belajar/angka/18.mp3');
+                    PlayAudio('audio/BELAJAR/angka/18.mp3');
                     _controller8.forward(from: 0.0);
                   });
                   Timer(Duration(seconds: 1), () {
@@ -730,7 +733,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/belajar/angka/19.mp3');
+                  PlayAudio('audio/BELAJAR/angka/19.mp3');
                   setState(() {
                     _controller9.forward(from: 0.0);
                   });
@@ -756,7 +759,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/belajar/angka/20.mp3');
+                  PlayAudio('audio/BELAJAR/angka/20.mp3');
                   setState(() {
                     _controller10.forward(from: 0.0);
                   });
@@ -950,7 +953,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/belajar/angka/21.mp3');
+                  PlayAudio('audio/BELAJAR/angka/21.mp3');
                   setState(() {
                     _controller1.forward(from: 0.0);
                   });
@@ -971,7 +974,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/belajar/angka/22.mp3');
+                  PlayAudio('audio/BELAJAR/angka/22.mp3');
                   setState(() {
                     _controller2.forward(from: 0.0);
                   });
@@ -992,7 +995,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/belajar/angka/23.mp3');
+                  PlayAudio('audio/BELAJAR/angka/23.mp3');
                   setState(() {
                     _controller3.forward(from: 0.0);
                   });
@@ -1017,7 +1020,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/belajar/angka/24.mp3');
+                  PlayAudio('audio/BELAJAR/angka/24.mp3');
                   setState(() {
                     _controller4.forward(from: 0.0);
                   });
@@ -1038,7 +1041,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/belajar/angka/25.mp3');
+                  PlayAudio('audio/BELAJAR/angka/25.mp3');
                   setState(() {
                     _controller5.forward(from: 0.0);
                   });
@@ -1059,7 +1062,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/belajar/angka/26.mp3');
+                  PlayAudio('audio/BELAJAR/angka/26.mp3');
                   setState(() {
                     _controller6.forward(from: 0.0);
                   });
@@ -1084,7 +1087,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/belajar/angka/27.mp3');
+                  PlayAudio('audio/BELAJAR/angka/27.mp3');
                   setState(() {
                     _controller7.forward(from: 0.0);
                   });
@@ -1105,7 +1108,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/belajar/angka/28.mp3');
+                  PlayAudio('audio/BELAJAR/angka/28.mp3');
                   setState(() {
                     _controller8.forward(from: 0.0);
                   });
@@ -1126,7 +1129,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/belajar/angka/29.mp3');
+                  PlayAudio('audio/BELAJAR/angka/29.mp3');
                   setState(() {
                     _controller9.forward(from: 0.0);
                   });
@@ -1152,7 +1155,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/belajar/angka/30.mp3');
+                  PlayAudio('audio/BELAJAR/angka/30.mp3');
                   setState(() {
                     _controller10.forward(from: 0.0);
                   });
@@ -1345,7 +1348,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  SfxAngka.play('audio/belajar/angka/31.mp3');
+                  SfxAngka.play('audio/BELAJAR/angka/31.mp3');
                   setState(() {
                     _controller1.forward(from: 0.0);
                   });
@@ -1366,7 +1369,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  SfxAngka.play('audio/belajar/angka/32.mp3');
+                  SfxAngka.play('audio/BELAJAR/angka/32.mp3');
                   setState(() {
                     _controller2.forward(from: 0.0);
                   });
@@ -1387,7 +1390,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  SfxAngka.play('audio/belajar/angka/33.mp3');
+                  SfxAngka.play('audio/BELAJAR/angka/33.mp3');
                   setState(() {
                     _controller3.forward(from: 0.0);
                   });
@@ -1412,7 +1415,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  SfxAngka.play('audio/belajar/angka/34.mp3');
+                  SfxAngka.play('audio/BELAJAR/angka/34.mp3');
                   setState(() {
                     _controller4.forward(from: 0.0);
                   });
@@ -1433,7 +1436,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  SfxAngka.play('audio/belajar/angka/35.mp3');
+                  SfxAngka.play('audio/BELAJAR/angka/35.mp3');
                   setState(() {
                     _controller5.forward(from: 0.0);
                   });
@@ -1454,7 +1457,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  SfxAngka.play('audio/belajar/angka/36.mp3');
+                  SfxAngka.play('audio/BELAJAR/angka/36.mp3');
                   setState(() {
                     _controller6.forward(from: 0.0);
                   });
@@ -1479,7 +1482,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  SfxAngka.play('audio/belajar/angka/37.mp3');
+                  SfxAngka.play('audio/BELAJAR/angka/37.mp3');
                   setState(() {
                     _controller7.forward(from: 0.0);
                   });
@@ -1500,7 +1503,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  SfxAngka.play('audio/belajar/angka/38.mp3');
+                  SfxAngka.play('audio/BELAJAR/angka/38.mp3');
                   setState(() {
                     _controller8.forward(from: 0.0);
                   });
@@ -1521,7 +1524,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  SfxAngka.play('audio/belajar/angka/39.mp3');
+                  SfxAngka.play('audio/BELAJAR/angka/39.mp3');
                   setState(() {
                     _controller9.forward(from: 0.0);
                   });
@@ -1547,7 +1550,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  SfxAngka.play('audio/belajar/angka/40.mp3');
+                  SfxAngka.play('audio/BELAJAR/angka/40.mp3');
                   setState(() {
                     _controller10.forward(from: 0.0);
                   });
@@ -1740,7 +1743,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/belajar/angka/41.mp3');
+                  PlayAudio('audio/BELAJAR/angka/41.mp3');
                   setState(() {
                     _controller1.forward(from: 0.0);
                   });
@@ -1761,7 +1764,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/belajar/angka/42.mp3');
+                  PlayAudio('audio/BELAJAR/angka/42.mp3');
                   setState(() {
                     _controller2.forward(from: 0.0);
                   });
@@ -1782,7 +1785,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/belajar/angka/43.mp3');
+                  PlayAudio('audio/BELAJAR/angka/43.mp3');
                   setState(() {
                     _controller3.forward(from: 0.0);
                   });
@@ -1807,7 +1810,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/belajar/angka/44.mp3');
+                  PlayAudio('audio/BELAJAR/angka/44.mp3');
                   setState(() {
                     _controller4.forward(from: 0.0);
                   });
@@ -1828,7 +1831,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/belajar/angka/45.mp3');
+                  PlayAudio('audio/BELAJAR/angka/45.mp3');
                   setState(() {
                     _controller5.forward(from: 0.0);
                   });
@@ -1849,7 +1852,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/belajar/angka/46.mp3');
+                  PlayAudio('audio/BELAJAR/angka/46.mp3');
                   setState(() {
                     _controller6.forward(from: 0.0);
                   });
@@ -1874,7 +1877,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/belajar/angka/47.mp3');
+                  PlayAudio('audio/BELAJAR/angka/47.mp3');
                   setState(() {
                     _controller7.forward(from: 0.0);
                   });
@@ -1895,7 +1898,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/belajar/angka/48.mp3');
+                  PlayAudio('audio/BELAJAR/angka/48.mp3');
                   setState(() {
                     _controller8.forward(from: 0.0);
                   });
@@ -1916,7 +1919,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/belajar/angka/49.mp3');
+                  PlayAudio('audio/BELAJAR/angka/49.mp3');
                   setState(() {
                     _controller9.forward(from: 0.0);
                   });
@@ -1942,7 +1945,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/belajar/angka/50.mp3');
+                  PlayAudio('audio/BELAJAR/angka/50.mp3');
                   setState(() {
                     _controller10.forward(from: 0.0);
                   });
