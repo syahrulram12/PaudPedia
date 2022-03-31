@@ -193,58 +193,198 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
               ),
             ),
             Flexible(
+              child: GestureDetector(
+                onTap: () {
+                  setState(() {
+                    _controller2.forward(from: 0.0);
+                  });
+                  Timer(Duration(seconds: 1), () {
+                    setState(() {
+                      _controller2.reverse();
+                    });
+                  });
+                  },
+              child: Transform.scale(
+              scale: AngkaItem2,
                 child: AngkaItem(
               Imageurl: 'icon_number/icon_1-10/icon_1-10-02.png',
-            )),
+                 ),
+               ),
+               ),
+               ),
             Flexible(
+              child: GestureDetector(
+              onTap: () {
+                setState(() {
+               _controller3.forward(from: 0.0);
+              });
+              Timer(Duration(seconds: 1), () {
+                setState(() {
+                  _controller3.reverse();
+              });
+              });
+              },
+              child: Transform.scale(
+                scale: AngkaItem3,
                 child: AngkaItem(
-              Imageurl: 'icon_number/icon_1-10/icon_1-10-03.png',
-            )),
-          ],
-        ),
+                Imageurl: 'icon_number/icon_1-10/icon_1-10-03.png',
+    ),
+    ),
+    ),
+    ),
         Row(
           children: [
             Flexible(
-                child: AngkaItem(
-              Imageurl: 'icon_number/icon_1-10/icon_1-10-04.png',
-            )),
+              child: GestureDetector(
+                onTap: () {
+                  setState(() {
+                    _controller4.forward(from: 0.0);
+                  });
+                  Timer(Duration(seconds: 1), () {
+                    setState(() {
+                      _controller4.reverse();
+    });
+    });
+    },
+                child: Transform.scale(
+                  scale: AngkaItem4,
+                  child: AngkaItem(
+                    Imageurl: 'icon_number/icon_1-10/icon_1-10-04.png',
+    ),
+    ),
+    ),
+    ),
             Flexible(
-                child: AngkaItem(
-              Imageurl: 'icon_number/icon_1-10/icon_1-10-05.png',
-            )),
+              child: GestureDetector(
+                onTap: () {
+                  setState(() {
+                    _controller5.forward(from: 0.0);
+                  });
+                  Timer(Duration(seconds: 1), () {
+                    setState(() {
+                      _controller5.reverse();
+                    });
+                  });
+                  },
+                child: Transform.scale(
+                  scale: AngkaItem5,
+                  child: AngkaItem(
+                    Imageurl: 'icon_number/icon_1-10/icon_1-10-05.png',
+    ),
+    ),
+    ),
+    ),
             Flexible(
-                child: AngkaItem(
-              Imageurl: 'icon_number/icon_1-10/icon_1-10-06.png',
-            )),
-          ],
-        ),
+              child: GestureDetector(
+                onTap: () {
+                  setState(() {
+                    _controller6.forward(from: 0.0);
+                  });
+                  Timer(Duration(seconds: 1), () {
+                    setState(() {
+                   _controller6.reverse();
+                    });
+                    });
+                  },
+    child: Transform.scale(
+    scale: AngkaItem6,
+    child: AngkaItem(
+    Imageurl: 'icon_number/icon_1-10/icon_1-10-06.png',
+    ),
+    ),
+    ),
+    ),
         Row(
           children: [
             Flexible(
-                child: AngkaItem(
-              Imageurl: 'icon_number/icon_1-10/icon_1-10-07.png',
-            )),
+              child: GestureDetector(
+                onTap: () {
+                setState(() {
+                 _controller7.forward(from: 0.0);
+                });
+                Timer(Duration(seconds: 1), () {
+                  setState(() {
+                    _controller7.reverse();
+                  });
+                   });
+                    },
+                child: Transform.scale(
+                  scale: AngkaItem7,
+                  child: AngkaItem(
+                    Imageurl: 'icon_number/icon_1-10/icon_1-10-07.png',
+    ),
+    ),
+    ),
+    ),
             Flexible(
-                child: AngkaItem(
-              Imageurl: 'icon_number/icon_1-10/icon_1-10-08.png',
-            )),
+              child: GestureDetector(
+                onTap: () {
+                  setState(() {
+                    _controller8.forward(from: 0.0);
+                  });
+                  Timer(Duration(seconds: 1), () {
+                    setState(() {
+                      _controller8.reverse();
+                    });
+                  });
+                  },
+                child: Transform.scale(
+                  scale: AngkaItem8,
+                  child: AngkaItem(
+                    Imageurl: 'icon_number/icon_1-10/icon_1-10-08.png',
+    ),
+    ),
+    ),
+    ),
             Flexible(
-                child: AngkaItem(
-              Imageurl: 'icon_number/icon_1-10/icon_1-10-09.png',
-            )),
-          ],
-        ),
+              child: GestureDetector(
+                onTap: () {
+                  setState(() {
+                    _controller9.forward(from: 0.0);
+                  });
+                  Timer(Duration(seconds: 1), () {
+                    setState(() {
+                      _controller9.reverse();
+    });
+    });
+    },
+                child: Transform.scale(
+                  scale: AngkaItem9,
+                  child: AngkaItem(
+                    Imageurl: 'icon_number/icon_1-10/icon_1-10-09.png',
+    ),
+    ),
+    ),
+    ),
         Row(
           children: [
             Flexible(child: Container()),
             Flexible(
+              child: GestureDetector(
+                onTap: () {
+                  setState(() {
+                    _controller10.forward(from: 0.0);
+                  });
+                  Timer(Duration(seconds: 1), () {
+                    setState(() {
+                      _controller10.reverse();
+                    });
+                  });
+    },
+    child: Transform.scale(
+                scale: AngkaItem10,
                 child: AngkaItem(
-              Imageurl: 'icon_number/icon_1-10/icon_1-10-10.png',
-            )),
+                Imageurl: 'icon_number/icon_1-10/icon_1-10-10.png',
+    ),
+    ),
+    ),
+    ),
             Flexible(child: Container())
           ],
-        ),
-      ],
+    ),
+    ],
+    )],
+    )])],
     ));
   }
 }
