@@ -74,7 +74,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
         vsync: this,
         lowerBound: 1.0,
         upperBound: 1.2,
-        duration: Duration(seconds: 1));
+        duration: Duration(milliseconds: 300));
     _controller4.addListener(() {
       setState(() {
         angkaitem4 = _controller4.value;
@@ -94,7 +94,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
         vsync: this,
         lowerBound: 1.0,
         upperBound: 1.2,
-        duration: Duration(seconds: 1));
+        duration: Duration(milliseconds: 300));
     _controller6.addListener(() {
       setState(() {
         angkaitem6 = _controller6.value;
@@ -114,7 +114,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
         vsync: this,
         lowerBound: 1.0,
         upperBound: 1.2,
-        duration: Duration(seconds: 1));
+        duration: Duration(milliseconds: 300));
     _controller8.addListener(() {
       setState(() {
         angkaitem8 = _controller8.value;
@@ -134,7 +134,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
         vsync: this,
         lowerBound: 1.0,
         upperBound: 1.2,
-        duration: Duration(seconds: 1));
+        duration: Duration(milliseconds: 300));
     _controller10.addListener(() {
       setState(() {
         angkaitem10 = _controller10.value;
@@ -437,7 +437,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
         vsync: this,
         lowerBound: 1,
         upperBound: 1.0,
-        duration: Duration(seconds: 1));
+        duration: Duration(milliseconds: 300));
     _controller2.addListener(() {
       setState(() {
         angkaitem2 = _controller2.value;
@@ -457,7 +457,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
         vsync: this,
         lowerBound: 1,
         upperBound: 1.0,
-        duration: Duration(seconds: 1));
+        duration: Duration(milliseconds: 300));
     _controller4.addListener(() {
       setState(() {
         angkaitem4 = _controller4.value;
@@ -477,7 +477,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
         vsync: this,
         lowerBound: 1,
         upperBound: 1.0,
-        duration: Duration(seconds: 1));
+        duration: Duration(milliseconds: 300));
     _controller6.addListener(() {
       setState(() {
         angkaitem6 = _controller6.value;
@@ -497,7 +497,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
         vsync: this,
         lowerBound: 1,
         upperBound: 1.0,
-        duration: Duration(seconds: 1));
+        duration: Duration(milliseconds: 300));
     _controller8.addListener(() {
       setState(() {
         angkaitem8 = _controller8.value;
@@ -517,7 +517,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
         vsync: this,
         lowerBound: 1,
         upperBound: 1.0,
-        duration: Duration(seconds: 1));
+        duration: Duration(milliseconds: 300));
     _controller10.addListener(() {
       setState(() {
         angkaitem10 = _controller10.value;
@@ -791,16 +791,16 @@ class Page3 extends StatefulWidget {
 }
 
 class _Page3State extends State<Page3> with TickerProviderStateMixin {
-  var angkaitem1 = 1.0;
-  var angkaitem2 = 1.0;
-  var angkaitem3 = 1.0;
-  var angkaitem4 = 1.0;
-  var angkaitem5 = 1.0;
-  var angkaitem6 = 1.0;
-  var angkaitem7 = 1.0;
-  var angkaitem8 = 1.0;
-  var angkaitem9 = 1.0;
-  var angkaitem10 = 1.0;
+  var angkaitem1 = 0.8;
+  var angkaitem2 = 0.8;
+  var angkaitem3 = 0.8;
+  var angkaitem4 = 0.8;
+  var angkaitem5 = 0.8;
+  var angkaitem6 = 0.8;
+  var angkaitem7 = 0.8;
+  var angkaitem8 = 0.8;
+  var angkaitem9 = 0.8;
+  var angkaitem10 = 0.8;
   late AnimationController _controller1;
   late AnimationController _controller2;
   late AnimationController _controller3;
@@ -818,7 +818,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
   void initState() {
     _controller1 = AnimationController(
         vsync: this,
-        lowerBound: 1,
+        lowerBound: 0.8,
         upperBound: 1.0,
         duration: Duration(milliseconds: 300));
     _controller1.addListener(() {
@@ -828,9 +828,9 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
     });
     _controller2 = AnimationController(
         vsync: this,
-        lowerBound: 1,
+        lowerBound: 0.8,
         upperBound: 1.0,
-        duration: Duration(seconds: 1));
+        duration: Duration(milliseconds: 300));
     _controller2.addListener(() {
       setState(() {
         angkaitem2 = _controller2.value;
@@ -838,7 +838,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
     });
     _controller3 = AnimationController(
         vsync: this,
-        lowerBound: 1,
+        lowerBound: 0.8,
         upperBound: 1.0,
         duration: Duration(milliseconds: 300));
     _controller3.addListener(() {
@@ -848,9 +848,9 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
     });
     _controller4 = AnimationController(
         vsync: this,
-        lowerBound: 1,
+        lowerBound: 0.8,
         upperBound: 1.0,
-        duration: Duration(seconds: 1));
+        duration: Duration(milliseconds: 300));
     _controller4.addListener(() {
       setState(() {
         angkaitem4 = _controller4.value;
@@ -858,7 +858,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
     });
     _controller5 = AnimationController(
         vsync: this,
-        lowerBound: 1,
+        lowerBound: 0.8,
         upperBound: 1.0,
         duration: Duration(milliseconds: 300));
     _controller5.addListener(() {
@@ -868,9 +868,9 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
     });
     _controller6 = AnimationController(
         vsync: this,
-        lowerBound: 1,
+        lowerBound: 0.8,
         upperBound: 1.0,
-        duration: Duration(seconds: 1));
+        duration: Duration(milliseconds: 300));
     _controller6.addListener(() {
       setState(() {
         angkaitem6 = _controller6.value;
@@ -878,7 +878,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
     });
     _controller7 = AnimationController(
         vsync: this,
-        lowerBound: 1,
+        lowerBound: 0.8,
         upperBound: 1.0,
         duration: Duration(milliseconds: 300));
     _controller7.addListener(() {
@@ -888,9 +888,9 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
     });
     _controller8 = AnimationController(
         vsync: this,
-        lowerBound: 1,
+        lowerBound: 0.8,
         upperBound: 1.0,
-        duration: Duration(seconds: 1));
+        duration: Duration(milliseconds: 300));
     _controller8.addListener(() {
       setState(() {
         angkaitem8 = _controller8.value;
@@ -898,7 +898,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
     });
     _controller9 = AnimationController(
         vsync: this,
-        lowerBound: 1,
+        lowerBound: 0.8,
         upperBound: 1.0,
         duration: Duration(milliseconds: 300));
     _controller9.addListener(() {
@@ -908,9 +908,9 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
     });
     _controller10 = AnimationController(
         vsync: this,
-        lowerBound: 1,
+        lowerBound: 0.8,
         upperBound: 1.0,
-        duration: Duration(seconds: 1));
+        duration: Duration(milliseconds: 300));
     _controller10.addListener(() {
       setState(() {
         angkaitem10 = _controller10.value;
@@ -1187,16 +1187,16 @@ class Page4 extends StatefulWidget {
 }
 
 class _Page4State extends State<Page4> with TickerProviderStateMixin {
-  var angkaitem1 = 1.0;
-  var angkaitem2 = 1.0;
-  var angkaitem3 = 1.0;
-  var angkaitem4 = 1.0;
-  var angkaitem5 = 1.0;
-  var angkaitem6 = 1.0;
-  var angkaitem7 = 1.0;
-  var angkaitem8 = 1.0;
-  var angkaitem9 = 1.0;
-  var angkaitem10 = 1.0;
+  var angkaitem1 = 0.8;
+  var angkaitem2 = 0.8;
+  var angkaitem3 = 0.8;
+  var angkaitem4 = 0.8;
+  var angkaitem5 = 0.8;
+  var angkaitem6 = 0.8;
+  var angkaitem7 = 0.8;
+  var angkaitem8 = 0.8;
+  var angkaitem9 = 0.8;
+  var angkaitem10 = 0.8;
   late AnimationController _controller1;
   late AnimationController _controller2;
   late AnimationController _controller3;
@@ -1214,7 +1214,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
   void initState() {
     _controller1 = AnimationController(
         vsync: this,
-        lowerBound: 1,
+        lowerBound: 0.8,
         upperBound: 1.0,
         duration: Duration(milliseconds: 300));
     _controller1.addListener(() {
@@ -1224,9 +1224,9 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
     });
     _controller2 = AnimationController(
         vsync: this,
-        lowerBound: 1,
+        lowerBound: 0.8,
         upperBound: 1.0,
-        duration: Duration(seconds: 1));
+        duration: Duration(milliseconds: 300));
     _controller2.addListener(() {
       setState(() {
         angkaitem2 = _controller2.value;
@@ -1234,7 +1234,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
     });
     _controller3 = AnimationController(
         vsync: this,
-        lowerBound: 1,
+        lowerBound: 0.8,
         upperBound: 1.0,
         duration: Duration(milliseconds: 300));
     _controller3.addListener(() {
@@ -1244,9 +1244,9 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
     });
     _controller4 = AnimationController(
         vsync: this,
-        lowerBound: 1,
+        lowerBound: 0.8,
         upperBound: 1.0,
-        duration: Duration(seconds: 1));
+        duration: Duration(milliseconds: 300));
     _controller4.addListener(() {
       setState(() {
         angkaitem4 = _controller4.value;
@@ -1254,7 +1254,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
     });
     _controller5 = AnimationController(
         vsync: this,
-        lowerBound: 1,
+        lowerBound: 0.8,
         upperBound: 1.0,
         duration: Duration(milliseconds: 300));
     _controller5.addListener(() {
@@ -1264,9 +1264,9 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
     });
     _controller6 = AnimationController(
         vsync: this,
-        lowerBound: 1,
+        lowerBound: 0.8,
         upperBound: 1.0,
-        duration: Duration(seconds: 1));
+        duration: Duration(milliseconds: 300));
     _controller6.addListener(() {
       setState(() {
         angkaitem6 = _controller6.value;
@@ -1274,7 +1274,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
     });
     _controller7 = AnimationController(
         vsync: this,
-        lowerBound: 1,
+        lowerBound: 0.8,
         upperBound: 1.0,
         duration: Duration(milliseconds: 300));
     _controller7.addListener(() {
@@ -1284,9 +1284,9 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
     });
     _controller8 = AnimationController(
         vsync: this,
-        lowerBound: 1,
+        lowerBound: 0.8,
         upperBound: 1.0,
-        duration: Duration(seconds: 1));
+        duration: Duration(milliseconds: 300));
     _controller8.addListener(() {
       setState(() {
         angkaitem8 = _controller8.value;
@@ -1294,7 +1294,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
     });
     _controller9 = AnimationController(
         vsync: this,
-        lowerBound: 1,
+        lowerBound: 0.8,
         upperBound: 1.0,
         duration: Duration(milliseconds: 300));
     _controller9.addListener(() {
@@ -1304,9 +1304,9 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
     });
     _controller10 = AnimationController(
         vsync: this,
-        lowerBound: 1,
+        lowerBound: 0.8,
         upperBound: 1.0,
-        duration: Duration(seconds: 1));
+        duration: Duration(milliseconds: 300));
     _controller10.addListener(() {
       setState(() {
         angkaitem10 = _controller10.value;
@@ -1582,16 +1582,16 @@ class Page5 extends StatefulWidget {
 }
 
 class _Page5State extends State<Page5> with TickerProviderStateMixin {
-  var angkaitem1 = 1.0;
-  var angkaitem2 = 1.0;
-  var angkaitem3 = 1.0;
-  var angkaitem4 = 1.0;
-  var angkaitem5 = 1.0;
-  var angkaitem6 = 1.0;
-  var angkaitem7 = 1.0;
-  var angkaitem8 = 1.0;
-  var angkaitem9 = 1.0;
-  var angkaitem10 = 1.0;
+  var angkaitem1 = 0.8;
+  var angkaitem2 = 0.8;
+  var angkaitem3 = 0.8;
+  var angkaitem4 = 0.8;
+  var angkaitem5 = 0.8;
+  var angkaitem6 = 0.8;
+  var angkaitem7 = 0.8;
+  var angkaitem8 = 0.8;
+  var angkaitem9 = 0.8;
+  var angkaitem10 = 0.8;
   late AnimationController _controller1;
   late AnimationController _controller2;
   late AnimationController _controller3;
@@ -1609,7 +1609,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
   void initState() {
     _controller1 = AnimationController(
         vsync: this,
-        lowerBound: 1,
+        lowerBound: 0.8,
         upperBound: 1.0,
         duration: Duration(milliseconds: 300));
     _controller1.addListener(() {
@@ -1619,9 +1619,9 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
     });
     _controller2 = AnimationController(
         vsync: this,
-        lowerBound: 1,
+        lowerBound: 0.8,
         upperBound: 1.0,
-        duration: Duration(seconds: 1));
+        duration: Duration(milliseconds: 300));
     _controller2.addListener(() {
       setState(() {
         angkaitem2 = _controller2.value;
@@ -1629,7 +1629,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
     });
     _controller3 = AnimationController(
         vsync: this,
-        lowerBound: 1,
+        lowerBound: 0.8,
         upperBound: 1.0,
         duration: Duration(milliseconds: 300));
     _controller3.addListener(() {
@@ -1639,9 +1639,9 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
     });
     _controller4 = AnimationController(
         vsync: this,
-        lowerBound: 1,
+        lowerBound: 0.8,
         upperBound: 1.0,
-        duration: Duration(seconds: 1));
+        duration: Duration(milliseconds: 300));
     _controller4.addListener(() {
       setState(() {
         angkaitem4 = _controller4.value;
@@ -1649,7 +1649,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
     });
     _controller5 = AnimationController(
         vsync: this,
-        lowerBound: 1,
+        lowerBound: 0.8,
         upperBound: 1.0,
         duration: Duration(milliseconds: 300));
     _controller5.addListener(() {
@@ -1659,9 +1659,9 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
     });
     _controller6 = AnimationController(
         vsync: this,
-        lowerBound: 1,
+        lowerBound: 0.8,
         upperBound: 1.0,
-        duration: Duration(seconds: 1));
+        duration: Duration(milliseconds: 300));
     _controller6.addListener(() {
       setState(() {
         angkaitem6 = _controller6.value;
@@ -1669,7 +1669,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
     });
     _controller7 = AnimationController(
         vsync: this,
-        lowerBound: 1,
+        lowerBound: 0.8,
         upperBound: 1.0,
         duration: Duration(milliseconds: 300));
     _controller7.addListener(() {
@@ -1679,9 +1679,9 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
     });
     _controller8 = AnimationController(
         vsync: this,
-        lowerBound: 1,
+        lowerBound: 0.8,
         upperBound: 1.0,
-        duration: Duration(seconds: 1));
+        duration: Duration(milliseconds: 300));
     _controller8.addListener(() {
       setState(() {
         angkaitem8 = _controller8.value;
@@ -1689,7 +1689,7 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
     });
     _controller9 = AnimationController(
         vsync: this,
-        lowerBound: 1,
+        lowerBound: 0.8,
         upperBound: 1.0,
         duration: Duration(milliseconds: 300));
     _controller9.addListener(() {
@@ -1699,9 +1699,9 @@ class _Page5State extends State<Page5> with TickerProviderStateMixin {
     });
     _controller10 = AnimationController(
         vsync: this,
-        lowerBound: 1,
+        lowerBound: 0.8,
         upperBound: 1.0,
-        duration: Duration(seconds: 1));
+        duration: Duration(milliseconds: 300));
     _controller10.addListener(() {
       setState(() {
         angkaitem10 = _controller10.value;
