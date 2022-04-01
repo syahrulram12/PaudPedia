@@ -144,7 +144,7 @@ class _AngkaHomeState extends State<AngkaHome> {
                   color: Colors.blue,
                   child: Padding(
                     padding: EdgeInsets.symmetric(horizontal: 2),
-                    child: Page1(),
+                    child: Page(),
                   ))
             ],
           ),

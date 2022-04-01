@@ -15,9 +15,9 @@ class Page1 extends StatefulWidget {
 }
 
 class _Page1State extends State<Page1> with TickerProviderStateMixin {
-  var angkaitem1 = 1.0;
-  var angkaitem2 = 1.0;
-  var angkaitem3 = 1.0;
+  var angkaitem1 = 0.8;
+  var angkaitem2 = 0.8;
+  var angkaitem3 = 0.8;
   var angkaitem4 = 0.8;
   var angkaitem5 = 0.8;
   var angkaitem6 = 0.8;
@@ -195,6 +195,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
             child: GestureDetector(
               onTap: () {
                 setState(() {
+                  PlayAudio('audio/BELAJAR/angka/2.mp3');
                   _controller2.forward(from: 0.0);
                 });
                 Timer(Duration(seconds: 1), () {
@@ -215,6 +216,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
             child: GestureDetector(
               onTap: () {
                 setState(() {
+                  PlayAudio('audio/BELAJAR/angka/3.mp3');
                   _controller3.forward(from: 0.0);
                 });
                 Timer(Duration(seconds: 1), () {
@@ -236,7 +238,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
           Flexible(
             child: GestureDetector(
               onTap: () {
-                PlayAudio('audio/BELAJAR/angka/1.mp3');
+                PlayAudio('audio/BELAJAR/angka/4.mp3');
                 setState(() {
                   _controller4.forward(from: 0.0);
                 });
@@ -249,7 +251,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: angkaitem4,
                 child: AngkaItem(
-                  Imageurl: 'icon_number/icon_1-10/icon_1-10-01.png',
+                  Imageurl: 'icon_number/icon_1-10/icon_1-10-04.png',
                 ),
               ),
             ),
@@ -258,6 +260,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
             child: GestureDetector(
               onTap: () {
                 setState(() {
+                  PlayAudio('audio/BELAJAR/angka/5.mp3');
                   _controller5.forward(from: 0.0);
                 });
                 Timer(Duration(seconds: 1), () {
@@ -269,7 +272,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: angkaitem5,
                 child: AngkaItem(
-                  Imageurl: 'icon_number/icon_1-10/icon_1-10-02.png',
+                  Imageurl: 'icon_number/icon_1-10/icon_1-10-05.png',
                 ),
               ),
             ),
@@ -278,6 +281,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
             child: GestureDetector(
               onTap: () {
                 setState(() {
+                  PlayAudio('audio/BELAJAR/angka/6.mp3');
                   _controller6.forward(from: 0.0);
                 });
                 Timer(Duration(seconds: 1), () {
@@ -289,7 +293,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: angkaitem6,
                 child: AngkaItem(
-                  Imageurl: 'icon_number/icon_1-10/icon_1-10-03.png',
+                  Imageurl: 'icon_number/icon_1-10/icon_1-10-06.png',
                 ),
               ),
             ),
@@ -299,7 +303,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
           Flexible(
             child: GestureDetector(
               onTap: () {
-                PlayAudio('audio/BELAJAR/angka/1.mp3');
+                PlayAudio('audio/BELAJAR/angka/7.mp3');
                 setState(() {
                   _controller7.forward(from: 0.0);
                 });
@@ -312,7 +316,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: angkaitem7,
                 child: AngkaItem(
-                  Imageurl: 'icon_number/icon_1-10/icon_1-10-01.png',
+                  Imageurl: 'icon_number/icon_1-10/icon_1-10-07.png',
                 ),
               ),
             ),
@@ -321,6 +325,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
             child: GestureDetector(
               onTap: () {
                 setState(() {
+                  PlayAudio('audio/BELAJAR/angka/8.mp3');
                   _controller8.forward(from: 0.0);
                 });
                 Timer(Duration(seconds: 1), () {
@@ -332,7 +337,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: angkaitem8,
                 child: AngkaItem(
-                  Imageurl: 'icon_number/icon_1-10/icon_1-10-02.png',
+                  Imageurl: 'icon_number/icon_1-10/icon_1-10-08.png',
                 ),
               ),
             ),
@@ -341,6 +346,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
             child: GestureDetector(
               onTap: () {
                 setState(() {
+                  PlayAudio('audio/BELAJAR/angka/9.mp3');
                   _controller9.forward(from: 0.0);
                 });
                 Timer(Duration(seconds: 1), () {
@@ -352,7 +358,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: angkaitem9,
                 child: AngkaItem(
-                  Imageurl: 'icon_number/icon_1-10/icon_1-10-03.png',
+                  Imageurl: 'icon_number/icon_1-10/icon_1-10-09.png',
                 ),
               ),
             ),
@@ -364,7 +370,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/BELAJAR/angka/20.mp3');
+                  PlayAudio('audio/BELAJAR/angka/10.mp3');
                   setState(() {
                     _controller10.forward(from: 0.0);
                   });
@@ -377,7 +383,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
                 child: Transform.scale(
                   scale: angkaitem10,
                   child: AngkaItem(
-                    Imageurl: 'icon_number/icon_11-20/icon_11-20-20.png',
+                    Imageurl: 'icon_number/icon_1-10/icon_1-10-10.png',
                   ),
                 ),
               ),
@@ -398,16 +404,16 @@ class Page2 extends StatefulWidget {
 }
 
 class _Page2State extends State<Page2> with TickerProviderStateMixin {
-  var angkaitem1 = 1.0;
-  var angkaitem2 = 1.0;
-  var angkaitem3 = 1.0;
-  var angkaitem4 = 1.0;
-  var angkaitem5 = 1.0;
-  var angkaitem6 = 1.0;
-  var angkaitem7 = 1.0;
-  var angkaitem8 = 1.0;
-  var angkaitem9 = 1.0;
-  var angkaitem10 = 1.0;
+  var angkaitem1 = 0.8;
+  var angkaitem2 = 0.8;
+  var angkaitem3 = 0.8;
+  var angkaitem4 = 0.8;
+  var angkaitem5 = 0.8;
+  var angkaitem6 = 0.8;
+  var angkaitem7 = 0.8;
+  var angkaitem8 = 0.8;
+  var angkaitem9 = 0.8;
+  var angkaitem10 = 0.8;
   late AnimationController _controller1;
   late AnimationController _controller2;
   late AnimationController _controller3;
@@ -425,8 +431,8 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
   void initState() {
     _controller1 = AnimationController(
         vsync: this,
-        lowerBound: 1,
-        upperBound: 1.0,
+        lowerBound: 1.0,
+        upperBound: 1.2,
         duration: Duration(milliseconds: 300));
     _controller1.addListener(() {
       setState(() {
@@ -435,8 +441,8 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     });
     _controller2 = AnimationController(
         vsync: this,
-        lowerBound: 1,
-        upperBound: 1.0,
+        lowerBound: 1.0,
+        upperBound: 1.2,
         duration: Duration(milliseconds: 300));
     _controller2.addListener(() {
       setState(() {
@@ -445,8 +451,8 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     });
     _controller3 = AnimationController(
         vsync: this,
-        lowerBound: 1,
-        upperBound: 1.0,
+        lowerBound: 1.0,
+        upperBound: 1.2,
         duration: Duration(milliseconds: 300));
     _controller3.addListener(() {
       setState(() {
@@ -455,8 +461,8 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     });
     _controller4 = AnimationController(
         vsync: this,
-        lowerBound: 1,
-        upperBound: 1.0,
+        lowerBound: 1.0,
+        upperBound: 1.2,
         duration: Duration(milliseconds: 300));
     _controller4.addListener(() {
       setState(() {
@@ -465,8 +471,8 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     });
     _controller5 = AnimationController(
         vsync: this,
-        lowerBound: 1,
-        upperBound: 1.0,
+        lowerBound: 1.0,
+        upperBound: 1.2,
         duration: Duration(milliseconds: 300));
     _controller5.addListener(() {
       setState(() {
@@ -475,8 +481,8 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     });
     _controller6 = AnimationController(
         vsync: this,
-        lowerBound: 1,
-        upperBound: 1.0,
+        lowerBound: 1.0,
+        upperBound: 1.2,
         duration: Duration(milliseconds: 300));
     _controller6.addListener(() {
       setState(() {
@@ -485,8 +491,8 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     });
     _controller7 = AnimationController(
         vsync: this,
-        lowerBound: 1,
-        upperBound: 1.0,
+        lowerBound: 1.0,
+        upperBound: 1.2,
         duration: Duration(milliseconds: 300));
     _controller7.addListener(() {
       setState(() {
@@ -495,8 +501,8 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     });
     _controller8 = AnimationController(
         vsync: this,
-        lowerBound: 1,
-        upperBound: 1.0,
+        lowerBound: 1.0,
+        upperBound: 1.2,
         duration: Duration(milliseconds: 300));
     _controller8.addListener(() {
       setState(() {
@@ -505,8 +511,8 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     });
     _controller9 = AnimationController(
         vsync: this,
-        lowerBound: 1,
-        upperBound: 1.0,
+        lowerBound: 1.0,
+        upperBound: 1.2,
         duration: Duration(milliseconds: 300));
     _controller9.addListener(() {
       setState(() {
@@ -515,8 +521,8 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     });
     _controller10 = AnimationController(
         vsync: this,
-        lowerBound: 1,
-        upperBound: 1.0,
+        lowerBound: 1.0,
+        upperBound: 1.2,
         duration: Duration(milliseconds: 300));
     _controller10.addListener(() {
       setState(() {
