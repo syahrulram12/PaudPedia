@@ -19,13 +19,14 @@ class _HurufHomeState extends State<HurufHome> {
   @override
   void initState() {
     // TODO: implement initState
-    super.initState();
     audioCache.play('audio/BELAJAR/huruf/belajar-huruf.mp3');
+    super.initState();
   }
 
   // Play(){
   //   if(audioCache == PLAYING)
-  // }
+  // }\
+
   ChangeStyle(act) {
     setState(() {
       if (act == 'kecil') {
@@ -124,24 +125,20 @@ class _HurufHomeState extends State<HurufHome> {
 }
 
 class HurufItem extends StatefulWidget {
-  final String Imageurl;
-  final String audioUrl;
-  final Function()? OnMenuClick;
+  final String imageurl;
+  final Function()? onmenuclick;
 
-  const HurufItem(
-      {Key? key,
-      required this.Imageurl,
-      this.OnMenuClick,
-      required this.audioUrl})
-      : super(key: key);
+  const HurufItem({
+    Key? key,
+    required this.imageurl,
+    this.onmenuclick,
+  }) : super(key: key);
 
   @override
   _HurufItemState createState() => _HurufItemState();
 }
 
 class _HurufItemState extends State<HurufItem> {
-  AudioCache SfxHuruf = AudioCache();
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -149,11 +146,8 @@ class _HurufItemState extends State<HurufItem> {
       child: ClipRRect(
           borderRadius: BorderRadius.circular(13),
           child: GestureDetector(
-            onTap: () {
-              SfxHuruf.play('audio/BELAJAR/huruf/' + widget.audioUrl);
-            },
             child: Image.asset(
-              'assets/icons/' + widget.Imageurl + '',
+              'assets/icons/' + widget.imageurl + '',
               fit: BoxFit.fill,
             ),
           )),

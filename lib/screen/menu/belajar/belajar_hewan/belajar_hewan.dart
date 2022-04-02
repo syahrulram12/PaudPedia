@@ -131,16 +131,16 @@ class _HewanHomeState extends State<HewanHome> {
                     Positioned(
                         left: -30,
                         child: Container(
-                          width: 200,
+                          width: width / 2,
                           child: Center(
                             child: Container(
                                 height: 400,
-                                width: 300,
-                                margin: EdgeInsets.only(top: 40),
+                                width: width / 1.54,
+                                margin: EdgeInsets.only(top: height / 5 / 3),
                                 child: Column(
                                   children: [
                                     Padding(
-                                      padding: EdgeInsets.all(2),
+                                      padding: EdgeInsets.all(0),
                                       child: ClipRRect(
                                         borderRadius: BorderRadius.circular(30),
                                         child: Container(
@@ -202,6 +202,7 @@ class _HewanHomeState extends State<HewanHome> {
                                       child: ClipRRect(
                                         borderRadius: BorderRadius.circular(30),
                                         child: Container(
+                                          width: width / 1,
                                           margin: EdgeInsets.only(
                                               bottom: 2, left: 2),
                                           decoration: BoxDecoration(boxShadow: [
