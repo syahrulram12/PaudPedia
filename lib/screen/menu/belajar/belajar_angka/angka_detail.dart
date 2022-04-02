@@ -15,16 +15,16 @@ class Page1 extends StatefulWidget {
 }
 
 class _Page1State extends State<Page1> with TickerProviderStateMixin {
-  var angkaitem1 = 0.8;
-  var angkaitem2 = 0.8;
-  var angkaitem3 = 0.8;
-  var angkaitem4 = 0.8;
-  var angkaitem5 = 0.8;
-  var angkaitem6 = 0.8;
-  var angkaitem7 = 0.8;
-  var angkaitem8 = 0.8;
-  var angkaitem9 = 0.8;
-  var angkaitem10 = 0.8;
+  var angkaitem1 = 1.0;
+  var angkaitem2 = 1.0;
+  var angkaitem3 = 1.0;
+  var angkaitem4 = 1.0;
+  var angkaitem5 = 1.0;
+  var angkaitem6 = 1.0;
+  var angkaitem7 = 1.0;
+  var angkaitem8 = 1.0;
+  var angkaitem9 = 1.0;
+  var angkaitem10 = 1.0;
   late AnimationController _controller1;
   late AnimationController _controller2;
   late AnimationController _controller3;
@@ -404,16 +404,16 @@ class Page2 extends StatefulWidget {
 }
 
 class _Page2State extends State<Page2> with TickerProviderStateMixin {
-  var angkaitem1 = 0.8;
-  var angkaitem2 = 0.8;
-  var angkaitem3 = 0.8;
-  var angkaitem4 = 0.8;
-  var angkaitem5 = 0.8;
-  var angkaitem6 = 0.8;
-  var angkaitem7 = 0.8;
-  var angkaitem8 = 0.8;
-  var angkaitem9 = 0.8;
-  var angkaitem10 = 0.8;
+  var angkaitem1 = 1.0;
+  var angkaitem2 = 1.0;
+  var angkaitem3 = 1.0;
+  var angkaitem4 = 1.0;
+  var angkaitem5 = 1.0;
+  var angkaitem6 = 1.0;
+  var angkaitem7 = 1.0;
+  var angkaitem8 = 1.0;
+  var angkaitem9 = 1.0;
+  var angkaitem10 = 1.0;
   late AnimationController _controller1;
   late AnimationController _controller2;
   late AnimationController _controller3;
@@ -959,7 +959,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
                 onTap: () {
                   PlayAudio('audio/BELAJAR/angka/21.mp3');
                   setState(() {
-                    _controller1.forward(from: 0.0);
+                    _controller1.forward(from: 0.8);
                   });
                   Timer(Duration(seconds: 1), () {
                     setState(() {
@@ -980,7 +980,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
                 onTap: () {
                   PlayAudio('audio/BELAJAR/angka/22.mp3');
                   setState(() {
-                    _controller2.forward(from: 0.0);
+                    _controller2.forward(from: 0.8);
                   });
                   Timer(Duration(seconds: 1), () {
                     setState(() {
@@ -1001,7 +1001,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
                 onTap: () {
                   PlayAudio('audio/BELAJAR/angka/23.mp3');
                   setState(() {
-                    _controller3.forward(from: 0.0);
+                    _controller3.forward(from: 0.8);
                   });
                   Timer(Duration(seconds: 1), () {
                     setState(() {
@@ -1026,7 +1026,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
                 onTap: () {
                   PlayAudio('audio/BELAJAR/angka/24.mp3');
                   setState(() {
-                    _controller4.forward(from: 0.0);
+                    _controller4.forward(from: 0.8);
                   });
                   Timer(Duration(seconds: 1), () {
                     setState(() {
@@ -1047,7 +1047,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
                 onTap: () {
                   PlayAudio('audio/BELAJAR/angka/25.mp3');
                   setState(() {
-                    _controller5.forward(from: 0.0);
+                    _controller5.forward(from: 0.8);
                   });
                   Timer(Duration(seconds: 1), () {
                     setState(() {
@@ -1068,7 +1068,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
                 onTap: () {
                   PlayAudio('audio/BELAJAR/angka/26.mp3');
                   setState(() {
-                    _controller6.forward(from: 0.0);
+                    _controller6.forward(from: 0.8);
                   });
                   Timer(Duration(seconds: 1), () {
                     setState(() {
@@ -1093,7 +1093,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
                 onTap: () {
                   PlayAudio('audio/BELAJAR/angka/27.mp3');
                   setState(() {
-                    _controller7.forward(from: 0.0);
+                    _controller7.forward(from: 0.8);
                   });
                   Timer(Duration(seconds: 1), () {
                     setState(() {
@@ -1114,7 +1114,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
                 onTap: () {
                   PlayAudio('audio/BELAJAR/angka/28.mp3');
                   setState(() {
-                    _controller8.forward(from: 0.0);
+                    _controller8.forward(from: 0.8);
                   });
                   Timer(Duration(seconds: 1), () {
                     setState(() {
@@ -1135,7 +1135,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
                 onTap: () {
                   PlayAudio('audio/BELAJAR/angka/29.mp3');
                   setState(() {
-                    _controller9.forward(from: 0.0);
+                    _controller9.forward(from: 0.8);
                   });
                   Timer(Duration(seconds: 1), () {
                     setState(() {
@@ -1161,7 +1161,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
                 onTap: () {
                   PlayAudio('audio/BELAJAR/angka/30.mp3');
                   setState(() {
-                    _controller10.forward(from: 0.0);
+                    _controller10.forward(from: 0.8);
                   });
                   Timer(Duration(seconds: 1), () {
                     setState(() {
@@ -1354,7 +1354,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
                 onTap: () {
                   SfxAngka.play('audio/BELAJAR/angka/31.mp3');
                   setState(() {
-                    _controller1.forward(from: 0.0);
+                    _controller1.forward(from: 0.8);
                   });
                   Timer(Duration(seconds: 1), () {
                     setState(() {
@@ -1375,7 +1375,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
                 onTap: () {
                   SfxAngka.play('audio/BELAJAR/angka/32.mp3');
                   setState(() {
-                    _controller2.forward(from: 0.0);
+                    _controller2.forward(from: 0.8);
                   });
                   Timer(Duration(seconds: 1), () {
                     setState(() {
@@ -1396,7 +1396,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
                 onTap: () {
                   SfxAngka.play('audio/BELAJAR/angka/33.mp3');
                   setState(() {
-                    _controller3.forward(from: 0.0);
+                    _controller3.forward(from: 0.8);
                   });
                   Timer(Duration(seconds: 1), () {
                     setState(() {
@@ -1421,7 +1421,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
                 onTap: () {
                   SfxAngka.play('audio/BELAJAR/angka/34.mp3');
                   setState(() {
-                    _controller4.forward(from: 0.0);
+                    _controller4.forward(from: 0.8);
                   });
                   Timer(Duration(seconds: 1), () {
                     setState(() {
@@ -1442,7 +1442,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
                 onTap: () {
                   SfxAngka.play('audio/BELAJAR/angka/35.mp3');
                   setState(() {
-                    _controller5.forward(from: 0.0);
+                    _controller5.forward(from: 0.8);
                   });
                   Timer(Duration(seconds: 1), () {
                     setState(() {
@@ -1463,7 +1463,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
                 onTap: () {
                   SfxAngka.play('audio/BELAJAR/angka/36.mp3');
                   setState(() {
-                    _controller6.forward(from: 0.0);
+                    _controller6.forward(from: 0.8);
                   });
                   Timer(Duration(seconds: 1), () {
                     setState(() {
@@ -1488,7 +1488,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
                 onTap: () {
                   SfxAngka.play('audio/BELAJAR/angka/37.mp3');
                   setState(() {
-                    _controller7.forward(from: 0.0);
+                    _controller7.forward(from: 0.8);
                   });
                   Timer(Duration(seconds: 1), () {
                     setState(() {
@@ -1509,7 +1509,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
                 onTap: () {
                   SfxAngka.play('audio/BELAJAR/angka/38.mp3');
                   setState(() {
-                    _controller8.forward(from: 0.0);
+                    _controller8.forward(from: 0.8);
                   });
                   Timer(Duration(seconds: 1), () {
                     setState(() {
@@ -1530,7 +1530,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
                 onTap: () {
                   SfxAngka.play('audio/BELAJAR/angka/39.mp3');
                   setState(() {
-                    _controller9.forward(from: 0.0);
+                    _controller9.forward(from: 0.8);
                   });
                   Timer(Duration(seconds: 1), () {
                     setState(() {

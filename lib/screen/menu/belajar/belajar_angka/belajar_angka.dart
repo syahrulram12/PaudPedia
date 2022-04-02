@@ -141,11 +141,10 @@ class _AngkaHomeState extends State<AngkaHome> {
               ),
               SizedBox(height: height / 10),
               Container(
-                  color: Colors.blue,
                   child: Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 2),
-                    child: Page(),
-                  ))
+                padding: EdgeInsets.symmetric(horizontal: 2),
+                child: Page(),
+              ))
             ],
           ),
         ),
