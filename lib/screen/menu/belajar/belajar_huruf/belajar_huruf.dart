@@ -103,20 +103,18 @@ class _HurufHomeState extends State<HurufHome> {
                       width: width / 5,
                       child: GestureDetector(
                           onTap: () {},
-                          child: Image.asset(
-                                    'assets/icons/tab_bar_auto.png',
-                                    fit: BoxFit.cover)),
+                          child: Image.asset('assets/icons/tab_bar_auto.png',
+                              fit: BoxFit.cover)),
                     ),
                   ],
                 )),
-            SizedBox(height: height / 4),
+            SizedBox(height: height / 10),
             Container(
-              margin: EdgeInsets.symmetric(horizontal: (width / 8) / 2),
-              child: Huruf
-                  ? TombolHuruf(UrlHuruf: 'icon_alfabet_big/icon_alfabet_-')
-                  : TombolHuruf(
-                      UrlHuruf: 'icon_alfabet_small/icon_alfabet_small--',
-                    ),
+              color: Colors.blue,
+              child: Padding(
+                padding: EdgeInsets.symmetric(horizontal: 2),
+                child: HurufHome(),
+              ),
             )
           ],
         ))
