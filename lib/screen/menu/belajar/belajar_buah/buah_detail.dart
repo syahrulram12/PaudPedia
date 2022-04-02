@@ -53,8 +53,8 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
   void initState() {
     _controller1 = AnimationController(
         vsync: this,
-        lowerBound: 0.5,
-        upperBound: 1.0,
+        lowerBound: 1.0,
+        upperBound: 1.2,
         duration: Duration(milliseconds: 300));
     _controller1.addListener(() {
       setState(() {
@@ -63,8 +63,8 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
     });
     _controller2 = AnimationController(
         vsync: this,
-        lowerBound: 0.5,
-        upperBound: 1.0,
+        lowerBound: 1.0,
+        upperBound: 1.2,
         duration: Duration(seconds: 1));
     _controller2.addListener(() {
       setState(() {
@@ -73,8 +73,8 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
     });
     _controller3 = AnimationController(
         vsync: this,
-        lowerBound: 0.5,
-        upperBound: 1.0,
+        lowerBound: 1.0,
+        upperBound: 1.2,
         duration: Duration(milliseconds: 300));
     _controller3.addListener(() {
       setState(() {
@@ -83,8 +83,8 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
     });
     _controller4 = AnimationController(
         vsync: this,
-        lowerBound: 0.5,
-        upperBound: 1.0,
+        lowerBound: 1.0,
+        upperBound: 1.2,
         duration: Duration(seconds: 1));
     _controller4.addListener(() {
       setState(() {
@@ -93,8 +93,8 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
     });
     _controller5 = AnimationController(
         vsync: this,
-        lowerBound: 0.5,
-        upperBound: 1.0,
+        lowerBound: 1.0,
+        upperBound: 1.2,
         duration: Duration(milliseconds: 300));
     _controller5.addListener(() {
       setState(() {
@@ -103,8 +103,8 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
     });
     _controller6 = AnimationController(
         vsync: this,
-        lowerBound: 0.5,
-        upperBound: 1.0,
+        lowerBound: 1.0,
+        upperBound: 1.2,
         duration: Duration(seconds: 1));
     _controller6.addListener(() {
       setState(() {
@@ -113,8 +113,8 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
     });
     _controller7 = AnimationController(
         vsync: this,
-        lowerBound: 0.5,
-        upperBound: 1.0,
+        lowerBound: 1.0,
+        upperBound: 1.2,
         duration: Duration(milliseconds: 300));
     _controller7.addListener(() {
       setState(() {
@@ -123,8 +123,8 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
     });
     _controller8 = AnimationController(
         vsync: this,
-        lowerBound: 0.5,
-        upperBound: 1.0,
+        lowerBound: 1.0,
+        upperBound: 1.2,
         duration: Duration(seconds: 1));
     _controller8.addListener(() {
       setState(() {
@@ -133,8 +133,8 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
     });
     _controller9 = AnimationController(
         vsync: this,
-        lowerBound: 0.5,
-        upperBound: 1.0,
+        lowerBound: 1.0,
+        upperBound: 1.2,
         duration: Duration(milliseconds: 300));
     _controller9.addListener(() {
       setState(() {
@@ -143,8 +143,8 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
     });
     _controller10 = AnimationController(
         vsync: this,
-        lowerBound: 0.5,
-        upperBound: 1.0,
+        lowerBound: 1.0,
+        upperBound: 1.2,
         duration: Duration(seconds: 1));
     _controller10.addListener(() {
       setState(() {
@@ -153,8 +153,8 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
     });
     _controller11 = AnimationController(
         vsync: this,
-        lowerBound: 0.5,
-        upperBound: 1.0,
+        lowerBound: 1.0,
+        upperBound: 1.2,
         duration: Duration(seconds: 1));
     _controller10.addListener(() {
       setState(() {
@@ -163,8 +163,8 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
     });
     _controller12 = AnimationController(
         vsync: this,
-        lowerBound: 0.5,
-        upperBound: 1.0,
+        lowerBound: 1.0,
+        upperBound: 1.2,
         duration: Duration(seconds: 1));
     _controller12.addListener(() {
       setState(() {
@@ -173,8 +173,8 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
     });
     _controller13 = AnimationController(
         vsync: this,
-        lowerBound: 0.5,
-        upperBound: 1.0,
+        lowerBound: 1.0,
+        upperBound: 1.2,
         duration: Duration(seconds: 1));
     _controller13.addListener(() {
       setState(() {
@@ -183,8 +183,8 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
     });
     _controller14 = AnimationController(
         vsync: this,
-        lowerBound: 0.5,
-        upperBound: 1.0,
+        lowerBound: 1.0,
+        upperBound: 1.2,
         duration: Duration(seconds: 1));
     _controller14.addListener(() {
       setState(() {
@@ -193,8 +193,8 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
     });
     _controller15 = AnimationController(
         vsync: this,
-        lowerBound: 0.5,
-        upperBound: 1.0,
+        lowerBound: 1.0,
+        upperBound: 1.2,
         duration: Duration(seconds: 1));
     _controller15.addListener(() {
       setState(() {
