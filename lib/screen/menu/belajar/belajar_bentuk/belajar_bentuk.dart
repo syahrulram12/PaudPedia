@@ -93,13 +93,9 @@ class _BentukHomeState extends State<BentukHome> {
 
 class BentukItem extends StatefulWidget {
   final String Imageurl;
-  final String audioUrl;
+
   final Function()? OnMenuClick;
-  const BentukItem(
-      {Key? key,
-      required this.Imageurl,
-      required this.audioUrl,
-      this.OnMenuClick})
+  const BentukItem({Key? key, required this.Imageurl, this.OnMenuClick})
       : super(key: key);
 
   @override
@@ -107,30 +103,23 @@ class BentukItem extends StatefulWidget {
 }
 
 class _BentukItemState extends State<BentukItem> {
-  AudioCache SfxAngka = AudioCache();
-  AudioPlayer audioPlayer = AudioPlayer();
-
-  PlayAudio(audioUrl) {
-    SfxAngka = AudioCache(fixedPlayer: audioPlayer);
-    audioPlayer.release();
-    SfxAngka.play('audio/BELAJAR/bentuk/' + audioUrl);
-  }
+  AudioCache SfxBentuk = AudioCache();
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.symmetric(horizontal: 14, vertical: 14),
-      width: 90,
-      height: 90,
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(13),
-        child: GestureDetector(
-          onTap: () {
-            PlayAudio(widget.audioUrl);
-          },
+    double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
+    return Center(
+      child: Container(
+        color: Colors.blue,
+        margin: EdgeInsets.only(bottom: 2),
+        width: width / 5,
+        height: height / 9.5,
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(13),
           child: Image.asset(
             'assets/icons/' + widget.Imageurl + '',
-            width: 20,
+            fit: BoxFit.cover,
           ),
         ),
       ),
