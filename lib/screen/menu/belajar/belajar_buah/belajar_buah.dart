@@ -77,8 +77,7 @@ class _BuahHomeState extends State<BuahHome> {
                       ),
                     ]),
               ),
-              SizedBox(height: height / 10),
-              SizedBox(height: height / 8),
+              SizedBox(height: height / 3.5),
               Container(
                   child: Padding(
                 padding: EdgeInsets.symmetric(horizontal: 2),
@@ -112,9 +111,8 @@ class _BuahItemState extends State<BuahItem> {
     double height = MediaQuery.of(context).size.height;
     return Center(
       child: Container(
-        color: Colors.blue,
         margin: EdgeInsets.only(bottom: 2),
-        width: width / 5,
+        width: width / 3,
         height: height / 9.5,
         child: ClipRRect(
           borderRadius: BorderRadius.circular(13),

@@ -23,10 +23,6 @@ class _HurufHomeState extends State<HurufHome> {
     super.initState();
   }
 
-  // Play(){
-  //   if(audioCache == PLAYING)
-  // }\
-
   ChangeStyle(act) {
     setState(() {
       if (act == 'kecil') {
@@ -114,7 +110,7 @@ class _HurufHomeState extends State<HurufHome> {
               color: Colors.blue,
               child: Padding(
                 padding: EdgeInsets.symmetric(horizontal: 2),
-                child: HurufHome(),
+                child: Huruf ? Page1() : Page1(),
               ),
             )
           ],

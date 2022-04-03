@@ -54,7 +54,7 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
     _controller1 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.4,
+        upperBound: 1.3,
         duration: Duration(milliseconds: 300));
     _controller1.addListener(() {
       setState(() {
@@ -64,8 +64,8 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
     _controller2 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.4,
-        duration: Duration(seconds: 1));
+        upperBound: 1.3,
+        duration: Duration(milliseconds: 300));
     _controller2.addListener(() {
       setState(() {
         bentukitem2 = _controller2.value;
@@ -74,7 +74,7 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
     _controller3 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.4,
+        upperBound: 1.3,
         duration: Duration(milliseconds: 300));
     _controller3.addListener(() {
       setState(() {
@@ -84,8 +84,8 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
     _controller4 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.4,
-        duration: Duration(seconds: 1));
+        upperBound: 1.3,
+        duration: Duration(milliseconds: 300));
     _controller4.addListener(() {
       setState(() {
         bentukitem4 = _controller4.value;
@@ -94,7 +94,7 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
     _controller5 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.4,
+        upperBound: 1.3,
         duration: Duration(milliseconds: 300));
     _controller5.addListener(() {
       setState(() {
@@ -104,8 +104,8 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
     _controller6 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.4,
-        duration: Duration(seconds: 1));
+        upperBound: 1.3,
+        duration: Duration(milliseconds: 300));
     _controller6.addListener(() {
       setState(() {
         bentukitem6 = _controller6.value;
@@ -114,7 +114,7 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
     _controller7 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.4,
+        upperBound: 1.3,
         duration: Duration(milliseconds: 300));
     _controller7.addListener(() {
       setState(() {
@@ -124,8 +124,8 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
     _controller8 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.4,
-        duration: Duration(seconds: 1));
+        upperBound: 1.3,
+        duration: Duration(milliseconds: 300));
     _controller8.addListener(() {
       setState(() {
         bentukitem8 = _controller8.value;
@@ -134,7 +134,7 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
     _controller9 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.4,
+        upperBound: 1.3,
         duration: Duration(milliseconds: 300));
     _controller9.addListener(() {
       setState(() {
@@ -144,8 +144,8 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
     _controller10 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.4,
-        duration: Duration(seconds: 1));
+        upperBound: 1.3,
+        duration: Duration(milliseconds: 300));
     _controller10.addListener(() {
       setState(() {
         bentukitem10 = _controller10.value;
@@ -154,8 +154,8 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
     _controller11 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.4,
-        duration: Duration(seconds: 1));
+        upperBound: 1.3,
+        duration: Duration(milliseconds: 300));
     _controller10.addListener(() {
       setState(() {
         bentukitem11 = _controller11.value;
@@ -164,8 +164,8 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
     _controller12 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.4,
-        duration: Duration(seconds: 1));
+        upperBound: 1.3,
+        duration: Duration(milliseconds: 300));
     _controller12.addListener(() {
       setState(() {
         bentukitem12 = _controller12.value;
@@ -174,8 +174,8 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
     _controller13 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.4,
-        duration: Duration(seconds: 1));
+        upperBound: 1.3,
+        duration: Duration(milliseconds: 300));
     _controller13.addListener(() {
       setState(() {
         bentukitem13 = _controller13.value;
@@ -184,8 +184,8 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
     _controller14 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.4,
-        duration: Duration(seconds: 1));
+        upperBound: 1.3,
+        duration: Duration(milliseconds: 300));
     _controller14.addListener(() {
       setState(() {
         bentukitem14 = _controller14.value;
@@ -194,8 +194,8 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
     _controller15 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.4,
-        duration: Duration(seconds: 1));
+        upperBound: 1.3,
+        duration: Duration(milliseconds: 300));
     _controller15.addListener(() {
       setState(() {
         bentukitem15 = _controller15.value;
@@ -565,6 +565,7 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
                 ),
               ),
             ),
+            Flexible(child: Container())
           ],
         ),
       ],

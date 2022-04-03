@@ -111,15 +111,14 @@ class _BentukItemState extends State<BentukItem> {
     double height = MediaQuery.of(context).size.height;
     return Center(
       child: Container(
-        color: Colors.blue,
-        margin: EdgeInsets.only(bottom: 2),
-        width: width / 5,
+        margin: EdgeInsets.only(bottom: height / 8 / 4),
+        width: width / 6,
         height: height / 9.5,
         child: ClipRRect(
           borderRadius: BorderRadius.circular(13),
           child: Image.asset(
             'assets/icons/' + widget.Imageurl + '',
-            fit: BoxFit.cover,
+            fit: BoxFit.contain,
           ),
         ),
       ),

@@ -231,7 +231,7 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
                 child: Transform.scale(
                   scale: buahitem1,
                   child: BuahItem(
-                    Imageurl: 'icon_fruit/icon_fruit-07.png',
+                    Imageurl: 'icon_fruit/icon_fruit_07.png',
                   ),
                 ),
               ),
@@ -545,7 +545,7 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
                   ),
                 ),
               ),
-            ),
+            )
           ],
         ),
       ],
