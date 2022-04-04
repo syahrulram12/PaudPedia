@@ -11,26 +11,25 @@ class Buah extends StatefulWidget {
   const Buah({Key? key}) : super(key: key);
 
   @override
-  _BuahState createState() => _BuahState();
+  State<Buah> createState() => _BuahState();
 }
 
 class _BuahState extends State<Buah> with TickerProviderStateMixin {
-  var buahitem1 = 0.8;
-  var buahitem2 = 0.8;
-  var buahitem3 = 0.8;
-  var buahitem4 = 0.8;
-  var buahitem5 = 0.8;
-  var buahitem6 = 0.8;
-  var buahitem7 = 0.8;
-  var buahitem8 = 0.8;
-  var buahitem9 = 0.8;
-  var buahitem10 = 0.8;
-  var buahitem11 = 0.8;
-  var buahitem12 = 0.8;
-  var buahitem13 = 0.8;
-  var buahitem14 = 0.8;
-  var buahitem15 = 0.8;
-
+  var buahitem1 = 1.0;
+  var buahitem2 = 1.0;
+  var buahitem3 = 1.0;
+  var buahitem4 = 1.0;
+  var buahitem5 = 1.0;
+  var buahitem6 = 1.0;
+  var buahitem7 = 1.0;
+  var buahitem8 = 1.0;
+  var buahitem9 = 1.0;
+  var buahitem10 = 1.0;
+  var buahitem11 = 1.0;
+  var buahitem12 = 1.0;
+  var buahitem13 = 1.0;
+  var buahitem14 = 1.0;
+  var buahitem15 = 1.0;
   late AnimationController _controller1;
   late AnimationController _controller2;
   late AnimationController _controller3;
@@ -46,7 +45,7 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
   late AnimationController _controller13;
   late AnimationController _controller14;
   late AnimationController _controller15;
-  AudioCache Sfxbuah = AudioCache();
+  AudioCache SfxBuah = AudioCache();
   AudioPlayer audio = AudioPlayer();
 
   @override
@@ -54,7 +53,7 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
     _controller1 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller1.addListener(() {
       setState(() {
@@ -64,8 +63,8 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
     _controller2 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
-        duration: Duration(seconds: 1));
+        upperBound: 1.4,
+        duration: Duration(milliseconds: 300));
     _controller2.addListener(() {
       setState(() {
         buahitem2 = _controller2.value;
@@ -74,7 +73,7 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
     _controller3 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller3.addListener(() {
       setState(() {
@@ -84,8 +83,8 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
     _controller4 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
-        duration: Duration(seconds: 1));
+        upperBound: 1.4,
+        duration: Duration(milliseconds: 300));
     _controller4.addListener(() {
       setState(() {
         buahitem4 = _controller4.value;
@@ -94,7 +93,7 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
     _controller5 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller5.addListener(() {
       setState(() {
@@ -104,8 +103,8 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
     _controller6 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
-        duration: Duration(seconds: 1));
+        upperBound: 1.4,
+        duration: Duration(milliseconds: 300));
     _controller6.addListener(() {
       setState(() {
         buahitem6 = _controller6.value;
@@ -114,7 +113,7 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
     _controller7 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller7.addListener(() {
       setState(() {
@@ -124,8 +123,8 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
     _controller8 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
-        duration: Duration(seconds: 1));
+        upperBound: 1.4,
+        duration: Duration(milliseconds: 300));
     _controller8.addListener(() {
       setState(() {
         buahitem8 = _controller8.value;
@@ -134,7 +133,7 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
     _controller9 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller9.addListener(() {
       setState(() {
@@ -144,8 +143,8 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
     _controller10 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
-        duration: Duration(seconds: 1));
+        upperBound: 1.4,
+        duration: Duration(milliseconds: 300));
     _controller10.addListener(() {
       setState(() {
         buahitem10 = _controller10.value;
@@ -154,9 +153,9 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
     _controller11 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
-        duration: Duration(seconds: 1));
-    _controller10.addListener(() {
+        upperBound: 1.4,
+        duration: Duration(milliseconds: 300));
+    _controller11.addListener(() {
       setState(() {
         buahitem11 = _controller11.value;
       });
@@ -164,8 +163,8 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
     _controller12 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
-        duration: Duration(seconds: 1));
+        upperBound: 1.4,
+        duration: Duration(milliseconds: 300));
     _controller12.addListener(() {
       setState(() {
         buahitem12 = _controller12.value;
@@ -174,8 +173,8 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
     _controller13 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
-        duration: Duration(seconds: 1));
+        upperBound: 1.4,
+        duration: Duration(milliseconds: 300));
     _controller13.addListener(() {
       setState(() {
         buahitem13 = _controller13.value;
@@ -184,8 +183,8 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
     _controller14 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
-        duration: Duration(seconds: 1));
+        upperBound: 1.4,
+        duration: Duration(milliseconds: 300));
     _controller14.addListener(() {
       setState(() {
         buahitem14 = _controller14.value;
@@ -194,40 +193,19 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
     _controller15 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
-        duration: Duration(seconds: 1));
+        upperBound: 1.4,
+        duration: Duration(milliseconds: 300));
     _controller15.addListener(() {
       setState(() {
         buahitem15 = _controller15.value;
       });
     });
-
-    Sfxbuah = AudioCache(fixedPlayer: audio);
+    SfxBuah = AudioCache(fixedPlayer: audio);
     super.initState();
   }
 
-  void PlayAudio(url) {
-    Sfxbuah.play(url);
-  }
-
-  @override
-  void dispose() {
-    _controller1.dispose();
-    _controller2.dispose();
-    _controller3.dispose();
-    _controller4.dispose();
-    _controller5.dispose();
-    _controller6.dispose();
-    _controller7.dispose();
-    _controller8.dispose();
-    _controller9.dispose();
-    _controller10.dispose();
-    _controller11.dispose();
-    _controller12.dispose();
-    _controller13.dispose();
-    _controller14.dispose();
-    _controller15.dispose();
-    super.dispose();
+  Future<void> PlayAudio(url) async {
+    SfxBuah.play('audio/BELAJAR/buah/' + url);
   }
 
   @override
@@ -240,7 +218,7 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/BELAJAR/buah/ceri.mp3');
+                  PlayAudio('ceri.mp3');
                   setState(() {
                     _controller1.forward(from: 0.0);
                   });
@@ -254,7 +232,6 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
                   scale: buahitem1,
                   child: BuahItem(
                     Imageurl: 'icon_fruit/icon_fruit_07.png',
-                    audioUrl: 'ceri.mp3',
                   ),
                 ),
               ),
@@ -262,7 +239,7 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/BELAJAR/buah/anggur.mp3');
+                  PlayAudio('anggur.mp3');
                   setState(() {
                     _controller2.forward(from: 0.0);
                   });
@@ -276,7 +253,6 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
                   scale: buahitem2,
                   child: BuahItem(
                     Imageurl: 'icon_fruit/icon_fruit_18.png',
-                    audioUrl: 'anggur.mp3',
                   ),
                 ),
               ),
@@ -284,7 +260,7 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/BELAJAR/buah/blueberry.mp3');
+                  PlayAudio('blueberry.mp3');
                   setState(() {
                     _controller3.forward(from: 0.0);
                   });
@@ -298,7 +274,6 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
                   scale: buahitem3,
                   child: BuahItem(
                     Imageurl: 'icon_fruit/icon_fruit_31.png',
-                    audioUrl: 'blueberry.mp3',
                   ),
                 ),
               ),
@@ -310,7 +285,7 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/BELAJAR/buah/kiwi.mp3');
+                  PlayAudio('kiwi.mp3');
                   setState(() {
                     _controller4.forward(from: 0.0);
                   });
@@ -324,7 +299,6 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
                   scale: buahitem4,
                   child: BuahItem(
                     Imageurl: 'icon_fruit/icon_fruit_04.png',
-                    audioUrl: 'kiwi.mp3',
                   ),
                 ),
               ),
@@ -332,7 +306,7 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/BELAJAR/buah/mangga.mp3');
+                  PlayAudio('mangga.mp3');
                   setState(() {
                     _controller5.forward(from: 0.0);
                   });
@@ -346,7 +320,6 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
                   scale: buahitem5,
                   child: BuahItem(
                     Imageurl: 'icon_fruit/icon_fruit_23.png',
-                    audioUrl: 'mangga.mp3',
                   ),
                 ),
               ),
@@ -354,7 +327,7 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/BELAJAR/buah/strauberry.mp3');
+                  PlayAudio('strauberry.mp3');
                   setState(() {
                     _controller6.forward(from: 0.0);
                   });
@@ -368,7 +341,6 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
                   scale: buahitem6,
                   child: BuahItem(
                     Imageurl: 'icon_fruit/icon_fruit_20.png',
-                    audioUrl: 'strauberry.mp3',
                   ),
                 ),
               ),
@@ -380,7 +352,7 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/BELAJAR/buah/pir.mp3');
+                  PlayAudio('pir.mp3');
                   setState(() {
                     _controller7.forward(from: 0.0);
                   });
@@ -394,7 +366,6 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
                   scale: buahitem7,
                   child: BuahItem(
                     Imageurl: 'icon_fruit/icon_fruit_15.png',
-                    audioUrl: 'pir.mp3',
                   ),
                 ),
               ),
@@ -402,7 +373,7 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/BELAJAR/buah/jeruk.mp3');
+                  PlayAudio('jeruk.mp3');
                   setState(() {
                     _controller8.forward(from: 0.0);
                   });
@@ -416,7 +387,6 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
                   scale: buahitem8,
                   child: BuahItem(
                     Imageurl: 'icon_fruit/icon_fruit_34.png',
-                    audioUrl: 'jeruk.mp3',
                   ),
                 ),
               ),
@@ -424,7 +394,7 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/BELAJAR/buah/pepaya.mp3');
+                  PlayAudio('pepaya.mp3');
                   setState(() {
                     _controller9.forward(from: 0.0);
                   });
@@ -438,7 +408,6 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
                   scale: buahitem9,
                   child: BuahItem(
                     Imageurl: 'icon_fruit/icon_fruit_28.png',
-                    audioUrl: 'pepaya.mp3',
                   ),
                 ),
               ),
@@ -450,7 +419,7 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/BELAJAR/buah/lemon.mp3');
+                  PlayAudio('lemon.mp3');
                   setState(() {
                     _controller10.forward(from: 0.0);
                   });
@@ -464,7 +433,6 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
                   scale: buahitem10,
                   child: BuahItem(
                     Imageurl: 'icon_fruit/icon_fruit_10.png',
-                    audioUrl: 'lemon.mp3',
                   ),
                 ),
               ),
@@ -472,7 +440,7 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/BELAJAR/buah/apel.mp3');
+                  PlayAudio('apel.mp3');
                   setState(() {
                     _controller11.forward(from: 0.0);
                   });
@@ -486,7 +454,6 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
                   scale: buahitem11,
                   child: BuahItem(
                     Imageurl: 'icon_fruit/icon_fruit_26.png',
-                    audioUrl: 'apel.mp3',
                   ),
                 ),
               ),
@@ -494,7 +461,7 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/BELAJAR/buah/manggis.mp3');
+                  PlayAudio('manggis.mp3');
                   setState(() {
                     _controller12.forward(from: 0.0);
                   });
@@ -508,7 +475,6 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
                   scale: buahitem12,
                   child: BuahItem(
                     Imageurl: 'icon_fruit/icon_fruit_40.png',
-                    audioUrl: 'manggis.mp3',
                   ),
                 ),
               ),
@@ -520,7 +486,7 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/BELAJAR/buah/semangka.mp3');
+                  PlayAudio('semangka.mp3');
                   setState(() {
                     _controller13.forward(from: 0.0);
                   });
@@ -534,7 +500,6 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
                   scale: buahitem13,
                   child: BuahItem(
                     Imageurl: 'icon_fruit/icon_fruit_12.png',
-                    audioUrl: 'semangka.mp3',
                   ),
                 ),
               ),
@@ -542,7 +507,7 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/BELAJAR/buah/pisang.mp3');
+                  PlayAudio('pisang.mp3');
                   setState(() {
                     _controller14.forward(from: 0.0);
                   });
@@ -556,7 +521,6 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
                   scale: buahitem14,
                   child: BuahItem(
                     Imageurl: 'icon_fruit/icon_fruit_37.png',
-                    audioUrl: 'pisang.mp3',
                   ),
                 ),
               ),
@@ -564,7 +528,7 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/BELAJAR/buah/nanas.mp3');
+                  PlayAudio('nanas.mp3');
                   setState(() {
                     _controller15.forward(from: 0.0);
                   });
@@ -578,11 +542,10 @@ class _BuahState extends State<Buah> with TickerProviderStateMixin {
                   scale: buahitem15,
                   child: BuahItem(
                     Imageurl: 'icon_fruit/icon_fruit_01.png',
-                    audioUrl: 'nanas.mp3',
                   ),
                 ),
               ),
-            ),
+            )
           ],
         ),
       ],

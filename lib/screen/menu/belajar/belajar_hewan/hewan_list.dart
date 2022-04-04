@@ -131,6 +131,8 @@ class Page2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
     return Column(
       children: [
         ClipRRect(
@@ -151,8 +153,8 @@ class Page2 extends StatelessWidget {
         ClipPath(
           clipper: BackgroundClipper(),
           child: Container(
-            width: 200,
-            height: 450,
+            width: width / 1.5,
+            height: height / 1.6,
             decoration: BoxDecoration(
               color: Colors.white,
             ),
@@ -241,6 +243,8 @@ class Page3 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
     return Column(
       children: [
         ClipRRect(
@@ -261,8 +265,8 @@ class Page3 extends StatelessWidget {
         ClipPath(
           clipper: BackgroundClipper(),
           child: Container(
-            width: 200,
-            height: 450,
+            width: width / 1.5,
+            height: height / 1.6,
             decoration: BoxDecoration(
               color: Colors.white,
             ),
@@ -344,6 +348,8 @@ class Page4 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
     return Column(
       children: [
         ClipRRect(
@@ -364,8 +370,8 @@ class Page4 extends StatelessWidget {
         ClipPath(
           clipper: BackgroundClipper(),
           child: Container(
-            width: 200,
-            height: 450,
+            width: width / 1.5,
+            height: height / 1.6,
             decoration: BoxDecoration(
               color: Colors.white,
             ),

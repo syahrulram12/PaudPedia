@@ -12,25 +12,25 @@ class Bentuk extends StatefulWidget {
   const Bentuk({Key? key}) : super(key: key);
 
   @override
-  _BentukState createState() => _BentukState();
+  State<Bentuk> createState() => _BentukState();
 }
 
 class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
-  var bentukitem1 = 0.5;
-  var bentukitem2 = 0.5;
-  var bentukitem3 = 0.5;
-  var bentukitem4 = 0.5;
-  var bentukitem5 = 0.5;
-  var bentukitem6 = 0.5;
-  var bentukitem7 = 0.5;
-  var bentukitem8 = 0.5;
-  var bentukitem9 = 0.5;
-  var bentukitem10 = 0.5;
-  var bentukitem11 = 0.5;
-  var bentukitem12 = 0.5;
-  var bentukitem13 = 0.5;
-  var bentukitem14 = 0.5;
-  var bentukitem15 = 0.5;
+  var bentukitem1 = 1.0;
+  var bentukitem2 = 1.0;
+  var bentukitem3 = 1.0;
+  var bentukitem4 = 1.0;
+  var bentukitem5 = 1.0;
+  var bentukitem6 = 1.0;
+  var bentukitem7 = 1.0;
+  var bentukitem8 = 1.0;
+  var bentukitem9 = 1.0;
+  var bentukitem10 = 1.0;
+  var bentukitem11 = 1.0;
+  var bentukitem12 = 1.0;
+  var bentukitem13 = 1.0;
+  var bentukitem14 = 1.0;
+  var bentukitem15 = 1.0;
   late AnimationController _controller1;
   late AnimationController _controller2;
   late AnimationController _controller3;
@@ -46,7 +46,7 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
   late AnimationController _controller13;
   late AnimationController _controller14;
   late AnimationController _controller15;
-  AudioCache Sfxbentuk = AudioCache();
+  AudioCache SfxBentuk = AudioCache();
   AudioPlayer audio = AudioPlayer();
 
   @override
@@ -54,7 +54,7 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
     _controller1 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.3,
         duration: Duration(milliseconds: 300));
     _controller1.addListener(() {
       setState(() {
@@ -64,8 +64,8 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
     _controller2 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
-        duration: Duration(seconds: 1));
+        upperBound: 1.3,
+        duration: Duration(milliseconds: 300));
     _controller2.addListener(() {
       setState(() {
         bentukitem2 = _controller2.value;
@@ -74,7 +74,7 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
     _controller3 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.3,
         duration: Duration(milliseconds: 300));
     _controller3.addListener(() {
       setState(() {
@@ -84,8 +84,8 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
     _controller4 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
-        duration: Duration(seconds: 1));
+        upperBound: 1.3,
+        duration: Duration(milliseconds: 300));
     _controller4.addListener(() {
       setState(() {
         bentukitem4 = _controller4.value;
@@ -94,7 +94,7 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
     _controller5 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.3,
         duration: Duration(milliseconds: 300));
     _controller5.addListener(() {
       setState(() {
@@ -104,8 +104,8 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
     _controller6 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
-        duration: Duration(seconds: 1));
+        upperBound: 1.3,
+        duration: Duration(milliseconds: 300));
     _controller6.addListener(() {
       setState(() {
         bentukitem6 = _controller6.value;
@@ -114,7 +114,7 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
     _controller7 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.3,
         duration: Duration(milliseconds: 300));
     _controller7.addListener(() {
       setState(() {
@@ -124,8 +124,8 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
     _controller8 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
-        duration: Duration(seconds: 1));
+        upperBound: 1.3,
+        duration: Duration(milliseconds: 300));
     _controller8.addListener(() {
       setState(() {
         bentukitem8 = _controller8.value;
@@ -134,7 +134,7 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
     _controller9 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.3,
         duration: Duration(milliseconds: 300));
     _controller9.addListener(() {
       setState(() {
@@ -144,8 +144,8 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
     _controller10 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
-        duration: Duration(seconds: 1));
+        upperBound: 1.3,
+        duration: Duration(milliseconds: 300));
     _controller10.addListener(() {
       setState(() {
         bentukitem10 = _controller10.value;
@@ -154,8 +154,8 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
     _controller11 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
-        duration: Duration(seconds: 1));
+        upperBound: 1.3,
+        duration: Duration(milliseconds: 300));
     _controller10.addListener(() {
       setState(() {
         bentukitem11 = _controller11.value;
@@ -164,8 +164,8 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
     _controller12 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
-        duration: Duration(seconds: 1));
+        upperBound: 1.3,
+        duration: Duration(milliseconds: 300));
     _controller12.addListener(() {
       setState(() {
         bentukitem12 = _controller12.value;
@@ -174,8 +174,8 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
     _controller13 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
-        duration: Duration(seconds: 1));
+        upperBound: 1.3,
+        duration: Duration(milliseconds: 300));
     _controller13.addListener(() {
       setState(() {
         bentukitem13 = _controller13.value;
@@ -184,8 +184,8 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
     _controller14 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
-        duration: Duration(seconds: 1));
+        upperBound: 1.3,
+        duration: Duration(milliseconds: 300));
     _controller14.addListener(() {
       setState(() {
         bentukitem14 = _controller14.value;
@@ -194,20 +194,20 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
     _controller15 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
-        duration: Duration(seconds: 1));
+        upperBound: 1.3,
+        duration: Duration(milliseconds: 300));
     _controller15.addListener(() {
       setState(() {
         bentukitem15 = _controller15.value;
       });
     });
 
-    Sfxbentuk = AudioCache(fixedPlayer: audio);
+    SfxBentuk = AudioCache(fixedPlayer: audio);
     super.initState();
   }
 
-  void PlayAudio(url) {
-    Sfxbentuk.play(url);
+  Future<void> PlayAudio(url) async {
+    SfxBentuk.play('audio/BELAJAR/bentuk/' + url);
   }
 
   @override
@@ -241,7 +241,7 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/BELAJAR/buah/bujur-sangkar.mp3');
+                  PlayAudio('bujur-sangkar.mp3');
                   setState(() {
                     _controller1.forward(from: 0.0);
                   });
@@ -255,7 +255,6 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
                   scale: bentukitem1,
                   child: BentukItem(
                     Imageurl: 'icon_shape/icon_box.png',
-                    audioUrl: 'bujur-sangkar.mp3',
                   ),
                 ),
               ),
@@ -263,7 +262,7 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/BELAJAR/buah/persegi-panjang.mp3');
+                  PlayAudio('persegi-panjang.mp3');
                   setState(() {
                     _controller2.forward(from: 0.0);
                   });
@@ -277,7 +276,6 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
                   scale: bentukitem2,
                   child: BentukItem(
                     Imageurl: 'icon_shape/icon_rectangle.png',
-                    audioUrl: 'persegi-panjang.mp3',
                   ),
                 ),
               ),
@@ -285,7 +283,7 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/BELAJAR/buah/lingkaran.mp3');
+                  PlayAudio('lingkaran.mp3');
                   setState(() {
                     _controller3.forward(from: 0.0);
                   });
@@ -299,7 +297,6 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
                   scale: bentukitem3,
                   child: BentukItem(
                     Imageurl: 'icon_shape/icon_circle.png',
-                    audioUrl: 'lingkaran.mp3',
                   ),
                 ),
               ),
@@ -307,7 +304,7 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/BELAJAR/buah/oval.mp3');
+                  PlayAudio('oval.mp3');
                   setState(() {
                     _controller4.forward(from: 0.0);
                   });
@@ -321,7 +318,6 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
                   scale: bentukitem4,
                   child: BentukItem(
                     Imageurl: 'icon_shape/icon_oval.png',
-                    audioUrl: 'oval.mp3',
                   ),
                 ),
               ),
@@ -333,7 +329,7 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/BELAJAR/buah/segi-tiga.mp3');
+                  PlayAudio('segi-tiga.mp3');
                   setState(() {
                     _controller5.forward(from: 0.0);
                   });
@@ -347,7 +343,6 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
                   scale: bentukitem5,
                   child: BentukItem(
                     Imageurl: 'icon_shape/triangle.png',
-                    audioUrl: 'segi-tiga.mp3',
                   ),
                 ),
               ),
@@ -355,7 +350,7 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/BELAJAR/buah/segi-lima.mp3');
+                  PlayAudio('segi-lima.mp3');
                   setState(() {
                     _controller6.forward(from: 0.0);
                   });
@@ -369,7 +364,6 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
                   scale: bentukitem6,
                   child: BentukItem(
                     Imageurl: 'icon_shape/icon_pentagon.png',
-                    audioUrl: 'segi-lima.mp3',
                   ),
                 ),
               ),
@@ -377,7 +371,7 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/BELAJAR/buah/segi-enam.mp3');
+                  PlayAudio('segi-enam.mp3');
                   setState(() {
                     _controller7.forward(from: 0.0);
                   });
@@ -391,7 +385,6 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
                   scale: bentukitem7,
                   child: BentukItem(
                     Imageurl: 'icon_shape/icon_hexagon.png',
-                    audioUrl: 'segi-enam.mp3',
                   ),
                 ),
               ),
@@ -399,7 +392,7 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/BELAJAR/buah/segi-delapan.mp3');
+                  PlayAudio('segi-delapan.mp3');
                   setState(() {
                     _controller8.forward(from: 0.0);
                   });
@@ -413,7 +406,6 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
                   scale: bentukitem8,
                   child: BentukItem(
                     Imageurl: 'icon_shape/icon_octagonal.png',
-                    audioUrl: 'segi-delapan.mp3',
                   ),
                 ),
               ),
@@ -425,7 +417,7 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/BELAJAR/buah/jajar-genjang.mp3');
+                  PlayAudio('jajar-genjang.mp3');
                   setState(() {
                     _controller9.forward(from: 0.0);
                   });
@@ -439,7 +431,6 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
                   scale: bentukitem9,
                   child: BentukItem(
                     Imageurl: 'icon_shape/icon_parallelogram.png',
-                    audioUrl: 'jajar-genjang.mp3',
                   ),
                 ),
               ),
@@ -447,7 +438,7 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/BELAJAR/buah/belah-ketupat.mp3');
+                  PlayAudio('belah-ketupat.mp3');
                   setState(() {
                     _controller10.forward(from: 0.0);
                   });
@@ -461,7 +452,6 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
                   scale: bentukitem10,
                   child: BentukItem(
                     Imageurl: 'icon_shape/icon_rhombus.png',
-                    audioUrl: 'belah-ketupat.mp3',
                   ),
                 ),
               ),
@@ -469,7 +459,7 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/BELAJAR/buah/trapesium.mp3');
+                  PlayAudio('trapesium.mp3');
                   setState(() {
                     _controller11.forward(from: 0.0);
                   });
@@ -483,7 +473,6 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
                   scale: bentukitem11,
                   child: BentukItem(
                     Imageurl: 'icon_shape/icon_trapezoid.png',
-                    audioUrl: 'trapesium.mp3',
                   ),
                 ),
               ),
@@ -491,7 +480,7 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/BELAJAR/buah/bulan.mp3');
+                  PlayAudio('bulan.mp3');
                   setState(() {
                     _controller12.forward(from: 0.0);
                   });
@@ -505,7 +494,6 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
                   scale: bentukitem12,
                   child: BentukItem(
                     Imageurl: 'icon_shape/icon_moon.png',
-                    audioUrl: 'bulan.mp3',
                   ),
                 ),
               ),
@@ -517,7 +505,7 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/BELAJAR/buah/hati.mp3');
+                  PlayAudio('hati.mp3');
                   setState(() {
                     _controller13.forward(from: 0.0);
                   });
@@ -531,7 +519,6 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
                   scale: bentukitem13,
                   child: BentukItem(
                     Imageurl: 'icon_shape/icon_love.png',
-                    audioUrl: 'hati.mp3',
                   ),
                 ),
               ),
@@ -539,7 +526,7 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/BELAJAR/buah/bintang.mp3');
+                  PlayAudio('bintang.mp3');
                   setState(() {
                     _controller14.forward(from: 0.0);
                   });
@@ -553,7 +540,6 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
                   scale: bentukitem14,
                   child: BentukItem(
                     Imageurl: 'icon_shape/icon_star.png',
-                    audioUrl: 'bintang.mp3',
                   ),
                 ),
               ),
@@ -561,7 +547,7 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('audio/BELAJAR/buah/panah.mp3');
+                  PlayAudio('panah.mp3');
                   setState(() {
                     _controller15.forward(from: 0.0);
                   });
@@ -575,11 +561,11 @@ class _BentukState extends State<Bentuk> with TickerProviderStateMixin {
                   scale: bentukitem15,
                   child: BentukItem(
                     Imageurl: 'icon_shape/icon_arrow.png',
-                    audioUrl: 'panah.mp3',
                   ),
                 ),
               ),
             ),
+            Flexible(child: Container())
           ],
         ),
       ],

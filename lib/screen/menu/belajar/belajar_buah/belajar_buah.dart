@@ -77,8 +77,7 @@ class _BuahHomeState extends State<BuahHome> {
                       ),
                     ]),
               ),
-              SizedBox(height: height / 10),
-              SizedBox(height: height / 8),
+              SizedBox(height: height / 3.5),
               Container(
                   child: Padding(
                 padding: EdgeInsets.symmetric(horizontal: 2),
@@ -94,14 +93,9 @@ class _BuahHomeState extends State<BuahHome> {
 
 class BuahItem extends StatefulWidget {
   final String Imageurl;
-  final String audioUrl;
-  final Function()? OnMenuClick;
 
-  const BuahItem(
-      {Key? key,
-      required this.Imageurl,
-      this.OnMenuClick,
-      required this.audioUrl})
+  final Function()? OnMenuClick;
+  const BuahItem({Key? key, required this.Imageurl, this.OnMenuClick})
       : super(key: key);
 
   @override
@@ -110,24 +104,24 @@ class BuahItem extends StatefulWidget {
 
 class _BuahItemState extends State<BuahItem> {
   AudioCache SfxBuah = AudioCache();
+
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
     return Center(
-        child: Container(
-      width: 80,
-      height: 80,
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(13),
-        child: GestureDetector(
-          onTap: () {
-            SfxBuah.play('audio/BELAJAR/buah/' + widget.audioUrl);
-          },
+      child: Container(
+        margin: EdgeInsets.only(bottom: 2),
+        width: width / 3,
+        height: height / 9.5,
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(13),
           child: Image.asset(
             'assets/icons/' + widget.Imageurl + '',
             fit: BoxFit.cover,
           ),
         ),
       ),
-    ));
+    );
   }
 }

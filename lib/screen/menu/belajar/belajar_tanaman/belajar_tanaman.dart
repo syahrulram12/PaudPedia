@@ -129,14 +129,14 @@ class _TanamanHomeState extends State<TanamanHome> {
                   clipBehavior: Clip.none,
                   children: [
                     Positioned(
-                        left: -30,
+                        left: width / -4 / 5,
                         child: Container(
-                          width: 200,
+                          width: width / 2,
                           child: Center(
                             child: Container(
                                 height: 400,
                                 width: 300,
-                                margin: EdgeInsets.only(top: 40),
+                                margin: EdgeInsets.only(top: height / 5 / 3),
                                 child: Column(
                                   children: [
                                     Padding(

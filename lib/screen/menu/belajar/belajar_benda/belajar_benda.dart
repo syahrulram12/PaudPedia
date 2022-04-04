@@ -113,9 +113,9 @@ class _BendaHomeState extends State<BendaHome> {
                     clipBehavior: Clip.none,
                     children: [
                       Positioned(
-                          left: -40,
+                          left: width / -2 / 5,
                           child: Container(
-                            width: 200,
+                            width: width / 2,
                             child: Center(
                               child: Container(
                                   height: 400,
@@ -127,7 +127,7 @@ class _BendaHomeState extends State<BendaHome> {
                                         padding: EdgeInsets.all(2),
                                         child: ClipRRect(
                                           borderRadius:
-                                              BorderRadius.circular(30),
+                                              BorderRadius.circular(40),
                                           child: Container(
                                             margin: EdgeInsets.only(
                                                 bottom: 2, left: 2),
@@ -135,10 +135,10 @@ class _BendaHomeState extends State<BendaHome> {
                                                 BoxDecoration(boxShadow: [
                                               BoxShadow(
                                                 color: Colors.black
-                                                    .withOpacity(0.2),
+                                                    .withOpacity(0.4),
                                                 spreadRadius: 50,
                                                 blurRadius: 1,
-                                                offset: Offset(20, 30),
+                                                offset: Offset(-50, 30),
                                               )
                                             ]),
                                             child: GestureDetector(
