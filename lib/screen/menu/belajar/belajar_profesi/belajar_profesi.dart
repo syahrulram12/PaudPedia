@@ -51,7 +51,7 @@ class ProfesiHome extends StatelessWidget {
                 child: Container(
                   margin: EdgeInsets.symmetric(horizontal: 15),
                   height: 500,
-                  child: Profesi1(),
+                  child: Profesi(),
                 ),
               )
             ],
@@ -64,15 +64,11 @@ class ProfesiHome extends StatelessWidget {
 
 class ProfesiItem extends StatefulWidget {
   final String Imageurl;
-  final String audioUrl;
-  final Function()? OnMenuClick;
 
-  const ProfesiItem(
-      {Key? key,
-      required this.Imageurl,
-      this.OnMenuClick,
-      required this.audioUrl})
+  final Function()? OnMenuClick;
+  const ProfesiItem({Key? key, required this.Imageurl, this.OnMenuClick})
       : super(key: key);
+
 
   @override
   _ProfesiItemState createState() => _ProfesiItemState();
@@ -102,16 +98,12 @@ class _ProfesiItemState extends State<ProfesiItem> {
       margin: EdgeInsets.symmetric(vertical: 5, horizontal: 5),
       width: width / 2.5,
       child: ClipRRect(
-        child: GestureDetector(
-          onTap: () {
-            SfxProfesi.play('audio/BELAJAR/profesi/' + widget.audioUrl);
-          },
           child: Image.asset(
             'assets/icons/' + widget.Imageurl + '',
             fit: BoxFit.contain,
           ),
         ),
       ),
-    ));
+    );
   }
 }
