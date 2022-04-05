@@ -103,7 +103,6 @@ class _SayurItemState extends State<SayurItem> {
     double height = MediaQuery.of(context).size.height;
     return Center(
       child: Container(
-        color: Colors.blue,
         margin: EdgeInsets.only(bottom: 2),
         width: width / 5,
         height: height / 9.5,

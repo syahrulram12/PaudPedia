@@ -1373,7 +1373,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
               mainAxisSpacing: 14,
               children: <Widget>[
                 Container(
-                  color: Color.fromARGB(255, 136, 233, 25),
+                  color: Colors.lightGreen.shade400,
                   child: GestureDetector(
                     onTap: () {
                       PlayAudio('audio/BELAJAR/fauna/kepiting.mp3');
