@@ -105,12 +105,11 @@ class _HurufHomeState extends State<HurufHome> {
                     ),
                   ],
                 )),
-            SizedBox(height: height / 10),
+            SizedBox(height: height / 4),
             Container(
-              color: Colors.blue,
               child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 2),
-                child: Huruf ? Page1() : Page1(),
+                padding: EdgeInsets.symmetric(horizontal: width / 9 / 2),
+                child: Huruf ? Page1() : Page2(),
               ),
             )
           ],
@@ -137,16 +136,20 @@ class HurufItem extends StatefulWidget {
 class _HurufItemState extends State<HurufItem> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 60,
-      child: ClipRRect(
-          borderRadius: BorderRadius.circular(13),
-          child: GestureDetector(
-            child: Image.asset(
-              'assets/icons/' + widget.imageurl + '',
-              fit: BoxFit.fill,
-            ),
-          )),
+    double height = MediaQuery.of(context).size.height;
+    double width = MediaQuery.of(context).size.width;
+    return Center(
+      child: Container(
+        margin: EdgeInsets.symmetric(horizontal: 2, vertical: 2),
+        child: ClipRRect(
+            borderRadius: BorderRadius.circular(13),
+            child: GestureDetector(
+              child: Image.asset(
+                'assets/icons/' + widget.imageurl + '',
+                fit: BoxFit.cover,
+              ),
+            )),
+      ),
     );
   }
 }

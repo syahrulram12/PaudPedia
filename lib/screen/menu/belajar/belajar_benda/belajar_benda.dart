@@ -245,43 +245,27 @@ class _BendaHomeState extends State<BendaHome> {
 
 class BendaItem extends StatefulWidget {
   final String Imageurl;
-  final String audioUrl;
   final Function()? OnMenuClick;
-  const BendaItem(
-      {Key? key,
-      required this.Imageurl,
-      this.OnMenuClick,
-      required this.audioUrl})
-      : super(key: key);
+  const BendaItem({
+    Key? key,
+    required this.Imageurl,
+    this.OnMenuClick,
+  }) : super(key: key);
 
   @override
   _BendaItemState createState() => _BendaItemState();
 }
 
 class _BendaItemState extends State<BendaItem> {
-  AudioCache SfxItem = AudioCache();
-  AudioPlayer audioPlayer = AudioPlayer();
-
-  PlayAudio(audioUrl) {
-    audioPlayer.stop();
-    SfxItem = AudioCache(fixedPlayer: audioPlayer);
-    SfxItem.play('audio/BELAJAR/benda/' + audioUrl);
-  }
-
   @override
   Widget build(BuildContext context) {
     return Center(
         child: Padding(
       padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
       child: ClipRRect(
-        child: GestureDetector(
-          onTap: () {
-            PlayAudio(widget.audioUrl);
-          },
-          child: Image.asset(
-            'assets/icons/' + widget.Imageurl + '',
-            fit: BoxFit.contain,
-          ),
+        child: Image.asset(
+          'assets/icons/' + widget.Imageurl + '',
+          fit: BoxFit.contain,
         ),
       ),
     ));

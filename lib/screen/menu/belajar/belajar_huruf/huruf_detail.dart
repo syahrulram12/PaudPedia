@@ -75,7 +75,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     _controller1 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller1.addListener(() {
       setState(() {
@@ -85,7 +85,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     _controller2 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller2.addListener(() {
       setState(() {
@@ -95,7 +95,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     _controller3 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller3.addListener(() {
       setState(() {
@@ -105,7 +105,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     _controller4 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller4.addListener(() {
       setState(() {
@@ -115,7 +115,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     _controller5 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller5.addListener(() {
       setState(() {
@@ -125,7 +125,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     _controller6 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller6.addListener(() {
       setState(() {
@@ -135,7 +135,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     _controller7 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller7.addListener(() {
       setState(() {
@@ -145,7 +145,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     _controller8 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller8.addListener(() {
       setState(() {
@@ -155,7 +155,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     _controller9 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller9.addListener(() {
       setState(() {
@@ -165,7 +165,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     _controller10 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller10.addListener(() {
       setState(() {
@@ -175,7 +175,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     _controller11 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller11.addListener(() {
       setState(() {
@@ -185,7 +185,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     _controller12 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(seconds: 1));
     _controller12.addListener(() {
       setState(() {
@@ -195,7 +195,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     _controller13 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(seconds: 1));
     _controller13.addListener(() {
       setState(() {
@@ -205,7 +205,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     _controller14 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(seconds: 1));
     _controller14.addListener(() {
       setState(() {
@@ -215,7 +215,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     _controller15 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(seconds: 1));
     _controller15.addListener(() {
       setState(() {
@@ -225,7 +225,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     _controller16 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(seconds: 1));
     _controller16.addListener(() {
       setState(() {
@@ -235,7 +235,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     _controller17 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(seconds: 1));
     _controller17.addListener(() {
       setState(() {
@@ -245,7 +245,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     _controller18 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(seconds: 1));
     _controller18.addListener(() {
       setState(() {
@@ -255,7 +255,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     _controller19 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(seconds: 1));
     _controller19.addListener(() {
       setState(() {
@@ -265,7 +265,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     _controller20 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(seconds: 1));
     _controller20.addListener(() {
       setState(() {
@@ -275,7 +275,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     _controller21 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller21.addListener(() {
       setState(() {
@@ -285,7 +285,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     _controller22 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller22.addListener(() {
       setState(() {
@@ -295,7 +295,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     _controller23 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller23.addListener(() {
       setState(() {
@@ -305,7 +305,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     _controller24 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller24.addListener(() {
       setState(() {
@@ -315,7 +315,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     _controller25 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller25.addListener(() {
       setState(() {
@@ -325,7 +325,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
     _controller26 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller26.addListener(() {
       setState(() {
@@ -393,7 +393,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem1,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_big/icon_alfabet_-01.png',
                 ),
               ),
@@ -415,7 +415,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem2,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_big/icon_alfabet_-02.png',
                 ),
               ),
@@ -437,7 +437,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem3,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_big/icon_alfabet_-03.png',
                 ),
               ),
@@ -459,7 +459,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem4,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_big/icon_alfabet_-04.png',
                 ),
               ),
@@ -481,7 +481,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem5,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_big/icon_alfabet_-05.png',
                 ),
               ),
@@ -503,7 +503,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem6,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_big/icon_alfabet_-06.png',
                 ),
               ),
@@ -527,7 +527,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem7,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_big/icon_alfabet_-07.png',
                 ),
               ),
@@ -549,7 +549,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem8,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_big/icon_alfabet_-08.png',
                 ),
               ),
@@ -571,7 +571,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem9,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_big/icon_alfabet_-09.png',
                 ),
               ),
@@ -593,7 +593,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem10,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_big/icon_alfabet_-10.png',
                 ),
               ),
@@ -615,7 +615,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem11,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_big/icon_alfabet_-11.png',
                 ),
               ),
@@ -637,7 +637,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem12,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_big/icon_alfabet_-12.png',
                 ),
               ),
@@ -661,7 +661,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem13,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_big/icon_alfabet_-13.png',
                 ),
               ),
@@ -683,7 +683,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem14,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_big/icon_alfabet_-14.png',
                 ),
               ),
@@ -705,7 +705,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem15,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_big/icon_alfabet_-15.png',
                 ),
               ),
@@ -727,7 +727,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem16,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_big/icon_alfabet_-16.png',
                 ),
               ),
@@ -749,7 +749,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem17,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_big/icon_alfabet_-17.png',
                 ),
               ),
@@ -771,7 +771,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem18,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_big/icon_alfabet_-18.png',
                 ),
               ),
@@ -795,7 +795,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem19,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_big/icon_alfabet_-19.png',
                 ),
               ),
@@ -817,7 +817,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem20,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_big/icon_alfabet_-20.png',
                 ),
               ),
@@ -839,7 +839,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem21,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_big/icon_alfabet_-21.png',
                 ),
               ),
@@ -861,7 +861,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem22,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_big/icon_alfabet_-22.png',
                 ),
               ),
@@ -883,7 +883,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem23,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_big/icon_alfabet_-23.png',
                 ),
               ),
@@ -905,7 +905,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem24,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_big/icon_alfabet_-24.png',
                 ),
               ),
@@ -930,7 +930,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
                 child: Transform.scale(
                   scale: hurufitem25,
                   child: HurufItem(
-                    Imageurl:
+                    imageurl:
                         'icon_alfabet/icon_alfabet_big/icon_alfabet_-25.png',
                   ),
                 ),
@@ -952,13 +952,16 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
                 child: Transform.scale(
                   scale: hurufitem26,
                   child: HurufItem(
-                    Imageurl:
+                    imageurl:
                         'icon_alfabet/icon_alfabet_big/icon_alfabet_-26.png',
                   ),
                 ),
               ),
             ),
-            Flexible(child: Container())
+            Flexible(child: Container()),
+            Flexible(child: Container()),
+            Flexible(child: Container()),
+            Flexible(child: Container()),
           ],
         ),
       ],
@@ -1034,7 +1037,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     _controller1 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller1.addListener(() {
       setState(() {
@@ -1044,7 +1047,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     _controller2 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller2.addListener(() {
       setState(() {
@@ -1054,7 +1057,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     _controller3 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller3.addListener(() {
       setState(() {
@@ -1064,7 +1067,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     _controller4 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller4.addListener(() {
       setState(() {
@@ -1074,7 +1077,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     _controller5 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller5.addListener(() {
       setState(() {
@@ -1084,7 +1087,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     _controller6 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller6.addListener(() {
       setState(() {
@@ -1094,7 +1097,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     _controller7 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller7.addListener(() {
       setState(() {
@@ -1104,7 +1107,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     _controller8 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller8.addListener(() {
       setState(() {
@@ -1114,7 +1117,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     _controller9 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller9.addListener(() {
       setState(() {
@@ -1124,7 +1127,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     _controller10 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller10.addListener(() {
       setState(() {
@@ -1134,7 +1137,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     _controller11 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller11.addListener(() {
       setState(() {
@@ -1144,7 +1147,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     _controller12 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(seconds: 1));
     _controller12.addListener(() {
       setState(() {
@@ -1154,7 +1157,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     _controller13 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(seconds: 1));
     _controller13.addListener(() {
       setState(() {
@@ -1164,7 +1167,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     _controller14 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(seconds: 1));
     _controller14.addListener(() {
       setState(() {
@@ -1174,7 +1177,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     _controller15 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(seconds: 1));
     _controller15.addListener(() {
       setState(() {
@@ -1184,7 +1187,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     _controller16 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(seconds: 1));
     _controller16.addListener(() {
       setState(() {
@@ -1194,7 +1197,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     _controller17 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(seconds: 1));
     _controller17.addListener(() {
       setState(() {
@@ -1204,7 +1207,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     _controller18 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(seconds: 1));
     _controller18.addListener(() {
       setState(() {
@@ -1214,7 +1217,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     _controller19 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(seconds: 1));
     _controller19.addListener(() {
       setState(() {
@@ -1224,7 +1227,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     _controller20 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(seconds: 1));
     _controller20.addListener(() {
       setState(() {
@@ -1234,7 +1237,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     _controller21 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller21.addListener(() {
       setState(() {
@@ -1244,7 +1247,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     _controller22 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller22.addListener(() {
       setState(() {
@@ -1254,7 +1257,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     _controller23 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller23.addListener(() {
       setState(() {
@@ -1264,7 +1267,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     _controller24 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller24.addListener(() {
       setState(() {
@@ -1274,7 +1277,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     _controller25 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller25.addListener(() {
       setState(() {
@@ -1284,7 +1287,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     _controller26 = AnimationController(
         vsync: this,
         lowerBound: 1.0,
-        upperBound: 1.2,
+        upperBound: 1.4,
         duration: Duration(milliseconds: 300));
     _controller26.addListener(() {
       setState(() {
@@ -1352,7 +1355,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem1,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_small/icon_alfabet_small--01.png',
                 ),
               ),
@@ -1374,7 +1377,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem2,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_small/icon_alfabet_small--02.png',
                 ),
               ),
@@ -1396,7 +1399,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem3,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_small/icon_alfabet_small--03.png',
                 ),
               ),
@@ -1418,7 +1421,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem4,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_small/icon_alfabet_small--04.png',
                 ),
               ),
@@ -1440,7 +1443,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem5,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_small/icon_alfabet_small--05.png',
                 ),
               ),
@@ -1462,7 +1465,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem6,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_small/icon_alfabet_small--06.png',
                 ),
               ),
@@ -1486,7 +1489,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem7,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_small/icon_alfabet_small--07.png',
                 ),
               ),
@@ -1508,7 +1511,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem8,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_small/icon_alfabet_small--08.png',
                 ),
               ),
@@ -1530,7 +1533,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem9,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_small/icon_alfabet_small--09.png',
                 ),
               ),
@@ -1552,7 +1555,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem10,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_small/icon_alfabet_small--10.png',
                 ),
               ),
@@ -1574,7 +1577,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem11,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_small/icon_alfabet_small--11.png',
                 ),
               ),
@@ -1596,7 +1599,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem12,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_small/icon_alfabet_small--12.png',
                 ),
               ),
@@ -1620,7 +1623,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem13,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_small/icon_alfabet_small--13.png',
                 ),
               ),
@@ -1642,7 +1645,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem14,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_small/icon_alfabet_small--14.png',
                 ),
               ),
@@ -1664,7 +1667,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem15,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_small/icon_alfabet_small--15.png',
                 ),
               ),
@@ -1686,7 +1689,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem16,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_small/icon_alfabet_small--16.png',
                 ),
               ),
@@ -1708,7 +1711,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem17,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_small/icon_alfabet_small--17.png',
                 ),
               ),
@@ -1730,7 +1733,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem18,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_small/icon_alfabet_small--18.png',
                 ),
               ),
@@ -1754,7 +1757,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem19,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_small/icon_alfabet_small--19.png',
                 ),
               ),
@@ -1776,7 +1779,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem20,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_small/icon_alfabet_small--20.png',
                 ),
               ),
@@ -1798,7 +1801,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem21,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_small/icon_alfabet_small--21.png',
                 ),
               ),
@@ -1820,7 +1823,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem22,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_small/icon_alfabet_small--22.png',
                 ),
               ),
@@ -1842,7 +1845,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem23,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_small/icon_alfabet_small--23.png',
                 ),
               ),
@@ -1864,7 +1867,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
               child: Transform.scale(
                 scale: hurufitem24,
                 child: HurufItem(
-                  Imageurl:
+                  imageurl:
                       'icon_alfabet/icon_alfabet_small/icon_alfabet_small--24.png',
                 ),
               ),
@@ -1889,7 +1892,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                 child: Transform.scale(
                   scale: hurufitem25,
                   child: HurufItem(
-                    Imageurl:
+                    imageurl:
                         'icon_alfabet/icon_alfabet_small/icon_alfabet_small--25.png',
                   ),
                 ),
@@ -1911,13 +1914,16 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                 child: Transform.scale(
                   scale: hurufitem26,
                   child: HurufItem(
-                    Imageurl:
+                    imageurl:
                         'icon_alfabet/icon_alfabet_small/icon_alfabet_small--26.png',
                   ),
                 ),
               ),
             ),
-            Flexible(child: Container())
+            Flexible(child: Container()),
+            Flexible(child: Container()),
+            Flexible(child: Container()),
+            Flexible(child: Container()),
           ],
         ),
       ],

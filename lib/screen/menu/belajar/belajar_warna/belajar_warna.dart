@@ -114,8 +114,7 @@ class _WarnaHomeState extends State<WarnaHome> {
               ),
               SizedBox(height: height / 6 / 2),
               Container(
-                  color: Colors.blue,
-                  height: height / 2,
+                  height: height / 1.5,
                   child: Padding(
                       padding: EdgeInsets.symmetric(horizontal: 0),
                       child: Center(
@@ -131,8 +130,8 @@ class _WarnaHomeState extends State<WarnaHome> {
                                       'assets/icons/tab_bar_kiri.png')),
                             ),
                             Container(
-                              margin: EdgeInsets.symmetric(vertical: 30),
                               width: width / 1.4,
+                              height: height / 2,
                               child: Page(),
                             ),
                             Container(
@@ -200,14 +199,15 @@ class _WarnaItemState extends State<WarnaItem> {
 
   @override
   Widget build(BuildContext context) {
+    double height = MediaQuery.of(context).size.height;
+    double width = MediaQuery.of(context).size.width;
     return Center(
         child: Container(
-            margin: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(13),
             ),
             child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+              padding: EdgeInsets.symmetric(horizontal: 3, vertical: 3),
               child: ClipRRect(
                 child: GestureDetector(
                     onTap: () {
@@ -215,12 +215,12 @@ class _WarnaItemState extends State<WarnaItem> {
                     },
                     child: Column(children: [
                       Container(
-                          height: 30,
-                          width: 100,
+                          height: height / 8 / 2,
                           child: Image.asset('assets/icons/tab_bar_' +
                               widget.Imageurl +
                               '.png')),
                       Container(
+                        height: height / 2,
                         child: play
                             ? Image.asset(
                                 'assets/icons/icon_cake/icon_cake-' +
