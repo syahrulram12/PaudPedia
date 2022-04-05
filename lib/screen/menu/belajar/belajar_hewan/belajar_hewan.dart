@@ -288,46 +288,29 @@ class _HewanHomeState extends State<HewanHome> {
 
 class HewanItem extends StatefulWidget {
   final String Imageurl;
-  final String audioUrl;
   final Function()? OnMenuClick;
-  const HewanItem(
-      {Key? key,
-      required this.Imageurl,
-      this.OnMenuClick,
-      required this.audioUrl})
-      : super(key: key);
+  const HewanItem({
+    Key? key,
+    required this.Imageurl,
+    this.OnMenuClick,
+  }) : super(key: key);
 
   @override
   _HewanItemState createState() => _HewanItemState();
 }
 
 class _HewanItemState extends State<HewanItem> {
-  AudioCache SfxHewan = AudioCache();
-  AudioPlayer audioPlayer = AudioPlayer();
-
-  void PlayAudio(audioUrl) {
-    audioPlayer.stop();
-    SfxHewan = AudioCache(fixedPlayer: audioPlayer);
-    SfxHewan.play('audio/BELAJAR/fauna/' + audioUrl);
-  }
-
   @override
   Widget build(BuildContext context) {
     return Center(
         child: Padding(
       padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
       child: ClipRRect(
-        child: GestureDetector(
-          onTap: () {
-            PlayAudio(widget.audioUrl);
-          },
-          child: Image.asset(
-            'assets/icons/' + widget.Imageurl + '',
-            fit: BoxFit.contain,
-          ),
+        child: Image.asset(
+          'assets/icons/' + widget.Imageurl + '',
+          fit: BoxFit.contain,
         ),
       ),
     ));
-    ;
   }
 }
