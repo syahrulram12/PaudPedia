@@ -180,7 +180,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
                     color: Colors.lightBlue.shade700,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('audio/BELAJAR/benda/20.mp3');
+                        PlayAudio('audio/BELAJAR/benda/teropong-bintang.mp3');
                         setState(() {
                           _controller1.forward(from: 0.0);
                         });
@@ -202,7 +202,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
                     color: Colors.lightBlue.shade700,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('audio/BELAJAR/angka/20.mp3');
+                        PlayAudio('audio/BELAJAR/benda/lampu-belajar.mp3');
                         setState(() {
                           _controller2.forward(from: 0.0);
                         });
@@ -224,7 +224,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
                     color: Colors.lightBlue.shade700,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('audio/BELAJAR/benda/20.mp3');
+                        PlayAudio('audio/BELAJAR/benda/bantal.mp3');
                         setState(() {
                           _controller3.forward(from: 0.0);
                         });
@@ -246,7 +246,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
                     color: Colors.lightBlue.shade700,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('audio/BELAJAR/benda/20.mp3');
+                        PlayAudio('audio/BELAJAR/benda/kasur.mp3');
                         setState(() {
                           _controller4.forward(from: 0.0);
                         });
@@ -267,7 +267,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
                     color: Colors.lightBlue.shade700,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('audio/BELAJAR/benda/20.mp3');
+                        PlayAudio('audio/BELAJAR/benda/kursi.mp3');
                         setState(() {
                           _controller5.forward(from: 0.0);
                         });
@@ -289,7 +289,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
                     color: Colors.lightBlue.shade700,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('audio/BELAJAR/benda/20.mp3');
+                        PlayAudio('audio/BELAJAR/benda/mobil-mobilan.mp3');
                         setState(() {
                           _controller6.forward(from: 0.0);
                         });
@@ -311,7 +311,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
                     color: Colors.lightBlue.shade700,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('audio/BELAJAR/benda/20.mp3');
+                        PlayAudio('audio/BELAJAR/benda/lemari.mp3');
                         setState(() {
                           _controller7.forward(from: 0.0);
                         });
@@ -333,7 +333,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
                     color: Colors.lightBlue.shade700,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('audio/BELAJAR/benda/20.mp3');
+                        PlayAudio('audio/BELAJAR/benda/bola.mp3');
                         setState(() {
                           _controller8.forward(from: 0.0);
                         });
@@ -355,7 +355,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
                     color: Colors.lightBlue.shade700,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('audio/BELAJAR/benda/20.mp3');
+                        PlayAudio('audio/BELAJAR/benda/keranjang-bola.mp3');
                         setState(() {
                           _controller9.forward(from: 0.0);
                         });
@@ -410,7 +410,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
   late AnimationController _controller8;
   late AnimationController _controller9;
   late AnimationController _controller10;
-  AudioCache SfxAngka = AudioCache();
+  AudioCache SfxBenda = AudioCache();
   AudioPlayer audio = AudioPlayer();
 
   @override
@@ -519,7 +519,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
   }
 
   Future<void> PlayAudio(url) async {
-    SfxAngka.play(url);
+    SfxBenda.play(url);
   }
 
   @override
@@ -563,7 +563,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                     color: Colors.yellow.shade700,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('audio/BELAJAR/benda/20.mp3');
+                        PlayAudio('audio/BELAJAR/benda/pancuran-air.mp3');
                         setState(() {
                           _controller1.forward(from: 0.0);
                         });
@@ -585,7 +585,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                     color: Colors.yellow.shade700,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('audio/BELAJAR/angka/20.mp3');
+                        PlayAudio('audio/BELAJAR/benda/sikat-gigi.mp3');
                         setState(() {
                           _controller2.forward(from: 0.0);
                         });
@@ -607,7 +607,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                     color: Colors.yellow.shade700,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('audio/BELAJAR/benda/20.mp3');
+                        PlayAudio('audio/BELAJAR/benda/handuk-kecil.mp3');
                         setState(() {
                           _controller3.forward(from: 0.0);
                         });
@@ -629,7 +629,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                     color: Colors.yellow.shade700,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('audio/BELAJAR/benda/20.mp3');
+                        PlayAudio('audio/BELAJAR/benda/tisu-toilet.mp3');
                         setState(() {
                           _controller4.forward(from: 0.0);
                         });
@@ -650,7 +650,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                     color: Colors.yellow.shade700,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('audio/BELAJAR/benda/20.mp3');
+                        PlayAudio('audio/BELAJAR/benda/ember.mp3');
                         setState(() {
                           _controller5.forward(from: 0.0);
                         });
@@ -672,7 +672,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                     color: Colors.yellow.shade700,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('audio/BELAJAR/benda/20.mp3');
+                        PlayAudio('audio/BELAJAR/benda/sabun.mp3');
                         setState(() {
                           _controller6.forward(from: 0.0);
                         });
@@ -694,7 +694,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                     color: Colors.yellow.shade700,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('audio/BELAJAR/benda/20.mp3');
+                        PlayAudio('audio/BELAJAR/benda/sikat-lantai.mp3');
                         setState(() {
                           _controller7.forward(from: 0.0);
                         });
@@ -716,7 +716,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                     color: Colors.yellow.shade700,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('audio/BELAJAR/benda/20.mp3');
+                        PlayAudio('audio/BELAJAR/benda/sampo.mp3');
                         setState(() {
                           _controller8.forward(from: 0.0);
                         });
@@ -738,7 +738,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                     color: Colors.yellow.shade700,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('audio/BELAJAR/benda/20.mp3');
+                        PlayAudio('audio/BELAJAR/benda/cermin.mp3');
                         setState(() {
                           _controller9.forward(from: 0.0);
                         });
@@ -793,7 +793,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
   late AnimationController _controller8;
   late AnimationController _controller9;
   late AnimationController _controller10;
-  AudioCache SfxAngka = AudioCache();
+  AudioCache SfxBenda = AudioCache();
   AudioPlayer audio = AudioPlayer();
 
   @override
@@ -902,7 +902,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
   }
 
   Future<void> PlayAudio(url) async {
-    SfxAngka.play(url);
+    SfxBenda.play(url);
   }
 
   @override
@@ -919,7 +919,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
             color: Colors.yellow.shade700,
             child: Center(
               child: Text(
-                'Kamar Mandi',
+                'Dapur',
                 style:
                     TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
               ),
@@ -946,7 +946,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
                     color: Colors.pink.shade400,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('audio/BELAJAR/benda/20.mp3');
+                        PlayAudio('audio/BELAJAR/benda/mangkok.mp3');
                         setState(() {
                           _controller1.forward(from: 0.0);
                         });
@@ -968,7 +968,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
                     color: Colors.pink.shade400,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('audio/BELAJAR/angka/20.mp3');
+                        PlayAudio('audio/BELAJAR/benda/gelas.mp3');
                         setState(() {
                           _controller2.forward(from: 0.0);
                         });
@@ -990,7 +990,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
                     color: Colors.pink.shade400,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('audio/BELAJAR/benda/20.mp3');
+                        PlayAudio('audio/BELAJAR/benda/sodet.mp3');
                         setState(() {
                           _controller3.forward(from: 0.0);
                         });
@@ -1012,7 +1012,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
                     color: Colors.pink.shade400,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('audio/BELAJAR/benda/20.mp3');
+                        PlayAudio('audio/BELAJAR/benda/pisau.mp3');
                         setState(() {
                           _controller4.forward(from: 0.0);
                         });
@@ -1033,7 +1033,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
                     color: Colors.pink.shade400,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('audio/BELAJAR/benda/20.mp3');
+                        PlayAudio('audio/BELAJAR/benda/wajan.mp3');
                         setState(() {
                           _controller5.forward(from: 0.0);
                         });
@@ -1055,7 +1055,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
                     color: Colors.pink.shade400,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('audio/BELAJAR/benda/20.mp3');
+                        PlayAudio('audio/BELAJAR/benda/panci.mp3');
                         setState(() {
                           _controller6.forward(from: 0.0);
                         });
@@ -1077,7 +1077,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
                     color: Colors.pink.shade400,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('audio/BELAJAR/benda/20.mp3');
+                        PlayAudio('audio/BELAJAR/benda/talenan.mp3');
                         setState(() {
                           _controller7.forward(from: 0.0);
                         });
@@ -1099,7 +1099,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
                     color: Colors.pink.shade400,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('audio/BELAJAR/benda/20.mp3');
+                        PlayAudio('audio/BELAJAR/benda/teko.mp3');
                         setState(() {
                           _controller8.forward(from: 0.0);
                         });
@@ -1121,7 +1121,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
                     color: Colors.pink.shade400,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('audio/BELAJAR/benda/20.mp3');
+                        PlayAudio('audio/BELAJAR/benda/sapu.mp3');
                         setState(() {
                           _controller9.forward(from: 0.0);
                         });
