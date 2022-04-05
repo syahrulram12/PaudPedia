@@ -220,7 +220,6 @@ class _WarnaItemState extends State<WarnaItem> {
                               widget.Imageurl +
                               '.png')),
                       Container(
-                        height: height / 2,
                         child: play
                             ? Image.asset(
                                 'assets/icons/icon_cake/icon_cake-' +
