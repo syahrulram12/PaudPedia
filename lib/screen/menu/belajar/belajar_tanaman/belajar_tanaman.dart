@@ -287,46 +287,31 @@ class _TanamanHomeState extends State<TanamanHome> {
 
 class TanamanItem extends StatefulWidget {
   final String Imageurl;
-  final String audioUrl;
   final Function()? OnMenuClick;
-  const TanamanItem(
-      {Key? key,
-      required this.Imageurl,
-      this.OnMenuClick,
-      required this.audioUrl})
-      : super(key: key);
+  const TanamanItem({
+    Key? key,
+    required this.Imageurl,
+    this.OnMenuClick,
+  }) : super(key: key);
 
   @override
   _TanamanItemState createState() => _TanamanItemState();
 }
 
 class _TanamanItemState extends State<TanamanItem> {
-  AudioCache SfxTanaman = AudioCache();
-  AudioPlayer audioPlayer = AudioPlayer();
 
-  void PlayAudio(audioUrl) {
-    audioPlayer.stop();
-    SfxTanaman = AudioCache(fixedPlayer: audioPlayer);
-    SfxTanaman.play('audio/BELAJAR/tanaman/' + audioUrl);
-  }
 
   @override
   Widget build(BuildContext context) {
     return Center(
         child: Padding(
-      padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-      child: ClipRRect(
-        child: GestureDetector(
-          onTap: () {
-            PlayAudio(widget.audioUrl);
-          },
-          child: Image.asset(
-            'assets/icons/' + widget.Imageurl + '',
-            fit: BoxFit.contain,
+          padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+          child: ClipRRect(
+            child: Image.asset(
+              'assets/icons/' + widget.Imageurl + '',
+              fit: BoxFit.contain,
+            ),
           ),
-        ),
-      ),
-    ));
-    ;
+        ));
   }
 }
