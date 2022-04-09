@@ -54,16 +54,16 @@ class _TanamanHomeState extends State<TanamanHome> {
   Page() {
     if (page == 1) {
       // PlayAudio('tanaman-bunga.mp3');
-      return Page1();
+      return Bunga();
     } else if (page == 2) {
       // PlayAudio('tanaman-hias.mp3');
-      return Page2();
+      return Hias();
     } else if (page == 3) {
       // PlayAudio('tanaman-obat.mp3');
-      return Page3();
+      return Pangan();
     } else {
       // PlayAudio('tanaman-pangan.mp3');
-      return Page4();
+      return Obat();
     }
   }
 
@@ -299,19 +299,17 @@ class TanamanItem extends StatefulWidget {
 }
 
 class _TanamanItemState extends State<TanamanItem> {
-
-
   @override
   Widget build(BuildContext context) {
     return Center(
         child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-          child: ClipRRect(
-            child: Image.asset(
-              'assets/icons/' + widget.Imageurl + '',
-              fit: BoxFit.contain,
-            ),
-          ),
-        ));
+      padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+      child: ClipRRect(
+        child: Image.asset(
+          'assets/icons/' + widget.Imageurl + '',
+          fit: BoxFit.contain,
+        ),
+      ),
+    ));
   }
 }

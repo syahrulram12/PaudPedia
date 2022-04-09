@@ -148,8 +148,8 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
         ClipRRect(
           borderRadius: BorderRadius.circular(25),
           child: Container(
-            width: 300,
-            height: 25,
+            width: width / 1.5,
+            height: height / 9 / 4,
             color: Colors.yellow.shade700,
             child: Center(
               child: Text(
@@ -163,7 +163,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
         ClipPath(
           clipper: BackgroundClipper(),
           child: Container(
-            width: width / 1.5,
+            width: width / 1.7,
             height: height / 1.6,
             decoration: BoxDecoration(
               color: Colors.white,
@@ -531,7 +531,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
         ClipRRect(
           borderRadius: BorderRadius.circular(25),
           child: Container(
-            width: width / 1,
+            width: width / 1.5,
             height: height / 9 / 4,
             color: Colors.yellow.shade700,
             child: Center(
@@ -546,7 +546,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
         ClipPath(
           clipper: BackgroundClipper(),
           child: Container(
-            width: width / 1.5,
+            width: width / 1.7,
             height: height / 1.6,
             decoration: BoxDecoration(
               color: Colors.white,
@@ -914,8 +914,8 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
         ClipRRect(
           borderRadius: BorderRadius.circular(25),
           child: Container(
-            width: 300,
-            height: 25,
+            width: width / 1.5,
+            height: height /9 /4 ,
             color: Colors.yellow.shade700,
             child: Center(
               child: Text(
@@ -929,7 +929,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
         ClipPath(
           clipper: BackgroundClipper(),
           child: Container(
-            width: width / 1.5,
+            width: width / 1.7,
             height: height / 1.6,
             decoration: BoxDecoration(
               color: Colors.white,
