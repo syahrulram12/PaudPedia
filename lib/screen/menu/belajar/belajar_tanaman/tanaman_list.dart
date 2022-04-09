@@ -139,15 +139,15 @@ class _BungaState extends State<Bunga> with TickerProviderStateMixin {
         duration: Duration(milliseconds: 300));
     _controller10.addListener(() {
       setState(() {
-        tanamanitem10 = _controller9.value;
+        tanamanitem10 = _controller10.value;
       });
     });
-    PlayAudio('tanaman-bunga.mp3');
+    PlayAudio('audio/BELAJAR/tanaman/tanaman-bunga.mp3');
     super.initState();
   }
 
-  PlayAudio(url) {
-    SfxTanaman.play('assets/BELAJAR/tanaman/' + url);
+  Future<void> PlayAudio(url) async {
+    SfxTanaman.play(url);
   }
 
   @override
@@ -191,7 +191,7 @@ class _BungaState extends State<Bunga> with TickerProviderStateMixin {
                     color: Colors.pink.shade100,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('bunga-anggrek.mp3');
+                        PlayAudio('audio/BELAJAR/tanaman/bunga-anggrek.mp3');
                         setState(() {
                           _controller1.forward(from: 0.0);
                         });
@@ -213,7 +213,7 @@ class _BungaState extends State<Bunga> with TickerProviderStateMixin {
                     color: Colors.pink.shade100,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('bunga-aster.mp3');
+                        PlayAudio('audio/BELAJAR/tanaman/bunga-aster.mp3');
                         setState(() {
                           _controller2.forward(from: 0.0);
                         });
@@ -233,7 +233,7 @@ class _BungaState extends State<Bunga> with TickerProviderStateMixin {
                     color: Colors.pink.shade100,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('bunga-bangkai.mp3');
+                        PlayAudio('audio/BELAJAR/tanaman/bunga-bangkai.mp3');
                         setState(() {
                           _controller3.forward(from: 0.0);
                         });
@@ -293,7 +293,7 @@ class _BungaState extends State<Bunga> with TickerProviderStateMixin {
                     color: Colors.pink.shade100,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('bunga-matahari.mp3');
+                        PlayAudio('audio/BELAJAR/tanaman/bunga-matahari.mp3');
                         setState(() {
                           _controller6.forward(from: 0.0);
                         });
@@ -333,7 +333,7 @@ class _BungaState extends State<Bunga> with TickerProviderStateMixin {
                     color: Colors.pink.shade100,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('bunga-melati.mp3');
+                        PlayAudio('audio/BELAJAR/tanaman/bunga-melati.mp3');
                         setState(() {
                           _controller8.forward(from: 0.0);
                         });
@@ -373,7 +373,7 @@ class _BungaState extends State<Bunga> with TickerProviderStateMixin {
                     color: Colors.pink.shade100,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('bunga-tulip.mp3');
+                        PlayAudio('audio/BELAJAR/tanaman/bunga-tulip.mp3');
                         setState(() {
                           _controller10.forward(from: 0.0);
                         });
@@ -532,7 +532,7 @@ class _HiasState extends State<Hias> with TickerProviderStateMixin {
         tanamanitem10 = _controller9.value;
       });
     });
-    PlayAudio('tanaman-hias.mp3');
+    PlayAudio('audio/BELAJAR/tanaman/tanaman-hias.mp3');
     super.initState();
   }
 
@@ -601,7 +601,7 @@ class _HiasState extends State<Hias> with TickerProviderStateMixin {
                     color: Colors.yellow.shade200,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('bambu-air.mp3');
+                        PlayAudio('audio/BELAJAR/tanaman/bambu-air.mp3');
                         setState(() {
                           _controller2.forward(from: 0.0);
                         });
@@ -621,7 +621,7 @@ class _HiasState extends State<Hias> with TickerProviderStateMixin {
                     color: Colors.yellow.shade200,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('kaktus.mp3');
+                        PlayAudio('audio/BELAJAR/tanaman/kaktus.mp3');
                         setState(() {
                           _controller3.forward(from: 0.0);
                         });
@@ -641,7 +641,7 @@ class _HiasState extends State<Hias> with TickerProviderStateMixin {
                     color: Colors.yellow.shade200,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('cemara.mp3');
+                        PlayAudio('audio/BELAJAR/tanaman/cemara.mp3');
                         setState(() {
                           _controller4.forward(from: 0.0);
                         });
@@ -661,7 +661,7 @@ class _HiasState extends State<Hias> with TickerProviderStateMixin {
                     color: Colors.yellow.shade200,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('keladi.mp3');
+                        PlayAudio('audio/BELAJAR/tanaman/keladi.mp3');
                         setState(() {
                           _controller5.forward(from: 0.0);
                         });
@@ -681,7 +681,7 @@ class _HiasState extends State<Hias> with TickerProviderStateMixin {
                     color: Colors.yellow.shade200,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('kolpanda.mp3');
+                        PlayAudio('audio/BELAJAR/tanaman/kolpanda.mp3');
                         setState(() {
                           _controller6.forward(from: 0.0);
                         });
@@ -701,7 +701,7 @@ class _HiasState extends State<Hias> with TickerProviderStateMixin {
                     color: Colors.yellow.shade200,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('pakis-haji.mp3');
+                        PlayAudio('audio/BELAJAR/tanaman/pakis-haji.mp3');
                         setState(() {
                           _controller7.forward(from: 0.0);
                         });
@@ -721,7 +721,7 @@ class _HiasState extends State<Hias> with TickerProviderStateMixin {
                     color: Colors.yellow.shade200,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('palem-merah.mp3');
+                        PlayAudio('audio/BELAJAR/tanaman/palem-merah.mp3');
                         setState(() {
                           _controller8.forward(from: 0.0);
                         });
@@ -741,7 +741,7 @@ class _HiasState extends State<Hias> with TickerProviderStateMixin {
                     color: Colors.yellow.shade200,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('puring.mp3');
+                        PlayAudio('audio/BELAJAR/tanaman/puring.mp3');
                         setState(() {
                           _controller9.forward(from: 0.0);
                         });
@@ -761,7 +761,7 @@ class _HiasState extends State<Hias> with TickerProviderStateMixin {
                     color: Colors.yellow.shade200,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('sansivera.mp3');
+                        PlayAudio('audio/BELAJAR/tanaman/sansivera.mp3');
                         setState(() {
                           _controller10.forward(from: 0.0);
                         });
@@ -920,7 +920,7 @@ class _ObatState extends State<Obat> with TickerProviderStateMixin {
         tanamanitem10 = _controller9.value;
       });
     });
-    PlayAudio('tanaman-obat.mp3');
+    PlayAudio('audio/BELAJAR/tanaman/tanaman-obat.mp3');
     super.initState();
   }
 
@@ -969,7 +969,7 @@ class _ObatState extends State<Obat> with TickerProviderStateMixin {
                     color: Colors.lightBlue.shade400,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('alang-alang.mp3');
+                        PlayAudio('audio/BELAJAR/tanaman/alang-alang.mp3');
                         setState(() {
                           _controller1.forward(from: 0.0);
                         });
@@ -989,7 +989,7 @@ class _ObatState extends State<Obat> with TickerProviderStateMixin {
                     color: Colors.lightBlue.shade400,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('jahe.mp3');
+                        PlayAudio('audio/BELAJAR/tanaman/jahe.mp3');
                         setState(() {
                           _controller2.forward(from: 0.0);
                         });
@@ -1009,7 +1009,7 @@ class _ObatState extends State<Obat> with TickerProviderStateMixin {
                     color: Colors.lightBlue.shade400,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('kerepeng-cina.mp3');
+                        PlayAudio('audio/BELAJAR/tanaman/kerepeng-cina.mp3');
                         setState(() {
                           _controller3.forward(from: 0.0);
                         });
@@ -1029,7 +1029,7 @@ class _ObatState extends State<Obat> with TickerProviderStateMixin {
                     color: Colors.lightBlue.shade400,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('kumis-kucing.mp3');
+                        PlayAudio('audio/BELAJAR/tanaman/kumis-kucing.mp3');
                         setState(() {
                           _controller4.forward(from: 0.0);
                         });
@@ -1049,7 +1049,7 @@ class _ObatState extends State<Obat> with TickerProviderStateMixin {
                     color: Colors.lightBlue.shade400,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('kunyit.mp3');
+                        PlayAudio('audio/BELAJAR/tanaman/kunyit.mp3');
                         setState(() {
                           _controller5.forward(from: 0.0);
                         });
@@ -1069,7 +1069,7 @@ class _ObatState extends State<Obat> with TickerProviderStateMixin {
                     color: Colors.lightBlue.shade400,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('lengkuas.mp3');
+                        PlayAudio('audio/BELAJAR/tanaman/lengkuas.mp3');
                         setState(() {
                           _controller6.forward(from: 0.0);
                         });
@@ -1089,7 +1089,7 @@ class _ObatState extends State<Obat> with TickerProviderStateMixin {
                     color: Colors.lightBlue.shade400,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('lidah-buaya.mp3');
+                        PlayAudio('audio/BELAJAR/tanaman/lidah-buaya.mp3');
                         setState(() {
                           _controller7.forward(from: 0.0);
                         });
@@ -1109,7 +1109,7 @@ class _ObatState extends State<Obat> with TickerProviderStateMixin {
                     color: Colors.lightBlue.shade400,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('mengkudu.mp3');
+                        PlayAudio('audio/BELAJAR/tanaman/mengkudu.mp3');
                         setState(() {
                           _controller8.forward(from: 0.0);
                         });
@@ -1129,7 +1129,7 @@ class _ObatState extends State<Obat> with TickerProviderStateMixin {
                     color: Colors.lightBlue.shade400,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('mint.mp3');
+                        PlayAudio('audio/BELAJAR/tanaman/mint.mp3');
                         setState(() {
                           _controller9.forward(from: 0.0);
                         });
@@ -1149,7 +1149,7 @@ class _ObatState extends State<Obat> with TickerProviderStateMixin {
                     color: Colors.lightBlue.shade400,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('rosela.mp3');
+                        PlayAudio('audio/BELAJAR/tanaman/rosela.mp3');
                         setState(() {
                           _controller10.forward(from: 0.0);
                         });
@@ -1308,7 +1308,7 @@ class _PanganState extends State<Pangan> with TickerProviderStateMixin {
         tanamanitem10 = _controller9.value;
       });
     });
-    PlayAudio('tanaman-pangan.mp3');
+    PlayAudio('audio/BELAJAR/tanaman/tanaman-pangan.mp3');
     super.initState();
   }
 
@@ -1357,7 +1357,7 @@ class _PanganState extends State<Pangan> with TickerProviderStateMixin {
                     color: Colors.lightGreen.shade300,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('brokoli.mp3');
+                        PlayAudio('audio/BELAJAR/tanaman/brokoli.mp3');
                         setState(() {
                           _controller1.forward(from: 0.0);
                         });
@@ -1377,7 +1377,7 @@ class _PanganState extends State<Pangan> with TickerProviderStateMixin {
                     color: Colors.lightGreen.shade300,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('gandum.mp3');
+                        PlayAudio('audio/BELAJAR/tanaman/gandum.mp3');
                         setState(() {
                           _controller2.forward(from: 0.0);
                         });
@@ -1397,7 +1397,7 @@ class _PanganState extends State<Pangan> with TickerProviderStateMixin {
                     color: Colors.lightGreen.shade300,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('jagung.mp3');
+                        PlayAudio('audio/BELAJAR/tanaman/jagung.mp3');
                         setState(() {
                           _controller3.forward(from: 0.0);
                         });
@@ -1417,7 +1417,7 @@ class _PanganState extends State<Pangan> with TickerProviderStateMixin {
                     color: Colors.lightGreen.shade300,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('kelapa.mp3');
+                        PlayAudio('audio/BELAJAR/tanaman/kelapa.mp3');
                         setState(() {
                           _controller4.forward(from: 0.0);
                         });
@@ -1437,7 +1437,7 @@ class _PanganState extends State<Pangan> with TickerProviderStateMixin {
                     color: Colors.lightGreen.shade300,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('ketela.mp3');
+                        PlayAudio('audio/BELAJAR/tanaman/ketela.mp3');
                         setState(() {
                           _controller5.forward(from: 0.0);
                         });
@@ -1457,7 +1457,7 @@ class _PanganState extends State<Pangan> with TickerProviderStateMixin {
                     color: Colors.lightGreen.shade300,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('kubis.mp3');
+                        PlayAudio('audio/BELAJAR/tanaman/kubis.mp3');
                         setState(() {
                           _controller6.forward(from: 0.0);
                         });
@@ -1477,7 +1477,7 @@ class _PanganState extends State<Pangan> with TickerProviderStateMixin {
                     color: Colors.lightGreen.shade300,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('padi.mp3');
+                        PlayAudio('audio/BELAJAR/tanaman/padi.mp3');
                         setState(() {
                           _controller7.forward(from: 0.0);
                         });
@@ -1497,7 +1497,7 @@ class _PanganState extends State<Pangan> with TickerProviderStateMixin {
                     color: Colors.lightGreen.shade300,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('pepaya.mp3');
+                        PlayAudio('audio/BELAJAR/tanaman/pepaya.mp3');
                         setState(() {
                           _controller8.forward(from: 0.0);
                         });
@@ -1517,7 +1517,7 @@ class _PanganState extends State<Pangan> with TickerProviderStateMixin {
                     color: Colors.lightGreen.shade300,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('pisang.mp3');
+                        PlayAudio('audio/BELAJAR/tanaman/pisang.mp3');
                         setState(() {
                           _controller9.forward(from: 0.0);
                         });
@@ -1537,7 +1537,7 @@ class _PanganState extends State<Pangan> with TickerProviderStateMixin {
                     color: Colors.lightGreen.shade300,
                     child: GestureDetector(
                       onTap: () {
-                        PlayAudio('sawi.mp3');
+                        PlayAudio('audio/BELAJAR/tanaman/sawi.mp3');
                         setState(() {
                           _controller10.forward(from: 0.0);
                         });

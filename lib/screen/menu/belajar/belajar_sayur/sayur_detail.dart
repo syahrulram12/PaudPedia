@@ -415,7 +415,7 @@ class _SayurState extends State<Sayur> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('jamur.mp3');
+                  PlayAudio('kubis.mp3');
                   setState(() {
                     _controller10.forward(from: 0.0);
                   });
@@ -435,7 +435,7 @@ class _SayurState extends State<Sayur> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('kentang.mp3');
+                  PlayAudio('labu.mp3');
                   setState(() {
                     _controller11.forward(from: 0.0);
                   });
@@ -456,7 +456,7 @@ class _SayurState extends State<Sayur> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('kacang-tanah.mp3');
+                  PlayAudio('lobak.mp3');
                   setState(() {
                     _controller12.forward(from: 0.0);
                   });
@@ -481,7 +481,7 @@ class _SayurState extends State<Sayur> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('jamur.mp3');
+                  PlayAudio('terong.mp3');
                   setState(() {
                     _controller13.forward(from: 0.0);
                   });
@@ -501,7 +501,7 @@ class _SayurState extends State<Sayur> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('kentang.mp3');
+                  PlayAudio('paprika.mp3');
                   setState(() {
                     _controller14.forward(from: 0.0);
                   });
@@ -522,7 +522,7 @@ class _SayurState extends State<Sayur> with TickerProviderStateMixin {
             Flexible(
               child: GestureDetector(
                 onTap: () {
-                  PlayAudio('kacang-tanah.mp3');
+                  PlayAudio('wortel.mp3');
                   setState(() {
                     _controller15.forward(from: 0.0);
                   });

@@ -1135,7 +1135,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
                         scale: bendaitem9,
                         child: BendaItem(
                           Imageurl:
-                              'icon_object/kitchen/icon_object_kitchen-09.png',
+                              'icon_object/kitchen/icon_object_kitchen-10.png',
                         ),
                       ),
                     )),
