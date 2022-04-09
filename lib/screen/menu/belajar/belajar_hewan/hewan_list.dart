@@ -828,7 +828,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                       });
                     },
                     child: Transform.scale(
-                      scale: hewanitem9,
+                      scale: hewanitem10,
                       child: HewanItem(
                         Imageurl:
                             'icon_hewan/icon_hewan_hutan/icon_hewan-20.png',
