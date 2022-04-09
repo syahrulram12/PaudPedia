@@ -146,7 +146,7 @@ class _BungaState extends State<Bunga> with TickerProviderStateMixin {
     super.initState();
   }
 
-  Future<void> PlayAudio(url) async {
+  PlayAudio(url) {
     SfxTanaman.play('assets/BELAJAR/tanaman/' + url);
   }
 
@@ -190,17 +190,8 @@ class _BungaState extends State<Bunga> with TickerProviderStateMixin {
                 Container(
                     color: Colors.pink.shade100,
                     child: GestureDetector(
-<<<<<<< Updated upstream
-                    onTap: () {
-                      PlayAudio('audio/BELAJAR/tanaman/bunga-anggrek.mp3');
-                      setState(() {
-                        _controller1.forward(from: 0.0);
-                      });
-                      Timer(Duration(seconds: 1), () {
-=======
                       onTap: () {
                         PlayAudio('bunga-anggrek.mp3');
->>>>>>> Stashed changes
                         setState(() {
                           _controller1.forward(from: 0.0);
                         });
@@ -221,17 +212,8 @@ class _BungaState extends State<Bunga> with TickerProviderStateMixin {
                 Container(
                     color: Colors.pink.shade100,
                     child: GestureDetector(
-<<<<<<< Updated upstream
-                    onTap: () {
-                      PlayAudio('audio/BELAJAR/tanaman/bunga-aster.mp3');
-                      setState(() {
-                        _controller2.forward(from: 0.0);
-                      });
-                      Timer(Duration(seconds: 1), () {
-=======
                       onTap: () {
                         PlayAudio('bunga-aster.mp3');
->>>>>>> Stashed changes
                         setState(() {
                           _controller2.forward(from: 0.0);
                         });
@@ -251,21 +233,6 @@ class _BungaState extends State<Bunga> with TickerProviderStateMixin {
                     color: Colors.pink.shade100,
                     child: GestureDetector(
                       onTap: () {
-<<<<<<< Updated upstream
-                          PlayAudio('audio/BELAJAR/tanaman/bunga-bangkai.mp3');
-                          setState(() {
-                            _controller3.forward(from: 0.0);
-                          });
-                          Timer(Duration(seconds: 1), () {
-                            setState(() {
-                            });
-                          });
-                          },
-                          child: Transform.scale(
-                          scale: tanamanitem3,
-                          child: TanamanItem(
-                          Imageurl: 'icon_tanaman/icon_tanaman_bunga/icon_tanaman_-bangkai.png',
-=======
                         PlayAudio('bunga-bangkai.mp3');
                         setState(() {
                           _controller3.forward(from: 0.0);
@@ -279,7 +246,6 @@ class _BungaState extends State<Bunga> with TickerProviderStateMixin {
                         child: TanamanItem(
                           Imageurl:
                               'icon_tanaman/icon_tanaman_bunga/icon_tanaman_-bangkai.png',
->>>>>>> Stashed changes
                         ),
                       ),
                     )),
@@ -326,13 +292,8 @@ class _BungaState extends State<Bunga> with TickerProviderStateMixin {
                 Container(
                     color: Colors.pink.shade100,
                     child: GestureDetector(
-<<<<<<< Updated upstream
-                    onTap: () {
-                        PlayAudio('audio/BELAJAR/tanaman/bunga-matahari.mp3');
-=======
                       onTap: () {
                         PlayAudio('bunga-matahari.mp3');
->>>>>>> Stashed changes
                         setState(() {
                           _controller6.forward(from: 0.0);
                         });
@@ -371,21 +332,10 @@ class _BungaState extends State<Bunga> with TickerProviderStateMixin {
                 Container(
                     color: Colors.pink.shade100,
                     child: GestureDetector(
-<<<<<<< Updated upstream
-                        onTap: () {
-                          PlayAudio('audio/BELAJAR/tanaman/bunga-melati.mp3');
-                          setState(() {
-                            _controller8.forward(from: 0.0);
-                          });
-                          Timer(Duration(seconds: 1), () {
-                            setState(() {
-                          });
-=======
                       onTap: () {
                         PlayAudio('bunga-melati.mp3');
                         setState(() {
                           _controller8.forward(from: 0.0);
->>>>>>> Stashed changes
                         });
                         Timer(Duration(seconds: 1), () {
                           setState(() {});
@@ -422,25 +372,6 @@ class _BungaState extends State<Bunga> with TickerProviderStateMixin {
                 Container(
                     color: Colors.pink.shade100,
                     child: GestureDetector(
-<<<<<<< Updated upstream
-                        onTap: () {
-                          PlayAudio('audio/BELAJAR/tanaman/bunga-tulip.mp3');
-                          setState(() {
-                            _controller10.forward(from: 0.0);
-                          });
-                          Timer(Duration(seconds: 1), () {
-                            setState(() {
-                              });
-                            });
-                          },
-                          child: Transform.scale(
-                              scale: tanamanitem10,
-                              child: TanamanItem(
-                                Imageurl: 'icon_tanaman/icon_tanaman_bunga/icon_tanaman_-tulip.png',
-                            ),
-                          ),
-                      )),
-=======
                       onTap: () {
                         PlayAudio('bunga-tulip.mp3');
                         setState(() {
@@ -458,7 +389,6 @@ class _BungaState extends State<Bunga> with TickerProviderStateMixin {
                         ),
                       ),
                     )),
->>>>>>> Stashed changes
               ],
             ),
           ),
@@ -650,13 +580,8 @@ class _HiasState extends State<Hias> with TickerProviderStateMixin {
                 Container(
                     color: Colors.yellow.shade200,
                     child: GestureDetector(
-<<<<<<< Updated upstream
-                      onTap:(){
-                        PlayAudio('audio/BELAJAR/tanaman/apu-apu.mp3');
-=======
                       onTap: () {
                         PlayAudio('apu-apu.mp3');
->>>>>>> Stashed changes
                         setState(() {
                           _controller1.forward(from: 0.0);
                         });
@@ -675,13 +600,8 @@ class _HiasState extends State<Hias> with TickerProviderStateMixin {
                 Container(
                     color: Colors.yellow.shade200,
                     child: GestureDetector(
-<<<<<<< Updated upstream
-                      onTap:(){
-                        PlayAudio('audio/BELAJAR/tanaman/bambu-air.mp3');
-=======
                       onTap: () {
                         PlayAudio('bambu-air.mp3');
->>>>>>> Stashed changes
                         setState(() {
                           _controller2.forward(from: 0.0);
                         });
@@ -700,30 +620,6 @@ class _HiasState extends State<Hias> with TickerProviderStateMixin {
                 Container(
                     color: Colors.yellow.shade200,
                     child: GestureDetector(
-<<<<<<< Updated upstream
-    onTap:(){
-    PlayAudio( 'audio/BELAJAR/tanaman/kaktus.mp3');
-    setState(() {
-    _controller3.forward(from: 0.0);
-    });
-    Timer(Duration(seconds: 1),(){
-    setState(() {
-    });
-    });
-    },
-    child: Transform.scale(
-    scale: tanamanitem3,
-    child: TanamanItem(
-    Imageurl:  'icon_tanaman/icon_tanaman_hias/icon_tanaman_-cactus.png',
-    ),
-    ),
-    )),
-                Container(
-                    color: Colors.yellow.shade200,
-                    child: GestureDetector(
-                      onTap:(){
-                        PlayAudio('audio/BELAJAR/tanaman/cemara.mp3');
-=======
                       onTap: () {
                         PlayAudio('kaktus.mp3');
                         setState(() {
@@ -746,7 +642,6 @@ class _HiasState extends State<Hias> with TickerProviderStateMixin {
                     child: GestureDetector(
                       onTap: () {
                         PlayAudio('cemara.mp3');
->>>>>>> Stashed changes
                         setState(() {
                           _controller4.forward(from: 0.0);
                         });
@@ -764,126 +659,6 @@ class _HiasState extends State<Hias> with TickerProviderStateMixin {
                     )),
                 Container(
                     color: Colors.yellow.shade200,
-<<<<<<< Updated upstream
-    child: GestureDetector(
-    onTap:(){
-    PlayAudio('audio/BELAJAR/tanaman/keladi.mp3');
-    setState(() {
-    _controller5.forward(from: 0.0);
-    });
-    Timer(Duration(seconds: 1),(){
-    setState(() {
-    });
-    });
-    },
-    child: Transform.scale(
-    scale: tanamanitem5,
-    child: TanamanItem(
-    Imageurl:   'icon_tanaman/icon_tanaman_hias/icon_tanaman_-keladi.png',
-    ),
-    ),
-    )),
-                Container(
-                    color: Colors.yellow.shade200,
-    child: GestureDetector(
-    onTap:(){
-    PlayAudio('audio/BELAJAR/tanaman/kolpanda.mp3');
-    setState(() {
-    _controller6.forward(from: 0.0);
-    });
-    Timer(Duration(seconds: 1),(){
-    setState(() {
-    });
-    });
-    },
-    child: Transform.scale(
-    scale: tanamanitem6,
-    child: TanamanItem(
-    Imageurl:  'icon_tanaman/icon_tanaman_hias/icon_tanaman_-kolbanda.png',
-    ),
-    ),
-    )),
-                Container(
-                    color: Colors.yellow.shade200,
-    child: GestureDetector(
-    onTap:(){
-    PlayAudio('audio/BELAJAR/tanaman/pakis-haji.mp3');
-    setState(() {
-    _controller7.forward(from: 0.0);
-    });
-    Timer(Duration(seconds: 1),(){
-    setState(() {
-    });
-    });
-    },
-    child: Transform.scale(
-    scale: tanamanitem7,
-    child: TanamanItem(
-    Imageurl:  'icon_tanaman/icon_tanaman_hias/icon_tanaman_-pakis_haji.png',
-    ),
-    ),
-    )),
-                Container(
-                    color: Colors.yellow.shade200,
-    child: GestureDetector(
-    onTap:(){
-    PlayAudio('audio/BELAJAR/tanaman/palem-merah.mp3');
-    setState(() {
-    _controller8.forward(from: 0.0);
-    });
-    Timer(Duration(seconds: 1),(){
-    setState(() {
-    });
-    });
-    },
-    child: Transform.scale(
-    scale: tanamanitem8,
-    child: TanamanItem(
-    Imageurl:  'icon_tanaman/icon_tanaman_hias/icon_tanaman_-palemerah.png',
-    ),
-    ),
-    )),
-                Container(
-                    color: Colors.yellow.shade200,
-    child: GestureDetector(
-    onTap:(){
-    PlayAudio('audio/BELAJAR/tanaman/puring.mp3');
-    setState(() {
-    _controller9.forward(from: 0.0);
-    });
-    Timer(Duration(seconds: 1),(){
-    setState(() {
-    });
-    });
-    },
-    child: Transform.scale(
-    scale: tanamanitem9,
-    child: TanamanItem(
-    Imageurl:  'icon_tanaman/icon_tanaman_hias/icon_tanaman_-puring.png',
-    ),
-    ),
-    )),
-                Container(
-                    color: Colors.yellow.shade200,
-    child: GestureDetector(
-    onTap:(){
-    PlayAudio('audio/BELAJAR/tanaman/sansivera.mp3');
-    setState(() {
-    _controller10.forward(from: 0.0);
-    });
-    Timer(Duration(seconds: 1),(){
-    setState(() {
-    });
-    });
-    },
-    child: Transform.scale(
-    scale: tanamanitem10,
-    child: TanamanItem(
-    Imageurl:  'icon_tanaman/icon_tanaman_hias/icon_tanaman_-sansivera.png',
-    ),
-    ),
-    )),
-=======
                     child: GestureDetector(
                       onTap: () {
                         PlayAudio('keladi.mp3');
@@ -1002,7 +777,6 @@ class _HiasState extends State<Hias> with TickerProviderStateMixin {
                         ),
                       ),
                     )),
->>>>>>> Stashed changes
               ],
             ),
           ),
@@ -1193,31 +967,6 @@ class _ObatState extends State<Obat> with TickerProviderStateMixin {
               children: <Widget>[
                 Container(
                     color: Colors.lightBlue.shade400,
-<<<<<<< Updated upstream
-    child: GestureDetector(
-    onTap:(){
-    PlayAudio('audio/BELAJAR/tanaman/alang-alang.mp3');
-    setState(() {
-    _controller1.forward(from: 0.0);
-    });
-    Timer(Duration(seconds: 1),(){
-    setState(() {
-    });
-    });
-    },
-    child: Transform.scale(
-    scale: tanamanitem1,
-    child: TanamanItem(
-    Imageurl:   'icon_tanaman/icon_tanaman_obat/icon_tanaman_alang_alang.png',
-    ),
-    ),
-    )),
-                Container(
-                    color: Colors.lightBlue.shade400,
-                    child: GestureDetector(
-                      onTap:(){
-                        PlayAudio('audio/BELAJAR/tanaman/jahe.mp3');
-=======
                     child: GestureDetector(
                       onTap: () {
                         PlayAudio('alang-alang.mp3');
@@ -1241,7 +990,6 @@ class _ObatState extends State<Obat> with TickerProviderStateMixin {
                     child: GestureDetector(
                       onTap: () {
                         PlayAudio('jahe.mp3');
->>>>>>> Stashed changes
                         setState(() {
                           _controller2.forward(from: 0.0);
                         });
@@ -1259,71 +1007,6 @@ class _ObatState extends State<Obat> with TickerProviderStateMixin {
                     )),
                 Container(
                     color: Colors.lightBlue.shade400,
-<<<<<<< Updated upstream
-    child: GestureDetector(
-    onTap:(){
-    PlayAudio('audio/BELAJAR/tanaman/kerepeng-cina.mp3');
-    setState(() {
-    _controller3.forward(from: 0.0);
-    });
-    Timer(Duration(seconds: 1),(){
-    setState(() {
-    });
-    });
-    },
-    child: Transform.scale(
-    scale: tanamanitem3,
-    child: TanamanItem(
-    Imageurl:  'icon_tanaman/icon_tanaman_obat/icon_tanaman_kerepeng_cina.png',
-    ),
-    ),
-    )),
-                Container(
-                    color: Colors.lightBlue.shade400,
-    child: GestureDetector(
-    onTap:(){
-    PlayAudio('audio/BELAJAR/tanaman/kumis-kucing.mp3');
-    setState(() {
-    _controller4.forward(from: 0.0);
-    });
-    Timer(Duration(seconds: 1),(){
-    setState(() {
-    });
-    });
-    },
-    child: Transform.scale(
-    scale: tanamanitem4,
-    child: TanamanItem(
-    Imageurl:  'icon_tanaman/icon_tanaman_obat/icon_tanaman_kumis_kucing.png',
-    ),
-    ),
-    )),
-                Container(
-                    color: Colors.lightBlue.shade400,
-                    child: GestureDetector(
-    onTap:(){
-    PlayAudio('audio/BELAJAR/tanaman/kunyit.mp3');
-    setState(() {
-    _controller5.forward(from: 0.0);
-    });
-    Timer(Duration(seconds: 1),(){
-    setState(() {
-    });
-    });
-    },
-    child: Transform.scale(
-    scale: tanamanitem5,
-    child: TanamanItem(
-    Imageurl:  'icon_tanaman/icon_tanaman_obat/icon_tanaman_kunyit.png',
-    ),
-    ),
-    )),
-                Container(
-                    color: Colors.lightBlue.shade400,
-                    child: GestureDetector(
-                      onTap:(){
-                        PlayAudio('audio/BELAJAR/tanaman/lengkuas.mp3');
-=======
                     child: GestureDetector(
                       onTap: () {
                         PlayAudio('kerepeng-cina.mp3');
@@ -1387,7 +1070,6 @@ class _ObatState extends State<Obat> with TickerProviderStateMixin {
                     child: GestureDetector(
                       onTap: () {
                         PlayAudio('lengkuas.mp3');
->>>>>>> Stashed changes
                         setState(() {
                           _controller6.forward(from: 0.0);
                         });
@@ -1405,86 +1087,6 @@ class _ObatState extends State<Obat> with TickerProviderStateMixin {
                     )),
                 Container(
                     color: Colors.lightBlue.shade400,
-<<<<<<< Updated upstream
-    child: GestureDetector(
-    onTap:(){
-    PlayAudio('audio/BELAJAR/tanaman/lidah-buaya.mp3');
-    setState(() {
-    _controller7.forward(from: 0.0);
-    });
-    Timer(Duration(seconds: 1),(){
-    setState(() {
-    });
-    });
-    },
-    child: Transform.scale(
-    scale: tanamanitem7,
-    child: TanamanItem(
-    Imageurl:  'icon_tanaman/icon_tanaman_obat/icon_tanaman_lidah_buaya.png',
-    ),
-    ),
-    )),
-                Container(
-                    color: Colors.lightBlue.shade400,
-    child: GestureDetector(
-    onTap:(){
-    PlayAudio('audio/BELAJAR/tanaman/mengkudu.mp3');
-    setState(() {
-    _controller8.forward(from: 0.0);
-    });
-    Timer(Duration(seconds: 1),(){
-    setState(() {
-    });
-    });
-    },
-    child: Transform.scale(
-    scale: tanamanitem8,
-    child: TanamanItem(
-    Imageurl:   'icon_tanaman/icon_tanaman_obat/icon_tanaman_mengkudu.png',
-    ),
-    ),
-    )),
-                Container(
-                    color: Colors.lightBlue.shade400,
-    child: GestureDetector(
-    onTap:(){
-    PlayAudio( 'audio/BELAJAR/tanaman/mint.mp3');
-    setState(() {
-    _controller9.forward(from: 0.0);
-    });
-    Timer(Duration(seconds: 1),(){
-    setState(() {
-    });
-    });
-    },
-    child: Transform.scale(
-    scale: tanamanitem9,
-    child: TanamanItem(
-    Imageurl:  'icon_tanaman/icon_tanaman_obat/icon_tanaman_mint.png',
-    ),
-    ),
-    )),
-                Container(
-                    color: Colors.lightBlue.shade400,
-    child: GestureDetector(
-    onTap:(){
-    PlayAudio('audio/BELAJAR/tanaman/rosela.mp3');
-    setState(() {
-    _controller10.forward(from: 0.0);
-    });
-    Timer(Duration(seconds: 1),(){
-    setState(() {
-    });
-    });
-    },
-    child: Transform.scale(
-    scale: tanamanitem10,
-    child: TanamanItem(
-    Imageurl:   'icon_tanaman/icon_tanaman_obat/icon_tanaman_rosela.png',
-    ),
-    ),
-    )),
-=======
                     child: GestureDetector(
                       onTap: () {
                         PlayAudio('lidah-buaya.mp3');
@@ -1563,7 +1165,6 @@ class _ObatState extends State<Obat> with TickerProviderStateMixin {
                         ),
                       ),
                     )),
->>>>>>> Stashed changes
               ],
             ),
           ),
@@ -1754,31 +1355,6 @@ class _PanganState extends State<Pangan> with TickerProviderStateMixin {
               children: <Widget>[
                 Container(
                     color: Colors.lightGreen.shade300,
-<<<<<<< Updated upstream
-    child: GestureDetector(
-    onTap:(){
-    PlayAudio('audio/BELAJAR/tanaman/brokoli.mp3');
-    setState(() {
-    _controller1.forward(from: 0.0);
-    });
-    Timer(Duration(seconds: 1),(){
-    setState(() {
-    });
-    });
-    },
-    child: Transform.scale(
-    scale: tanamanitem1,
-    child: TanamanItem(
-    Imageurl:  'icon_tanaman/icon_tanaman_pangan/icon_tanaman_brokoli.png',
-    ),
-    ),
-    )),
-                Container(
-                    color: Colors.lightGreen.shade300,
-                    child: GestureDetector(
-                      onTap:(){
-                        PlayAudio('audio/BELAJAR/tanaman/gandum.mp3');
-=======
                     child: GestureDetector(
                       onTap: () {
                         PlayAudio('brokoli.mp3');
@@ -1802,7 +1378,6 @@ class _PanganState extends State<Pangan> with TickerProviderStateMixin {
                     child: GestureDetector(
                       onTap: () {
                         PlayAudio('gandum.mp3');
->>>>>>> Stashed changes
                         setState(() {
                           _controller2.forward(from: 0.0);
                         });
@@ -1821,30 +1396,6 @@ class _PanganState extends State<Pangan> with TickerProviderStateMixin {
                 Container(
                     color: Colors.lightGreen.shade300,
                     child: GestureDetector(
-<<<<<<< Updated upstream
-    onTap:(){
-    PlayAudio('audio/BELAJAR/tanaman/jagung.mp3');
-    setState(() {
-    _controller3.forward(from: 0.0);
-    });
-    Timer(Duration(seconds: 1),(){
-    setState(() {
-    });
-    });
-    },
-    child: Transform.scale(
-    scale: tanamanitem3,
-    child: TanamanItem(
-    Imageurl:  'icon_tanaman/icon_tanaman_pangan/icon_tanaman_jagung.png',
-    ),
-    ),
-    )),
-                Container(
-                    color: Colors.lightGreen.shade300,
-                    child: GestureDetector(
-                      onTap:(){
-                        PlayAudio('audio/BELAJAR/tanaman/kelapa.mp3');
-=======
                       onTap: () {
                         PlayAudio('jagung.mp3');
                         setState(() {
@@ -1867,7 +1418,6 @@ class _PanganState extends State<Pangan> with TickerProviderStateMixin {
                     child: GestureDetector(
                       onTap: () {
                         PlayAudio('kelapa.mp3');
->>>>>>> Stashed changes
                         setState(() {
                           _controller4.forward(from: 0.0);
                         });
@@ -1886,30 +1436,6 @@ class _PanganState extends State<Pangan> with TickerProviderStateMixin {
                 Container(
                     color: Colors.lightGreen.shade300,
                     child: GestureDetector(
-<<<<<<< Updated upstream
-                      onTap:(){
-                        PlayAudio('audio/BELAJAR/tanaman/ketela.mp3');
-                        setState(() {
-                          _controller5.forward(from: 0.0);
-                        });
-                        Timer(Duration(seconds: 1),(){
-                          setState(() {
-                          });
-                        });
-                        },
-                        child: Transform.scale(
-                        scale: tanamanitem5,
-                          child: TanamanItem(
-                        Imageurl:  'icon_tanaman/icon_tanaman_pangan/icon_tanaman_ketela.png',
-                      ),
-                    ),
-                     )),
-                Container(
-                    color: Colors.lightGreen.shade300,
-                    child: GestureDetector(
-                      onTap:(){
-                        PlayAudio('audio/BELAJAR/tanaman/kubis.mp3');
-=======
                       onTap: () {
                         PlayAudio('ketela.mp3');
                         setState(() {
@@ -1932,7 +1458,6 @@ class _PanganState extends State<Pangan> with TickerProviderStateMixin {
                     child: GestureDetector(
                       onTap: () {
                         PlayAudio('kubis.mp3');
->>>>>>> Stashed changes
                         setState(() {
                           _controller6.forward(from: 0.0);
                         });
@@ -1950,86 +1475,6 @@ class _PanganState extends State<Pangan> with TickerProviderStateMixin {
                     )),
                 Container(
                     color: Colors.lightGreen.shade300,
-<<<<<<< Updated upstream
-    child: GestureDetector(
-    onTap:(){
-    PlayAudio('audio/BELAJAR/tanaman/padi.mp3');
-    setState(() {
-    _controller7.forward(from: 0.0);
-    });
-    Timer(Duration(seconds: 1),(){
-    setState(() {
-    });
-    });
-    },
-    child: Transform.scale(
-    scale: tanamanitem7,
-    child: TanamanItem(
-    Imageurl:  'icon_tanaman/icon_tanaman_pangan/icon_tanaman_padi.png',
-    ),
-    ),
-    )),
-                Container(
-                    color: Colors.lightGreen.shade300,
-    child: GestureDetector(
-    onTap:(){
-    PlayAudio('audio/BELAJAR/tanaman/pepaya.mp3');
-    setState(() {
-    _controller8.forward(from: 0.0);
-    });
-    Timer(Duration(seconds: 1),(){
-    setState(() {
-    });
-    });
-    },
-    child: Transform.scale(
-    scale: tanamanitem8,
-    child: TanamanItem(
-    Imageurl:  'icon_tanaman/icon_tanaman_pangan/icon_tanaman_pepaya.png',
-    ),
-    ),
-    )),
-                Container(
-                    color: Colors.lightGreen.shade300,
-    child: GestureDetector(
-    onTap:(){
-    PlayAudio('audio/BELAJAR/tanaman/pisang.mp3');
-    setState(() {
-    _controller9.forward(from: 0.0);
-    });
-    Timer(Duration(seconds: 1),(){
-    setState(() {
-    });
-    });
-    },
-    child: Transform.scale(
-    scale: tanamanitem9,
-    child: TanamanItem(
-    Imageurl:  'icon_tanaman/icon_tanaman_pangan/icon_tanaman_pisang.png',
-    ),
-    ),
-    )),
-                Container(
-                    color: Colors.lightGreen.shade300,
-    child: GestureDetector(
-    onTap:(){
-    PlayAudio('audio/BELAJAR/tanaman/sawi.mp3');
-    setState(() {
-    _controller10.forward(from: 0.0);
-    });
-    Timer(Duration(seconds: 1),(){
-    setState(() {
-    });
-    });
-    },
-    child: Transform.scale(
-    scale: tanamanitem10,
-    child: TanamanItem(
-    Imageurl:  'icon_tanaman/icon_tanaman_pangan/icon_tanaman_sawi.png',
-    ),
-    ),
-    )),
-=======
                     child: GestureDetector(
                       onTap: () {
                         PlayAudio('padi.mp3');
@@ -2108,7 +1553,6 @@ class _PanganState extends State<Pangan> with TickerProviderStateMixin {
                         ),
                       ),
                     )),
->>>>>>> Stashed changes
               ],
             ),
           ),
