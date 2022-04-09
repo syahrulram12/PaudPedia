@@ -8,14 +8,14 @@ import 'package:paudpedia_kemendikbud/components/shape.dart';
 import 'package:paudpedia_kemendikbud/screen/menu/belajar/belajar_tanaman/belajar_tanaman.dart';
 import 'dart:async';
 
-
-class Page1 extends StatefulWidget {
-  const Page1({Key? key}) : super(key: key);
+class Bunga extends StatefulWidget {
+  const Bunga({Key? key}) : super(key: key);
 
   @override
-  State<Page1> createState() => _Page1State();
+  State<Bunga> createState() => _BungaState();
 }
-class _Page1State extends State<Page1> with TickerProviderStateMixin {
+
+class _BungaState extends State<Bunga> with TickerProviderStateMixin {
   var tanamanitem1 = 1.0;
   var tanamanitem2 = 1.0;
   var tanamanitem3 = 1.0;
@@ -142,12 +142,14 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
         tanamanitem10 = _controller9.value;
       });
     });
-
+    PlayAudio('tanaman-bunga.mp3');
     super.initState();
   }
+
   Future<void> PlayAudio(url) async {
-    SfxTanaman.play(url);
+    SfxTanaman.play('assets/BELAJAR/tanaman/' + url);
   }
+
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
@@ -157,8 +159,8 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
         ClipRRect(
           borderRadius: BorderRadius.circular(25),
           child: Container(
-            width: 300,
-            height: 25,
+            width: width / 1.5,
+            height: height / 9 / 4,
             color: Colors.indigo.shade900,
             child: Center(
               child: Text(
@@ -172,7 +174,7 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
         ClipPath(
           clipper: BackgroundClipper(),
           child: Container(
-            width: width / 1.5,
+            width: width / 1.7,
             height: height / 1.6,
             decoration: BoxDecoration(
               color: Colors.white,
@@ -188,48 +190,68 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
                 Container(
                     color: Colors.pink.shade100,
                     child: GestureDetector(
+<<<<<<< Updated upstream
                     onTap: () {
                       PlayAudio('audio/BELAJAR/tanaman/bunga-anggrek.mp3');
                       setState(() {
                         _controller1.forward(from: 0.0);
                       });
                       Timer(Duration(seconds: 1), () {
+=======
+                      onTap: () {
+                        PlayAudio('bunga-anggrek.mp3');
+>>>>>>> Stashed changes
                         setState(() {
-                          _controller1.reverse();
+                          _controller1.forward(from: 0.0);
                         });
-                      });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {
+                            _controller1.reverse();
+                          });
+                        });
                       },
                       child: Transform.scale(
                         scale: tanamanitem1,
                         child: TanamanItem(
-                          Imageurl:'icon_tanaman/icon_tanaman_bunga/icon_tanaman_-anggrek.png',
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_bunga/icon_tanaman_-anggrek.png',
                         ),
-                  ),
-                  )),
+                      ),
+                    )),
                 Container(
                     color: Colors.pink.shade100,
                     child: GestureDetector(
+<<<<<<< Updated upstream
                     onTap: () {
                       PlayAudio('audio/BELAJAR/tanaman/bunga-aster.mp3');
                       setState(() {
                         _controller2.forward(from: 0.0);
                       });
                       Timer(Duration(seconds: 1), () {
+=======
+                      onTap: () {
+                        PlayAudio('bunga-aster.mp3');
+>>>>>>> Stashed changes
                         setState(() {
+                          _controller2.forward(from: 0.0);
                         });
-                      });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {});
+                        });
                       },
-                        child: Transform.scale(
-                          scale: tanamanitem2,
-                          child: TanamanItem(
-                        Imageurl:'icon_tanaman/icon_tanaman_bunga/icon_tanaman_-aster.png',
+                      child: Transform.scale(
+                        scale: tanamanitem2,
+                        child: TanamanItem(
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_bunga/icon_tanaman_-aster.png',
+                        ),
                       ),
-                      ),
-                     )),
+                    )),
                 Container(
                     color: Colors.pink.shade100,
                     child: GestureDetector(
                       onTap: () {
+<<<<<<< Updated upstream
                           PlayAudio('audio/BELAJAR/tanaman/bunga-bangkai.mp3');
                           setState(() {
                             _controller3.forward(from: 0.0);
@@ -243,9 +265,24 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
                           scale: tanamanitem3,
                           child: TanamanItem(
                           Imageurl: 'icon_tanaman/icon_tanaman_bunga/icon_tanaman_-bangkai.png',
+=======
+                        PlayAudio('bunga-bangkai.mp3');
+                        setState(() {
+                          _controller3.forward(from: 0.0);
+                        });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {});
+                        });
+                      },
+                      child: Transform.scale(
+                        scale: tanamanitem3,
+                        child: TanamanItem(
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_bunga/icon_tanaman_-bangkai.png',
+>>>>>>> Stashed changes
                         ),
-                           ),
-                      )),
+                      ),
+                    )),
                 Container(
                     color: Colors.pink.shade100,
                     child: GestureDetector(
@@ -255,14 +292,14 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
                           _controller4.forward(from: 0.0);
                         });
                         Timer(Duration(seconds: 1), () {
-                          setState(() {
-                            });
-                            });
-                        },
+                          setState(() {});
+                        });
+                      },
                       child: Transform.scale(
                         scale: tanamanitem4,
                         child: TanamanItem(
-                          Imageurl: 'icon_tanaman/icon_tanaman_bunga/icon_tanaman_-kamboja.png',
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_bunga/icon_tanaman_-kamboja.png',
                         ),
                       ),
                     )),
@@ -275,37 +312,42 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
                           _controller5.forward(from: 0.0);
                         });
                         Timer(Duration(seconds: 1), () {
-                          setState(() {
-                          });
+                          setState(() {});
                         });
                       },
                       child: Transform.scale(
                         scale: tanamanitem5,
-                         child: TanamanItem(
-                        Imageurl:'icon_tanaman/icon_tanaman_bunga/icon_tanaman_-lili.png',
+                        child: TanamanItem(
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_bunga/icon_tanaman_-lili.png',
+                        ),
                       ),
-                    ),
-                  )),
+                    )),
                 Container(
                     color: Colors.pink.shade100,
                     child: GestureDetector(
+<<<<<<< Updated upstream
                     onTap: () {
                         PlayAudio('audio/BELAJAR/tanaman/bunga-matahari.mp3');
+=======
+                      onTap: () {
+                        PlayAudio('bunga-matahari.mp3');
+>>>>>>> Stashed changes
                         setState(() {
                           _controller6.forward(from: 0.0);
                         });
                         Timer(Duration(seconds: 1), () {
-                          setState(() {
-                          });
+                          setState(() {});
                         });
-                        },
-                        child: Transform.scale(
+                      },
+                      child: Transform.scale(
                         scale: tanamanitem6,
                         child: TanamanItem(
-                          Imageurl:'icon_tanaman/icon_tanaman_bunga/icon_tanaman_-matahari.png',
-                            ),
-                             ),
-                              )),
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_bunga/icon_tanaman_-matahari.png',
+                        ),
+                      ),
+                    )),
                 Container(
                     color: Colors.pink.shade100,
                     child: GestureDetector(
@@ -315,21 +357,21 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
                           _controller7.forward(from: 0.0);
                         });
                         Timer(Duration(seconds: 1), () {
-                          setState(() {
-                          });
+                          setState(() {});
                         });
                       },
-                          child: Transform.scale(
-                             scale: tanamanitem7,
-                             child: TanamanItem(
-                              Imageurl:'icon_tanaman/icon_tanaman_bunga/icon_tanaman_-mawar.png',
-                          ),
-                     ),
-                   )),
-
+                      child: Transform.scale(
+                        scale: tanamanitem7,
+                        child: TanamanItem(
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_bunga/icon_tanaman_-mawar.png',
+                        ),
+                      ),
+                    )),
                 Container(
                     color: Colors.pink.shade100,
                     child: GestureDetector(
+<<<<<<< Updated upstream
                         onTap: () {
                           PlayAudio('audio/BELAJAR/tanaman/bunga-melati.mp3');
                           setState(() {
@@ -338,15 +380,25 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
                           Timer(Duration(seconds: 1), () {
                             setState(() {
                           });
+=======
+                      onTap: () {
+                        PlayAudio('bunga-melati.mp3');
+                        setState(() {
+                          _controller8.forward(from: 0.0);
+>>>>>>> Stashed changes
                         });
-                    },
-                          child: Transform.scale(
-                          scale: tanamanitem8,
-                          child: TanamanItem(
-                          Imageurl:'icon_tanaman/icon_tanaman_bunga/icon_tanaman_-melati.png',
-                          ),
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {});
+                        });
+                      },
+                      child: Transform.scale(
+                        scale: tanamanitem8,
+                        child: TanamanItem(
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_bunga/icon_tanaman_-melati.png',
                         ),
-                          )),
+                      ),
+                    )),
                 Container(
                     color: Colors.pink.shade100,
                     child: GestureDetector(
@@ -356,20 +408,21 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
                           _controller9.forward(from: 0.0);
                         });
                         Timer(Duration(seconds: 1), () {
-                          setState(() {
-                            });
-                          });
-                        },
+                          setState(() {});
+                        });
+                      },
                       child: Transform.scale(
-                          scale: tanamanitem9,
-                          child: TanamanItem(
-                          Imageurl: 'icon_tanaman/icon_tanaman_bunga/icon_tanaman_-sakura.png',
-                    ),
-                ),
-                  )),
+                        scale: tanamanitem9,
+                        child: TanamanItem(
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_bunga/icon_tanaman_-sakura.png',
+                        ),
+                      ),
+                    )),
                 Container(
                     color: Colors.pink.shade100,
                     child: GestureDetector(
+<<<<<<< Updated upstream
                         onTap: () {
                           PlayAudio('audio/BELAJAR/tanaman/bunga-tulip.mp3');
                           setState(() {
@@ -387,6 +440,25 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
                             ),
                           ),
                       )),
+=======
+                      onTap: () {
+                        PlayAudio('bunga-tulip.mp3');
+                        setState(() {
+                          _controller10.forward(from: 0.0);
+                        });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {});
+                        });
+                      },
+                      child: Transform.scale(
+                        scale: tanamanitem10,
+                        child: TanamanItem(
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_bunga/icon_tanaman_-tulip.png',
+                        ),
+                      ),
+                    )),
+>>>>>>> Stashed changes
               ],
             ),
           ),
@@ -396,13 +468,14 @@ class _Page1State extends State<Page1> with TickerProviderStateMixin {
   }
 }
 
-class Page2 extends StatefulWidget {
-  const Page2({Key? key}) : super(key: key);
+class Hias extends StatefulWidget {
+  const Hias({Key? key}) : super(key: key);
 
   @override
-  State<Page2> createState() => _Page2State();
+  State<Hias> createState() => _HiasState();
 }
-class _Page2State extends State<Page2> with TickerProviderStateMixin {
+
+class _HiasState extends State<Hias> with TickerProviderStateMixin {
   var tanamanitem1 = 1.0;
   var tanamanitem2 = 1.0;
   var tanamanitem3 = 1.0;
@@ -529,12 +602,14 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
         tanamanitem10 = _controller9.value;
       });
     });
-
+    PlayAudio('tanaman-hias.mp3');
     super.initState();
   }
+
   Future<void> PlayAudio(url) async {
     SfxTanaman.play(url);
   }
+
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
@@ -544,8 +619,8 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
         ClipRRect(
           borderRadius: BorderRadius.circular(25),
           child: Container(
-            width: 300,
-            height: 25,
+            width: width / 1.5,
+            height: height / 9 / 4,
             color: Colors.indigo.shade900,
             child: Center(
               child: Text(
@@ -559,7 +634,7 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
         ClipPath(
           clipper: BackgroundClipper(),
           child: Container(
-            width: width / 1.5,
+            width: width / 1.7,
             height: height / 1.6,
             decoration: BoxDecoration(
               color: Colors.white,
@@ -575,46 +650,57 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                 Container(
                     color: Colors.yellow.shade200,
                     child: GestureDetector(
+<<<<<<< Updated upstream
                       onTap:(){
                         PlayAudio('audio/BELAJAR/tanaman/apu-apu.mp3');
+=======
+                      onTap: () {
+                        PlayAudio('apu-apu.mp3');
+>>>>>>> Stashed changes
                         setState(() {
                           _controller1.forward(from: 0.0);
                         });
-                        Timer(Duration(seconds: 1),(){
-                          setState(() {
-                          });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {});
                         });
-                        },
+                      },
                       child: Transform.scale(
                         scale: tanamanitem1,
                         child: TanamanItem(
-                          Imageurl: 'icon_tanaman/icon_tanaman_hias/icon_tanaman_-apuapu.png',
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_hias/icon_tanaman_-apuapu.png',
                         ),
                       ),
                     )),
                 Container(
                     color: Colors.yellow.shade200,
                     child: GestureDetector(
+<<<<<<< Updated upstream
                       onTap:(){
                         PlayAudio('audio/BELAJAR/tanaman/bambu-air.mp3');
+=======
+                      onTap: () {
+                        PlayAudio('bambu-air.mp3');
+>>>>>>> Stashed changes
                         setState(() {
                           _controller2.forward(from: 0.0);
                         });
-                        Timer(Duration(seconds: 1),(){
-                          setState(() {
-                          });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {});
                         });
-                            },
+                      },
                       child: Transform.scale(
-                      scale: tanamanitem2,
-                      child: TanamanItem(
-                      Imageurl:  'icon_tanaman/icon_tanaman_hias/icon_tanaman_-bambuair.png',
+                        scale: tanamanitem2,
+                        child: TanamanItem(
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_hias/icon_tanaman_-bambuair.png',
+                        ),
                       ),
-                  ),
-                  )),
+                    )),
                 Container(
                     color: Colors.yellow.shade200,
                     child: GestureDetector(
+<<<<<<< Updated upstream
     onTap:(){
     PlayAudio( 'audio/BELAJAR/tanaman/kaktus.mp3');
     setState(() {
@@ -637,23 +723,48 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
                     child: GestureDetector(
                       onTap:(){
                         PlayAudio('audio/BELAJAR/tanaman/cemara.mp3');
+=======
+                      onTap: () {
+                        PlayAudio('kaktus.mp3');
                         setState(() {
-                          _controller4.forward(from: 0.0);
+                          _controller3.forward(from: 0.0);
                         });
-                        Timer(Duration(seconds: 1),(){
-                          setState(() {
-                          });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {});
                         });
                       },
                       child: Transform.scale(
-                        scale: tanamanitem4,
+                        scale: tanamanitem3,
                         child: TanamanItem(
-                          Imageurl:   'icon_tanaman/icon_tanaman_hias/icon_tanaman_-cemara.png',
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_hias/icon_tanaman_-cactus.png',
                         ),
                       ),
                     )),
                 Container(
                     color: Colors.yellow.shade200,
+                    child: GestureDetector(
+                      onTap: () {
+                        PlayAudio('cemara.mp3');
+>>>>>>> Stashed changes
+                        setState(() {
+                          _controller4.forward(from: 0.0);
+                        });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {});
+                        });
+                      },
+                      child: Transform.scale(
+                        scale: tanamanitem4,
+                        child: TanamanItem(
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_hias/icon_tanaman_-cemara.png',
+                        ),
+                      ),
+                    )),
+                Container(
+                    color: Colors.yellow.shade200,
+<<<<<<< Updated upstream
     child: GestureDetector(
     onTap:(){
     PlayAudio('audio/BELAJAR/tanaman/keladi.mp3');
@@ -772,6 +883,126 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
     ),
     ),
     )),
+=======
+                    child: GestureDetector(
+                      onTap: () {
+                        PlayAudio('keladi.mp3');
+                        setState(() {
+                          _controller5.forward(from: 0.0);
+                        });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {});
+                        });
+                      },
+                      child: Transform.scale(
+                        scale: tanamanitem5,
+                        child: TanamanItem(
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_hias/icon_tanaman_-keladi.png',
+                        ),
+                      ),
+                    )),
+                Container(
+                    color: Colors.yellow.shade200,
+                    child: GestureDetector(
+                      onTap: () {
+                        PlayAudio('kolpanda.mp3');
+                        setState(() {
+                          _controller6.forward(from: 0.0);
+                        });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {});
+                        });
+                      },
+                      child: Transform.scale(
+                        scale: tanamanitem6,
+                        child: TanamanItem(
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_hias/icon_tanaman_-kolbanda.png',
+                        ),
+                      ),
+                    )),
+                Container(
+                    color: Colors.yellow.shade200,
+                    child: GestureDetector(
+                      onTap: () {
+                        PlayAudio('pakis-haji.mp3');
+                        setState(() {
+                          _controller7.forward(from: 0.0);
+                        });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {});
+                        });
+                      },
+                      child: Transform.scale(
+                        scale: tanamanitem7,
+                        child: TanamanItem(
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_hias/icon_tanaman_-pakis_haji.png',
+                        ),
+                      ),
+                    )),
+                Container(
+                    color: Colors.yellow.shade200,
+                    child: GestureDetector(
+                      onTap: () {
+                        PlayAudio('palem-merah.mp3');
+                        setState(() {
+                          _controller8.forward(from: 0.0);
+                        });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {});
+                        });
+                      },
+                      child: Transform.scale(
+                        scale: tanamanitem8,
+                        child: TanamanItem(
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_hias/icon_tanaman_-palemerah.png',
+                        ),
+                      ),
+                    )),
+                Container(
+                    color: Colors.yellow.shade200,
+                    child: GestureDetector(
+                      onTap: () {
+                        PlayAudio('puring.mp3');
+                        setState(() {
+                          _controller9.forward(from: 0.0);
+                        });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {});
+                        });
+                      },
+                      child: Transform.scale(
+                        scale: tanamanitem9,
+                        child: TanamanItem(
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_hias/icon_tanaman_-puring.png',
+                        ),
+                      ),
+                    )),
+                Container(
+                    color: Colors.yellow.shade200,
+                    child: GestureDetector(
+                      onTap: () {
+                        PlayAudio('sansivera.mp3');
+                        setState(() {
+                          _controller10.forward(from: 0.0);
+                        });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {});
+                        });
+                      },
+                      child: Transform.scale(
+                        scale: tanamanitem10,
+                        child: TanamanItem(
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_hias/icon_tanaman_-sansivera.png',
+                        ),
+                      ),
+                    )),
+>>>>>>> Stashed changes
               ],
             ),
           ),
@@ -781,13 +1012,14 @@ class _Page2State extends State<Page2> with TickerProviderStateMixin {
   }
 }
 
-class Page3 extends StatefulWidget {
-  const Page3({Key? key}) : super(key: key);
+class Obat extends StatefulWidget {
+  const Obat({Key? key}) : super(key: key);
 
   @override
-  State<Page3> createState() => _Page3State();
+  State<Obat> createState() => _ObatState();
 }
-class _Page3State extends State<Page3> with TickerProviderStateMixin {
+
+class _ObatState extends State<Obat> with TickerProviderStateMixin {
   var tanamanitem1 = 1.0;
   var tanamanitem2 = 1.0;
   var tanamanitem3 = 1.0;
@@ -914,12 +1146,14 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
         tanamanitem10 = _controller9.value;
       });
     });
-
+    PlayAudio('tanaman-obat.mp3');
     super.initState();
   }
+
   Future<void> PlayAudio(url) async {
     SfxTanaman.play(url);
   }
+
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
@@ -929,8 +1163,8 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
         ClipRRect(
           borderRadius: BorderRadius.circular(25),
           child: Container(
-            width: 300,
-            height: 25,
+            width: width / 1.5,
+            height: height / 9 / 4,
             color: Colors.indigo.shade900,
             child: Center(
               child: Text(
@@ -944,7 +1178,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
         ClipPath(
           clipper: BackgroundClipper(),
           child: Container(
-            width: width / 1.5,
+            width: width / 1.7,
             height: height / 1.6,
             decoration: BoxDecoration(
               color: Colors.white,
@@ -959,6 +1193,7 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
               children: <Widget>[
                 Container(
                     color: Colors.lightBlue.shade400,
+<<<<<<< Updated upstream
     child: GestureDetector(
     onTap:(){
     PlayAudio('audio/BELAJAR/tanaman/alang-alang.mp3');
@@ -982,23 +1217,49 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
                     child: GestureDetector(
                       onTap:(){
                         PlayAudio('audio/BELAJAR/tanaman/jahe.mp3');
+=======
+                    child: GestureDetector(
+                      onTap: () {
+                        PlayAudio('alang-alang.mp3');
                         setState(() {
-                          _controller2.forward(from: 0.0);
+                          _controller1.forward(from: 0.0);
                         });
-                        Timer(Duration(seconds: 1),(){
-                          setState(() {
-                          });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {});
                         });
                       },
                       child: Transform.scale(
-                        scale: tanamanitem2,
+                        scale: tanamanitem1,
                         child: TanamanItem(
-                          Imageurl:  'icon_tanaman/icon_tanaman_obat/icon_tanaman_jahe.png',
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_obat/icon_tanaman_alang_alang.png',
                         ),
                       ),
                     )),
                 Container(
                     color: Colors.lightBlue.shade400,
+                    child: GestureDetector(
+                      onTap: () {
+                        PlayAudio('jahe.mp3');
+>>>>>>> Stashed changes
+                        setState(() {
+                          _controller2.forward(from: 0.0);
+                        });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {});
+                        });
+                      },
+                      child: Transform.scale(
+                        scale: tanamanitem2,
+                        child: TanamanItem(
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_obat/icon_tanaman_jahe.png',
+                        ),
+                      ),
+                    )),
+                Container(
+                    color: Colors.lightBlue.shade400,
+<<<<<<< Updated upstream
     child: GestureDetector(
     onTap:(){
     PlayAudio('audio/BELAJAR/tanaman/kerepeng-cina.mp3');
@@ -1062,23 +1323,89 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
                     child: GestureDetector(
                       onTap:(){
                         PlayAudio('audio/BELAJAR/tanaman/lengkuas.mp3');
+=======
+                    child: GestureDetector(
+                      onTap: () {
+                        PlayAudio('kerepeng-cina.mp3');
                         setState(() {
-                          _controller6.forward(from: 0.0);
+                          _controller3.forward(from: 0.0);
                         });
-                        Timer(Duration(seconds: 1),(){
-                          setState(() {
-                          });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {});
                         });
                       },
                       child: Transform.scale(
-                        scale: tanamanitem6,
+                        scale: tanamanitem3,
                         child: TanamanItem(
-                          Imageurl:  'icon_tanaman/icon_tanaman_obat/icon_tanaman_lengkuas.png',
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_obat/icon_tanaman_kerepeng_cina.png',
                         ),
                       ),
                     )),
                 Container(
                     color: Colors.lightBlue.shade400,
+                    child: GestureDetector(
+                      onTap: () {
+                        PlayAudio('kumis-kucing.mp3');
+                        setState(() {
+                          _controller4.forward(from: 0.0);
+                        });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {});
+                        });
+                      },
+                      child: Transform.scale(
+                        scale: tanamanitem4,
+                        child: TanamanItem(
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_obat/icon_tanaman_kumis_kucing.png',
+                        ),
+                      ),
+                    )),
+                Container(
+                    color: Colors.lightBlue.shade400,
+                    child: GestureDetector(
+                      onTap: () {
+                        PlayAudio('kunyit.mp3');
+                        setState(() {
+                          _controller5.forward(from: 0.0);
+                        });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {});
+                        });
+                      },
+                      child: Transform.scale(
+                        scale: tanamanitem5,
+                        child: TanamanItem(
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_obat/icon_tanaman_kunyit.png',
+                        ),
+                      ),
+                    )),
+                Container(
+                    color: Colors.lightBlue.shade400,
+                    child: GestureDetector(
+                      onTap: () {
+                        PlayAudio('lengkuas.mp3');
+>>>>>>> Stashed changes
+                        setState(() {
+                          _controller6.forward(from: 0.0);
+                        });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {});
+                        });
+                      },
+                      child: Transform.scale(
+                        scale: tanamanitem6,
+                        child: TanamanItem(
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_obat/icon_tanaman_lengkuas.png',
+                        ),
+                      ),
+                    )),
+                Container(
+                    color: Colors.lightBlue.shade400,
+<<<<<<< Updated upstream
     child: GestureDetector(
     onTap:(){
     PlayAudio('audio/BELAJAR/tanaman/lidah-buaya.mp3');
@@ -1157,6 +1484,86 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
     ),
     ),
     )),
+=======
+                    child: GestureDetector(
+                      onTap: () {
+                        PlayAudio('lidah-buaya.mp3');
+                        setState(() {
+                          _controller7.forward(from: 0.0);
+                        });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {});
+                        });
+                      },
+                      child: Transform.scale(
+                        scale: tanamanitem7,
+                        child: TanamanItem(
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_obat/icon_tanaman_lidah_buaya.png',
+                        ),
+                      ),
+                    )),
+                Container(
+                    color: Colors.lightBlue.shade400,
+                    child: GestureDetector(
+                      onTap: () {
+                        PlayAudio('mengkudu.mp3');
+                        setState(() {
+                          _controller8.forward(from: 0.0);
+                        });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {});
+                        });
+                      },
+                      child: Transform.scale(
+                        scale: tanamanitem8,
+                        child: TanamanItem(
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_obat/icon_tanaman_mengkudu.png',
+                        ),
+                      ),
+                    )),
+                Container(
+                    color: Colors.lightBlue.shade400,
+                    child: GestureDetector(
+                      onTap: () {
+                        PlayAudio('mint.mp3');
+                        setState(() {
+                          _controller9.forward(from: 0.0);
+                        });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {});
+                        });
+                      },
+                      child: Transform.scale(
+                        scale: tanamanitem9,
+                        child: TanamanItem(
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_obat/icon_tanaman_mint.png',
+                        ),
+                      ),
+                    )),
+                Container(
+                    color: Colors.lightBlue.shade400,
+                    child: GestureDetector(
+                      onTap: () {
+                        PlayAudio('rosela.mp3');
+                        setState(() {
+                          _controller10.forward(from: 0.0);
+                        });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {});
+                        });
+                      },
+                      child: Transform.scale(
+                        scale: tanamanitem10,
+                        child: TanamanItem(
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_obat/icon_tanaman_rosela.png',
+                        ),
+                      ),
+                    )),
+>>>>>>> Stashed changes
               ],
             ),
           ),
@@ -1166,13 +1573,14 @@ class _Page3State extends State<Page3> with TickerProviderStateMixin {
   }
 }
 
-class Page4 extends StatefulWidget {
-  const Page4({Key? key}) : super(key: key);
+class Pangan extends StatefulWidget {
+  const Pangan({Key? key}) : super(key: key);
 
   @override
-  State<Page4> createState() => _Page4State();
+  State<Pangan> createState() => _PanganState();
 }
-class _Page4State extends State<Page4> with TickerProviderStateMixin {
+
+class _PanganState extends State<Pangan> with TickerProviderStateMixin {
   var tanamanitem1 = 1.0;
   var tanamanitem2 = 1.0;
   var tanamanitem3 = 1.0;
@@ -1299,12 +1707,14 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
         tanamanitem10 = _controller9.value;
       });
     });
-
+    PlayAudio('tanaman-pangan.mp3');
     super.initState();
   }
+
   Future<void> PlayAudio(url) async {
     SfxTanaman.play(url);
   }
+
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
@@ -1314,8 +1724,8 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
         ClipRRect(
           borderRadius: BorderRadius.circular(25),
           child: Container(
-            width: 300,
-            height: 25,
+            width: width / 1.5,
+            height: height / 9 / 4,
             color: Colors.indigo.shade900,
             child: Center(
               child: Text(
@@ -1329,7 +1739,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
         ClipPath(
           clipper: BackgroundClipper(),
           child: Container(
-            width: width / 1.5,
+            width: width / 1.7,
             height: height / 1.6,
             decoration: BoxDecoration(
               color: Colors.white,
@@ -1344,6 +1754,7 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
               children: <Widget>[
                 Container(
                     color: Colors.lightGreen.shade300,
+<<<<<<< Updated upstream
     child: GestureDetector(
     onTap:(){
     PlayAudio('audio/BELAJAR/tanaman/brokoli.mp3');
@@ -1367,24 +1778,50 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
                     child: GestureDetector(
                       onTap:(){
                         PlayAudio('audio/BELAJAR/tanaman/gandum.mp3');
+=======
+                    child: GestureDetector(
+                      onTap: () {
+                        PlayAudio('brokoli.mp3');
                         setState(() {
-                          _controller2.forward(from: 0.0);
+                          _controller1.forward(from: 0.0);
                         });
-                        Timer(Duration(seconds: 1),(){
-                          setState(() {
-                          });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {});
                         });
                       },
                       child: Transform.scale(
-                        scale: tanamanitem2,
+                        scale: tanamanitem1,
                         child: TanamanItem(
-                          Imageurl:  'icon_tanaman/icon_tanaman_pangan/icon_tanaman_gandum.png',
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_pangan/icon_tanaman_brokoli.png',
                         ),
                       ),
                     )),
                 Container(
                     color: Colors.lightGreen.shade300,
                     child: GestureDetector(
+                      onTap: () {
+                        PlayAudio('gandum.mp3');
+>>>>>>> Stashed changes
+                        setState(() {
+                          _controller2.forward(from: 0.0);
+                        });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {});
+                        });
+                      },
+                      child: Transform.scale(
+                        scale: tanamanitem2,
+                        child: TanamanItem(
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_pangan/icon_tanaman_gandum.png',
+                        ),
+                      ),
+                    )),
+                Container(
+                    color: Colors.lightGreen.shade300,
+                    child: GestureDetector(
+<<<<<<< Updated upstream
     onTap:(){
     PlayAudio('audio/BELAJAR/tanaman/jagung.mp3');
     setState(() {
@@ -1407,24 +1844,49 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
                     child: GestureDetector(
                       onTap:(){
                         PlayAudio('audio/BELAJAR/tanaman/kelapa.mp3');
+=======
+                      onTap: () {
+                        PlayAudio('jagung.mp3');
                         setState(() {
-                          _controller4.forward(from: 0.0);
+                          _controller3.forward(from: 0.0);
                         });
-                        Timer(Duration(seconds: 1),(){
-                          setState(() {
-                          });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {});
                         });
                       },
                       child: Transform.scale(
-                        scale: tanamanitem4,
+                        scale: tanamanitem3,
                         child: TanamanItem(
-                          Imageurl:  'icon_tanaman/icon_tanaman_pangan/icon_tanaman_kelapa.png',
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_pangan/icon_tanaman_jagung.png',
                         ),
                       ),
                     )),
                 Container(
                     color: Colors.lightGreen.shade300,
                     child: GestureDetector(
+                      onTap: () {
+                        PlayAudio('kelapa.mp3');
+>>>>>>> Stashed changes
+                        setState(() {
+                          _controller4.forward(from: 0.0);
+                        });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {});
+                        });
+                      },
+                      child: Transform.scale(
+                        scale: tanamanitem4,
+                        child: TanamanItem(
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_pangan/icon_tanaman_kelapa.png',
+                        ),
+                      ),
+                    )),
+                Container(
+                    color: Colors.lightGreen.shade300,
+                    child: GestureDetector(
+<<<<<<< Updated upstream
                       onTap:(){
                         PlayAudio('audio/BELAJAR/tanaman/ketela.mp3');
                         setState(() {
@@ -1447,23 +1909,48 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
                     child: GestureDetector(
                       onTap:(){
                         PlayAudio('audio/BELAJAR/tanaman/kubis.mp3');
+=======
+                      onTap: () {
+                        PlayAudio('ketela.mp3');
                         setState(() {
-                          _controller6.forward(from: 0.0);
+                          _controller5.forward(from: 0.0);
                         });
-                        Timer(Duration(seconds: 1),(){
-                          setState(() {
-                          });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {});
                         });
                       },
                       child: Transform.scale(
-                        scale: tanamanitem6,
+                        scale: tanamanitem5,
                         child: TanamanItem(
-                          Imageurl: 'icon_tanaman/icon_tanaman_pangan/icon_tanaman_kol.png',
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_pangan/icon_tanaman_ketela.png',
                         ),
                       ),
                     )),
                 Container(
                     color: Colors.lightGreen.shade300,
+                    child: GestureDetector(
+                      onTap: () {
+                        PlayAudio('kubis.mp3');
+>>>>>>> Stashed changes
+                        setState(() {
+                          _controller6.forward(from: 0.0);
+                        });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {});
+                        });
+                      },
+                      child: Transform.scale(
+                        scale: tanamanitem6,
+                        child: TanamanItem(
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_pangan/icon_tanaman_kol.png',
+                        ),
+                      ),
+                    )),
+                Container(
+                    color: Colors.lightGreen.shade300,
+<<<<<<< Updated upstream
     child: GestureDetector(
     onTap:(){
     PlayAudio('audio/BELAJAR/tanaman/padi.mp3');
@@ -1542,6 +2029,86 @@ class _Page4State extends State<Page4> with TickerProviderStateMixin {
     ),
     ),
     )),
+=======
+                    child: GestureDetector(
+                      onTap: () {
+                        PlayAudio('padi.mp3');
+                        setState(() {
+                          _controller7.forward(from: 0.0);
+                        });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {});
+                        });
+                      },
+                      child: Transform.scale(
+                        scale: tanamanitem7,
+                        child: TanamanItem(
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_pangan/icon_tanaman_padi.png',
+                        ),
+                      ),
+                    )),
+                Container(
+                    color: Colors.lightGreen.shade300,
+                    child: GestureDetector(
+                      onTap: () {
+                        PlayAudio('pepaya.mp3');
+                        setState(() {
+                          _controller8.forward(from: 0.0);
+                        });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {});
+                        });
+                      },
+                      child: Transform.scale(
+                        scale: tanamanitem8,
+                        child: TanamanItem(
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_pangan/icon_tanaman_pepaya.png',
+                        ),
+                      ),
+                    )),
+                Container(
+                    color: Colors.lightGreen.shade300,
+                    child: GestureDetector(
+                      onTap: () {
+                        PlayAudio('pisang.mp3');
+                        setState(() {
+                          _controller9.forward(from: 0.0);
+                        });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {});
+                        });
+                      },
+                      child: Transform.scale(
+                        scale: tanamanitem9,
+                        child: TanamanItem(
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_pangan/icon_tanaman_pisang.png',
+                        ),
+                      ),
+                    )),
+                Container(
+                    color: Colors.lightGreen.shade300,
+                    child: GestureDetector(
+                      onTap: () {
+                        PlayAudio('sawi.mp3');
+                        setState(() {
+                          _controller10.forward(from: 0.0);
+                        });
+                        Timer(Duration(seconds: 1), () {
+                          setState(() {});
+                        });
+                      },
+                      child: Transform.scale(
+                        scale: tanamanitem10,
+                        child: TanamanItem(
+                          Imageurl:
+                              'icon_tanaman/icon_tanaman_pangan/icon_tanaman_sawi.png',
+                        ),
+                      ),
+                    )),
+>>>>>>> Stashed changes
               ],
             ),
           ),
