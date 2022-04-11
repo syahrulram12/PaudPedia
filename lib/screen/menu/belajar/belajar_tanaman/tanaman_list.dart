@@ -966,7 +966,7 @@ class _ObatState extends State<Obat> with TickerProviderStateMixin {
               mainAxisSpacing: 14,
               children: <Widget>[
                 Container(
-                    color: Colors.lightBlue.shade400,
+                    color: Colors.lightGreen.shade300,
                     child: GestureDetector(
                       onTap: () {
                         PlayAudio('audio/BELAJAR/tanaman/alang-alang.mp3');
@@ -986,7 +986,7 @@ class _ObatState extends State<Obat> with TickerProviderStateMixin {
                       ),
                     )),
                 Container(
-                    color: Colors.lightBlue.shade400,
+                    color: Colors.lightGreen.shade300,
                     child: GestureDetector(
                       onTap: () {
                         PlayAudio('audio/BELAJAR/tanaman/jahe.mp3');
@@ -1006,7 +1006,7 @@ class _ObatState extends State<Obat> with TickerProviderStateMixin {
                       ),
                     )),
                 Container(
-                    color: Colors.lightBlue.shade400,
+                    color: Colors.lightGreen.shade300,
                     child: GestureDetector(
                       onTap: () {
                         PlayAudio('audio/BELAJAR/tanaman/kerepeng-cina.mp3');
@@ -1026,7 +1026,7 @@ class _ObatState extends State<Obat> with TickerProviderStateMixin {
                       ),
                     )),
                 Container(
-                    color: Colors.lightBlue.shade400,
+                    color: Colors.lightGreen.shade300,
                     child: GestureDetector(
                       onTap: () {
                         PlayAudio('audio/BELAJAR/tanaman/kumis-kucing.mp3');
@@ -1046,7 +1046,7 @@ class _ObatState extends State<Obat> with TickerProviderStateMixin {
                       ),
                     )),
                 Container(
-                    color: Colors.lightBlue.shade400,
+                    color: Colors.lightGreen.shade300,
                     child: GestureDetector(
                       onTap: () {
                         PlayAudio('audio/BELAJAR/tanaman/kunyit.mp3');
@@ -1066,7 +1066,7 @@ class _ObatState extends State<Obat> with TickerProviderStateMixin {
                       ),
                     )),
                 Container(
-                    color: Colors.lightBlue.shade400,
+                    color: Colors.lightGreen.shade300,
                     child: GestureDetector(
                       onTap: () {
                         PlayAudio('audio/BELAJAR/tanaman/lengkuas.mp3');
@@ -1086,7 +1086,7 @@ class _ObatState extends State<Obat> with TickerProviderStateMixin {
                       ),
                     )),
                 Container(
-                    color: Colors.lightBlue.shade400,
+                    color: Colors.lightGreen.shade300,
                     child: GestureDetector(
                       onTap: () {
                         PlayAudio('audio/BELAJAR/tanaman/lidah-buaya.mp3');
@@ -1106,7 +1106,7 @@ class _ObatState extends State<Obat> with TickerProviderStateMixin {
                       ),
                     )),
                 Container(
-                    color: Colors.lightBlue.shade400,
+                    color: Colors.lightGreen.shade300,
                     child: GestureDetector(
                       onTap: () {
                         PlayAudio('audio/BELAJAR/tanaman/mengkudu.mp3');
@@ -1126,7 +1126,7 @@ class _ObatState extends State<Obat> with TickerProviderStateMixin {
                       ),
                     )),
                 Container(
-                    color: Colors.lightBlue.shade400,
+                    color: Colors.lightGreen.shade300,
                     child: GestureDetector(
                       onTap: () {
                         PlayAudio('audio/BELAJAR/tanaman/mint.mp3');
@@ -1146,7 +1146,7 @@ class _ObatState extends State<Obat> with TickerProviderStateMixin {
                       ),
                     )),
                 Container(
-                    color: Colors.lightBlue.shade400,
+                    color: Colors.lightGreen.shade300,
                     child: GestureDetector(
                       onTap: () {
                         PlayAudio('audio/BELAJAR/tanaman/rosela.mp3');
@@ -1354,7 +1354,7 @@ class _PanganState extends State<Pangan> with TickerProviderStateMixin {
               mainAxisSpacing: 14,
               children: <Widget>[
                 Container(
-                    color: Colors.lightGreen.shade300,
+                    color: Colors.lightBlue.shade400,
                     child: GestureDetector(
                       onTap: () {
                         PlayAudio('audio/BELAJAR/tanaman/brokoli.mp3');
@@ -1374,7 +1374,7 @@ class _PanganState extends State<Pangan> with TickerProviderStateMixin {
                       ),
                     )),
                 Container(
-                    color: Colors.lightGreen.shade300,
+                    color: Colors.lightBlue.shade400,
                     child: GestureDetector(
                       onTap: () {
                         PlayAudio('audio/BELAJAR/tanaman/gandum.mp3');
@@ -1394,7 +1394,7 @@ class _PanganState extends State<Pangan> with TickerProviderStateMixin {
                       ),
                     )),
                 Container(
-                    color: Colors.lightGreen.shade300,
+                    color: Colors.lightBlue.shade400,
                     child: GestureDetector(
                       onTap: () {
                         PlayAudio('audio/BELAJAR/tanaman/jagung.mp3');
@@ -1414,7 +1414,7 @@ class _PanganState extends State<Pangan> with TickerProviderStateMixin {
                       ),
                     )),
                 Container(
-                    color: Colors.lightGreen.shade300,
+                    color: Colors.lightBlue.shade400,
                     child: GestureDetector(
                       onTap: () {
                         PlayAudio('audio/BELAJAR/tanaman/kelapa.mp3');
@@ -1434,7 +1434,7 @@ class _PanganState extends State<Pangan> with TickerProviderStateMixin {
                       ),
                     )),
                 Container(
-                    color: Colors.lightGreen.shade300,
+                    color: Colors.lightBlue.shade400,
                     child: GestureDetector(
                       onTap: () {
                         PlayAudio('audio/BELAJAR/tanaman/ketela.mp3');
@@ -1454,7 +1454,7 @@ class _PanganState extends State<Pangan> with TickerProviderStateMixin {
                       ),
                     )),
                 Container(
-                    color: Colors.lightGreen.shade300,
+                    color: Colors.lightBlue.shade400,
                     child: GestureDetector(
                       onTap: () {
                         PlayAudio('audio/BELAJAR/tanaman/kubis.mp3');
@@ -1474,7 +1474,7 @@ class _PanganState extends State<Pangan> with TickerProviderStateMixin {
                       ),
                     )),
                 Container(
-                    color: Colors.lightGreen.shade300,
+                    color: Colors.lightBlue.shade400,
                     child: GestureDetector(
                       onTap: () {
                         PlayAudio('audio/BELAJAR/tanaman/padi.mp3');
@@ -1494,7 +1494,7 @@ class _PanganState extends State<Pangan> with TickerProviderStateMixin {
                       ),
                     )),
                 Container(
-                    color: Colors.lightGreen.shade300,
+                    color: Colors.lightBlue.shade400,
                     child: GestureDetector(
                       onTap: () {
                         PlayAudio('audio/BELAJAR/tanaman/pepaya.mp3');
@@ -1514,7 +1514,7 @@ class _PanganState extends State<Pangan> with TickerProviderStateMixin {
                       ),
                     )),
                 Container(
-                    color: Colors.lightGreen.shade300,
+                    color: Colors.lightBlue.shade400,
                     child: GestureDetector(
                       onTap: () {
                         PlayAudio('audio/BELAJAR/tanaman/pisang.mp3');
@@ -1534,7 +1534,7 @@ class _PanganState extends State<Pangan> with TickerProviderStateMixin {
                       ),
                     )),
                 Container(
-                    color: Colors.lightGreen.shade300,
+                    color: Colors.lightBlue.shade400,
                     child: GestureDetector(
                       onTap: () {
                         PlayAudio('audio/BELAJAR/tanaman/sawi.mp3');
