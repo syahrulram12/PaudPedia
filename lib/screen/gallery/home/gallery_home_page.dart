@@ -5,6 +5,7 @@ import 'package:paudpedia_kemendikbud/screen/gallery/playing/playing_video_list_
 import 'package:paudpedia_kemendikbud/screen/gallery/reading/reading_list_page.dart';
 import 'package:paudpedia_kemendikbud/screen/gallery/sing/sing_list_page.dart';
 import 'package:paudpedia_kemendikbud/screen/gallery/telling/telling_list_page.dart';
+import 'package:paudpedia_kemendikbud/screen/menu/menu.dart';
 import 'package:paudpedia_kemendikbud/styles/color.dart';
 import 'package:paudpedia_kemendikbud/utils/screen_utils.dart';
 import 'package:simple_tooltip/simple_tooltip.dart';
@@ -21,6 +22,7 @@ class _GalleryHomePageState extends State<GalleryHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    double height = MediaQuery.of(context).size.height;
     return Scaffold(
         body: SafeArea(
       child: Stack(
@@ -100,7 +102,7 @@ class _GalleryHomePageState extends State<GalleryHomePage> {
                   ],
                 ),
                 SizedBox(
-                  height: 30,
+                  height: height / 9 / 7,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -123,6 +125,20 @@ class _GalleryHomePageState extends State<GalleryHomePage> {
                     ),
                   ],
                 ),
+                SizedBox(
+                  height: height / 9 / 8,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    GalleryMenuWidget(
+                        imageUrl: 'assets/images/cover_400x400.jpg',
+                        label: "Ruang Bermain",
+                        onMenuTap: () {
+                          Get.to(HomeMenu());
+                        })
+                  ],
+                )
               ],
             ),
           )

@@ -23,8 +23,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   TooltipInfoState tooltipState = TooltipInfoState.NONE;
 
-  String greetingText =
-      """Halo Sobat PAUD,
+  String greetingText = """Halo Sobat PAUD,
 Aplikasi Paudpedia adalah
 aplikasi yang dikembangkan oleh
 Direktorat Pendidikan Anak Usia
@@ -132,34 +131,6 @@ pembelajaran saat ini.
                           ],
                         ),
                       ),
-                    ),
-                    Positioned(
-                      bottom: (getHeight(context) / 9),
-                      left: 0,
-                      right: 0,
-                      child: Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 36),
-                          child: Row(
-                            mainAxisSize: MainAxisSize.max,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Flexible(
-                                child: MainMenuItem2(
-                                  imageUrl: 'assets/images/cover_400x400.jpg',
-                                  message: "",
-                                  // isShow:
-                                  // tooltipState == TooltipInfoState.GALLERY,
-                                  // onInfoClick: () {
-                                  //   updateStateTooltipInfo(
-                                  //       TooltipInfoState.GALLERY);
-                                  // },
-                                  onMenuClick: () {
-                                    Get.to(() => HomeMenu());
-                                  },
-                                ),
-                              ),
-                            ],
-                          )),
                     ),
                     Positioned(
                         bottom: 13,
